@@ -22,17 +22,22 @@ class AllHeads {
     }
 
     public function display() {
+        MainHead::sortByProp($this->mainHeads,'heading');
         foreach ($this->mainHeads as $mainHead) {
             echo "\n" . $mainHead->heading;
-            if (!empty($mainHead->pages )) {
-                $p = implode(', ' , $mainHead->getPages());
-                echo ', ' . $p;
+            $p = $mainHead->getPages();
+            if (!empty($p)) {
+                natsort($p);
+                $s = implode(', ' , $p);
+                echo ', ' . $s;
             }
             if (!empty ($mainHead->subheads)) {
+                SubHead::sortByProp($mainHead->subheads,'heading');
                 foreach($mainHead->subheads as $subHead) {
-
-                    $p = implode(', ' , $subHead->getPages());
-                    echo "\n    " . $subHead->heading . ', ' . $p;
+                    $p = $subHead->getPages();
+                    natsort($p);
+                    $s = implode(', ' , $p);
+                    echo "\n    " . $subHead->heading . ', ' . $s;
 
                 }
             }
@@ -93,23 +98,21 @@ class Line {
         if (count($parts) == 1) { /* no sub head */
             $splits = explode(',', $line);
             $this->mainHead = trim($splits[0]);
+            array_shift($splits); /* remove mainHead from array */
             $this->subHead = null;
             foreach($splits as $split) {
                 $split = trim($split);
-                if (is_numeric($split)) {
-                    $this->pages[] = $split;
-                }
+                $this->pages[] = $split;
             }
         } else {
             $this->mainHead = trim($parts[0]);
-
             $splits = explode(',', $parts[1]);
             $this->subHead =  trim($splits[0]);
+            
+            array_shift($splits); /* remove subHead */
             foreach($splits as $split) {
                 $split = trim($split);
-                if (is_numeric($split)) {
-                    $this->pages[] = trim($split);
-                }
+                $this->pages[] = trim($split);
             }
 
         }
@@ -124,6 +127,8 @@ class Line {
 class SubHead {
     public $heading;
     public $pages;
+    static $sortKey;
+
     public function __construct($line )
     {
         $this->heading = $line->subHead;
@@ -131,6 +136,16 @@ class SubHead {
     }
     public function getPages() {
         return (array) $this->pages;
+    }
+    public static function sorter( $a, $b )
+    {
+        return strcasecmp( $a->{self::$sortKey}, $b->{self::$sortKey} );
+    }
+
+    public static function sortByProp( &$collection, $prop )
+    {
+        self::$sortKey = $prop;
+        usort( $collection, array( __CLASS__, 'sorter' ) );
     }
 }
 
