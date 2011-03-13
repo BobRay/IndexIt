@@ -22,6 +22,7 @@ class AllHeads {
     }
 
     public function display() {
+        MainHead::sortByProp($this->mainHeads,'heading');
         foreach ($this->mainHeads as $mainHead) {
             echo "\n" . $mainHead->heading;
             if (!empty($mainHead->pages )) {
@@ -29,6 +30,7 @@ class AllHeads {
                 echo ', ' . $p;
             }
             if (!empty ($mainHead->subheads)) {
+                SubHead::sortByProp($mainHead->subheads,'heading');
                 foreach($mainHead->subheads as $subHead) {
 
                     $p = implode(', ' , $subHead->getPages());
@@ -124,6 +126,8 @@ class Line {
 class SubHead {
     public $heading;
     public $pages;
+    static $sortKey;
+
     public function __construct($line )
     {
         $this->heading = $line->subHead;
@@ -131,6 +135,16 @@ class SubHead {
     }
     public function getPages() {
         return (array) $this->pages;
+    }
+    public static function sorter( $a, $b )
+    {
+        return strcasecmp( $a->{self::$sortKey}, $b->{self::$sortKey} );
+    }
+
+    public static function sortByProp( &$collection, $prop )
+    {
+        self::$sortKey = $prop;
+        usort( $collection, array( __CLASS__, 'sorter' ) );
     }
 }
 
