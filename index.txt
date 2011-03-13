@@ -1,11 +1,23 @@
+Examples|GetResources,12,45,67
+Examples|getCollection,23,45,56
 topic2|subtopic3,013,14,15
 topic2,77,100-101,88,99
 topic1|subtopic1,12,10-20,14,56,77-88
 topic2|subtopic1,14,56,89
 topic1|subtopic2,45,99-210,67,88
+SMTP,345
+PHP Primer,896
+OOP programming,976
+Examples|getObjectGraph,343
+getObjectGraph,343
 topic1|subtopic1,0010,222,333
+Examples|getCollection,77,88,99
+xPDO|getObject,12,23
 topic7,12
 topic1|subtopic8,12
 Topic1|subtopic0,45,0067,98
 topic2,34,056,77
+xPDO|getCollection,11,12
+Appendix,789
+
 

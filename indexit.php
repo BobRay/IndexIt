@@ -23,7 +23,14 @@ class AllHeads {
 
     public function display() {
         MainHead::sortByProp($this->mainHeads,'heading');
+        $letter = 'A';
+        echo "A";
         foreach ($this->mainHeads as $mainHead) {
+            $l = strtoupper(substr($mainHead->heading,0,1));
+            if ($l != $letter){
+                echo "\n\n" . $l;
+                $letter = $l;
+            }
             echo "\n" . $mainHead->heading;
             $p = $mainHead->getPages();
             if (!empty($p)) {
