@@ -1,23 +1,50 @@
-Examples|GetResources,12,45,67
-Examples|getCollection,23,45,56
-topic2|subtopic3,013,14,15
-topic2,77,100-101,88,99
-topic1|subtopic1,12,10-20,14,56,77-88
-topic2|subtopic1,14,56,89
-topic1|subtopic2,45,99-210,67,88
+Example code|getResources,67
+getResources|example code,67
+Example code|getCollection,45
+getCollection|Example code,45
+Example code|getObject,23
+getObject|retrieving users with,25
+getObject|retrieving resources with,29
+getObject|example code,23
+snippets|SPForm,3,013,14,15
+SPForm,224
+snippets|FormIt,288
+FormIt,288
+system settings|site_start,99
+site_start system setting,99
+getResources,77,100-101,88,99
+EZfaq,343
+Snippets|EZfaq,343
 SMTP,345
+Email|SMTP,345
+Email|emailsender system setting,586
+emailsender system setting,586
+system settings|emailsender,586
 PHP Primer,896
 OOP programming,976
-Examples|getObjectGraph,343
+Example code|getObjectGraph,343
 getObjectGraph,343
-topic1|subtopic1,0010,222,333
-Examples|getCollection,77,88,99
+getObjectGraph|example code,343
+getObjectGraph|retrieving user and user profile,356
+retrieving user profile,356
+user profile,356
+user profile|retrieving,356
+getting user profile,356
 xPDO|getObject,12,23
-topic7,12
-topic1|subtopic8,12
-Topic1|subtopic0,45,0067,98
-topic2,34,056,77
 xPDO|getCollection,11,12
 Appendix,789
+xPDO Methods|getCollection,23
+getcollection,23
+xPDO Methods|getObject,33
+getObject,33
+MODx Methods|getChildIDs,93
+getChildIds,23
+MODx Methods|hasSessionContext,295
+hasSessionContext,295
+system settings|site_start,567
+site_start system setting,567
+hidemenu_default system setting,588
+system settings|hidemenu_default,588
+
 
 

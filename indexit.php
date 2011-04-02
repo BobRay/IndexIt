@@ -24,11 +24,13 @@ class AllHeads {
     public function display() {
         MainHead::sortByProp($this->mainHeads,'heading');
         $letter = 'A';
-        echo "A";
+        //echo "A";
         foreach ($this->mainHeads as $mainHead) {
             $l = strtoupper(substr($mainHead->heading,0,1));
             if ($l != $letter){
-                echo "\n\n" . $l;
+                if (preg_match("/[A-Z\s_]/i", $l)) {
+                    echo "\n\n" . $l;
+                }
                 $letter = $l;
             }
             echo "\n" . $mainHead->heading;
@@ -50,6 +52,7 @@ class AllHeads {
             }
         }
     }
+
     public function addLine($fileLine) {
         $line = new Line($fileLine);
 
@@ -182,10 +185,13 @@ class MainHead
         $this->pages = array_merge($this->pages, $pages);
     }
     public function addSubHead($line) {
-        foreach ($this->subheads as $key=>$sub) {
-            if (strcasecmp($line->subHead,$sub->heading) ==0) {
-                $sub->pages = array_merge($sub->pages,$line->pages);
-                return;
+
+        if (!empty($this->subheads)) {
+            foreach ($this->subheads as $key=>$sub) {
+                    if (strcasecmp($line->subHead,$sub->heading) ==0) {
+                    $sub->pages = array_merge($sub->pages,$line->pages);
+                    return;
+                }
             }
         }
         $sub = new SubHead($line);
@@ -207,7 +213,7 @@ class MainHead
 
 
 
-$fp = fopen('index.txt','r');
+$fp = fopen('bookindex.txt','r');
 
 if ($fp == false){
     return "File Not Found";
