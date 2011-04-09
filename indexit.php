@@ -28,7 +28,7 @@ class AllHeads {
         foreach ($this->mainHeads as $mainHead) {
             $l = strtoupper(substr($mainHead->heading,0,1));
             if ($l != $letter){
-                if (preg_match("/[A-Z\s_]/i", $l)) {
+                if (preg_match("/[A-Z\s]/i", $l)) {
                     echo "\n\n" . $l;
                 }
                 $letter = $l;
@@ -221,9 +221,11 @@ if ($fp == false){
 $allHeads = new AllHeads;
 while (($buffer = fgets($fp, 4096)) !== false) {
        $buffer = trim($buffer);
-       if (!empty($buffer)) {
-       $allHeads->addLine($buffer);
+       /* skip comments and empty lines */
+       if (empty($buffer) || preg_match('/^#/', $buffer)) {
+            continue;
        }
+       $allHeads->addLine($buffer);
 }
 fclose($fp);
 
