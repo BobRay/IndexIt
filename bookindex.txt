@@ -38,6 +38,7 @@ database overview,1
 third-party components (overview),4
 MODX|extras (overview),4
 MODX|add-on components (overview),4
+add-on components|overview,4
 3PCs (overview),4
 MODX|components (overview),4
 components (overview),4
@@ -46,9 +47,8 @@ MODX|back end,5
 back end,5
 front end,5
 MODX|front end,5
-MODX building blocks,6-20
 building blocks of MODX,6-20
-basic building blocks,6-20
+basic building blocks of MODX,6-20
 MODX|basic building blocks,6-20
 web resources,6
 documents,7
@@ -205,13 +205,15 @@ server requirements|database,36-37
 requirements|database,36-37
 server requirements|browsers,36-37
 requirements|browsers,36-37
-browser support,36-37
+browser support in MODX,36-37
+MODX|browser support,36-37
 supported browsers,36-37
+MODX|supported browsers,36-37
 downloading MODX,38
 MODX|downloading,38
 installation|file placement,38-39
 file placement,38-39
-MODX database creation,40
+MODX|database creation,40
 creating the MODX database,40
 database (creating),40
 MODX|creating database,40
@@ -220,8 +222,8 @@ PHPMyAdmin|creating database,40
 MODX|database creation,40
 database username,40
 database password,40
-MODX database username,40
-MODX database password,40
+MODX|database username,40
+MODX|database password,40
 config.inc.php,41
 MODX|config file,41
 files|MODX config,41
@@ -281,7 +283,8 @@ MODX|BaseTemplate,49
 changing the site name,49
 site_name system setting,49
 system settings|site_name,49
-MODX site name,49
+MODX|site name,49
+site name (changing),49
 publish_default system setting,50
 system settings|publish_default,50
 creating|unauthorized page,50
@@ -363,8 +366,8 @@ database|exporting,65-66
 database|importing,65-66
 PHPMyAdmin|exporting database,65-66
 PHPMyAdmin|importing database,65-66
-PhpMyAdmin|file download dialog,65-66
-dialogs|PhpMyAdmin file download,65-66
+PhpMyAdmin|File Download dialog,65-66
+dialogs|PhpMyAdmin File Download,65-66
 setting|file and directory permissions,69
 file and directory permissions,69
 files|setting permissions,69
@@ -377,11 +380,11 @@ development version of MODX,70-75
 MODX|development version,70-75
 GitHub,70-75
 Git|branches,70-72
-branches,70-72
+branches (Git),70-72
 Git|master branch,71
 master branch,71
 Git|develop branch,71
-develop branch,71
+develop branch (Git),71
 Git|commits,71
 commits,71
 Git|HEAD,71
@@ -389,14 +392,14 @@ HEAD,71
 Git|SHA1,71
 SHA1,71
 Git|hotfix branch,71
-hotfix branch,71
+hotfix branch (Git),71
 Git|feature branches,71
-feature branches,71
+feature branches (Git),71
 Git|release branches,72
-release branches,72
+release branches (Git),72
 Git|Revolution repository,72
 Git|switching branches,72
-switching branches,72
+switching branches (Git),72
 Git|client,72
 version control,72-73
 mysysgit,73
@@ -404,6 +407,7 @@ Git|Bash,73
 Git|GUI,73
 command-line client for Git,73
 Git|installing,73
+installing Git,73
 cloning MODX development version,73-75
 Git|cloning MODX development version,73-75
 contributing to MODX development,75-89
@@ -418,26 +422,35 @@ GitHub|cloning a fork of MODX,78-79
 creating|fork of MODX at GitHub,78-79
 cloning a fork at GitHub,78-79
 Git|fetch,80-81
+fetch (Git),80-81
 Git|checkout,80
+checkout (Git),80
 creating|branch with Git,84
 Git|tracking branches,80
-tracking branches,80
+tracking branches (Git),80
 Git|origin remote,80
 Git|upstream remote,80
 Git|creating a remotes,80
 Git|remotes,80
-origin remote,80
-upstream remote,80
+origin remote (Git),80
+upstream remote (Git),80
 Git|merge,81
+merge (Git),81
 Git|--ff-only,81
+-ff=only merge (Git),81
 Git|deleting branches,82
+deleting branches (Git),82
 Git|deleting remotes branches,82
 Git|push,82
+push (Git),82
 Git|contributor workflow,83-89
 contributor workflow in Git,83-89
 bug fixes in Git,84
+Git|bug fixes in,84
 contributing a bug fix with Git,84
 Git|editing commit messages,85
+editing commit messages (Git),85
+commit messages (editing in Git),85
 Git|contributing a new feature,86
 contributing a new feature in Git,86
 new feature in Git,86
@@ -451,12 +464,13 @@ updating development version of MODX,88
 development version of MODX|updating,88
 Git|updating development version of MODX,88
 Git|checkout,88
-checkout in Git,88
+checkout (Git),88
 Git|fetch,88
 Git|merge,88
-fetch in Git,88
-merge in Git,88
-Git|--ff-only,88
+fetch (Git),88
+merge (Git),88
+Git|--ff-only merges,88
+-ff-only merge (Git),88
 MODX|porting an existing site to,89-94
 porting an existing site to MODX,89-94
 moving a site to MODX,89-94
@@ -478,7 +492,7 @@ Evolution|configuration check,96
 Configuration check for Evolution,96
 Installing|Evolution add-on components,96
 Evolution|installing add-on components,96
-add-on components in Evolution,96
+add-on components|in Evolution,96
 Evolution|fURLs,97
 FURLs|in Evolution,97
 friendly URLs|in Evolution,97
@@ -491,35 +505,35 @@ manager,99
 MODX|Manager,99
 manager|trees,99-109
 MODX|Manager trees,99-109
-resource tree,100-104
-manager|resource tree,100-104
-resource tree|icons,101
-icons|resource tree,101
-resource tree|sorting,101
-resource tree|menuindex,101
-sorting resource tree,101
+Resource tree,100-104
+manager|Resource tree,100-104
+Resource tree|icons,101
+icons|Resource tree,101
+Resource tree|sorting,101
+Resource tree|menuindex,101
+sorting Resource tree,101
 menuindex|and Resource tree,101
-resource tree|deleting resources,103
+Resource tree|deleting resources,103
 deleting resources,102-103
 resources|deleting,102-103
 purging resources,102
-resource tree|purging resources,102
+Resource tree|purging resources,102
 MODX|deleting resources,102-103
-resource tree|type style,102
-type style of resource tree,102
-resource tree|right-click menu,103
-right-click menu|resource tree,103
-view resource,103
-resource tree|view resource,103
-resource tree|edit resource,103
+Resource tree|type style,102
+type style of Resource tree,102
+Resource tree|right-click menu,103
+right-click menu|Resource tree,103
+View Resource,103
+Resource tree|View Resource,103
+Resource tree|Edit Resource,103
 edit resource,103
-resource tree|quick update resource,103
-quick update resource,103
-duplicate resource,103
-resource tree|duplicate resource,103
-weblink|create,103
-document|create,103
-resource|create,103
+Resource tree|Quick Update Resource,103
+Quick Update Resource,103
+Duplicate Resource,103
+Resource tree|Duplicate Resource,103
+weblink|Create,103
+document|Create,103
+resource|Create,103
 creating|resources,103
 creating|weblinks,103
 weblinks|creating,103
@@ -527,11 +541,11 @@ creating|symlinks,103
 symlinks|creating,103
 static resources|creating,103
 creating|static resources,103
-quick create,103
-resources|quick create,103
-weblinks|quick create,103
-symlinks|quick create,103
-static resources|quick create,103
+Quick Create,103
+resources|Quick Create,103
+weblinks|Quick Create,103
+symlinks|Quick Create,103
+static resources|Quick Create,103
 resources|publishing,103
 publishing resources,103
 deleting|resources,103
@@ -540,47 +554,47 @@ resources|undeleting,103
 resources|deletion,103
 resources|preview,103
 previewing resources,103
-MODX|element tree,104-106
-element tree,104-106
-element tree icons,104
+MODX|Element tree,104-106
+Element tree,104-106
+Element tree icons,104
 icons|Element tree,104
 categories,105
 element categories,105
 categories|creating,105
 categories|placing elements in,105
-right-click menu|element tree,106
-element tree|right-click menu,106
-element tree|create new element here,106
-create new element here,106
+right-click menu|Element tree,106
+Element tree|right-click menu,106
+Element tree|Create New Element Here,106
+Create New Element Here,106
 elements|creating,106
 creating|elements,106
-quick create|elements,106
-element tree|Quick Create,106
+Quick Create|elements,106
+Element tree|Quick Create,106
 creating|categories,106
 categories|creating,106
-remove category,106
+Remove Category,106
 categories|removing,106
-element tree|edit,106
-edit element,106
+Element tree|Edit,106
+Edit Element,106
 elements|editing,106
-quick update element,106
-elements,quick update,106
+Quick Update element,106
+elements,Quick Update,106
 removing|elements,106
 elements|removing,106
-file tree,106-109
-icons|file tree,107
-file tree|icons,107
-right-click menu|file tree,108-109
-file tree|right-click menu,108-109
-create directory here,108
-create directory dialog,108
-dialogs|create directory,108
+File tree,106-109
+icons|File tree,107
+File tree|icons,107
+right-click menu|File tree,108-109
+File tree|right-click menu,108-109
+Create Directory Here,108
+Create Directory dialog,108
+dialogs|Create Directory,108
 chmod directory,108
 directories|chmod,108
 setting|directory permissions,108
 directory permissions,108
 chmod directory dialog,108
-file tree|chmod directory,108
+File tree|chmod directory,108
 dialogs|chmod directory,108
 creating|directories,108
 directories|creating,108
@@ -590,31 +604,31 @@ setting|file permissions,108
 setting|directory permissions,108
 upload files,108
 files|uploading,108
-file tree|upload files,108
-upload files dialog,
-dialogs|upload files,108
+File tree|upload files,108
+Upload Files dialog,
+dialogs|Upload Files,108
 removing|directories,108
 renaming directories,108
 directories|removing,108
 directories|deleting,108
 directories|renaming,109
-rename directory dialog,109
-dialogs|rename directory,109
+Rename Directory dialog,109
+dialogs|Rename Directory,109
 deleting|directories,109
 files|removing,109
 removing|files,109
 renaming files,109
 files|renaming,109
-dialogs|rename file,109
-rename file dialog,109
+dialogs|Rename File,109
+Rename File dialog,109
 files|deleting,109
 deleting|files,109
 top menu,109-128
 MODX|top menu,109-128
-top menu|home,109
-home top menu choice,109
-manager home screen,109
-home screen of the manager,109
+top menu|Home,109
+Home top menu choice,109
+manager Home screen,109
+Home screen of the manager,109
 system settings|site_name,109
 site_name system setting,109
 configuration check,110
@@ -628,9 +642,9 @@ error page unpublished,110
 unauthorized page unpublished,110
 unpublished error page,110
 unpublished unauthorized page,110
-MODX news panel,110
-MODX security panel,110
-MODX RSS feeds,110
+MODX|News panel,110
+MODX|Security panel,110
+MODX|RSS feeds,110
 RSS feeds,110
 news feed,110
 security feed,110
@@ -641,137 +655,142 @@ enabling news feed,110
 enabling security feed,110
 disabling news feed,110
 disabling security feed,110
-recent documents,110
+Recent Documents,110
 documents|recently edited,110
 recently edited documents,110
 resources|recently edited,110
-info panel,111
-online panel,111
+Info panel,111
+Online panel,111
 users|list of currently logged in,111
 currently logged-in users,111
 logged-in users list,111
-top menu|site,111
-site panel,111
-site|view,111
-site preview,111
-preview site,111
-site|clear cache,111
+top menu|Site,111
+Site panel,111
+Site|View,111
+Site Preview,111
+Preview Site,111
+Site|Clear Cache,111
 home page|previewing,111
 locks,112
-site|remove locks,112
+Site|Remove Locks,112
 removing|locks,112
 locks|removing,112
 searching the site,112
 site|searching,112
-site|new document,113
-site|new weblink,113
-site|new symlink,113
-site|new static resource,113
+Site|New Document,113
+Site|New Weblink,113
+Site|New Symlink,113
+Site|New Static Resource,113
 creating|resources,113
 creating|weblinks,113
 creating|symlinks,113
 creating|static resources,113
 logging out,113
-site|logout,113
-components menu,113
-top menu|components,113
-top menu|security,113
-security menu,113
-manage users menu,114
-security menu|manage users,114
-create/edit user panel,114
-create/edit user panel|general information tab,114
-create/edit user panel,114
-create/edit user panel|settings tab,114
+Site|Logout,113
+Components menu,113
+top menu|Components,113
+top menu|Security,113
+Security menu,113
+Manage Users menu,114
+Security menu|Manage Users,114
+Create/Edit User panel,114
+Create/Edit User panel|general information tab,114
+Create/Edit User panel,114
+Create/Edit User panel|settings tab,114
 creating|user settings,114
 user|settings,114
-create/edit user panel|access permissions tab,114
+Create/Edit User panel|access permissions tab,114
 creating|access permissions,114-115
-user|access permissions,114-115
+User|Access Permissions,114-115
 user groups|adding users to,115
+adding|users to user groups,115
+assigning|users to user groups,115
 user groups|removing users from,115
+removing|users from user groups,115
 user|extended fields,115
 creating|user extended fields,115
 extended fields,115
-security menu|access controls,115
-access controls menu,115
-access controls menu|user groups,115
+Security menu|Access Controls,115
+Access Controls menu,115
+Access Controls menu|User Groups,115
 creating|user groups,115
-assigning users to user groups,115
-users|assigning to user groups,115
-access controls menu|roles tab,115
+Access Controls menu|Roles tab,115
 creating|roles,115
-new role,115
-access controls menu|access policies tab,115
+New Role,115
+Access Controls menu|Access Policies tab,115
 access policies|creating,115
 creating|access policies,115
 access policies|editing,115
 editing|access policies,115
-access controls menu|policy templates tab,115
+Access Controls menu|Policy Templates tab,115
 access policy templates,115
 policy templates,115
 updating user groups,115-116
 user groups|updating,115-116
-access controls menu|user groups tab,115-116
+Access Controls menu|User Groups tab,115-116
 user groups|creating,115
 creating|user groups,115
 updating|user groups,115
 user groups|updating,115
 roles|assigning to users,115
+assigning|roles to users,115
+attaching|roles to users,115
 users|assigning roles to,115
-context access ACL,115-116
-update user group panel,115
-access controls menu|context access tab,115-116
-ACL entries|context access,116
-access controls menu|resource group access tab,115-116
-resource group access ACL,116
-ACL entries|resource group access,116
-access controls menu|category access tab,116
-element category access ACL,116
-ACL entries|element category access,116
-add category dialog,117
-dialogs|add category,117
+Context Access ACL,115-116
+Update User Group panel,115
+Access Controls menu|Context Access tab,115-116
+ACL entries|Context Access,116
+Access Controls menu|Resource Group Access tab,115-116
+Resource Group Access ACL entries,116
+ACL entries|Resource Group Access,116
+Access Controls menu|Category Access tab,116
+Element Category Access ACL entries,116
+ACL entries|Element Category Access,116
+Add Category dialog,117
+dialogs|Add Category,117
 resource groups,117
 creating|resource groups,117
-access controls menu|resource groups tab,117
+Access Controls menu|Resource Groups tab,117
 resources|adding to resource groups,117
-form customization|manager panel,117
+adding|resources to resource groups,117
+assigning|resources to resource groups,117
+Form Customization|manager panel,117
 flushing permissions,117
-access controls menu|flush permissions,117
+Access Controls menu|Flush Permissions,117
 flushing sessions,117
-access controls menu|flush all sessions,117
-top menu|tools,117-120
-tools top menu item,117-120
-tools menu|import resources,118
+Access Controls menu|Flush All Sessions,117
+top menu|Tools,117-120
+Tools top menu item,117-120
+Tools menu|Import Resources,118
 importing resources,118
 resources|importing,118
-tools menu|import HTML,118
+Tools menu|Import HTML,118
 importing HTML resources,118
-tools menu|property sets,119
-new property set dialog,119
-dialogs|new property set,119
-property sets|tools menu,119
+Tools menu|Property Sets,119
+New Property Set dialog,119
+dialogs|New Property Set,119
+Property Sets|Tools menu,119
 property sets|creating,119
 creating|property sets,119
 reports,120-122
-tools menu|reports,120-122
-site schedule,120
-publication report,120
-unpublication report,120
-reports|publication schedule,120
-reports|manager actions,121
-tools menu|manager actions report,121
-manager actions report,121
+Tools menu|Reports,120-122
+Site Schedule,120
+Publication Report,120
+Unpublication Report,120
+Reports|Publication Schedule,120
+Reports|Manager Actions,121
+Tools menu|Manager Actions Report,121
+Manager Actions Report,121
 error log,121
 MODX|error log,121
-tools menu|error log,121
-tools menu|system info,121
+Tools menu|Error Log,121
+Tools menu|System Info,121
 phpinfo,121
-system info,121
+System Info,121
 database tables|overhead,121
 optimize database tables,121
 overhead of database tables,121
-recently edited documents report,121
+Recently Edited Documents report,121
 resources|recently edited,121
 about MODX,122
 MODX|about report,122
@@ -789,28 +808,28 @@ help|PHP,122
 help|MODX documentation,122
 help|MySQL,122
 help|xPDO,122
-system menu,122-126
-top menu|system,122-126
-system menu|package manager,122-123
-package manager|menu,122-123
-download extras button,122
+System menu,122-126
+top menu|System,122-126
+System menu|Package Manager,122-123
+Package Manager|menu,122-123
+Download Extras button,122
 extras, downloading,122
 add-on components|downloading,122
 transport packages|downloading,122
 downloading transport packages,122
-system menu|system settings,123-124
+System menu|System Settings,123-124
 system settings|editing,123-124
-system menu|lexicon management,124-125
-lexicon management,124-125
-system menu|content types,125
+System menu|Lexicon Management,124-125
+Lexicon Management,124-125
+System menu|Content Types,125
 creating|content types,125
 content types,125
 MIME types,125
 creating|MIME types,125
-system menu|contexts,125
+System menu|Contexts,125
 contexts|creating,125
 creating|contexts,125
-system menu|actions,126
+System menu|Actions,126
 actions,126
 manager actions,126
 top menu|modifying,126
@@ -819,44 +838,44 @@ adding|top-menu items,126
 top menu|removing items,126
 top menu|editing items,126
 removing|top-menu items,126
-system menu|namespaces,126
+System menu|Namespaces,126
 namespaces|creating,126
-create namespace dialog,126
-dialogs|create namespace,126
+Create Namespace dialog,126
+dialogs|Create Namespace,126
 creating|namespaces,126
-top menu|user,126-127
-user|top menu,126-127
-user menu|profile,127
+top menu|User,126-127
+User|top menu,126-127
+User menu|profile,127
 user profile,127
-user menu|reset password,127
-user menu|recent resources,127
+User menu|Reset Password,127
+User menu|Recent Resources,127
 user|reset password in manager,127
 reset user password in manager,127
 setting user password,127
 user|recent resources edited by,127
-user|messages,127
-user menu|messages,127
+user|Messages,127
+User menu|Messages,127
 creating|messages for users,127
-top menu|support,127-128
-support menu,127-128
-support menu|forums,127-128
+top menu|Support,127-128
+Support menu,127-128
+Support menu|Forums,127-128
 forums link,127-128
-MODX forums link,127-128
+MODX|forums link,127-128
 links|to MODX forums,127-128
 MODX forums|searching,127-128
-support menu|wiki,128
-MODX wiki,128
+Support menu|Wiki,128
+MODX|wiki,128
 wiki,128
 links|MODX wiki,128
-support menu|bugs,129
+Support menu|Bugs,129
 reporting bugs,129
 bug reporting,129
 links|bug report,129
 API documentation,129
 links|MODX API documentation,129
 MODX|API documentation,129
-resource tree|Evolution,130
-resources|Evolution resource tree,130
+Resource tree|Evolution,130
+resources|Evolution Resource tree,130
 Evolution|editing files,130
 files|editing in Evolution,130
 Evolution|editing elements,130
@@ -874,8 +893,8 @@ documents|creating,136
 creating|documents,136
 resources|page settings tab,136
 page settings,136
-create/edit resource panel,136
-create/edit resource panel,139
+Create/Edit Resource panel,136
+Create/Edit Resource panel,139
 resource fields quick reference,138
 site_content table,137
 resources|site_content table,137
@@ -1228,14 +1247,16 @@ content disposition of attachment,178
 static resources|creating,178
 creating|static resources,178
 template variables tab,179
-create/edit resource panel|template variables tab,179
-create/edit resource panel|access controls tab,179
-assigning resources to resource groups,179
+Create/Edit Resource panel|template variables tab,179
+Create/Edit Resource panel|access controls tab,179
+assigning|resources to resource groups,179
+adding|resources to resource groups,179
+attaching|resources to resource groups,179
 resource groups|assigning resources to,179
 view resource,180
-view resource panel|general tab,180
-view resource panel|changes tab,180
-view resource panel|cache output tab,180
+View Resource panel|general tab,180
+View Resource panel|changes tab,180
+view Resource panel|cache output tab,180
 cache output view,180
 viewing cache output,180
 resources|viewing cache output,180
@@ -1253,7 +1274,7 @@ resources|deleting,182
 previewing resources,183
 resources|previewing,183
 Evolution|editing elements,184
-Evolution|resource tree,184
+Evolution|Resource tree,184
 Evolution|templates,185
 templates|in Evolution,185
 Evolution|documents,185
@@ -1309,7 +1330,7 @@ uses for template variables,200
 template variables|creating,201
 creating|template variables,201
 template variables|assigning to templates,203
-assigning template variables to templates,203
+assigning|template variables to templates,203
 attaching|template variables to templates,203
 templates|attaching template variables to,203
 template variables|attaching to templates,203
@@ -1414,8 +1435,13 @@ template variables|creating properties for,219
 creating|properties for template variables,219
 template variables|template access tab,219
 template variables|assigning to templates,219
+assigning|template variables to templates,219
 template variables|attaching to templates,219
+attaching|template variables to templates,219
+adding|template variables to templates,219
 template variables|assigning to resource groups,219
+assigning|template variables to resource groups,219
+adding|template variables to resource groups,219
 template variables|attaching to resource groups,219
 template variables|access permissions tab,220
 resource groups|assigning template variables to,220
@@ -1521,7 +1547,9 @@ default properties|overriding,256
 property sets|creating,256
 creating|property sets,256
 property sets|adding properties to,257-258
-adding properties to property sets,257-258
+adding|properties to property sets,257-258
+assigning|properties to property sets,257-258
+properties|adding to property sets,257-258
 property sets|specifying in element tags,
 specifying property sets in element tags,259
 property sets|editing on the tools menu,259
@@ -1667,6 +1695,8 @@ disabling plugins,296
 system events|OnBeforeDocFormSave,296
 OnBeforeDocFormSave system event,296
 OnBeforeChunkFormSave system event,297
+$resource variable in plugins,297-298
+variables|$resource in plugins,297-298
 system events|OnBeforeChunkSave,297
 plugins|listening to multiple system events,298
 system events|multiple events in a plugin,298
@@ -1759,8 +1789,11 @@ database|retrieving users from,311
 retrieving|users from database,311
 database|retrieving resource fields from,311
 retrieving|resource fields from database,311
-assignment by reference,312
-reference variables,312
+$resource variable assignment by reference,312-313
+variables|$resource assignment by reference,312-313
+variables|assignment by reference,312-313
+assignment by reference,312-313
+reference variables,312-313
 methods|getCollection(),313
 getCollection() method,313
 methods|getIterator(),313
@@ -1793,6 +1826,10 @@ related objects|Parent,318
 Parent related object,318
 related objects|Children,318
 Children related object,318
+$modx->resource variable,318
+variables|$modx->resource,318
+$modx->user variable,318
+variables|$modx->user,318
 user profile,318-319
 related objects|Profile,318
 Profile related object,318
@@ -1900,6 +1937,7 @@ creating|snippets in code,340-341
 methods|set(),340
 set() method,340
 id field,340
+resource fields|id,340
 methods|setContent(),340
 setContent() method,340
 methods|fromArray(),340-341
@@ -1974,7 +2012,7 @@ ObjectDemo tutorial,353
 tutorials|working with resources in code,353
 working with resources in code tutorial,353
 variables|$resource,354
-$resource, variable,354
+$resource variable,354
 methods|getObject(),354
 getObject() method,354
 methods|get(),355
@@ -2077,15 +2115,15 @@ getMany() method,373
 $scriptProperties array,374
 variables|$scriptProperties,374
 $scriptProperties variable,374
-array_merge method,375
-methods|array_merge,375
+array_merge() method,375
+methods|array_merge(),375
 template variables|retrieving in code,377-379
 snippets|retrieving template variables,377-379
 database|retrieving template variables from,377-379
 retrieving|template variables from database,377-379
 methods|getTVValue(),378
 getTVValue() method,378
-resources|getTVValue method,378
+resources|getTVValue() method,378
 raw content of template variables,376
 template variables|retrieving raw content of,376
 processed content of template variables,377
@@ -2297,13 +2335,13 @@ attaching|templates to categories in code,401-402
 templates|attaching to categories in code,401-402
 categories|attaching templates to in code,401-402
 categories|addMany() method,402
-addMany() method(),402
+addMany() method,402
 methods|addMany()402
 template variables|creating in code,402-404
 creating|template variables in code,402-404
 creating template variables in code tutorial,402-404
 tutorials|creating template variables in code,402-404
-attaching template variables to templates in code,402-404
+attaching|template variables to templates in code,402-404
 template variables|attaching to templates in code,402-404
 templates|attaching to template variables in code,402-404
 attaching|template variables to templates in code,402-404
@@ -2392,6 +2430,7 @@ automatic_alias system setting,409
 custom database tables,409-411
 database tables (custom),409-411
 database tables|adding to database,409-411
+adding|tables to database,409-411
 database|adding custom tables to,409-411
 xPDO for custom database tables,409-411
 custom database table schemas,409-411
@@ -2608,15 +2647,15 @@ roles|in security permissions,449
 security|roles in,449
 roles|Revolution versus Evolution,440
 security|Revolution versus Evolution,440
-access policy,440
+access policies,440
 security|access policies,440
-authority number,440
+authority numbers,440
 security|authority numbers,440
-roles|authority number,440
+roles|authority numbers,440
 creating|roles,440
 roles|creating,440
-create role dialog,440
-dialogs|create role,440
+Create Role dialog,440
+dialogs|Create Role,440
 multiple security permissions,440
 security|permissions,440
 permissions|conflicting,440
@@ -2684,7 +2723,7 @@ access policies|context access,444-445
 policies|context access,444-445
 context access policy,444-445
 security|context access policy,444-445
-access policies|resource group access,444-445
+access policies|resource group access ACL entries,444-445
 security|resource group access policy,444-445
 policies|resource group access,444-445
 resource group access policy,444-445
@@ -2709,16 +2748,20 @@ security|manager action policies,444-445
 policies|manager action,444-445
 manager action policy,444-445
 access policies|object,444-445
+access policies|Object,444
 security|object policies,444-445
 policies|object,444-445
 object policy,444-445
+policies|Object,444
+Object policy,444
+
 roles,446
 Evolution|roles in,446
 roles in Evolution,446
 Revolution|roles in,446
 roles in Revolution,446
-authority number,446
-roles|authority number,446
+authority numbers,446
+roles|authority numbers,446
 roles|creating,446
 security|creating roles,446
 creating|roles,446
@@ -2734,25 +2777,29 @@ user settings|tre_root_id,447
 tree_root_id user setting,447
 user groups|creating,447
 creating|user groups,447
-create user group dialog,447
+Create User Group dialog,447
 security|creating user groups,447
-dialogs|create user group,447
+dialogs|Create User Group,447
 admin Super User|adding to user groups,447
+adding|admin Super User to user groups,447
 users|adding to user groups,447
-add user to group dialog,447-448
-dialogs|add user to group,447-448
+Add User To Group dialog,447-448
+dialogs|Add User to Group,447-448
 security|adding users to user groups,447-448
+attaching|users to user groups,447-448
+assigning|users to user groups,447-448
+adding|users to user groups,447-448
 user groups|adding users,447-448
 user roles,448
 security|user roles,448
-update user role dialog,448
-dialogs|update user role,448
+Update User Role dialog,448
+dialogs|Update User Role,448
 resource groups,448
 security|creating user groups,448
 resource groups|creating,448
 creating|resource groups,448
-create resource group dialog,448
-dialogs|create resource group,448
+Create Resource Group Dialog,448
+dialogs|Create Resource Group,448
 resources|removing from resource groups,448
 Access Control Lists,449-454
 security|Access Control Lists,449-454
@@ -2765,8 +2812,8 @@ context access ACL entries,449-451
 Access Control Lists|context access entries,449-451
 ACL entries|context access entries,449-451
 security|context access ACL entries,449-451
-user group context access dialog,449-451
-dialogs|user group context access,449-451
+User Group Context Access dialog,449-451
+dialogs|User Group Context Access,449-451
 manager action rules,449
 permissions|load,449
 load permission,449
@@ -2781,7 +2828,7 @@ new_user permission,449
 security|minimum role for context access ACL entries,449
 minimum role for context access ACL entries,450-451
 roles|minimum role for context access ACL entries,450-451
-access policies for context access ACL entries,450-451
+access policies|for context access ACL entries,450-451
 policies for context access ACL entries,450-451
 Administrator user group,450-451
 user groups|Administrator,450-451
@@ -2802,7 +2849,7 @@ roles|minimum role for resource group access ACL entries,452
 access policies|for resource group access ACL entries,452
 policies for resource group access ACL entries,452
 security|policies for resource group access ACL entries,452
-ACLs|element category access,453-554
+ACL entries|element category access,453-554
 Access Control Lists|element category access entries,453-554
 permissions|save_chunk,453
 save_chunk permission,453
@@ -2835,16 +2882,16 @@ system settings|site_start,455
 site_start system setting,455
 AllDocs resource group,455
 resource groups|AllDocs,455
-create resource group dialog,455
-dialogs|create resource group,455
+Create Resource Group dialog,455
+dialogs|Create Resource Group,455
 cancel button,455
 user groups|Editors,455
 Editors user group,455
 EditorAdmin policy,456
 policies|EditorAdmin,456
 context access ACL entries,456-457
-user group context access dialog,456-457
-dialogs|user group context access,456-457
+User Group Context Access dialog,456-457
+dialogs|User Group Context Access,456-457
 creating|context access ACL entries,456-457
 security|creating context access ACL entries,456-457
 context access ACL entries,456-457
@@ -2867,15 +2914,15 @@ roles|Editor,458
 resource group access ACL entries,458-459
 creating|resource groups access ACL entries,458-459
 security|creating resource groups access ACL entries,458-459
-Access Control List|resource group access entries,458-459
+Access Control Lists|resource group access entries,458-459
 security|minimum role for resource group access ACL entries,458-459
 minimum role for resource group access ACL entries,458-459
 roles|minimum role for resource group access ACL entries,458-459
 access policies|for resource group access ACL entries,458-459
 policies for resource group access ACL entries,458-459
 security|policies for resource group access ACL entries,458-459
-add resource group dialog,458
-dialogs|add resource group,458
+Add Resource Group dialog,458
+dialogs|Add Resource Group,458
 ACL entries|resource group access,458-459
 AllDocs resource group,458
 resource groups|AllDocs,458
@@ -2930,14 +2977,14 @@ elements|hiding,461-463
 categories|AdminOnly,461
 AdminOnly category,461
 access policies|EditorElement,462
-new category dialog,42
-dialogs|new category,462
-add category dialog,462
-dialogs|add category,462
+New Category dialog,42
+dialogs|New Category,462
+Add Category dialog,462
+dialogs|Add Category,462
 policies|EditorElement,462
 EditorElement policy,462
 context access ACL entries,462-463
-ACLs|context access,462-463
+ACL entries|context access,462-463
 flush permissions,462
 flush all sessions,462
 Editor role,463
@@ -2975,8 +3022,8 @@ permissions|tree_root_id,466-467
 tree_root_id permission,466-467
 tutorials|tree_root_id,466-467
 tree_root_id tutorial,466-467
-create new setting dialog,466-467
-dialogs|create new setting,466-467
+Create New Setting dialog,466-467
+dialogs|Create New Setting,466-467
 permissions|filemanager_path,467
 filemanager_path permission,467
 tutorials|filemanager_path,467
@@ -3013,36 +3060,36 @@ Private Document,470
 resources|Private Document,470
 Private resource group,470
 resource groups|Private,470
-create resource group dialog,470
-dialogs|create resource group,470
-create user group dialog,471
-dialogs|create user group,471
+Create Resource Group dialog,470
+dialogs|Create Resource Group,470
+Create User Group dialog,471
+dialogs|Create User Group,471
 PrivateViewers user group,471
 user groups|PrivateViewers,471
 FeViewer role,471
 roles|FeViewer,471
-create role dialog,471
-dialogs|create role,471
+Create Role dialog,471
+dialogs|Create Role,471
 access policy templates|FeViewTemplate,471
 FeViewTemplate access policy,471
-create access policy dialog,471
-dialogs|create access policy,471
+Create Access Policy dialog,471
+dialogs|Create Access Policy,471
 policy templates|FeViewTemplate,471
 access policies|FeView,471
 policies|FeView,471
 FeView policy,471
-access policies|load,471
-policies|load,471
-load policy,471
-access policies|view,471
-policies|view,471
-view policy,471
+access policies|Load,471
+policies|Load,471
+Load policy,471
+access policies|View,471
+policies|View,471
+View policy,471
 Registered user,471
 Unregistered user,471
 users|Registered,471
 users|Unregistered,471
-add user to group dialog,472
-dialogs|add user to group,472
+Add User to Group dialog,472
+dialogs|Add User to Group,472
 Private resource group,472
 resource groups|Private,472
 roles|FeViewer,472
@@ -3124,13 +3171,13 @@ security|hiding template variables in the Manager with ACLs tutorials,481-484
 hiding template variables in the Manager with ACLs tutorial,481-484
 HiddenTVs resource group,482
 resource groups|HiddenTVs,482
-create resource group dialog,482
-dialogs|create resource group,482
+Create Resource Group dialog,482
+dialogs|Create Resource Group,482
 access policies|Resource,483
 policies|Resource,483
 Resource policy,483
-add resource group dialog,483
-dialogs|add resource group,483
+Add Resource Group dialog,483
+dialogs|Add Resource Group,483
 contexts|mgr,483
 mgr context,483
 tutorials|hiding template variables in the front end,484-485
@@ -3158,10 +3205,10 @@ creating|custom permissions,486-487
 access policies|FeViewTemplate,486-487
 policies|FeViewTemplate,486-487
 FeViewTemplate policy,486-487
-allow_private access policy template,486-487
-access policy templates_allow_private,486-487
-add permission to template dialog,486-487
-dialogs|add permission to template,486-487
+my_allow_private permission,486-487
+permissions|my_allow_private,486-487
+Add Permission to Template dialog,486-487
+dialogs|Add Permission to Template,486-487
 permissions|allow_private,486
 allow_private permission,486
 Unauthorized resource,487
@@ -3181,8 +3228,8 @@ member pages with tree_root_id tutorial,489-496
 security|member pages with tree_root_id tutorial,489-496
 user settings|tree_root_id,489
 tree_root_id user setting,489
-create new setting dialog,491
-dialogs|create new setting,491
+Create New Setting dialog,491
+dialogs|Create New Setting,491
 Member template,490-491
 templates|Member,490-491
 Members resource,489
@@ -3229,9 +3276,9 @@ top menu|actions,502-508
 manager actions,502-508
 menu tree,503-513
 top menu|menu tree,503-513
-menu update dialog,503
-update menu dialog,503
-top menu|update menu dialog,503
+Menu Update dialog,503
+Update Menu dialog,503
+top menu|Update Menu Dialog,503
 handler for menu items,503-504
 menu item handler,503-504
 top menu|handler,503-504
@@ -3246,18 +3293,17 @@ renaming top menu items,504-505
 components|changing menu item for,504-505
 changing component menu items,504-505
 Batcher add-on component,504-507
-actions tree,505-506
-top menu|actions tree,505-506
+Actions tree,505-506
+top menu|Actions tree,505-506
 Batcher namespace path,505
 namespace paths,505
-update action dialog,505
-dialogs|update action,505
-dialogs|update action,505
+Update Action dialog,505
+dialogs|Update Action,505
 controller,506
 namespace,506
 load headers,506
 lexicon topics,506
-assets (in update action dialog),506
+assets (in Update Action dialog),506
 database|modx_actions table,506
 modx_actions database table,506
 top menu|handling menu clicks,507
@@ -3279,8 +3325,8 @@ top menu|removing items,508-510
 removing|top menu items,508-510
 top menu|hiding items,510-512
 hiding|top menu items,510-512
-update menu dialog,510
-dialogs|update menu,510
+Update Menu dialog,510
+dialogs|Update Menu,510
 custom permissions,510-512
 permissions|custom,510-512
 permissions|view_user,510
@@ -3291,8 +3337,8 @@ custom menus,513
 menus|custom,513
 user groups|custom menus for,513
 form customization,513-523
-create/edit resource panel|altering with form customization,513-523
-customizing the create/edit resource panel with form customization,513-523
+Create/Edit Resource panel|altering with form customization,513-523
+customizing the Create/Edit Resource panel with form customization,513-523
 resource/create action,514
 actions|resource/create,514
 resource/update action,514
@@ -3326,12 +3372,12 @@ profiles in form customization,516
 tutorials|setting a TV's default value with form customization,517-519
 setting a TV's default value with form customization tutorial,517-519
 template variables|setting default value with form customization,517-519
-create new profile dialog (form customization),517-518
-dialogs|create new profile dialog (form customization),517-518
-create new set dialog (form customization),518
-dialogs|create new set dialog (form customization),518
-add user group dialog (form customization),518
-dialogs|add user group dialog (form customization),518
+Create New Profile dialog (form customization),517-518
+dialogs|Create New Profile dialog (form customization),517-518
+Create New Set dialog (form customization),518
+dialogs|Create New Set dialog (form customization),518
+Add User Group dialog (form customization),518
+dialogs|Add User Group dialog (form customization),518
 tutorials|hiding a TV with form customization,520
 hiding|template variables with form customization,520
 template variables|hiding with form customization,520
@@ -3340,44 +3386,44 @@ tutorials|moving TV to a new tab with form customization,520
 moving TV to a new tab with form customization tutorial,520
 template variable|moving to new tab with form customization,520
 form customization|moving TVs to a new tab with,520
-create/edit resource panel|modx-resource settings tab,520
-create/edit resource panel|modx-page-settings tab,520
+Create/Edit Resource panel|modx-resource settings tab,520
+Create/Edit Resource panel|modx-page-settings tab,520
 form customization|hiding tabs with,520
 hiding tabs with form customization,520
-tutorials|hiding create/edit resource panel tabs with form customization,520
-hiding create/edit resource panel tabs with form customization tutorial,520
-create/edit resource panel|hiding tabs with form customization,520
-hiding|create/edit resource panel tabs with form customization,520
-create/edit resource panel|modx-panel-resource-tv tab,520
-create/edit resource panel|modx-resource-access-permissions tab,520
+tutorials|hiding Create/Edit Resource panel tabs with form customization,520
+hiding Create/Edit Resource panel tabs with form customization tutorial,520
+Create/Edit Resource panel|hiding tabs with form customization,520
+hiding|Create/Edit Resource panel tabs with form customization,520
+Create/Edit Resource panel|modx-panel-resource-tv tab,520
+Create/Edit Resource panel|modx-resource-access-permissions tab,520
 form customization|constraints,521-522
 constraints in form customization,521-522
 constraint field,521-522
 fields|constraint field in form customization,521-522
 form customization|creating new tabs with,522
-create/edit resource panel|modx-panel-resource-tv tab,522
-create/edit resource panel|creating a new tab with form customization,522
-creating|new create/edit resource panel tabs with form customization,522
-tutorials|creating new create/edit resource panel tabs with form customization,522
-creating new create/edit resource panel tabs with form customization tutorial,522
+Create/Edit Resource panel|modx-panel-resource-tv tab,522
+Create/Edit Resource panel|creating a new tab with form customization,522
+creating|new Create/Edit Resource panel tabs with form customization,522
+tutorials|creating new Create/Edit Resource panel tabs with form customization,522
+creating new Create/Edit Resource panel tabs with form customization tutorial,522
 my-new-tab,522
 form customization|hiding tabs with,522
-create/edit resource panel|hiding fields with form customization,522
-hiding|create/edit resource panel fields with form customization,522
-tutorials|hiding create/edit resource panel fields with form customization,522
-hiding|create/edit resource panel fields with form customization tutorial,522
+Create/Edit Resource panel|hiding fields with form customization,522
+hiding|Create/Edit Resource panel fields with form customization,522
+tutorials|hiding Create/Edit Resource panel fields with form customization,522
+hiding|Create/Edit Resource panel fields with form customization tutorial,522
 form customization|setting field default values with,523
-create/edit resource panel|setting field default values form customization,523
+Create/Edit Resource panel|setting field default values form customization,523
 field default values|setting with form customization,523
 tutorials|setting field default values with form customization,523
 setting field default values with form customization tutorial,523
 form customization|setting field labels with,523
-create/edit resource panel|setting labels form customization,523
+Create/Edit Resource panel|setting labels form customization,523
 field labels|setting with form customization,523
 tutorials|setting field labels with form customization,523
 setting field labels with form customization tutorial,523
 form customization|setting template variable labels with,523
-create/edit resource panel|setting labels form customization,523
+Create/Edit Resource panel|setting labels form customization,523
 template variable labels|setting with form customization,523
 tutorials|setting template variable labels with form customization,523
 setting template variable labels with form customization tutorial,523
@@ -3435,6 +3481,7 @@ modules in Evolution,533
 #Chapter 12 Using Common MODX Components
 
 common MODX add-on components,535-594
+add-on components|commonly used,535-594
 MODX|common add-on components,535-594
 using common MODX extras,535-594
 extras (using common MODX),535-594
@@ -3461,7 +3508,7 @@ search locally for packages,537
 package manager|search locally for packages,537
 transport packages|not downloadable through package management,537
 modx.com/extras,537
-add-on components with no transport package,538
+add-on components|with no transport package,538
 installing|add-on components with no transport package,538
 property sets|creating,538-539
 creating|property sets,538-539
@@ -3526,7 +3573,6 @@ SPForm|takeMeBack property,550-551
 takeMeBack property for SPForm,550-551
 BreadCrumbs add-on component tutorial,551-555
 tutorials|BreadCrumbs add-on component,551-555
-BreadCrumbs add-on component tutorial,551-555
 BreadCrumbs|installing,552
 installing|BreadCrumbs,552
 BreadCrumbs|properties,553
@@ -3720,7 +3766,7 @@ source for transport packages,601
 transport packages|target,601
 target for transport packages,601
 transport packages|build scripts,601
-build scripts for transport packages,601
+build scripts|for transport packages,601
 transport packages|_build directory,601
 _build directory for transport packages,602
 directories|_build (for transport packages),602
@@ -3758,7 +3804,7 @@ simple transport package tutorial,605-610
 Hello2 snippet,605
 snippets|Hello2,605
 transport packages|build scripts,605-610
-build scripts for transport packages,605-610
+build scripts|for transport packages,605-610
 transport packages|defined constants,605-607
 defined constants for transport packages,605-607
 methods|loadClass(),606
@@ -3933,10 +3979,18 @@ transport packages|categories,621-623
 categories|in transport packages,621-623
 methods|addMany(),621
 addMany() method,621
-adding elements to categories in transport packages,621-623
+adding|elements to categories in transport packages,621-623
+assigning|elements to categories in transport packages,621-623
+attaching|elements to categories in transport packages,621-623
 categories|adding element to in transport packages,621-623
+adding|snippets to categories in transport packages,621-623
+assigning|snippets to categories in transport packages,621-623
+attaching|snippets to categories in transport packages,621-623
 snippets|adding to categories in transport packages,621-623
 chunks|adding to categories in transport packages,621-623
+adding|chunks to categories in transport packages,621-623
+assigning|chunks to categories in transport packages,621-623
+attaching|chunks to categories in transport packages,621-623
 xPDOTransport::UNIQUE_KEY constant,621-622
 constants|xPDOTransport::UNIQUE_KEY,621-622
 xPDOTransport::UPDATE_OBJECT constant,621-622
@@ -3986,7 +4040,7 @@ transport packages|target directory,624
 target directory for transport packages,624
 transport packages|running build script outside of MODX,624-625
 running build script outside of MODX in transport packages,624-625
-build script|running outside of MODX,624-625
+build scripts|running outside of MODX,624-625
 tutorials|running transport package build script outside of MODX,624-625
 running transport package build script outside of MODX tutorial,624-625
 transport packages|build.config.php file,624
@@ -4017,7 +4071,7 @@ Appendix,
 
 #MODX API reference
 
-MODX API reference,1-28
+MODX|API reference,1-28
 xPDO class,1-11
 classes|xPDO,1-11
 methods|xPDO class,3-11
@@ -4077,7 +4131,7 @@ methods|getCollectionGraph(),5-6
 getCollectionGraph() method,5-6
 JSON,5
 variables|$cacheFlag,5
-$cacheFlag, variable,5
+$cacheFlag variable,5
 methods|getComposites(),6
 getComposites() method,6
 methods|getCount(),6
@@ -4099,7 +4153,7 @@ getObject() method,6
 methods|getObjectGraph(),6-7
 getObjectGraph() method,6-7
 variables|$cacheFlag,6
-$cacheFlag, variable,6
+$cacheFlag variable,6
 methods|getChunk(),8
 getChunk() method,8
 methods|getOption(),8
@@ -4454,9 +4508,9 @@ joinGroup() method,
 methods|leaveGroup(),
 leaveGroup() method,
 methods|remove() (user object),
-remove() user object methods,
+remove() method (user object),
 methods|save() (user object),
-save() user object method,
+save() method (user object),
 methods|sendEmail(),
 sendEmail() method,
 system settings|site_name,
@@ -4678,7 +4732,7 @@ MODX|error log,
 
 #MODX Objects reference
 
-MODX objects reference,
+MODX|objects reference,
 MODX|resource object reference,
 resources|object reference,
 MODX|chunk object reference,
