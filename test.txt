@@ -1,0 +1,7 @@
+Transform for Appendix pages (Adds 'A' in front of page numbers)
+Highlight appendix and run only on that section.
+
+Search:
+([,-])([0-9]*)
+
+Replace:$1A$2
