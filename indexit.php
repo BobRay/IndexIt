@@ -12,6 +12,7 @@
     sorting
  */
 
+
 class AllHeads {
     public $mainHeads; /* array of mainHead objects */
    
@@ -20,6 +21,34 @@ class AllHeads {
     {
         $this->mainHeads = array();
     }
+public function pageSort(&$pages) {
+        $introPages=array();
+        $mainPages=array();
+        $appendixPages=array();
+
+        foreach ($pages as $page){
+            $c = substr($page,0,1);
+            if ($c == 'A') {
+                $appendixPages[] = $page;
+            } elseif (preg_match('/[ixvl]/',$c)) {
+                $introPages[] = $page;
+            } else {
+                $mainPages[] = $page;
+            }
+        }
+        if (!empty($introPages)) {
+            natsort($introPages);
+        }
+        if (!empty($mainPages)) {
+            natsort($mainPages);
+        }
+        if (!empty($appendixPages)) {
+            natsort($appendixPages);
+        }
+        $pages = array_merge($introPages, $mainPages, $appendixPages);
+        return;
+}
+
 
     public function display() {
         MainHead::sortByProp($this->mainHeads,'heading');
@@ -36,7 +65,8 @@ class AllHeads {
             echo "\n" . $mainHead->heading;
             $p = $mainHead->getPages();
             if (!empty($p)) {
-                natsort($p);
+                // natsort($p);
+                $this->pageSort(&$p);
                 $s = implode(', ' , $p);
                 echo ', ' . $s;
             }
@@ -44,7 +74,8 @@ class AllHeads {
                 SubHead::sortByProp($mainHead->subheads,'heading');
                 foreach($mainHead->subheads as $subHead) {
                     $p = $subHead->getPages();
-                    natsort($p);
+                    $this->pageSort(&$p);
+                    //natsort($p);
                     $s = implode(', ' , $p);
                     echo "\n    " . $subHead->heading . ', ' . $s;
 
@@ -211,7 +242,10 @@ class MainHead
 
 }
 
-
+$mtime = microtime();
+$mtime = explode(" ", $mtime);
+$mtime = $mtime[1] + $mtime[0];
+$tstart = $mtime;
 
 $fp = fopen('bookindex.txt','r');
 
@@ -231,3 +265,11 @@ fclose($fp);
 
 $allHeads->display();
 
+$mtime= microtime();
+$mtime= explode(" ", $mtime);
+$mtime= $mtime[1] + $mtime[0];
+$tend= $mtime;
+$totalTime= ($tend - $tstart);
+$totalTime= sprintf("%2.4f s", $totalTime);
+
+echo "\n\nExecution time: {$totalTime}\n";
