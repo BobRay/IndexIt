@@ -50,25 +50,28 @@ public function pageSort(&$pages) {
 }
 
 
-    public function display() {
+    public function display($fp) {
         MainHead::sortByProp($this->mainHeads,'heading');
         $letter = 'A';
-        //echo "A";
+
         foreach ($this->mainHeads as $mainHead) {
             $l = strtoupper(substr($mainHead->heading,0,1));
             if ($l != $letter){
                 if (preg_match("/[A-Z\s]/i", $l)) {
-                    echo "\n\n" . $l;
+                    //echo "\n\n" . $l;
+                    fwrite($fp,"\n\n" . $l);
                 }
                 $letter = $l;
             }
-            echo "\n" . $mainHead->heading;
+            // echo "\n" . $mainHead->heading;
+            fwrite($fp,"\n" . $mainHead->heading);
             $p = $mainHead->getPages();
             if (!empty($p)) {
                 // natsort($p);
                 $this->pageSort(&$p);
                 $s = implode(', ' , $p);
-                echo ', ' . $s;
+                // echo ', ' . $s;
+                fwrite($fp, ', ' . $s);
             }
             if (!empty ($mainHead->subheads)) {
                 SubHead::sortByProp($mainHead->subheads,'heading');
@@ -77,8 +80,8 @@ public function pageSort(&$pages) {
                     $this->pageSort(&$p);
                     //natsort($p);
                     $s = implode(', ' , $p);
-                    echo "\n    " . $subHead->heading . ', ' . $s;
-
+                    // echo "\n    " . $subHead->heading . ', ' . $s;
+                    fwrite($fp,"\n    " . $subHead->heading . ', ' . $s);
                 }
             }
         }
@@ -247,7 +250,9 @@ $mtime = explode(" ", $mtime);
 $mtime = $mtime[1] + $mtime[0];
 $tstart = $mtime;
 
-$fp = fopen('bookindex.txt','r');
+$infile = 'bookindex.txt';
+$outfile = 'final.txt';
+$fp = fopen($infile,'r');
 
 if ($fp == false){
     return "File Not Found";
@@ -262,9 +267,14 @@ while (($buffer = fgets($fp, 4096)) !== false) {
        $allHeads->addLine($buffer);
 }
 fclose($fp);
+$fp = fopen($outfile,'w');
 
-$allHeads->display();
+if ($fp == false){
+   return "File Not Found";
+                             }
+$allHeads->display($fp);
 
+fclose($fp);
 $mtime= microtime();
 $mtime= explode(" ", $mtime);
 $mtime= $mtime[1] + $mtime[0];
