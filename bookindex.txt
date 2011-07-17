@@ -33,8 +33,7 @@ MODX|core independence,
 
 how MODX works,1
 using|a content management system,2
-MODX|database (overview),1
-database|overview,1
+MODX|database,1
 third-party components (overview),4
 MODX|extras (overview),4
 extras|overview,4
@@ -129,16 +128,18 @@ web page parsing,21
 MODX|delivering a web page,21
 MODX|parser,21
 parser,21
-transport packages defined,22
+transport packages|defined,22
 MODX|transport packages defined,22
-packages,22
+Package Manager,22
+transport packages,22
 namespaces|defined,23
+namespaces,23
 MODX|namespaces defined,23
-lexicon (overview),23-24
+lexicon|overview,23-24
 MODX|lexicon (overview),23-24
 lexicon topics,23-24
 topics (lexicon),23-24
-lexicon strings,23-24
+lexicon strings|overview,23-24
 MODX|lexicon strings,23-24
 system settings|defined,25
 MODX|system settings defined,25
@@ -168,27 +169,35 @@ MODX|property sets defined,27-28
 cache|overview of,28-29
 MODX|cache (overview),28-29
 cache|clearing,28
-Evolution|elements in,31
+Evolution|elements,31
+MODX Evolution|elements,31
 elements|in Evolution,31
-Evolution|content element in,31
-content element in Evolution,31
-Evolution|lexicon in,32
-lexicon in Evolution,32
-Evolution|system settings in,32
+Evolution|content elements,31
+MODX Evolution|content elements,31
+content elements in Evolution,31
+Evolution|lexicon,32
+MODX Evolution|lexicon,32
+lexicon|in Evolution,32
+Evolution|system settings,32
+MODX Evolution|system settings,32
 system settings in Evolution,32
-Evolution|contexts in,32
+Evolution|contexts,32
+MODX Evolution|contexts,32
 contexts in Evolution,32
-Evolution|context setting in,32
-context setting in Evolution,32
-Evolution|user settings in,32
+Evolution|context settings,32
+context settings in Evolution,32
+Evolution|user settings,32
+MODX Evolution|user settings,32
 user settings in Evolution,32
-Evolution|properties in,32
-properties in Evolution,32
+Evolution|properties,32
+MODX Evolution|properties,32
+properties|in Evolution,32
 cache|in Evolution,33
 Evolution|cache,33
+MODX Evolution|cache,33
 #chapter 2 Installing MODX
 
-installing|MODX,35
+installing MODX,35
 MODX|installing,35
 MODX|server requirements,
 server requirements for MODX,36-37
@@ -212,12 +221,12 @@ supported browsers,36-37
 MODX|supported browsers,36-37
 downloading MODX,38
 MODX|downloading,38
-installation|file placement,38-39
+index.php file|MODX,38
+MODX|index.php file,38
+files|index.php (MODX),38
+installing MODX|file placement,38-39
 file placement,38-39
-MODX|database creation,40
-creating the MODX database,40
-database|creating for MODX,40
-MODX|creating database,40
+MODX|database,40
 creating|MODX database,40
 PHPMyAdmin|creating database,40
 MODX|database creation,40
@@ -233,31 +242,34 @@ file permissions,41
 directory permissions,41
 MODX|file and directory permissions,41
 running setup,41
-installation|config file,41
+installing MODX|config file,41
 files|MODX config,41
-installation|running setup,41
+installing MODX|running setup,41
 setup,41
 MODX|setup,41
 MODX|running setup,41
-installation|Evolution,42
-Evolution|installation,42
-installation|connection information,42
+installing MODX|Evolution,42
+Evolution|installing,42
+MODX Evolution|installing,42
+installing MODX|connection information,42
 connection information,42
 default database,42
 localhost default database,42
 database|host,42
 host (database),42
-installation|database host,42
+installing MODX|database host,42
+MODX|database host,42
 database|name,42
 name of MODX database,42
-installation|database name,42
-installation|summary screen,43
+MODX|database name,42
+installing MODX|database name,42
+installing MODX|summary screen,43
 configuration check|Revolution,45
-MODX|configuration check,45
-installation|configuration check (Revolution),45
+MODX|configuration check (Revolution),45
+installing MODX|configuration check (Revolution),45
 config file still writable,45
 warnings|config file still writable,45
-installation|register_globals,45-47
+installing MODX|register_globals,45-47
 register_globals,45-47
 warnings|register_globals is on,45-47
 errors|server 500,46
@@ -270,8 +282,8 @@ ht.access file,46-47
 files|ht.access,46-47
 suPHP,47
 suPHP_ConfigPath,47
-installer still present,47
-installation|installer still present,47
+installer still present warning,47
+installing MODX|installer still present warning,47
 warnings|installer still present,47
 MODX|home page,48
 home page,48
@@ -297,11 +309,12 @@ errors|404 (page-not-found),50
 creating|resources,50
 editing|system settings,50
 system settings|editing,50
-installing add-on components,52-54
+installing|add-on components,52-54
 add-on components|installing,52-54
 extras|installing,52-54
+installing|MODX extras,52-54
 3PCs (installing),52-54
-package manager,52-54
+Package Manager,52-54
 installing|packages,52-54
 cURL,52
 enabling|cURL,52
@@ -309,6 +322,7 @@ troubleshooting|Package Manager and cURL
 downloading packages,53
 transport packages|downloading,53
 transport packages|installing,54
+installing|transport packages,54
 transport packages|uninstalling,54
 transport packages|removing,54
 transport packages|updating,54
@@ -316,6 +330,9 @@ FURLs,55-61
 Friendly URLs,55-61
 SEO-friendly URLs,55-61
 system settings|FURLs,55-61
+index.php file|MODX,56
+MODX|index.php file,56
+files|index.php (MODX),56
 FURLs|prefixes,57
 FURLs|suffixes,57
 prefixes for FURLs,57
@@ -346,7 +363,11 @@ RewriteBase,60
 FURLs|RewriteBase,60
 .htaccess file|RewriteBase,60
 FURLs|testing,60
-installation|localhost,62-64
+index.php file|MODX,61
+MODX|index.php file,61
+files|index.php (MODX),61
+installing MODX|localhost,62-64
+installing MODX|XAMPP,62-64
 XAMPP|downloading,62
 XAMPP|installing,62
 PHPMyAdmin|accessing,63
@@ -357,7 +378,6 @@ uft8_unicode_ci,63
 character set,63
 XAMPP|file locations,63
 files|XAMPP,63
-installation|localhost,63
 htdocs directory,63
 directories|XAMPP,63
 directories|htdocs,63
@@ -379,17 +399,17 @@ setting|file and directory permissions,69
 file and directory permissions,69
 files|setting permissions,69
 upgrade install,69
-installation|upgrade,69
+installing MODX|upgrade,69
 upgrading MODX,69
 MODX|upgrading,69
-installation|development version,70-75
+installing MODX|development version,70-75
 development version of MODX,70-75
 MODX|development version,70-75
 GitHub,70-75
 Git|branches,70-72
 branches (Git),70-72
 Git|master branch,71
-master branch,71
+master branch (Git),71
 Git|develop branch,71
 develop branch (Git),71
 Git|commits,71
@@ -414,7 +434,7 @@ Git|Bash,73
 Git|GUI,73
 command-line client for Git,73
 Git|installing,73
-installing Git,73
+installing|Git,73
 cloning MODX development version,73-75
 Git|cloning MODX development version,73-75
 contributing to MODX development,75-89
@@ -489,37 +509,46 @@ converting a template to MODX,90
 config.inc.php file|Evolution,95
 files|config.inc.php for Evolution,95
 Evolution|config file,95
+MODX Evolution|config file,95
 files|Evolution config,95
-Installation|MODX Evolution,96
+installing MODX|Evolution,96
 Evolution|file and directory permissions,95
+MODX Evolution|file and directory permissions,95
 file permissions in Evolution,95
 Evolution|installing,96
 MODX Evolution|installing,96
 Evolution|configuration check,96
-Configuration check|Evolution,96
-Installing|Evolution add-on components,96
+MODX|configuration check (Evolution),96
+installing MODX|configuration check (Evolution),96
+configuration check|Evolution,96
+installing|Evolution add-on components,96
 Evolution|installing add-on components,96
+MODX Evolution|installing add-on components,96
 add-on components|in Evolution,96
 Evolution|fURLs,97
+MODX Evolution|fURLs,97
 FURLs|in Evolution,97
 friendly URLs|in Evolution,97
+MODX Evolution|friendly URLs,97
 Evolution|development version,97
 development version of Evolution,97
 
 #Chapter 3 The MODX Manager
 
-manager,99
-MODX|Manager,99
-manager|trees,99-109
+Manager,99-132
+MODX Manager,99-132
+MODX|Manager,99-132
+Manager|trees,99-109
+MODX Manager|trees,99-109
 MODX|Manager trees,99-109
 Resource tree,100-104
-manager|Resource tree,100-104
+Manager|Resource tree,100-104
 Resource tree|icons,101
 icons|Resource tree,101
 Resource tree|sorting,101
 Resource tree|menuindex,101
 sorting Resource tree,101
-menuindex|and Resource tree,101
+menuindex (and Resource tree sorting),101
 Resource tree|deleting resources,103
 deleting|resources,102-103
 resources|deleting,102-103
@@ -536,9 +565,10 @@ Resource tree|Edit Resource,103
 Editing|resources,103
 Edit Resource,103
 Resource tree|Quick Update Resource,103
-Quick Update Resource,103
+Quick Update|resources,103
 Duplicate Resource,103
 Resource tree|Duplicate Resource,103
+resources|duplicating,103
 weblink|Create,103
 document|Create,103
 resource|Create,103
@@ -549,11 +579,14 @@ creating|symlinks,103
 symlinks|creating,103
 static resources|creating,103
 creating|static resources,103
-Quick Create,103
+Quick Create|resources,103
 resources|Quick Create,103
 weblinks|Quick Create,103
+Quick Create|weblinks,103
 symlinks|Quick Create,103
+Quick Create|symlinks,103
 static resources|Quick Create,103
+Quick Create|static resources,103
 resources|publishing,103
 publishing resources,103
 undeleting|resources,103
@@ -562,6 +595,8 @@ resources|preview,103
 previewing resources,103
 MODX|Element tree,104-106
 Element tree,104-106
+Manager|Element tree,104-106
+MODX Manager|Element tree,104-106
 Element tree icons,104
 icons|Element tree,104
 categories,105
@@ -583,11 +618,13 @@ categories|removing,106
 Element tree|Edit,106
 Edit Element,106
 elements|editing,106
-Quick Update Element,106
+Quick Update|elements,106
 elements|Quick Update,106
 removing|elements,106
 elements|removing,106
 File tree,106-109
+Manager|File tree,106-109
+MODX Manager|File tree,106-109
 icons|File tree,107
 File tree|icons,107
 right-click menu|File tree,108-109
@@ -634,12 +671,14 @@ Top Menu,109-128
 MODX|Top Menu,109-128
 Top Menu|Home,109
 Home Top Menu choice,109
-manager Home screen,109
-Home screen of the manager,109
+Manager|Home screen,109
+MODX Manager|Home screen,109
+Home screen of the Manager,109
 system settings|site_name,109
 site_name system setting,109
 configuration check|Revolution,110
-MODX manager|configuration check,110
+MODX Manager|configuration check,110
+Manager|configuration check (Revolution),110
 register_globals,110
 troubleshooting|register_globals,110
 warnings|register globals,110
@@ -682,7 +721,6 @@ home page|previewing,111
 locks,112
 Site|Remove Locks,112
 removing|locks,112
-locks|removing,112
 searching the site,112
 site|searching,112
 Site|New Document,113
@@ -723,7 +761,7 @@ Access Controls menu|User Groups,115
 creating|user groups,115
 Access Controls menu|Roles tab,115
 creating|roles,115
-New Role,115
+New Role button,115
 Access Controls menu|Access Policies tab,115
 access policies|creating,115
 creating|access policies,115
@@ -761,7 +799,7 @@ Access Controls menu|Resource Groups tab,117
 resources|adding to resource groups,117
 adding|resources to resource groups,117
 assigning|resources to resource groups,117
-Form Customization|manager panel,117
+Form Customization|Manager panel,117
 flushing permissions,117
 Access Controls menu|Flush Permissions,117
 flushing sessions,117
@@ -769,10 +807,10 @@ Access Controls menu|Flush All Sessions,117
 Top Menu|Tools,117-120
 Tools Top Menu item,117-120
 Tools menu|Import Resources,118
-importing resources,118
+importing|resources,118
 resources|importing,118
 Tools menu|Import HTML,118
-importing HTML resources,118
+importing|HTML resources,118
 Tools menu|Property Sets,119
 New Property Set dialog,119
 dialogs|New Property Set,119
@@ -797,17 +835,17 @@ System Info,121
 database tables|overhead,121
 optimize database tables,121
 overhead of database tables,121
-Recently Edited Documents report,121
+Recently Edited Documents Report,121
 resources|recently edited,121
 about MODX,122
-MODX|about report,122
+MODX|About Report,122
 help,122
 MODX|help,122
 MODX|credits,122
 credits,122
 documentation link,122
 MODX|documentation link,122
-PHP help,122
+PHP|help,122
 MySQL help,122
 xPDO help,122
 help|MODX,122
@@ -818,7 +856,7 @@ help|xPDO,122
 System menu,122-126
 Top Menu|System,122-126
 System menu|Package Manager,122-123
-Package Manager|menu,122-123
+Package Manager,122-123
 Download Extras button,122
 extras|downloading,122
 add-on components|downloading,122
@@ -856,8 +894,8 @@ User menu|profile,127
 user profile,127
 User menu|Reset Password,127
 User menu|Recent Resources,127
-user|reset password in manager,127
-reset user password in manager,127
+user|reset password in Manager,127
+reset user password in Manager,127
 setting user password,127
 user|recent resources edited by,127
 user|Messages,127
@@ -865,31 +903,39 @@ User menu|Messages,127
 creating|messages for users,127
 Top Menu|Support,127-128
 Support menu,127-128
-Support menu|Forums,127-128
+Support menu|Forums link,127-128
 forums link,127-128
 MODX|forums link,127-128
-links|to MODX forums,127-128
-MODX forums|searching,127-128
-Support menu|Wiki,128
-MODX|wiki,128
-wiki,128
+links|MODX forums,127-128
+MODX|forums (searching),127-128
+searching MODX forums,127-128
+help|searching MODX forums,127-128
+Support menu|Wiki link,128
+help|MODX Wiki,128
+MODX|Wiki link,128
+Wiki,128
 links|MODX wiki,128
-Support menu|Bugs,129
+Support menu|Bugs link,129
 reporting bugs,129
-bug reporting,129
+bug reporting link,129
 links|bug report,129
-API documentation,129
+API documentation link,129
+help|API documentation link,129
 links|MODX API documentation,129
-MODX|API documentation,129
+MODX|API documentation link,129
 Resource tree|Evolution,130
 resources|Evolution Resource tree,130
 Evolution|editing files,130
+MODX Evolution|editing files,130
 editing|files in Evolution,130
 files|editing in Evolution,130
 Evolution|editing elements,130
+MODX Evolution|editing elements,130
 Evolution|Top Menu,130-132
+MODX Evolution|Top Menu,130-132
 Top Menu|Evolution,130-132
-Evolution|missing manager functions in,133
+Evolution|missing Manager functions in,133
+MODX Evolution|missing Manager functions in,133
 
 #Chapter 4 MODX Resources
 
@@ -913,9 +959,9 @@ resources|site_content table,137
 database|site_content table,137
 document fields,138
 
-id (Resource Id) field,138
-Create/Edit Resource panel|id (Resource Id) resource field,138
-Resource Id resource field,139
+id (Resource ID) field,138
+Create/Edit Resource panel|id (Resource ID) resource field,138
+Resource ID resource field,139
 resource fields|id,139
 Create/Edit Resource panel|Resource ID (id) resource field,139
 
@@ -940,6 +986,11 @@ longtitle (Long Title) resource field,142
 Create/Edit Resource panel|longtitle (Long Title) resource field,142
 resource fields|longtitle,142
 
+index.php file|MODX,142
+MODX|index.php file,142
+files|index.php (MODX),142
+
+
 description resource field,142
 resource fields|description (Description),142
 Create/Edit Resource panel|description (Description) resource field,142
@@ -962,17 +1013,17 @@ Summary (introtext) resource field,143
 Create/Edit Resource panel|Summary (introtext) resource field,143
 resource fields|introtext (Summary),143
 
-parent (Parent Resource) resource field,144
+parent (Resource Parent) resource field,144
 Create/Edit Resource panel|parent (Parent Resource) resource field,144
-resource fields|parent,144
+resource fields|parent (Parent Resource),144
 
 menutitle (Menu Title) resource field,144
 Create/Edit Resource panel|menutitle (Menu Title) resource field,144
-resource fields|menutitle,144
+resource fields|menutitle (Menu Title),144
 
 menuindex (Menu Index) resource field,145
 Create/Edit Resource panel|menuindex (Menu Index) resource field,145
-resource fields|menuindex,145
+resource fields|menuindex (Menu Index),145
 
 hiding|resources from menus,145
 Hide From Menus checkbox,145
@@ -1103,7 +1154,10 @@ link tags|context property,163
 language tags,163-164
 tags|language,163-164
 tags|nested,164-165
-nested|tags,164-165
+nested tags,164-165
+index.php file|MODX,165
+MODX|index.php file,165
+files|index.php (MODX),165
 cache|control with tags,166
 cache|exclamation point in tags,166
 cache|tags and,166
@@ -1320,7 +1374,7 @@ isnotloggedin output modifier,173
 output modifiers|use with properties,174
 properties|use with output modifiers,174
 custom output modifiers,174-176
-output modifier|custom,174-176
+output modifiers|custom,174-176
 creating|custom output modifiers,174-176
 input filters,176
 resources|weblinks,176-177
@@ -1352,12 +1406,12 @@ view Resource panel|cache output tab,180
 cache output (viewing),180
 viewing cache output,180
 resources|viewing cache output,180
-Quick Update Resource,181
+Quick Update|resources,181
 resources|Quick Update,181
 duplicate resource,181
 resources|duplicating,181
 refresh resource,182
-Quick Create Resource,182
+Quick Create|resources,182
 resources|Quick Create,182
 publishing resources,182
 resources|publishing,182
@@ -1366,20 +1420,28 @@ resources|deleting,182
 previewing resources,183
 resources|previewing,183
 Evolution|editing elements,184
+MODX Evolution|editing elements,184
 editing|elements in Evolution,184
 Evolution|Resource tree,184
+MODX Evolution|Resource tree,184
 Evolution|templates,185
+MODX Evolution|templates,185
 templates|in Evolution,185
 Evolution|documents,185
+MODX Evolution|documents,185
 documents|in Evolution,185
 properties|in Evolution,186
 Evolution|properties,186
+MODX Evolution|properties,186
 snippet properties in Evolution,186
 cache control in Evolution,187
 Evolution|cache control,187
+MODX Evolution|cache control,187
 output modifiers|Evolution (PHX),187
 PHX in Evolution,187
 Evolution|PHX,187
+MODX Evolution|PHX,187
+MODX Evolution|output modifiers,187
 
 #Chapter 5 Template and Template Variables
 
@@ -1429,7 +1491,7 @@ attaching|template variables to templates,203
 templates|attaching template variables to,203
 template variables|attaching to templates,203
 template variables|default value,203
-displaying template variables,203
+displaying|template variables,203
 showing template variables,203
 template variables|displaying,203
 template variables|showing,203
@@ -1589,7 +1651,7 @@ using|chunks in snippet properties,236-237
 getChunk() method,237
 methods|getChunk(),237
 chunks|displaying with a snippet,237
-displaying a chunk with a snippet,237
+displaying|a chunk with a snippet,237
 chunks|using to store data,238-241
 using|chunks to store data,238-241
 storing data in chunks,238-241
@@ -1610,15 +1672,15 @@ TV-based chunks,244-247
 chunks|TV-based,244-247
 tutorials|TV-based chunks,244-247
 TV-based chunks tutorial,244-247
-properties (overview),247-248
+properties|overview,247-248
 key,247
 value,247
 properties|key,247
 properties|value,247
 properties|sending in chunk tags,249
 chunks|sending properties in tag,249
-default properties versus property sets,249-251
-property sets versus default properties,249-251
+default properties|versus property sets,249-251
+property sets|versus default properties,249-251
 properties|in property sets,250-251
 property sets|properties in,250-251
 properties|where stored,250
@@ -1656,26 +1718,30 @@ specifying property sets in element tags,259
 property sets|editing on the tools menu,259
 editing|property sets on the tools menu,260
 property sets|importing,261
-importing property sets,261
+importing|property sets,261
 property sets|exporting,261
 exporting property sets,261
 property sets|creating,261-262
 creating|property sets,261-262
-Evolution|chunk tags in,264-265
+Evolution|chunk tags,264-265
+MODX Evolution|chunk tags,264-265
 chunk tags in Evolution,264-265
 chunks|editing in Evolution,264-265
+Evolution|editing chunks,264-265
+MODX Evolution|editing chunks,264-265
 editing|chunks in Evolution,264-265
 properties|in Evolution,265
 Evolution|properties,265
+MODX Evolution|properties,265
 
 #Chapter 7 Snippets and Plugins
 
 snippets|defined,267
 snippet properties|defined,267
 plugins|defined,267
-snippets|installing with package manager,268
-installing|snippets with package manager,268
-package manager|installing snippets,268
+snippets|installing with Package Manager,268
+installing|snippets with Package Manager,268
+Package Manager|installing snippets,268
 CodeMirror editor|installing,269
 editors|CodeMirror,269
 CodeMirror editor |configuring,269
@@ -1688,17 +1754,18 @@ snippets|hello snippet tutorial,269-270
 snippet properties,270-271
 snippets|properties,270-271
 properties|in snippet tags,270-271
-PHP variables,272
+PHP|variables,272
 variables in PHP,272
 snippet properties|as PHP variables,270-271
 snippets|displaying output of,272
 snippets|return value,272
-displaying snippet output,272
+displaying|snippet output,272
 showing snippet output,272
 $output variable in snippets,272
 snippets|$output variable,272
 variables|$output,272
 PHP|operators,272-273
+operators|PHP,272-273
 placeholders|setting in snippets,272-273
 tutorials|enhanced hello snippet,273-275
 enhanced hello snippet,273-275
@@ -1708,7 +1775,6 @@ placeholders|setting in snippets,274-275
 tutorials|setting placeholders with a snippets,274-275
 setting placeholders with a snippet tutorial,274-275
 snippet default properties,276
-default properties in snippets,276
 properties|snippet,276
 snippets|properties,276
 default properties|of snippets,276-277
@@ -1720,7 +1786,7 @@ properties|overriding,276
 tutorials|SnippetDemo,270-280
 SnippetDemo tutorial,270-280
 tutorials|default properties of snippets,270-280
-default properties or snippets tutorial,270-280
+default properties of snippets tutorial,270-280
 tutorials|property sets with snippets,270-280
 property sets|creating,279
 creating|property sets,279
@@ -1839,29 +1905,41 @@ NightErrorPage resource,303
 system events|OnPageNotFound,304
 OnPageNotFound system event,304
 snippets in Evolution,306
-Evolution|snippets in,306
-installing|snippet in Evolution,306
-Evolution|installing snippets in,306
+Evolution|snippets,306
+MODX Evolution|snippets,306
+installing|snippets in Evolution,306
+Evolution|installing snippets,306
+MODX Evolution|installing snippets,306
 tags|in Evolution,306
-Evolution|tags in,306
+Evolution|tags,306
+MODX Evolution|tags,306
 properties|in Evolution,306
-Evolution|properties in,306
-Evolution|placeholders in,306
+Evolution|properties,306
+MODX Evolution|properties,306
+Evolution|placeholders,306
+MODX Evolution|placeholders,306
 placeholders|in Evolution,306
 default properties|in Evolution,306
-Evolution|default properties in,306
+Evolution|default properties,306
+MODX Evolution|default properties,306
 documentObject,307
 Evolution|documentObject,307
+MODX Evolution|documentObject,307
 user information in Evolution,307
 Evolution|user information in,307
+MODX Evolution|user information in,307
 userLoggedIn() method (Evolution),307
 Evolution|userLoggedIn() method,307
+MODX Evolution|userLoggedIn() method,307
 getLoginUserID() method (Evolution),307
 Evolution|getLoginUserID() method,307
+MODX Evolution|getLoginUserID() method,307
 getLoginUserName() method (Evolution),307
 Evolution|getLoginUserName() method,307
+MODX Evolution|getLoginUserName() method,307
 plugins|in Evolution,307
-Evolution|plugins in,307
+Evolution|plugins,307
+MODX Evolution|plugins,307
 
 #Chapter 8 Advanced Snippet Operations
 
@@ -1894,6 +1972,9 @@ variables|$resource assignment by reference,312-313
 variables|assignment by reference,312-313
 assignment by reference,312-313
 reference variables,312-313
+=& operator (PHP),312
+operators|=& (PHP),312
+PHP operators|=&,312
 methods|getCollection(),313
 getCollection() method,313
 methods|getIterator(),313
@@ -1992,9 +2073,9 @@ template variables|renderOutput() method,330
 methods|renderOutput(),330-331
 renderOutput() method,330-331
 snippet tags|display rather than execute,330
-displaying snippet tags (without executing),330
+displaying|snippet tags (without executing),330
 str_replace() PHP function,330
-PHP str_replace() function,330
+PHP functions|str_replace(),330
 methods|hasTemplate(),331
 hasTemplate() method,331
 template variables|hasTemplate() method,331
@@ -2018,17 +2099,18 @@ PHP functions|is_array(),335
 is_array() PHP function,335
 PHP functions|empty(),335-336
 empty() PHP function,335-336
-=== operator,336
-operators|===,336
+=== operator (PHP),336
+operators|=== (PHP),336
 PHP operators|===,336
 PHP functions|is_object(),337
 is_object() PHP function,337
-PHP instanceof,337-338
+PHP|instanceof,337-338
 instanceof in PHP,337-338
-creating|MODX objects,338-344
-modifying MODX objects,338-344
-updating MODX objects,338-344
-new MODX objects,339
+creating|MODX objects in code,338-344
+MODX objects (creating in code),338-344
+modifying MODX objects in code,338-344
+updating MODX objects in code,338-344
+new MODX objects in code,339
 methods|newObject(),339
 newObject() method,339
 creating|resources in code,339
@@ -2036,7 +2118,7 @@ creating|chunks in code,339
 creating|snippets in code,340-341
 methods|set(),340
 set() method,340
-id field,340
+id (resource ID) field,340
 resource fields|id,340
 methods|setContent(),340
 setContent() method,340
@@ -2059,7 +2141,6 @@ methods|save(),343-344
 save() method,343-344
 methods|remove(),344
 remove() method,344
-modifying existing objects,344
 setting placeholders in code,344-347
 placeholders|setting in code,344-347
 methods|setPlaceholder(),344-347
@@ -2082,32 +2163,34 @@ unsetPlaceholders() method,347
 lexicon files|location of,348
 files|lexicon,348
 location of lexicon files,348
-lexicon|using code with,347-351
+lexicon|working with in code,347-351
 using|lexicon strings in code,347-351
-lexicon strings in code,347-351
+lexicon strings|in code,347-351
+displaying|lexicon strings with code,347-351
 snippets|lexicon strings in,347-351
 plugins|lexicon strings in,347-351
 lexicon_entries table,348
-namespaces for components,349
+namespaces|for components,349
 components|namespaces,349
 add-on component namespaces,349
 lexicon topics,349-351
+topics (lexicon),349-351
 default.inc.php lexicon file,348
 files|default.inc.php,348
 lexicon files|default.inc.php,348
+lexicon|default.inc.php file,348
 default lexicon file,348
 namespace path,349
 path to namespace,349
 {core_path},349
 core directory,349
 directories|core,349
+MODX|core directory,349
 languages,349
-displaying a lexicon string with code,349-351
-lexicon strings|displaying with code,349-351
 methods|lexicon->load(),350
 lexicon->load() method,350
 loading lexicon topics,350
-lexicon string prefixes,350
+lexicon strings|prefixes,350
 resources|ObjectDemo,352
 resources|working with in code,
 snippets|ObjectDemo,353
@@ -2119,6 +2202,9 @@ variables|$resource,354
 $resource variable,354
 methods|getObject(),354
 getObject() method,354
+=& operator (PHP),354
+operators|=& (PHP),354
+PHP operators|=&,354
 methods|get(),355
 get() method,355
 methods|toArray(),355
@@ -2126,15 +2212,15 @@ toArray() method,355
 methods|hasChildren(),356
 hasChildren() method,356
 resource fields|isfolder,356
-isfolder field,356
+isfolder (Container) resource field,356
 methods|getChildIds(),357
 getChildIds() method,357
 related objects|Children,357
 Children related object,357
 methods|getParentIds(),358
 getParentIds() method,358
-resource fields|parent,358
-parent resource field,358
+resource fields|parent (Resource Parent),358
+parent (Resource Parent) resource field,358
 methods|getOne(),358-360
 getOne() method,358-360
 methods|getMany(),359-361
@@ -2224,6 +2310,7 @@ Profile related object,383-383
 modUser object,381
 username,381
 user id,381
+id (User ID) field,381
 user password,381
 (anonymous) user,381
 modx.user.id placeholder,381
@@ -2272,6 +2359,9 @@ CreatedBy related object,388
 current resource|editor,388
 related objects|EditedBy,388
 EditedBy related object,388
+=& operator (PHP),388
+operators|=& (PHP),388
+PHP operators|=&,388
 current resource|publisher,389
 related objects|PublishedBy,389
 PublishedBy related object,389
@@ -2325,6 +2415,8 @@ methods|getSelectColumns(),393
 getSelectColumns() method,393
 methods|innerJoin(),393
 innerJoin() method,393
+queries|innerJoin() method, 393
+xPDO queries|innerJoin() method, 393
 related objects|Profile,393
 Profile related object,393
 methods|getCollection(),393
@@ -2360,7 +2452,7 @@ getCollectionGraph() method,397
 database|retrieving user extended fields from,397
 retrieving|user extended fields from database,397
 creating|MODX objects in code,397-409
-MODX objects|creating in code,397-409
+MODX objects (creating in code),397-409
 methods|newObject(),397
 newObject() method,397
 resources|creating in code,398
@@ -2426,6 +2518,7 @@ methods|getCollection(),403
 getCollection() method,403
 snippets|creating template variables in,402-404
 intersect objects|modTemplateVarTemplate,403
+modTemplateVarTemplate intersect object,403
 methods|setValue(),404
 setValue() method,404
 creating|users in code,404
@@ -2476,10 +2569,12 @@ addOne() method,408
 roles|working with in code,408
 snippets|working with roles,408
 intersect objects|modResourceGroupResource,408
+modResourceGroupResource intersect object,408
 resources|attaching to resource groups in code,408
 snippets|attaching resources to resource groups in,408
 attaching|resources to resource groups in code,408
 intersect objects|modPluginEvent,408
+modPluginEvent intersect object,408
 snippets|attaching plugins to events in,408
 plugins|attaching to events in code,408
 attaching|plugins to events in code,408
@@ -2488,6 +2583,7 @@ newObject() method,409
 methods|addOne(),409
 addOne() method,409
 intersect objects|modElementPropertySet,409
+modElementPropertySet intersect object,409
 snippets|attaching property sets to elements in,409
 attaching|property sets to elements in code,409
 property sets|attaching to elements in code,409
@@ -2514,7 +2610,7 @@ parseSchema() method,410
 lexicon|working with in code,411-413
 working with the lexicon in code,411-413
 lexicon|using in snippets tutorial,411-413
-using|lexicon in snippets turorial,411-413
+using|lexicon in snippets tutorial,411-413
 tutorials|using the lexicon in snippets,411-413
 snippets|using the lexicon in,411-413
 namespaces,411
@@ -2522,6 +2618,7 @@ creating|namespaces,411
 {core_path},411
 core directory,411
 directories|core,411
+MODX|core directory,411
 creating|lexicon files,412
 files|creating lexicon files,412
 lexicon files|creating,412
@@ -2534,28 +2631,37 @@ methods|lexicon->load(),412
 snippets|loading lexicon files,412
 files|loading lexicon files in snippets,412
 lexicon->load() method,412
-lexicon strings|displaying in code,413
+lexicon strings|in code,413
 snippets|displaying lexicon strings,413
+displaying|lexicon strings with code,413
 tutorials|page count snippet,413-414
 page count snippet tutorial,413-414
 template variables|setValue() method,414
 methods|setValue(),414
 setValue() method,414
-Evolution|getChildIds() method in,416
+Evolution|getChildIds() method,416
+MODX Evolution|getChildIds() method,416
 getChildIds() method in Evolution,416
-Evolution|getParentIds() method in,416
+Evolution|getParentIds() method,416
+MODX Evolution|getParentIds() method,416
 getParentIds() method in Evolution,416
-Evolution|getChunk() method in,416
+Evolution|getChunk() method,416
+MODX Evolution|getChunk() method,416
 getChunk() method in Evolution,416
-Evolution|parseChunk() method in,416
+Evolution|parseChunk() method,416
+MODX Evolution|parseChunk() method,416
 parseChunk() method in Evolution,416
-Evolution|runSnippet() method in,416
+Evolution|runSnippet() method,416
+MODX Evolution|runSnippet() method,416
 runSnippet() method in Evolution,416
-Evolution|retrieving system settings in,416
+Evolution|retrieving system settings,416
+MODX Evolution|retrieving system settings,416
 retrieving system settings in Evolution,416
-Evolution|lexicon strings in,416
-lexicon strings in Evolution,416
-Evolution|DBAPI in,416
+Evolution|lexicon strings,416
+MODX Evolution|lexicon strings,416
+lexicon strings|in Evolution,416
+Evolution|DBAPI,416
+MODX Evolution|DBAPI,416
 DBAPI in Evolution,416
 
 #Chapter 9 Site Organization and Contexts
@@ -2587,6 +2693,7 @@ files|config.core.php,420
 moving the MODX core directory,421-422
 core directory,421-422
 directories|core,421-422
+MODX|core directory (moving),421-422
 directories|moving the core,421-422
 renaming the core directory,421-422
 directories|renaming the core,421-422
@@ -2616,15 +2723,16 @@ database|table prefix,425
 sharing core between sites,425-426
 core directory,425-426
 directories|core,425-426
+MODX|core directory,425-426
 MODX|sharing core between sites,425-426
 contexts|sharing core between sites,425-426
-index.php file,426-427
-MODX|index.php file,426-427
-files|index.php,426-427
+index.php file|separate contexts,426-428
+MODX|index.php file (separate contexts),426-428
+files|index.php (separate contexts),426-428
 contexts|in separate directories,426-431
 contexts|initialize() method,426-427
-methods|initialize(),426-427
-initialize() method,426-427
+methods|initialize() (contexts),426-427
+initialize() method (contexts),426-427
 .htaccess file,426
 files|.htaccess,426
 MODX|.htaccess file,426
@@ -2694,12 +2802,14 @@ permissions|for contexts,433
 contexts|sharing core between sites,433
 core directory,433
 directories|core,433
+MODX|core directory,433
 sharing core with multiple contexts,433
 MODX|multiple sites sharing core,433
 MODX|sharing core between sites,433
 multi-language sites,434
 sites|multi-language,434
-Evolution|contexts in,435
+Evolution|contexts,435
+MODX Evolution|contexts,435
 contexts|in Evolution,435
 
 #Chapter 10 MODX Security
@@ -2718,8 +2828,8 @@ Access Control Lists|entries,438
 ACL entries,438
 resource groups,438
 elements|protected,439
-protected elements,439
-protected contexts,439
+protected|elements,439
+protected|contexts,439
 contexts|protected,439
 system settings|udperms_allowroot,439
 udperms_allowroot system setting,439
@@ -2790,8 +2900,9 @@ access policies|Resource,443
 access policies|Administrator,443
 access policies|Element,443
 access policies|Load Only,443
-access policies|Load List and View,443
 Load Only policy,443
+access policies|Load List and View,444
+policies|Load List and View,444
 Load List and View policy,444
 duplicating access policies,444
 policies|duplicating,444
@@ -2833,15 +2944,16 @@ access policies|object,444-445
 access policies|Object,444
 security|object policies,444-445
 policies|object,444-445
-object policy,444-445
+object policies,444-445
 policies|Object,444
 Object policy,444
 
 roles,446
-Evolution|roles in,446
-roles in Evolution,446
+Evolution|roles,446
+MODX Evolution|roles,446
+roles|in Evolution,446
 Revolution|roles in,446
-roles in Revolution,446
+roles|in Revolution,446
 authority numbers,446
 roles|authority numbers,446
 roles|creating,446
@@ -2924,7 +3036,7 @@ permissions|save_document,453
 save_document permission,453
 security|protected resources,451-453
 resources|protected,451-453
-protected resources,451-453
+protected|resources,451-453
 security|minimum role for resource group access ACL entries,452
 minimum role for resource group access ACL entries,452
 roles|minimum role for resource group access ACL entries,452
@@ -2954,11 +3066,11 @@ edit permission,453
 permissions|save_chunk,453
 save_chunk permission,453
 categories|protected,453
-protected categories,453
+protected|categories,453
 security|protected categories,453
 tutorials|hiding resources in the Manager,454-460
 hiding|resources in the Manager|tutorial,454-460
-security|hiding resources in the Managertutorial,454-460
+security|hiding resources in the Manager tutorial,454-460
 resources|hiding in the Manager,454-460
 system settings|site_start,455
 site_start system setting,455
@@ -3021,6 +3133,9 @@ access policies|duplicating,459
 duplicating access policies,459
 News resource group,459
 resource groups|News,459
+access policies|Load List and View,459
+policies|Load List and View,459
+Load List and View policy,459
 Editor role,459
 roles|editor,459
 access policies|EditorResource,459
@@ -3089,7 +3204,7 @@ permissions|edit_document,465
 edit_document permission,465
 permissions|save_document,465
 save_document permission,465
-object policies|editing,465-466
+object policies (editing),465-466
 security|editing object policies,465-466
 editing|object policies,465-466
 permissions|publish,466
@@ -3185,14 +3300,14 @@ web context,472
 Login page|creating,472-473
 creating|Login page,472-473
 tutorials|Login page,472-473
-Login page tutorial,472-473
+Login page|tutorial,472-473
 Login snippet,472-473
 snippets|Login,472-473
 Tpl chunks,473
 chunks|Tpl,473
 flush permissions,474
 loginResourceId property,474
-Login page loginResourceId property,474
+Login page|loginResourceId property,474
 redirecting users on login,474
 users|redirecting on login,474
 system settings|error_page,475
@@ -3338,23 +3453,27 @@ system events|OnUserFormRender,493
 OnUserFormRender system event,493
 system events|OnUserFormSave,493
 OnUserFormSave system event,493
-Evolution|security system in,497-498
+Evolution|security system,497-498
+MODX Evolution|security system,497-498
 security system in Evolution,497-498
 manager users in Evolution,497-498
+MODX Evolution|manager users,497-498
 web users in Evolution,497-498
-Evolution|roles in,498
-roles in Evolution,498
+MODX Evolution|web users,497-498
+Evolution|roles,498
+MODX Evolution|roles,498
+roles|in Evolution,498
 
 #Chapter 11 Customizing the MODX Manager
 
 customizing the MODX Manager,501-533
-manger (customizing),501-533
+Manager|customizing,501-533
 MODX|customizing the Manager,501-533
 MODX Manager|customizing,501-533
 Top Menu|altering,502-513
 menu (see Top Menu)
 MODX|menu (see Top Menu)
-manager menu (see Top Menu)
+Manager menu (see Top Menu)
 actions,502-508
 Top Menu|actions,502-508
 manager actions,502-508
@@ -3371,7 +3490,7 @@ permissions|clear_cache,503
 clear_cache permission,503
 core lexicon,504-505
 lexicon|for Top Menu items,504-505
-lexicon keys for Top Menu items,504-505
+lexicon keys|for Top Menu items,504-505
 Top Menu|renaming items,504-505
 renaming Top Menu items,504-505
 components|changing menu item for,504-505
@@ -3379,14 +3498,17 @@ changing component menu items,504-505
 Batcher add-on component,504-507
 Actions tree,505-506
 Top Menu|Actions tree,505-506
+index.php file|components,505-506
+files|index.php (components),505-506
 Batcher namespace path,505
-namespace paths,505
+namespace path (Batcher),505
 Update Action dialog,505
 dialogs|Update Action,505
 controller,506
-namespace,506
+namespaces,506
 load headers,506
 lexicon topics,506
+topics (lexicon),506
 assets (in Update Action dialog),506
 database|modx_actions table,506
 modx_actions database table,506
@@ -3397,9 +3519,10 @@ Top Menu|order of items,507-508
 tutorials|modifying the Top Menu,507-512
 modifying the Top Menu tutorial,507-512
 Top Menu|lexicon keys,508
+lexicon keys|for Top Menu items,508
+lexicon|for Top Menu items,508
 Top Menu|components,508
 components Top Menu item,508
-lexicon keys for Top Menu items,508
 Top Menu|custom items,508-509
 custom Top Menu items,508-509
 MyMenu custom menu item,509
@@ -3418,7 +3541,7 @@ view_user permission,510
 my_view_user permission,510
 permissions|my_view_user,510
 custom menus,513
-menus|custom,513
+menus (custom),513
 user groups|custom menus for,513
 form customization,513-523
 Create/Edit Resource panel|altering with form customization,513-523
@@ -3526,13 +3649,16 @@ namespaces|cheatsheet,524
 {core_path},524
 core directory,524
 directories|core,524
+MODX|core directory,524
 actions|creating,524-525
 creating|actions,524-525
 Top Menu|creating actions,524-525
+index.php file|for CheatSheet component,525
+files|index.php for CheatSheet component,525
 handler,526
 JavaScript,526
-lexicon entries for CheatSheet component|creating,526
-creating|lexicon strings (entries) for CheatSheet component,526
+lexicon|for CheatSheet component,526-527
+creating|lexicon strings (entries) for CheatSheet component,526-527
 {core_path},527
 methods|getOption(),527
 getOption() method,527
@@ -3540,11 +3666,12 @@ methods|regClientCSS(),527
 regClientCSS() method,527
 load headers,514
 lexicon topics for custom manager pages,524
-
-lexicon key for CheatSheet component,527
+topics (lexicon),524
+lexicon keys| for CheatSheet component,527
 system settings|assets_url,527
 assets_url system setting,527
-index.php file for CheatSheet component,527
+index.php file|for CheatSheet component,527
+files|index.php for CheatSheet component,527
 $_GET array,528
 variables|$_GET,528
 $_GET variable,528
@@ -3555,13 +3682,16 @@ manager_url system setting,531
 HTML comments,531
 comments|HTML,531
 Smarty,532
-MODXExt,532
+MODExt,532-533
 ExtJS,532
-Evolution|form customization in,533
+Evolution|form customization,533
+MODX Evolution|form customization,533
 form customization|in Evolution,533
-Evolution|custom manager pages in,533
+Evolution|custom manager pages,533
+MODX Evolution|custom manager pages,533
 custom manager pages in Evolution,533
-Evolution|modules in,533
+Evolution|modules,533
+MODX Evolution|modules,533
 modules in Evolution,533
 
 #Chapter 12 Using Common MODX Components
@@ -3575,7 +3705,8 @@ installing|add-on components,536-538
 add-on components|installing,536-538
 cURL,536
 sockets,536
-package manager|cURL and,536
+Package Manager|cURL and,536
+Package Manager|troubleshooting,536
 cURL|enabling in XAMPP,536
 enabling|cURL in XAMPP,536
 XAMPP|enabling cURL,536
@@ -3588,11 +3719,12 @@ cURL|.dll file,536
 core/packages directory,537
 directories|core/packages,537
 transport packages|installing manually,537-538
+installing|transport packages manually,537-538
 manually installing transport packages,537-538
 add package,537
-package manager|add package,537
+Package Manager|add package,537
 search locally for packages,537
-package manager|search locally for packages,537
+Package Manager|search locally for packages,537
 transport packages|not downloadable through package management,537
 modx.com/extras,537
 extras|at modx.com,537
@@ -3631,8 +3763,9 @@ SPForm|spf_inline prompt,547
 spf_block_prompt,547
 SPForm|spf_block prompt,547
 SPForm|lexicon file,548
+lexicon|SPForm,548
 files|SPForm lexicon,548
-Lexicon files|SPForm,548
+lexicon files|SPForm,548
 SPForm|translating to other languages,548
 SPForm snippet,548-549
 snippets|SPForm,548-549
@@ -3686,8 +3819,8 @@ Wayfinder|Tpl chunks,560-562
 Tpl Chunks|Wayfinder,560-562
 Wayfinder|CSS,559
 CSS|Wayfinder,559
-JavaScript|Wayfinder,559
-Wayfinder|Javascript,559
+JavaScript|(with Wayfinder),559
+Wayfinder|Javascript with,559
 Wayfinder|hide from menus checkbox,560
 Hide From Menus checkbox (and Wayfinder),560
 Wayfinder placeholders,562
@@ -3811,13 +3944,17 @@ related objects|Profile,593
 Profile related object,593
 methods|setPlaceholder(),593
 setPlaceholder() method,593
-Evolution|installing components in,595
-installing|components in Evolution,595
-Evolution|snippet properties in,595
+Evolution|installing add-on components,595
+MODX Evolution|installing add-on components,595
+installing|add-on components in Evolution,595
+Evolution|snippet properties,595
+MODX Evolution|snippet properties,595
 snippet properties in Evolution,595
-Evolution|common snippets in,595-596
+Evolution|common snippets,595-596
+MODX Evolution|common snippets,595-596
 common snippets in Evolution,595-596
-Evolution|using SMTP in,596
+Evolution|using SMTP,596
+MODX Evolution|using SMTP,596
 using|SMTP in Evolution,596
 SMTP|using in Evolution,596
 using SMTP in Evolution,596
@@ -3924,8 +4061,6 @@ putVehicle() method (transport packages),606
 transport packages|putVehicle() method,606
 PHP functions|file_get_contents(),606
 file_get_contents() PHP function,606
-methods|pack(),607
-pack() method,607
 transport packages|pack() method,607
 pack() method (transport packages),607
 methods|loadClass(),608
@@ -3938,9 +4073,9 @@ methods|loadClass(),609
 loadClass() method,609
 PHP functions|str_replace(),609
 str_replace() PHP function,609
-PHP functions|trim() function,609
+PHP functions|trim(),609
 trim() PHP function,609
-PHP function|file_get_contents(),609
+PHP functions|file_get_contents(),609
 file_get_contents() PHP function,609
 transport packages|validators,609
 validators (transport packages),609
@@ -4013,13 +4148,13 @@ package attributes for transport packages,615
 setting|package attributes for transport packages,615
 PHP functions|file_get_contents(),615
 file_get_contents() PHP function,615
-transport packages|interacting with the user in,616-619
-interacting with the user in transport packages,616-619
-users|interacting with in transport packages,616-619
+transport packages|interacting with the user in,616-620
+interacting with the user in transport packages,616-620
+users|interacting with in transport packages,616-620
 user.input.html file,616
 files|user.input.html (transport packages),616
-install.script.php file,617
-files|install.script.php (transport packages),617
+install.script.php file,616-620
+files|install.script.php (transport packages),616-620
 methods|log() (transport packages),617
 log() method (transport packages),617
 transport packages|log() method,617
@@ -4048,7 +4183,7 @@ file validators in transport packages,619
 transport packages|validate() method,620
 validate() method (transport packages),620
 transport packages|PHP validators,619-620
-PHP validators in transport packages,619-620
+PHP|validators in transport packages,619-620
 xPDOTransport::ABORT_ON_VEHICLE_FAIL constant,620
 constants|xPDOTransport::ABORT_ON_VEHICLE_FAIL,620
 transport packages|aborting,620
@@ -4140,7 +4275,8 @@ MyComponent example transport package build script,,625
 build scripts|MyComponent example,,625
 transport packages|MyComponent example script,,625
 GetMyComponent add-on package,,625
-Evolution|transport packages in,626
+Evolution|transport packages,626
+MODX Evolution|transport packages,626
 transport packages in Evolution,626
 
 #Appendix
@@ -4196,14 +4332,14 @@ methods|getCollection(),4-5
 getCollection() method,4-5
 methods|newQuery(),4
 xPDO queries|newQuery() method,4
-newQuery() method for xPDO queries,4
+newQuery() method,4
 methods|where() for xPDO queries,4
 where() method for xPDO queries,4
-queries|xPDO where() method,4
+queries|where() method,4
 xPDO queries|where() method,4
 methods|sortby() for xPDO queries,5
 sortby() method for xPDO queries,5
-queries|xPDO sortby() method for,5
+queries|sortby() method,5
 xPDO queries|sortby() method,5
 methods|getCollectionGraph(),5-6
 getCollectionGraph() method,5-6
@@ -4459,8 +4595,8 @@ methods|handleRequest(),
 handleRequest() method,
 methods|hasPermission(),
 hasPermission() method,
-methods|initialize(),
-initialize() method,
+methods|initialize() (MODX),
+initialize() method (MODX),
 methods|insideManager(),
 insideManager() method,
 methods|invokeEvent(),
@@ -4486,7 +4622,7 @@ https URL,
 full URL,
 absolute URL,
 $_GET parameters,
-parameters|$_GET
+parameters (with $_GET)
 variables|$_GET,
 $_GET variable,
 methods|mergeChunkContent(),
@@ -4564,7 +4700,6 @@ unsetPlaceholders() method,
 #modUser
 modUser class,26-27
 classes|modUser,26-27
-modUser class methods,26-27
 methods|modUser class,26-27
 methods|user class,26-27
 user|class methods,26-27
@@ -4614,7 +4749,7 @@ renderOutput() method,
 
 PHP primer,
 tutorials|PHP,
-PHP tutorial,
+PHP|tutorial,
 tutorials|Hello World,
 Hello World tutorial,
 PHP|comments,
@@ -4658,14 +4793,18 @@ smart quotes in PHP,
 PHP|pasting code into,
 pasting code into in PHP,
 PHP|operators,
-operators in PHP,
+operators|PHP
 PHP|arithmetic operators,
+operators|arithmetic (PHP),
 arithmetic operators in PHP,
 PHP|assignment operators,
+operators|assignment (PHP),
 assignment operators in PHP,
 PHP|comparison operators,
+operators|comparison (PHP),
 comparison operators in PHP,
 PHP|logical operators,
+operators|logical (PHP),
 logical operators in PHP,
 PHP|conditionals,
 conditionals in PHP,
@@ -4674,6 +4813,7 @@ if statement in PHP,
 PHP|switch statement,
 switch statement in PHP,
 PHP|ternary operator,
+operators|ternary (PHP),
 ternary operator in PHP,
 PHP|arrays,
 arrays in PHP,
@@ -4738,7 +4878,7 @@ PHP functions|str_replace(),
 str_replace() PHP function,
 PHP functions|str_ireplace(),
 str_ireplace() PHP function,
-PHP functions|array()s,
+PHP functions|array(),
 array functions in PHP,
 PHP functions|count(),
 count() PHP function,
@@ -4746,7 +4886,7 @@ PHP functions|explode(),
 explode() PHP function,
 PHP functions|implode(),
 implode() PHP function,
-PHP file functions,
+PHP|file functions,
 file functions in PHP,
 PHP functions|file_exists(),
 file_exists() PHP function,
@@ -4810,7 +4950,7 @@ error log,
 MODX|error log,
 
 #MODX Objects reference
-
+MODX Objects reference,
 MODX|objects reference,
 MODX|resource object reference,
 resources|object reference,
@@ -5141,8 +5281,9 @@ system events|OnRichTextEditorInit,
 OnRichTextEditorInit system event,
 system events|OnRichTextBrowserInit,
 OnRichTextBrowserInit system event,
-modules|manager system events,
-system events|module events,
+modules|manager system events (Evolution),
+Evolution|module manager system events,
+system events|module events (Evolution),
 system events|OnModFormPrerender,
 OnModFormPrerender system event,
 system events|OnModFormRender,
