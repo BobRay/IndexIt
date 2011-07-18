@@ -81,7 +81,10 @@ public function pageSort(&$pages) {
                     //natsort($p);
                     $s = implode(', ' , $p);
                     // echo "\n    " . $subHead->heading . ', ' . $s;
-                    fwrite($fp,"\n    " . $subHead->heading . ', ' . $s);
+                    $d = substr($subHead->heading,0,1) == '('? '': ', ';
+                    $pfx = "\n    ";
+                    //fwrite($fp,"\n    " . $subHead->heading . ', ' . $s);
+                    fwrite($fp,$pfx . $subHead->heading . $d . $s);
                 }
             }
         }
