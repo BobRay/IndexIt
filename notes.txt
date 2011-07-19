@@ -5,3 +5,8 @@ Search:
 ([,-])([0-9]*)
 
 Replace:$1A$2
+
+Move {core_path}
+
+
+line ending transforms
