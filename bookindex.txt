@@ -338,7 +338,7 @@ page-not-found page,50
 file-not-found page,50
 BaseTemplate,49
 MODX|BaseTemplate,49
-changing the site name,49
+changing|the site name,49
 site_name system setting,49
 system settings|site_name,49
 MODX|site name,49
@@ -1024,7 +1024,7 @@ creating|documents,136
 resources|page settings tab,136
 page settings,136
 Create/Edit Resource panel,135-154
-resource fields quick reference,138
+resource fields|quick reference,138-154
 site_content table,137
 resources|site_content table,137
 database|site_content table,137
@@ -1231,6 +1231,7 @@ link tags|scheme property,163
 link tags|context property,163
 language tags,163-164
 tags|language,163-164
+changing|language strings used in the Manager,164
 tags|nested,164-165
 nested tags,164-165
 index.php file|MODX,165
@@ -1640,7 +1641,7 @@ radio options template variable input type,212
 template variables|resource list input type,212
 resource list template variable input type,212
 template variables|rich text input type,213
-rich text template variable input type,213
+rich text|template variable input type,213
 template variables|text input type,213
 text template variable input type,213
 template variables|textarea input type,213
@@ -1665,7 +1666,7 @@ template variables|image output type,217
 image template variable output type,217
 troubleshooting|image TVs,217
 template variables|rich text output type,217
-rich text template variable output type,217
+rich text|template variable output type,217
 template variables|string output type,218
 string template variable output type,218
 template variables|URL output type,218
@@ -2292,6 +2293,7 @@ save() method,343-344
 methods|remove(),344
 remove() method,344
 current resource|changing alias in code,344
+changing|current resource alias in code,344
 resources|changing alias in code,344
 removing|MODX objects in code,344
 deleting|MODX objects in code,344
@@ -2501,7 +2503,7 @@ modx.user.username placeholder,381
 placeholders|modx.user.username,381
 admin Super user,382
 user profile,382-384
-Profile related object|382-384
+Profile related object,382-384
 related objects|Profile,382-384
 database|retrieving user profiles from,382-383
 retrieving|user profiles from database,382-383
@@ -2544,7 +2546,7 @@ users|related to current resource,387-389
 current resource|users related to,387-389
 current resource|related objects,387-389
 current resource|creator,388
-retrieving|current resource related object,388
+retrieving|current resource related objects,388
 related objects|CreatedBy,388
 CreatedBy related object,388
 current resource|editor,388
@@ -2859,7 +2861,7 @@ MODX Evolution|runSnippet() method,416
 runSnippet() method in Evolution,416
 Evolution|retrieving system settings,416
 MODX Evolution|retrieving system settings,416
-retrieving system settings in Evolution,416
+retrieving|system settings in Evolution,416
 Evolution|lexicon strings,416
 MODX Evolution|lexicon strings,416
 lexicon strings|in Evolution,416
@@ -3440,7 +3442,7 @@ documents|edit_document permission,465
 resources|edit_document permission,465
 edit_document permission,465
 permissions|save_document,465
-resources|save_document,465
+resources|save_document permission,465
 documents|save_document permission,465
 save_document permission,465
 object policies (editing),465-466
@@ -3578,7 +3580,6 @@ roles|member,475
 access policies|Load Only,475
 policies|Load Only,475
 Load Only policy,475
-registering users,476-480
 users|registering,476-480
 Register snippet,476-480
 snippets|Register,476-480
@@ -3665,8 +3666,8 @@ hasPermission() method,485
 current user,485
 security|hasPermission() method,485
 Private Document 2 resource,486
-documents|Private Document 2,486
-resources|Private Document 2,486
+documents|Private Document2,486
+resources|Private Document2,486
 custom permissions|creating,486-487
 creating|custom permissions,486-487
 access policies|FeViewTemplate,486-487
@@ -3778,8 +3779,10 @@ lexicon keys|for Top Menu items,504-505
 Top Menu|renaming items,504-505
 renaming|Top Menu items,504-505
 components|changing menu item for,504-505
+changing|Top Menu items,504-505
+changing|language strings used in the Manager,164
 Components|Top Menu item,504-505
-changing component menu items,504-505
+changing|component menu items,504-505
 Batcher add-on component,504-507
 Actions tree,505-506
 Top Menu|Actions tree,505-506
@@ -5686,7 +5689,7 @@ OnCategoryBeforeRemove system event,712
 system events|OnCategoryRemove,712
 OnCategoryRemove system event,712
 
-rich text manager system events,712
+rich text|manager system events,712
 system events|rich text manager events,712
 system events|OnRichTextEditorRegister,712
 OnRichTextEditorRegister system event,712
