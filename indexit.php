@@ -15,7 +15,7 @@
 
 class AllHeads {
     public $mainHeads; /* array of mainHead objects */
-   
+
     
     public function __construct()
     {
@@ -50,7 +50,7 @@ public function pageSort(&$pages) {
 }
 
 
-    public function display($fp) {
+    public function display($fp, $html) {
         MainHead::sortByProp($this->mainHeads,'heading');
         $letter = 'A';
 
@@ -59,19 +59,31 @@ public function pageSort(&$pages) {
             if ($l != $letter){
                 if (preg_match("/[A-Z\s]/i", $l)) {
                     //echo "\n\n" . $l;
-                    fwrite($fp,"\n\n" . $l);
+                    if (!$html) {
+                        fwrite($fp,"\n\n" . $l);
+                    } else {
+
+                    }
                 }
                 $letter = $l;
             }
             // echo "\n" . $mainHead->heading;
-            fwrite($fp,"\n" . $mainHead->heading);
+            if (!$html) {
+                fwrite($fp,"\n" . $mainHead->heading);
+            } else {
+
+            }
             $p = $mainHead->getPages();
             if (!empty($p)) {
                 // natsort($p);
                 $this->pageSort(&$p);
                 $s = implode(', ' , $p);
                 // echo ', ' . $s;
-                fwrite($fp, ', ' . $s);
+                if (!$html) {
+                    fwrite($fp, ', ' . $s);
+                } else {
+
+                }
             }
             if (!empty ($mainHead->subheads)) {
                 SubHead::sortByProp($mainHead->subheads,'heading');
@@ -85,7 +97,9 @@ public function pageSort(&$pages) {
                     $pfx = "\n    ";
                     // $pfx = "~";
                     //fwrite($fp,"\n    " . $subHead->heading . ', ' . $s);
-                    fwrite($fp,$pfx . $subHead->heading . $d . $s);
+                    if (!$html) {
+                        fwrite($fp,$pfx . $subHead->heading . $d . $s);
+                    }
                 }
             }
         }
@@ -254,8 +268,13 @@ $mtime = explode(" ", $mtime);
 $mtime = $mtime[1] + $mtime[0];
 $tstart = $mtime;
 
+$html = 0;
 $infile = 'bookindex.txt';
-$outfile = 'final.txt';
+if (!$html) {
+    $outfile = 'final.txt';
+} else {
+    $outfile = 'final.html';
+}
 $fp = fopen($infile,'r');
 
 if ($fp == false){
@@ -276,7 +295,7 @@ $fp = fopen($outfile,'w');
 if ($fp == false){
    return "File Not Found";
                              }
-$allHeads->display($fp);
+$allHeads->display($fp, $html);
 
 fclose($fp);
 $mtime= microtime();
