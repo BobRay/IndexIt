@@ -11,3 +11,13 @@ Move {core_path}
 
 line ending transforms
 
+Finds all and only $variables:
+    \$.[A-Za-z->_'\[\]]*[^,\s]
+
+Finds functions and methods:
+    [\*a-zA-Z_-]*\(\)
+
+Output modifiers (use $1):
+    ([a-zA-Z_-]*)\s\(output modifier\)
+    output modifiers\|([a-zA-Z_-]*)
+

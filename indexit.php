@@ -83,7 +83,7 @@ public function pageSort(&$pages) {
                     // echo "\n    " . $subHead->heading . ', ' . $s;
                     $d = substr($subHead->heading,0,1) == '('? '': ', ';
                     $pfx = "\n    ";
-                    $pfx = "~";
+                    // $pfx = "~";
                     //fwrite($fp,"\n    " . $subHead->heading . ', ' . $s);
                     fwrite($fp,$pfx . $subHead->heading . $d . $s);
                 }
