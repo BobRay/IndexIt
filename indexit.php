@@ -54,15 +54,32 @@ public function pageSort(&$pages) {
         MainHead::sortByProp($this->mainHeads,'heading');
         $letter = 'A';
 
+        if ($html) {
+                $htmlHead = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<p class="IndexTitle">Index</p>
+<hr class="IndexTitleHr" size="2" width="90%" align="left" />
+';
+                fwrite($fp,$htmlHead);
+            }
+
         foreach ($this->mainHeads as $mainHead) {
             $l = strtoupper(substr($mainHead->heading,0,1));
+
+
             if ($l != $letter){
                 if (preg_match("/[A-Z\s]/i", $l)) {
                     //echo "\n\n" . $l;
                     if (!$html) {
                         fwrite($fp,"\n\n" . $l);
                     } else {
-
+                        fwrite($fp,'<p class="IndexLetterHeading">' . $l . "</p> \n" .
+'<hr class="IndexLetterHeadingHr"  size="2"  width="40%" align="left" />' . "\n");
                     }
                 }
                 $letter = $l;
@@ -71,8 +88,9 @@ public function pageSort(&$pages) {
             if (!$html) {
                 fwrite($fp,"\n" . $mainHead->heading);
             } else {
-
+                fwrite($fp,"\n" . '<p class="MainHead"><span class = "MainHeadText">' . $mainHead->heading . '</span>');
             }
+
             $p = $mainHead->getPages();
             if (!empty($p)) {
                 // natsort($p);
@@ -82,6 +100,7 @@ public function pageSort(&$pages) {
                 if (!$html) {
                     fwrite($fp, ', ' . $s);
                 } else {
+                    fwrite($fp,'<span class="MainHeadNumbers">' . ', ' . $s . '</span></p>');
 
                 }
             }
@@ -94,14 +113,25 @@ public function pageSort(&$pages) {
                     $s = implode(', ' , $p);
                     // echo "\n    " . $subHead->heading . ', ' . $s;
                     $d = substr($subHead->heading,0,1) == '('? '': ', ';
-                    $pfx = "\n    ";
+                    if (!$html) {
+                        $pfx = "\n    ";
+                    } else {
+                        $pfx = '';
+                    }
                     // $pfx = "~";
                     //fwrite($fp,"\n    " . $subHead->heading . ', ' . $s);
                     if (!$html) {
                         fwrite($fp,$pfx . $subHead->heading . $d . $s);
+                    } else {
+                        fwrite($fp, "\n" . $pfx .'<p class=subhead><span class="SubHeadText">'. $subHead->heading . $d .
+                                    '</span><span class="SubHeadNumbers">' . $s . '</span></p>');
                     }
                 }
             }
+        }
+        if ($html) {
+            fwrite($fp,'</body>
+</html>');
         }
     }
 
@@ -268,7 +298,7 @@ $mtime = explode(" ", $mtime);
 $mtime = $mtime[1] + $mtime[0];
 $tstart = $mtime;
 
-$html = 0;
+$html = 1;
 $infile = 'bookindex.txt';
 if (!$html) {
     $outfile = 'final.txt';

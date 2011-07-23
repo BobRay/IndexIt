@@ -617,7 +617,9 @@ MODX|Manager trees,99-109
 working with|the Resource tree,100-104
 Resource tree,100-104
 Manager|Resource tree,100-104
-admin Super user,101
+admin Super User,100
+troubleshooting|disappearing resources,100
+admin Super User,101
 Resource tree|icons,101
 icons|Resource tree,101
 Resource tree|sorting,101-102
@@ -682,7 +684,7 @@ categories,105
 element categories,105
 categories|creating,105
 categories|placing elements in,105
-admin Super user,106
+admin Super User,106
 right-click menu|Element tree,106
 Element tree|right-click menu,106
 Element tree|Create New Element Here,106
@@ -1249,6 +1251,7 @@ MODX|tags,154-176
 using|tags in documents,154-167
 uses for|tags,154-167
 tags|uses for,154-167
+admin Super User|detecting in tags,156
 documents|using tags in,154-167
 tags|using in documents,154-167
 MODX|tags in documents,154-167
@@ -1985,6 +1988,8 @@ invoking system events,289-290
 system events|firing,289-290
 system events|invoking,289-290
 system events|OnWebPagePrerender,290
+$modx->resource variable|in plugins,290
+variables|$modx->resource,290
 OnWebPagePrerender system event,290
 modresponse.class.php file,290
 files|modresponse.class.php,290
@@ -2143,12 +2148,11 @@ database|retrieving chunks from,311
 retrieving|chunks from database,311
 database|retrieving users from,311
 retrieving|users from database,311
-database|retrieving resource fields from,311
-retrieving|resource fields from database,311
-current resource|retrieving in code,311
-$modx->resource variable,311
-variables|$modx->resource,311
-retrieving|current resource in code,311
+current resource|retrieving in code,312
+$modx->resource variable,312-313
+variables|$modx->resource,312-313
+retrieving|current resource in code,312-313
+$modx->resource variable|reference variable for,312-313
 $resource variable assignment by reference,312-313
 variables|$resource assignment by reference,312-313
 variables|assignment by reference,312-313
@@ -2157,8 +2161,6 @@ reference variables,312-313
 =& operator (PHP),312
 operators|=& (PHP),312
 PHP operators|=&,312
-$modx->resource variable,312-313
-variables|$modx->resource,312-313
 methods|getCollection(),313
 getCollection() method,313
 methods|getIterator(),313
@@ -2168,6 +2170,7 @@ query criteria,311-313
 xPDO queries|criteria,311-313
 methods|newQuery(),313
 newQuery() method,313
+xPDO queries|newQuery() method,313
 methods|getOption(),314
 getOption() method,314
 methods|getChildIds(),315
@@ -2222,11 +2225,13 @@ related objects|Children,321
 Children related object,321
 related objects|Parent,321
 Parent related object,321
-$modx->user variable,322
-variables|$modx->user,322
+$modx->user variable|using get() with,323
+variables|$modx->user,323
 related objects|Profile,322-325
-Profile related object,322-325
+Profile related object|retrieving with getObjectGraph(),322-325
+retrieving|user profile with getObjectGraph(),322-325
 user profile,322-325
+user profile|retrieving with getObjectGraph(),322-325
 graph methods,321-325
 methods|graph,321-325
 methods|getObjectGraph(),321-324
@@ -2247,13 +2252,11 @@ related objects|TemplateVars,324
 TemplateVars related object,324
 variables|$xpdo,325
 $xpdo variable,325
-related objects|Profile,325
-Profile related object,325
 object methods,326-332
 methods|object,326-332
 methods|get(),327
 get() method,327
-$modx->user variable,327
+$modx->user variable|using get() with,327
 variables|$modx->user,327
 current user,327
 current resource|retrieving in code,327-328
@@ -2261,8 +2264,9 @@ current resource|getting ID of in code,327-328
 retrieving|ID of current resource,327-328
 current resource|children,315
 retrieving|current resource in code,327-328
-$modx->resource variable,327-328
+$modx->resource variable|using get() with,327
 variables|$modx->resource,327-328
+$modx->resource variable|using toArray() with,327
 methods|getContent(),328
 getContent() method,328
 methods|toArray(),328
@@ -2293,7 +2297,8 @@ current resource|retrieving TV values for,331
 methods|joinGroup() (user object),332
 joinGroup() method (user object),332
 users|joinGroup() method,332
-$modx->resource variable,332
+$modx->resource variable|using joinGroup() with,332
+$modx->resource variable|using leaveGroup() with,332
 variables|$modx->resource,332
 assigning|users to user groups in code,332
 resources|joinGroup() method,332
@@ -2301,6 +2306,8 @@ assigning|resources to resource groups in code,332
 joinGroup() method (resource object),332
 methods|leaveGroup() (user object),332
 methods|leaveGroup() (resource object),332
+$modx->user variable|using joinGroup() with,332
+$modx->user variable|using leaveGroup() with,332
 leaveGroup() method (user object),332
 leaveGroup() method (resource object),332
 removing|users from user groups in code,332
@@ -2358,8 +2365,9 @@ addOne() method,341-342
 methods|addMany(),342
 addMany() method,342
 related objects|Profile,341
-Profile related object,341
-user profile,341
+Profile related object|creating in code,341-342
+user profile|creating in code,341-342
+creating|user profile in code,341-342
 md5,342
 PBKDF2,342
 user|passwords in code,342
@@ -2376,6 +2384,8 @@ methods|remove(),344
 remove() method,344
 current resource|changing alias in code,344
 changing|current resource alias in code,344
+$modx->resource variable|using set() with,344
+$modx->resource variable|using save() with,344
 resources|changing alias in code,344
 removing|MODX objects in code,344
 deleting|MODX objects in code,344
@@ -2389,7 +2399,8 @@ $key and $value pairs,344-345
 variables|$key,344-345
 variables|$value,344-345
 $value variable,344-345
-$modx->user variable,345
+$modx->user variable|using get() with,345
+$modx->user variable|setting placeholders for,345
 variables|$modx->user,345
 methods|setPlaceholders(),346-347
 setPlaceholders() method,346-347
@@ -2443,6 +2454,12 @@ tutorials|working with resources in code,352-365
 working with|resources in code tutorial,352-365
 $modx->resource variable,353-355
 variables|$modx->resource,353-355
+$modx->resource variable|using get() with,355
+get() method,355
+methods|get(),355
+toArray() method,355
+methods|toArray(),355
+$modx->resource variable|using toArray() with,355
 variables|$resource,354
 $resource variable,354
 methods|getObject(),354
@@ -2468,6 +2485,8 @@ getParentIds() method,358
 resource fields|parent (Resource Parent),358
 parent (Resource Parent) resource field,358
 methods|getOne(),358-360
+$modx->resource variable|using getOne() with,359
+$modx->resource variable|using get() with,359
 getOne() method,358-360
 methods|getMany(),359-361
 getMany() method,359-361
@@ -2483,6 +2502,7 @@ retrieving|children of current resource,360-361
 database|retrieving related objects,359-361
 methods|getCollection(),362-363
 sorting|in getCollection(),362-361
+$modx->resource variable|using getMany() with,359
 getCollection() method,362-363
 where() method for xPDO queries,362-363
 queries|where() method,362-363
@@ -2490,6 +2510,7 @@ xPDO queries|where() method,362-363
 query criteria,363
 criteria for queries,363
 methods|getObjectGraph(),363-364
+$modx->resource variable|using getObjectGraph() with,363-364
 getObjectGraph() method,363-364
 related objects|Parent,363
 Parent related object,363
@@ -2536,12 +2557,16 @@ variables|$scriptProperties,374
 $scriptProperties variable,374
 PHP functions|array_merge(),375
 array_merge() PHP function,375
+$modx->resource variable|using getTVValue() with,376
+current resource|retrieving TV values for,376
 template variables|retrieving in code,377-379
 snippets|retrieving template variables,377-379
 database|retrieving template variables from,377-379
 retrieving|template variables from database,377-379
 methods|getTVValue(),378
+$modx->resource variable|using getTVValue() with,378
 getTVValue() method,378
+current resource|retrieving TV values for,378
 resources|getTVValue() method,378
 raw content of template variables,376
 displaying|template variables,375-376
@@ -2579,10 +2604,13 @@ current user,381-383
 working with|the current user in code,381-383
 current user,381-383
 $modx->user variable,381-389
+$modx->user variable|using get() with,381-382
 variables|$modx->user,381-389
 retrieving|current user,381-383
-related objects|Profile,383-383
-Profile related object,383-383
+related objects|Profile,382-383
+Profile related object|retrieving with getOne(),382
+user profile|retrieving with getOne(),382
+retrieving|user profile with getOne(),382
 modUser object,381
 username user field,381
 user fields|username,381
@@ -2600,12 +2628,14 @@ modx.user.id placeholder,381
 placeholders|modx.user.id,381
 modx.user.username placeholder,381
 placeholders|modx.user.username,381
-admin Super user,382
+admin Super User|previewing from Manager,382
 user profile,382-384
 Profile related object,382-384
 related objects|Profile,382-384
 database|retrieving user profiles from,382-383
 retrieving|user profiles from database,382-383
+Profile related object|setting placeholders for,383
+user profile|setting placeholders for,382-383
 placeholders|setting in code,383-384
 setting|placeholders in code,383-384
 methods|getOne(),384
@@ -2613,6 +2643,9 @@ getOne() method,348
 methods|toPlaceholders(),384
 toPlaceholders() method,384
 methods|getObjectGraph(),384
+$modx->user variable|using getOne() with,384
+$modx->user variable|setting placeholders for,384
+variables|$modx->user,384
 current user,384
 getObjectGraph() method,384
 PHP functions|array_merge(),384
@@ -2627,13 +2660,17 @@ authenticating users,384-385
 users|checking login status in code,384-385
 users|logged in or not,469
 current user,469
+$modx->user variable|checking login status with,385
+$modx->user variable|using isMember() with,385
+variables|$modx->user,385
 redirecting users|on login,385
 users|redirecting on login,385
-users|checking user group membership in code,386-386
-user groups|checking membership in code,386-386
-methods|isMember(),386-386
-isMember() method,386-386
-users|isMember() method,386-386
+users|checking user group membership in code,386-387
+user groups|checking membership in code,386-387
+methods|isMember(),386-387
+isMember() method,386-387
+users|isMember() method,386-387
+$modx->user variable|checking user group membership with,386
 tutorials|using isMember() to select content,387
 using|isMember() to select content tutorial,387
 tutorials|StudentTeacher,387
@@ -2652,6 +2689,8 @@ users|related to current resource,387-389
 current resource|users related to,387-389
 current resource|related objects,387-389
 current resource|creator,388
+$modx->user variable|using get() with,388-389
+variables|$modx->user,388-389
 retrieving|current resource related objects,388
 related objects|CreatedBy,388
 CreatedBy related object,388
@@ -2678,7 +2717,9 @@ toPlaceholders() method,388-389
 PHP functions|array_merge(),388
 array_merge() PHP function,388
 related objects|Profile,388-389
-Profile related object,388-389
+Profile related object|retrieving with getObjectGraph(),388-389
+user profile|retrieving with getObjectGraph(),388-389
+retrieving|user profile with getObjectGraph(),388-389
 users|related to another resource,389-391
 resources|users related to,389-391
 methods|getObject(),390
@@ -2699,6 +2740,8 @@ getCollectionGraph() method,391
 methods|getCollectionGraph(),391
 related objects|Profile,391-397
 Profile related object,391-397
+Profile related object|retrieving with getOne(),392
+retrieving|user profile with getOne(),392
 database|retrieving users from,392-393
 retrieving|users from database,392-393
 methods|getCollection(),392-393
@@ -2707,9 +2750,13 @@ methods|getOne(),392
 getOne() method,392
 Peoples add-on component,392
 methods|newQuery(),393
+xPDO queries|newQuery() method,393
 newQuery() method,393
 methods|getSelectColumns(),393
 getSelectColumns() method,393
+Profile related object|retrieving with getCollection(),393
+user profile|retrieving with getCollection(),393
+retrieving|user profile with getCollection(),393
 methods|innerJoin(),393
 innerJoin() method,393
 queries|innerJoin() method, 393
@@ -2825,8 +2872,9 @@ setValue() method (TV),404
 creating|users in code,404
 users|creating in code,404
 related objects|Profile,404
-Profile related object,404
-user profile,404-405
+Profile related object|creating in code,404
+user profile|creating in code,404-405
+creating|user profile in code,404-405
 methods|newObject(),404
 newObject() method,404
 methods|set(),404
@@ -2994,7 +3042,7 @@ files|MODX config,420-423
 files|config.inc.php,420-423
 MODX|config file,420-423
 MODX|root directory,420
-admin Super user,420
+admin Super User|changing username for security,420
 directories|root,420
 root directory,420
 directories|manager,420
@@ -3118,7 +3166,7 @@ contexts|web,432
 contexts|alt,432
 context settings|default_template,432
 default_template context setting,432
-admin Super user,433
+admin Super User|hiding resources from others,433
 contexts|security permissions,433
 security|permissions for contexts,433
 permissions|for contexts,433
@@ -3150,7 +3198,9 @@ hiding|resources in the Manager,438-439
 Access Control Lists|entries,438
 ACL entries,438
 resource groups,438
-admin Super user,439
+admin Super User|accidentally hiding resources from,439
+admin Super User|hiding resources from others,439
+troubleshooting|disappearing resources,439
 elements|protected,439
 protected|elements,439
 protected|contexts,439
@@ -3196,7 +3246,8 @@ security|Access Control Lists,441
 security|elements,442-453
 MODX|security system elements,442-453
 Access Control Lists,449-454
-admin Super user,442-444
+admin Super User,442-444
+admin Super User|default ACL entries for,442
 security|default settings,442
 default security settings,442
 permissions|default settings,442
@@ -3232,6 +3283,8 @@ access policies|Element,443
 access policies|Load Only,443
 Load Only policy,443
 access policies|Load List and View,444
+admin Super User|accidentally removing permissions for,444
+troubleshooting|admin Super User permissions,444
 policies|Load List and View,444
 Load List and View policy,444
 duplicating access policies,444
@@ -3307,7 +3360,7 @@ Create User Group dialog,447
 security|creating user groups,447
 creating|user groups,447
 dialogs|Create User Group,447
-admin Super User,447
+admin Super User|advisability of adding to user groups,447
 users|adding to user groups,447
 users|removing from user groups,447-448
 removing|users from user groups,447-448
@@ -3364,7 +3417,10 @@ new_user permission,449
 security|minimum role,450-453
 roles|minimum,450-453
 security|minimum role for context access ACL entries,449
-admin Super user|minimum role of,450
+admin Super User|minimum role of,450
+admin Super User|authority level,450
+admin Super User|inheriting permissions,450
+admin Super User|advisability of adding to user groups,450
 minimum role|for context access ACL entries,450-451
 roles|minimum role for context access ACL entries,450-451
 access policies|for context access ACL entries,450-451
@@ -3454,7 +3510,8 @@ web context,457
 access policies|EditorAdmin,457
 policies|EditorAdmin,457
 EditorAdmin policy,457
-admin Super user,458-459
+admin Super User|accidentally giving users rights as,457
+admin Super User|hiding resources from others,458-459
 access policies|EditorAdmin,458
 policies|EditorAdmin,458
 Editor role,458
@@ -3551,6 +3608,7 @@ EditorElement policy,463
 tutorials|limiting permissions in the Manager,464-467
 limiting permissions in the Manager tutorial,464-467
 security|limiting permissions in the Manager tutorial,464-467
+admin Super User|accidentally giving users rights as,464-465
 permissions|access_permissions,465
 access_permissions permission,465
 permissions|element_tree,465
@@ -3584,13 +3642,14 @@ undelete permission,466
 resources|remove permission,466
 permissions|remove,466
 remove permission,466
+admin Super User|restricting permission to,466
 permissions|tree_root_id,466-467
 tree_root_id|permission,466-467
 tutorials|tree_root_id,466-467
 tree_root_id|tutorial,466-467
 Create New Setting dialog,466-467
 dialogs|Create New Setting,466-467
-admin Super user,467
+admin Super User|tree_root_id for,467-468
 files|filemanager_path setting,467
 permissions|filemanager_path,467
 filemanager_path permission,467
@@ -3598,6 +3657,7 @@ tutorials|filemanager_path,467
 filemanager_path tutorial,467
 permissions|tree_root_id,468
 tree_root_id|permission,468
+admin Super User|previewing from Manager,468
 filemanager_path permission,468
 tutorials|filemanager_path,468
 controlling|access in the front end,468-474
@@ -3610,7 +3670,8 @@ security|hiding pages with a snippet tutorial,468-470
 snippets|hiding pages with,468-470
 uses for|snippets,468
 snippets|uses for,468
-$modx->user variable,469
+$modx->user variable|checking login status with,469
+$modx->user variable|using hasSessionContext() with,469
 variables|$modx->user,469
 methods|hasSessionContext(),469
 hasSessionContext() method,469
@@ -3761,6 +3822,9 @@ users|redirecting based on login status,481
 users|redirecting with sendRedirect(),481
 redirecting users|with sendRedirect(),481
 checking user's login status,481
+$modx->user variable|checking login status with,481
+$modx->user variable|using hasSessionContext() with,481
+variables|$modx->user,481
 methods|hasSessionContext(),481
 hasSessionContext() method,481
 methods|makeUrl(),481
@@ -3773,7 +3837,7 @@ HiddenTVs resource group,482
 resource groups|HiddenTVs,482
 Create Resource Group dialog,482
 dialogs|Create Resource Group,482
-admin Super user,483
+admin Super User|hiding template variables from others,483-484
 access policies|Resource,483
 policies|Resource,483
 Resource policy,483
@@ -3844,6 +3908,9 @@ Member template,490-491
 templates|Member,490-491
 Members resource,489
 resources|Member,489
+$modx->user variable|checking login status with,490
+$modx->user variable|using hasSessionContext() with,490
+variables|$modx->user,490
 redirecting users|based on login status,490
 users|redirecting based on login status,490
 users|redirecting with sendRedirect(),490
@@ -3969,7 +4036,10 @@ permissions|view_user,510
 view_user permission,510
 my_view_user permission,510
 permissions|my_view_user,510
-admin Super user,511-513
+admin Super User|hiding menu items from others,510-513
+admin Super User|custom menu for,510-513
+admin Super User|accidentally hiding menu items from,512
+troubleshooting|disappearing menu items,512
 custom menus,513
 menus (custom),513
 user groups|custom menus for,513
@@ -4006,6 +4076,7 @@ constraints in form customization,515
 form customization|sets,515
 sets in form customization,516
 form customization|rule sets,516
+admin Super User|form customization rules and,516
 rule sets in form customization,516
 form customization|profiles,516
 profiles in form customization,516
@@ -4019,6 +4090,8 @@ Create New Set dialog (form customization),518
 dialogs|Create New Set dialog (form customization),518
 Add User Group dialog (form customization),518
 dialogs|Add User Group dialog (form customization),518
+admin Super User|accidentally hiding TVs from,519
+troubleshooting|disappearing TVs,519
 tutorials|hiding a TV with form customization,520
 hiding|template variables with form customization tutorial,520
 template variables|hiding with form customization,520
@@ -4042,11 +4115,13 @@ constraint field (form customization),518
 fields|constraint field in form customization,518
 fields|constraint field in form customization,521
 constraint field (form customization),521
+admin Super User|accidentally hiding TVs from,521
+troubleshooting|disappearing TVs,521
+
 form customization|creating new tabs with,522
 creating|new tabs with form customization,522
 Create/Edit Resource panel|modx-panel-resource-tv tab,522
 Create/Edit Resource panel|creating a new tab with form customization,522
-creating|new Create/Edit Resource panel tabs with form customization,522
 tutorials|creating new Create/Edit Resource panel tabs with form customization,522
 creating|new Create/Edit Resource panel tabs with form customization tutorial,522
 my-new-tab,522
@@ -4228,7 +4303,6 @@ using|SMTP with SPForm,550
 SMTP|using with SPForm,550
 http_referer variable,550
 $_SERVER['HTTP_REFERER'] variable,550
-variables|http_referer,550
 variables|$_SERVER['HTTP_REFERER'],550
 SPForm|takeMeBack property,550-551
 takeMeBack property for SPForm,550-551
@@ -4389,6 +4463,9 @@ FormIt|variables available in custom hooks,590
 custom hooks|variables available for FormIt,590
 FormItRetriever snippet,592
 snippets|FormItRetriever,592
+$modx->user variable|checking login status with,592
+$modx->user variable|using hasSessionContext() with,592
+variables|$modx->user,592
 custom preHooks for FormIt,591-593
 hooks|FormIt custom preHooks,591-593
 FormIt|custom preHooks,591-593
@@ -4402,8 +4479,9 @@ hooks|setValue() method (FormIt),592
 current user|592-593
 tutorials|ChangeEmail custom hook for FormIt,591-594
 ChangeEmail custom hook for FormIt tutorial,591-594
-$modx->user variable,593
-variables|$modx->user,593
+$modx->user variable|using get() with,592-593
+$modx->user variable|using getOne() with,592-593
+variables|$modx->user,592-593
 methods|setPlaceholder(),593
 setPlaceholder() method,593
 Evolution|installing add-on components,595
@@ -4647,6 +4725,7 @@ transport packages|validators,619-620
 transport packages|file validators,619
 file|validators (transport packages,619
 transport packages|validate() method,620
+admin Super User|restricting package installation to,620
 validate() method (transport packages),620
 transport packages|PHP validators,619-620
 PHP|validators in transport packages,619-620
@@ -4758,7 +4837,7 @@ methods|xPDO class,630-637
 #xPDO
 variables|$xpdo,629
 $xpdo variable,629
-variables|$,modx,629
+variables|$modx,629
 $modx variable,629
 methods|getObject(),629
 getObject() method,629
@@ -4881,6 +4960,7 @@ FILE constant,635
 log() method options,635
 methods|newObject(),635
 newObject() method,635
+xPDO queries|newQuery() method,635
 methods|newQuery(),636
 newQuery() method,636
 methods|prepare(),636
@@ -5515,6 +5595,7 @@ modUser object reference,694
 MODX|user profile object reference,695
 user profile|object reference,695
 modUserProfile object reference,695
+Profile related Object|object reference,695
 
 #SMTP
 
