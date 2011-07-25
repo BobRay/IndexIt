@@ -9,15 +9,72 @@ Replace:$1A$2
 Move {core_path}
 
 
-line ending transforms
+Finds @ bindings and @ signs
+    @[A-Z]*
 
 Finds all and only $variables:
     \$.[A-Za-z->_'\[\]]*[^,\s]
+
+Finds PHP operators:
+     ^[\=\&\+]+|\|[\=\&\+]+
+
+Finds all and only System Events (must be case-sensitive + regex):
+On[A-Z][a-zA-Z]*
+
 
 Finds functions and methods:
     [\*a-zA-Z_-]*\(\)
 
 Output modifiers (use $1):
-    ([a-zA-Z_-]*)\s\(output modifier\)
-    output modifiers\|([a-zA-Z_-]*)
+    [0-9a-zA-Z_-]*\s\(output modifier\)
+    output modifiers\|[!0-9a-zA-Z_-]*,
+
+    Undo:
+    output modifiers|custom
+    output modifiers|reference
+    output modifiers|string
+    output modifiers|conditional
+
+Finds file names
+
+
+    undo modx.
+
+
+
+    [^\s\|]+\.[^\s,\(0-9]+    (all files that don't start with a dot)
+    ^\.\S*    (all files that start with a dot at the beginning of a line)
+    \|\.[^\s,\(]* (all files that start with a dot after pipe -- mind the pipe)
+
+
+
+directories
+     skip
+
+resource fields
+
+Finds Constants, permissions, and settings (but also some functions and methods)
+
+[\{\}A-Za-z0-9:]+_[A-Za-z0-9_\{\}]+
+
+misses: non-underscore permissions (and settings?)
+Permissions:
+create
+edit
+list
+load
+remove
+save
+undelete
+publish
+unpublish
+view
+
+Settings:
+emailsender
+emailsubject
+
+Resource fields (use case).
+
+
 

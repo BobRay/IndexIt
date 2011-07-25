@@ -1,61 +1,97 @@
 
-!empty (output modifier), 172
-$_COOKIE variable, 699
-$_GET array, 528
-$_GET parameters, 646
-$_GET variable, 528, 646
-$_output variable in plugins, 300-301
-$_POST variable, 699
-$_SERVER['HTTP_REFERER'] variable, 550
-$_SESSION variable, 301, 699
-$cacheFlag variable, 631-632, 633, 699
-$classKey argument for getObject, 311-312
-$key and $value pairs, 344-345
-$modx variable, 310, 629, 699
-$modx->resource variable, 152, 311, 312-313, 318, 327-328, 332, 353-355, 387-388
-$modx->user variable, 318, 322, 327, 345, 381-389, 469, 481, 593
-$output variable (PHP), 656
-$output variable in snippets, 176, 272
-$resource variable, 354
-$resource variable assignment by reference, 312-313
-$resource variable in plugins, 297-298
-$scheme argument for makeUrl(), 646
-$scriptProperties array, 366-367, 374
-$scriptProperties variable, 366-367, 374
-$value variable, 344-345
-$xpdo variable, 310, 325, 405, 629
+!#empty~ (output modifier), 172
+#$_COOKIE~ variable, 699
+#$_GET~ array, 528
+#$_GET~ parameters, 646
+#$_GET~ variable, 528, 646
+#$_output~ variable in plugins, 300-301
+#$_POST~ variable, 699
+#$_SERVER['HTTP_REFERER']~ variable, 550
+#$_SESSION~ variable, 301, 699
+#$cacheFlag~ variable, 631-632, 633, 699
+#$classKey~ argument for getObject, 311-312
+#$key~ and #$value~ pairs, 344-345
+#$modx~ variable, 310, 629, 699
+#$modx->resource~ variable, 152, 312-313, 318, 353-355, 387-388
+    in plugins, 290
+    reference variable for, 312-313
+    using #get()~ with, 327, 355, 359
+    using #getMany()~ with, 359
+    using #getObjectGraph()~ with, 363-364
+    using #getOne()~ with, 359
+    using #getTVValue()~ with, 376, 378
+    using #joinGroup()~ with, 332
+    using #leaveGroup()~ with, 332
+    using #save()~ with, 344
+    using #set()~ with, 344
+    using #toArray()~ with, 327, 355
+#$modx->user~ variable, 318, 381-389, 481
+    checking login status with, 385, 469, 481, 490, 592
+    checking user group membership with, 386
+    setting placeholders for, 345, 384
+    using #get()~ with, 323, 327, 345, 381-382, 388-389, 592-593
+    using #getOne()~ with, 384, 592-593
+    using #hasSessionContext()~ with, 469, 481, 490, 592
+    using #isMember()~ with, 385
+    using #joinGroup()~ with, 332
+    using #leaveGroup()~ with, 332
+#$output~ variable (PHP), 656
+#$output~ variable in snippets, 176, 272
+#$resource~ variable, 311-313, 313, 313, 354, using getCollection() with, using getObject() with
+    assignment by reference, 312-313
+    in plugins, 297-298
+    in transport packages, 622
+    using #fromArray()~ with, 638
+    using #get()~ with, 320, 355, 637
+    using #getContent()~ with, 651
+    using #getMany()~ with, 318, 321
+    using #getObject()~ with, 318, 320, 637
+    using #getObjectGraph()~ with, 323, 363
+    using #getOne()~ with, 318, 321, 390
+    using #getTVValue()~ with, 331
+    using #hasChildren()~ with, 356-357
+    using #joinGroup()~ with, 332
+    using #newObject()~ with, 340, 398-399, 638
+    using #save()~ with, 339, 340, 399
+    using #set()~ with, 340, 639
+    using #setContent()~ with, 340, 399, 651
+    using #toArray()~ with, 355, 370-373
+#$scheme~ argument for #makeUrl()~, 646
+#$scriptProperties~ array, 366-367, 374
+#$scriptProperties~ variable, 366-367, 374
+#$value~ variable, 344-345
+#$xpdo~ variable, 310, 325, 405, 629
 (anonymous) user, 104, 381-383, 387, 460, 469, 474-475, 481
--ff-only merge (Git), 81, 88
-.DOC files as static resources, 178
-.htaccess file, 46-47, 59-60, 426
+#--ff-only~ merge (Git), 81, 88
+#.DOC~ files as static resources, 178
+#.htaccess~ file, 46-47, 59-60, 426
     configuring for FURLs, 59
     Furls and, 59
     renaming, 59
     RewriteBase, 60
-.PDF files as static resources, 178
-3PCs (installing), 52-54
-3PCs (overview), 4
+#.PDF~ files as static resources, 178
+3PCS (see: add-on components)
 404 (page-not-found) error, 50
 500 server error, 46
-= operator (PHP), 661
-=& operator (PHP), 312, 354, 388
-=== operator (PHP), 336
-@ BINDINGS, 220-226
-@CHUNK binding, 222-223
-@DIRECTORY binding, 225
-@EVAL binding, 225-226
-@FILE binding, 224
-@INHERIT binding, 207, 221-222
-@RESOURCE binding, 224
-@SELECT binding, 225
-[[*content]] tag, 49, 145-146
-[[*content]] tag in template, 194
-_build directory (transport packages), 602, 614, 623
+#=~ operator (PHP), 661
+#=&~ operator (PHP), 312, 354, 388
+#===~ operator (PHP), 336
+#@~ BINDINGS, 220-226
+#@CHUNK~ binding, 222-223
+#@DIRECTORY~ binding, 225
+#@EVAL~ binding, 225-226
+#@FILE~ binding, 224
+#@INHERIT~ binding, 207, 221-222
+#@RESOURCE~ binding, 224
+#@SELECT~ binding, 225
+#[[*content]]~ tag, 49, 145-146
+#[[*content]]~ tag in template, 194
+#_build~ directory (transport packages), 602, 614, 623
 
 A
 aborting transport packages, 620
 about MODX, vi-xiii, 122
-absolute URL, 646
+absolute URL in #makeUrl()~ method, 646
 Access Control Lists, 441, 449-454, 449-454
     context access entries, 449-451
     creating entries, 449-454
@@ -102,7 +138,7 @@ access policies, 440, 443
     View, 471
 access policy templates, 115, 443
     FeViewTemplate, 471
-access_permissions permission, 465
+#access_permissions~ permission, 465
 ACL entries, 438, 441
     context access, 116, 449-451, 462-463
     creating, 449-454
@@ -115,7 +151,7 @@ actions, 126, 502-508
 Actions tree, 505-506
 active user field, 479
 active users, 479
-add (output modifier), 172
+#add~ (output modifier), 172
 Add Category dialog, 117, 462
 add package, 537
 Add Permission to Template dialog, 486-487
@@ -123,6 +159,7 @@ Add Resource Group dialog, 458, 483
 Add User Group dialog (form customization), 518
 Add User To Group dialog, 447-448, 472
 add-on components
+    at #http://modx.com~, 537
     commonly used, 535-594
     downloading, 122
     in Evolution, 96
@@ -131,8 +168,8 @@ add-on components
     overview, 4
     PackMan, 600
     with no transport package, 538
-add_children permission, 459
-addEventListener() method, 640
+#add_children~ permission, 459
+#addEventListener()~ method, 640
 adding
     (see also: attaching and assigning)
     chunks to categories in transport packages, 621-623
@@ -145,11 +182,31 @@ adding
     template variables to templates, 219
     Top Menu items, 126
     users to user groups, 115, 447-448
-addMany() method, 342, 402, 621, 637
-addOne() method, 341-342, 403, 404, 406, 408, 409, 497, 637
-addPackage() method, 630
-admin Super user, 101, 106, 382, 420, 433, 439, 442-444, 447, 458-459, 467, 483, 511-513
+#addMany()~ method, 342, 402, 621, 637
+#addOne()~ method, 341-342, 403, 404, 406, 408, 409, 497, 637
+#addPackage()~ method, 630
+admin Super User, 100, 101, 106, 442-444
+    accidentally giving users rights as, 457, 464-465
+    accidentally hiding menu items from, 512
+    accidentally hiding resources from, 439
+    accidentally hiding TVs from, 519, 521
+    accidentally removing permissions for, 444
+    advisability of adding to user groups, 447, 450
+    authority level, 450
+    changing username for security, 420
+    custom menu for, 510-513
+    default ACL entries for, 442
+    detecting in tags, 156
+    form customization rules and, 516
+    hiding menu items from others, 510-513
+    hiding resources from others, 433, 439, 458-459
+    hiding template variables from others, 483-484
+    inheriting permissions, 450
     minimum role of, 450
+    previewing from Manager, 382, 468
+    restricting package installation to, 620
+    restricting permission to, 466
+    #tree_root_id~ for, 467-468
 Administrator policy, 443, 444-445
 Administrator user group, 450-451
 AdminOnly category, 461
@@ -157,28 +214,28 @@ Advanced distribution of MODX, 420-421
 advanced snippet operations, 309-414
 advanced transport package tutorial, 611-625
 aggregate alias, 319
-alias (Resource Alias) resource field, 142
+#alias~ (Resource Alias) resource field, 142
 AllDocs resource group, 455, 458
-allow_private permission, 486
-alt context, 426-433, 432
-and (output modifier), 168
+#allow_private~ permission, 486
+#alt~ context, 426-433, 432
+#and~ (output modifier), 168
 anonymous user, 104, 381-383, 387, 460, 469, 474-475, 481
 Apache Friends, 62
-Apache httpd.conf file, 60
-apache/bin directory, 430
+Apache #httpd.conf~ file, 60
+#apache/bin~ directory, 430
 API documentation link, 129
 Appendix, 629-715
 architecture of MODX, x-xiii
 arithmetic operators in PHP, 660
 array functions in PHP, 678
 array of file paths for transport packages, 623-624
-array_merge() PHP function, 375, 384, 388
+#array_merge()~ PHP function, 375, 384, 388
 arrays in PHP, 668-669
 assets (in Update Action dialog), 506
-assets directory, 20
-assets directory (transport packages), 623
-assets directory for transport packages, 602-604
-assets_url system setting, 193, 527
+#assets~ directory, 20
+#assets~ directory (transport packages), 623
+#assets~ directory for transport packages, 602-604
+#assets_url~ system setting, 193, 527
 assigning
     (see also: adding and attaching)
     resources to resource groups, 117, 117, 179
@@ -211,7 +268,7 @@ audience for this book, ii
 authenticating users, 302, 384-385, 469
 authority numbers, 440, 446
 auto-tag template variable input type, 208-209
-automatic_alias system setting, 143, 409
+#automatic_alias~ system setting, 143, 409
 avoiding the error page, 475
 
 B
@@ -225,13 +282,13 @@ BadWords plugin, 290-295
 BadWords tutorial, 290-295
 BadWordsMgr tutorial, 296-299
 base href tag, 429
-base_url context setting, 428
-base_url system setting, 428
+#base_url~ context setting, 428
+#base_url~ system setting, 428
 BaseTemplate, 49
 basic building blocks of MODX, 6-20
 Batcher add-on component, 504-507
 Batcher namespace path, 505
-beginTransaction() method, 405, 630
+#beginTransaction()~ method, 405, 630
 block comments in PHP, 654
 blogging with getResources, 571
 boolean variables in PHP, 655
@@ -248,9 +305,9 @@ build scripts
     for transport packages, 601, 605-610
     MyComponent example, 625
     running outside of MODX, 624-625
-build.config.php file (transport packages), 624
-build.transport.php file (transport packages, 600-601
-build.transport.php file (transport packages), 621-623
+#build.config.php~ file (transport packages), 624
+#build.transport.php~ file (transport packages, 600-601
+#build.transport.php~ file (transport packages), 621-623
 building blocks of MODX, 6-20
 building the development version of Revolution, 87
 built-in functions in PHP, 675-679
@@ -258,7 +315,7 @@ bulk actions in form customization, 523
 
 C
 cache
-    clear_cache permission, 503
+    #clear_cache~ permission, 503
     clearing, 28, 65, 111
     control, xiii
     control in Evolution, 187
@@ -276,10 +333,10 @@ calling processors in code, 409
 cancel button, 455
 Captcha plugin, 300-302
 caption TV field, 205
-cat (output modifier), 169
+#cat~ (output modifier), 169
 categories, 105
     adding elements to in transport packages, 621-623
-    addMany() method, 402
+    #addMany()~ method, 402
     AdminOnly, 461
     attaching chunks to in code, 401-402
     attaching snippets to in code, 401-402
@@ -294,13 +351,13 @@ categories, 105
     removing, 106
     uses for, 14
 category TV field, 205
-cdata (output modifier), 171
+#cdata~ (output modifier), 171
 ChangeEmail custom hook for FormIt tutorial, 591-594
-changelog.txt (transport packages), 614-615
+#changelog.txt~ (transport packages), 614-615
 changelogs (transport packages), 602
 ChangePassword snippet, 481
-changePassword() method, 640, 650
-changeWebUserPassword() method, 640
+#changePassword()~ method, 640, 650
+#changeWebUserPassword()~ method, 640
 changing
     (see also: modifying and renaming)
     component menu items, 504-505
@@ -314,8 +371,8 @@ checkbox template variable input type, 209-210
 checking user's login status, 481
 checkout (Git), 80, 88
 CheckPermission snippet, 487-488
-checkPreview() method, 640
-checkSession() method, 640
+#checkPreview()~ method, 640
+#checkSession()~ method, 640
 Children related object, 318, 321, 324, 357, 364
 Chmod directory dialog, 108
 chunk tags, 11-12, 157, 194
@@ -330,7 +387,7 @@ chunks
     displaying with a snippet, 237
     editing in Evolution, 264-265
     emailTpl, 585
-    getChunk() method, 368-370
+    #getChunk()~ method, 368-370
     in snippet properties, 236-237
     ItemTpl, 242, 284
     manager system events, 705-706
@@ -339,7 +396,7 @@ chunks
     overview, 230
     relatedUserTpl, 389
     RowTpl, 242, 284
-    save_chunk permission, 449, 453, 453
+    #save_chunk~ permission, 449, 453, 453
     sending properties in tag, 249
     Tpl, 241-244, 473
     tutorial, 230-235
@@ -350,7 +407,7 @@ chunks
     using with snippets, 236-237
     working with, 229-247
 class variables in PHP, 683
-class_key (Class Key) resource field, 151
+#class_key~ (Class Key) resource field, 151
 classes
     creating in PHP, 682-686
     in PHP, 679-686
@@ -358,8 +415,8 @@ classes
     modX, 640-649
     xPDO, 630-637
     xPDOObject, 637-639
-cleanDocumentIdentifier() method, 640
-clear_cache permission, 503
+#cleanDocumentIdentifier()~ method, 640
+#clear_cache~ permission, 503
 clearing MODX, 65
 cloning a fork at GitHub, 78-79
 cloning Revolution development version, 73-75
@@ -376,7 +433,7 @@ comments
     PHP block, 654
     PHP single-line, 654
 commit messages (editing in Git), 85
-commit() method, 4-6, 630
+#commit()~ method, 4-6, 630
 commits (Git), 71
 common MODX add-on components, 535-594
 common snippets in Evolution, 595-596
@@ -391,12 +448,12 @@ Components Tom Menu item, 109
 Components Top Menu item, 113, 508
 composite alias, 319
 conditional output modifiers
-    reference, 167-169
-    replacing with snippets, 280-283
+    #Reference~, 167-169
+    #replacing with snippets~, 280-283
 conditionals in PHP, 664-668
 config file still writable warning, 45
-config.core.php files, 420
-config.inc.php file
+#config.core.php~ files, 420
+#config.inc.php~ file
     Evolution, 95
     Revolution, 41, 420-423
 configuration check
@@ -406,100 +463,100 @@ configuring .htaccess file for FURLS, 59
 configuring CodeMirror editor, 269
 Confirm Registration resource, 477
 conflicting permissions, 440
-connect() method, 631
+#connect()~ method, 631
 connection information, 42
-connectors directory, 420
+#connectors~ directory, 420
 constants
-    ECHO, 635
-    FILE, 635
-    HTML, 635
-    MODE_NEW, 299
-    MODE_UPD, 299
-    modSystemEvent::MODE_NEW, 699
-    modSystemEvent::MODE_UPD, 699
-    modX::LOG_LEVEL_INFO, 625
-    modX::SESSION_STATE_EXTERNAL, 644
-    modX::SESSION_STATE_INITIALIZED, 644
-    modX::SESSION_STATE_UNAVAILABLE, 644
-    modX::SESSION_STATE_UNINITIALIZED, 644
-    MODX_ASSETS_PATH, 603, 614
-    MODX_ASSETS_URL, 603
-    MODX_CONFIG_KEY, 601
-    MODX_CORE_PATH, 601, 603, 630, 634
-    MODX_PROCESSORS_PATH, 422
-    REDIRECT_HEADER, 648
-    REDIRECT_META, 648
-    REDIRECT_REFRESH, 648
-    xPDO::LOG_LEVEL_DEBUG, 635
-    xPDO::LOG_LEVEL_ERROR, 635
-    xPDO::LOG_LEVEL_FATAL, 635
-    xPDO::LOG_LEVEL_INFO, 617, 618, 635
-    xPDO::LOG_LEVEL_WARN, 635
-    XPDO_CLI_MODE, 625
-    xPDOTransport::ABORT_ON_VEHICLE_FAIL, 620
-    xPDOTransport::ACTION_INSTALL, 618
-    xPDOTransport::ACTION_UNINSTALL, 618
-    xPDOTransport::ACTION_UPGRADE, 618
-    xPDOTransport::PACKAGE_ACTION, 617
-    xPDOTransport::PRESERVE_KEYS, 606, 610, 621-622
-    xPDOTransport::RELATED_OBJECT_ATTRIBUTES, 621-623
-    xPDOTransport::RELATED_OBJECTS, 621-623
-    xPDOTransport::UNIQUE_KEY, 606, 610, 621-622
-    xPDOTransport::UPDATE_OBJECT, 606, 610, 621-622
+    #ECHO~, 635
+    #FILE~, 635
+    #HTML~, 635
+    #MODE_NEW~, 299, 699
+    #MODE_UPD~, 299, 699
+    #modSystemEvent::MODE_NEW~, 299, 699
+    #modSystemEvent::MODE_UPD~, 299, 699
+    #modX::LOG_LEVEL_INFO~, 625
+    #modX::SESSION_STATE_EXTERNAL~, 644
+    #modX::SESSION_STATE_INITIALIZED~, 644
+    #modX::SESSION_STATE_UNAVAILABLE~, 644
+    #modX::SESSION_STATE_UNINITIALIZED~, 644
+    #MODX_ASSETS_PATH~, 603, 614
+    #MODX_ASSETS_URL~, 603
+    #MODX_CONFIG_KEY~, 601
+    #MODX_CORE_PATH~, 601, 603, 630, 634
+    #MODX_PROCESSORS_PATH~, 422
+    #REDIRECT_HEADER~, 648
+    #REDIRECT_META~, 648
+    #REDIRECT_REFRESH~, 648
+    #xPDO::LOG_LEVEL_DEBUG~, 635
+    #xPDO::LOG_LEVEL_ERROR~, 635
+    #xPDO::LOG_LEVEL_FATAL~, 635
+    #xPDO::LOG_LEVEL_INFO~, 617, 618, 635
+    #xPDO::LOG_LEVEL_WARN~, 635
+    #XPDO_CLI_MODE~, 625
+    #xPDOTransport::ABORT_ON_VEHICLE_FAIL~, 620
+    #xPDOTransport::ACTION_INSTALL~, 618
+    #xPDOTransport::ACTION_UNINSTALL~, 618
+    #xPDOTransport::ACTION_UPGRADE~, 618
+    #xPDOTransport::PACKAGE_ACTION~, 617
+    #xPDOTransport::PRESERVE_KEYS~, 606, 610, 621-622
+    #xPDOTransport::RELATED_OBJECT_ATTRIBUTES~, 621-623
+    #xPDOTransport::RELATED_OBJECTS~, 621-623
+    #xPDOTransport::UNIQUE_KEY~, 606, 610, 621-622
+    #xPDOTransport::UPDATE_OBJECT~, 606, 610, 621-622
 constraint field (form customization), 518, 521
 constraints in form customization, 515, 521-522
 constructors in PHP, 684
 contact form
     creating with FormIt tutorial, 581-587
     creating with SPForm tutorial, 543-551
-Container (isfolder) resource field, 146
-container_suffix system setting, 57, 146
-content (Resource Content) resource field, 145-146
-Content Disposition (content_dispo) resource field, 151
+Container (#isfolder~) resource field, 146
+#container_suffix~ system setting, 57, 146
+#content~ (Resource Content) resource field, 145-146
+Content Disposition (#content_dispo~) resource field, 151
 content disposition of attachments, 178
 content elements defined, 9
 content elements in Evolution, 31
 content tag, 49, 145-146
 content tag in template, 194
 content types, 125
-content_dispo (Content Disposition) resource field, 151
-content_type (Content Type) resource field, 150
+#content_dispo~ (Content Disposition) resource field, 151
+#content_type~ (Content Type) resource field, 150
 context access ACL, 115-116
 context access ACL entries, 449-451, 456-457, 456-457, 462-463
 context access policy, 444-445
 context property for link tags, 163
 context settings, 25-26
-    base_url, 428
-    default_template, 429, 429, 432
-    http_host, 429, 431
+    #base_url~, 428
+    #default_template~, 429, 429, 432
+    #http_host~, 429, 431
     in Evolution, 32
-    site_start, 428
-    site_url, 429
+    #site_start~, 428
+    #site_url~, 429
 contexts, 424-434
-    alt, 426-433, 432
+    #alt~, 426-433, 432
     back end, 441
-    base_url setting, 428
+    #base_url~ setting, 428
     creating, 25-26, 125
     creating a second, 426-433
-    default_template setting, 429
+    #default_template~ setting, 429
     defined, 25-26
     front end, 441
     Gateway plugin, 432
-    http_host setting, 429
+    #http_host~ setting, 429
     in Evolution, 32, 435
     in separate directories, 426-431
-    initialize() method, 426-427
+    #initialize()~ method, 426-427
     manager system events, 713
-    mgr, 25-26, 424-425, 441, 450-451, 450-451, 456, 458, 459, 460, 483
+    #mgr~, 25-26, 424-425, 441, 450-451, 450-451, 456, 458, 459, 460, 483
     protected, 439
     security permissions, 433
     settings, 428-429
     sharing core between sites, 425-426, 433
-    site_start setting, 428
-    site_url setting, 429
+    #site_start~ setting, 428
+    #site_url~ setting, 429
     two in the same directory, 431-432
     uses for, 424
-    web, 25-26, 424-425, 432, 441, 446-447, 457, 460, 468, 472, 484
+    #web~, 25-26, 424-425, 432, 441, 446-447, 457, 460, 468, 472, 484
 contributing a bug fix with Git, 84
 contributing a new feature in Git, 86
 contributing to MODX development, 75-89
@@ -521,11 +578,10 @@ core
     directory (transport packages), 602-603, 623
     independence in MODX, xii-xiii
     lexicon, 504-505
-    MODX_CORE_PATH constant, 601, 603, 630, 634
-    modx_core_path system setting, 642
-    packages directory, 537
-core/packages directory, 537
-count() PHP function, 678
+    #MODX_CORE_PATH~ constant, 601, 603, 630, 634
+    #modx_core_path~ system setting, 642
+#core/packages~ directory, 537
+#count()~ PHP function, 678
 cPanel, 429
 Create Access Policy dialog, 471
 Create Directory dialog, 108
@@ -541,63 +597,68 @@ Create Role dialog, 440, 471
 Create User Group dialog, 447, 471
 Create/Edit Resource panel, 135-154
     access controls tab, 179
-    alias (Resource Alias) resource field, 142
+    #alias~ (Resource Alias) resource field, 142
     altering with form customization, 513-523
-    cacheable resource field, 150
-    class_key (Class Key) resource field, 151
-    content (Resource Content) resource field, 145-146
-    content_dispo (Content Disposition) resource field, 151
-    content_type (Content Type) resource field, 150
-    createdby (Created By) resource field, 152
-    createdon (Created On) resource field, 152
+    Cacheable (#cacheable~) resource field, 150
+    Class Key (#class_key~) resource field, 151
+    Container (#isfolder~) resource field, 146
+    #content~ (Resource Content) resource field, 145-146
+    Content Disposition (#content_dispo~) resource field, 151
+    Content Type (#content_type~) resource field, 150
+    Created By (#createdby~) resource field, 152
+    Created On (#createdon~) resource field, 152
     creating a new tab with form customization, 522
-    deletedby (Deleted By) resource field, 153
-    deletedon (Deleted On) resource field, 153
-    description (Description) resource field, 142
-    editedby (Edited By) resource field, 153
-    editedon (Edited On) resource field, 153
+    Deleted By (#deletedby~) resource field, 153
+    Deleted On (#deletedon~) resource field, 153
+    Description (#description~) resource field, 142
+    Edited By (#editedby~) resource field, 153
+    Edited On (#editedon~) resource field, 153
     Empty Cache checkbox, 150
-    Freeze URI (uri_override) resource field, 154
-    Freeze URI resource field, 154
-    hidemenu (Hide From Menus) resource field, 145
+    Freeze URI (#uri_override~) resource field, 154
+    Hide From Menus (#hidemenu~) resource field, 145
     hiding tabs with form customization, 520
-    id (Resource ID) resource field, 138
-    isfolder (Container) resource field, 146
-    link_attributes (Link Attributes) resource field, 143
-    longtitle (Long Title) resource field, 142
-    menuindex (Menu Index) resource field, 145
-    menutitle (Menu Title) resource field, 144
+    #id~ (Resource ID) resource field, 138
+    #introtext~ (Summary) resource field, 143
+    #isfolder~ (Container) resource field, 146
+    Link Attributes (#link_attributes~) resource field, 143
+    Long Title  (#longtitle~) resource field, 142
+    Menu Index (#menuindex~) resource field, 145
+    Menu Title (#menutitle~) resource field, 144
     modx-page-settings tab, 520
     modx-panel-resource-tv tab, 520, 522
     modx-resource settings tab, 520
     modx-resource-access-permissions tab, 520
-    parent (Parent Resource) resource field, 144
-    pub_date (Publish Date) resource field, 148
+    #pagetitle~ (Resource Title) resource field, 141
+    Parent Resource (#parent~) resource field, 144
+    Publish Date (#pub_date~) resource field, 148
+    Published (#published~) resource field, 141
     Published checkbox, 141
-    publishedon (Published On) resource field, 147
-    Resource Alias (alias) resource field, 142
-    Resource Content (content) resource field, 145-146
-    Resource ID (id) resource field, 139
-    Resource Title (pagetitle) field, 141
-    richtext (Rich Text) resource field, 147
-    searchable resource field, 149
+    Published On (#publishedon~) resource field, 147
+    Resource Alias (#alias~) resource field, 142
+    Resource Content (#content~) resource field, 145-146
+    Resource ID (#id~) resource field, 139
+    Resource Title (#pagetitle~) resource field, 141
+    Rich Text (#richtext~) resource field, 147
+    Searchable (#searchable~) resource field, 149
     setting field default values form customization, 523
     setting labels form customization, 523, 523
-    Summary (introtext) resource field, 143
-    template (Uses Template) resource field, 140
+    Summary (#introtext~) resource field, 143
+    #template~ (Uses Template) resource field, 140
     template variables tab, 179
-    unpub_date (Unpublish Date) resource field, 149
-    URI (uri) resource field, 154
+    Unpublish Date (#unpub_date~) resource field, 149
+    URI (#uri~) resource field, 154
+    #uri_override~ (Freeze URI) resource field, 154
+    Uses Template (#template~) resource field, 140
 Create/Edit User panel, 114
     access permissions tab, 114
     general information tab, 114
     settings tab, 114
-createdby (Created By) resource field, 152
+#createdby~ (Created By) resource field, 152
 CreatedBy related object, 320, 323, 388, 390
-createdon (Created On) resource field, 152
+#createdon~ (Created On) resource field, 152
 CreatedResources related object, 324
-createPackage() method (transport packages), 606, 608
-createVehicle() method (transport packages), 606, 610, 622
+#createPackage()~ method (transport packages), 606, 608
+#createVehicle()~ method (transport packages), 606, 610, 622
 creating
     a second context, 426-433
     Access Control List entries, 449-454
@@ -640,7 +701,6 @@ creating
     MODX database, 40
     MODX objects in code, 338-344, 397-409
     namespaces, 126, 411
-    new Create/Edit Resource panel tabs with form customization, 522
     new Create/Edit Resource panel tabs with form customization tutorial, 522
     new tabs with form customization, 522
     objects by calling processors, 409
@@ -670,6 +730,7 @@ creating
     unauthorized page, 50
     user extended fields, 115
     user groups, 115, 115, 447, 447
+    user profile in code, 341-342, 404-405
     user settings, 114
     users in code, 404
     virtual hosts, 429-431
@@ -682,8 +743,8 @@ CSS
     for BreadCrumbs, 553-555
     Wayfinder, 559
 cURL, 52, 536
-    .dll file, 536
     enabling in XAMPP, 536
+    #php_curl.dll~ file, 536
 current resource
     changing alias in code, 344
     children, 315, 315
@@ -696,9 +757,9 @@ current resource
     in Evolution, 307
     publisher, 389
     related objects, 387-389
-    retrieving in code, 311, 318, 327-328
-    retrieving TV values for, 331
-    toArray() method, 328, 356
+    retrieving in code, 312, 318, 327-328
+    retrieving TV values for, 331, 376, 378
+    #toArray()~ method, 328, 356
     users related to, 387-389
 current user, 16, 318, 327, 381-383, 381-383, 384, 469, 485
     492-493, 
@@ -712,7 +773,7 @@ custom hooks
 custom manager page tutorial, 523-533
 custom manager pages in Evolution, 533
 custom menus, 513
-custom output modifiers, 174-176
+Custom output modifiers, 174-176
 custom permissions, 510-512
     creating, 486-487
 custom preHooks for FormIt, 591-593
@@ -734,13 +795,12 @@ database
     location of properties, 250
     location of property sets, 250
     modifying MODX objects in code, 338-344
-    modx_actions table, 506
+    #modx_actions~ table, 506
     name, 42
     password, 40
     removing objects in code, 344
     retrieving chunks from, 311
     retrieving related objects, 359-361
-    retrieving resource fields from, 311
     retrieving resources from, 311
     retrieving system settings from, 380
     retrieving template variables from, 377-379
@@ -749,7 +809,7 @@ database
     retrieving user profiles from, 382-383
     retrieving users from, 311, 392-393
     sharing between sites, 425
-    site_content table, 137
+    #site_content~ table, 137
     table prefix, 425
     username, 40
     users table, 479
@@ -757,20 +817,20 @@ database tables
     adding to database, 409-411
     custom, 409-411
     overhead, 121
-    site_snippets, 250
-date (output modifier), 172
+    #site_snippets~, 250
+#date~ (output modifier), 172
 date and time functions in PHP, 679
 date template variables
     formatting codes, 215
     input type, 210
     output type, 214-215
-date() PHP function, 679
+#date()~ PHP function, 679
 DayErrorPage resource, 303
 DBAPI in Evolution, 416
 debugging PHP code, 686-690
-decr (output modifier), 172
-decrement (output modifier), 172
-default (output modifier), 172, 567
+#decr~ (output modifier), 172
+#decrement~ (output modifier), 172
+#default~ (output modifier), 172, 567
 default collation, 63
 default database, 42
 default lexicon file, 348
@@ -790,12 +850,12 @@ default properties, 249-255
 default security settings, 442
 default template variable output type, 215
 default value TV field, 207
-default.inc.php lexicon file, 348
-default_template context setting, 429, 432
+#default.inc.php~ lexicon file, 348
+#default_template~ context setting, 429, 432
 defined constants (transport packages), 605-607
-deletedby (Deleted By) resource field, 153
+#deletedby~ (Deleted By) resource field, 153
 DeletedBy related object, 390
-deletedon (Deleted On) resource field, 153
+#deletedon~ (Deleted On) resource field, 153
 deleting
     branches (Git), 82
     categories, 106
@@ -844,27 +904,27 @@ dialogs
     Upload Files, 108
     User Group Context Access, 449-451, 456-457
 directories
-    _build (transport packages), 602, 614
-    apache.bin, 430
-    assets, 20
-    chmod, 108
-    connectors, 420
-    core, 20, 349, 411, 421-422, 425-426, 433, 524
-    core/packages, 537
+    #_build~ (transport packages), 602, 614
+    #apache/bin~, 430
+    #assets~, 20
+    #chmod~, 108
+    #connectors~, 420
+    #core~, 20, 349, 411, 421-422, 425-426, 433, 524
+    #core/packages~, 537
     creating, 108
     deleting, 108
-    htdocs, 63
-    manager, 420
+    #htdocs~, 63
+    #manager~, 420
     moving manager, 423
     moving the core, 421-422
-    public_html, 59, 422, 602
+    #public_html~, 59, 422, 602
     removing, 108
     renaming, 109
     renaming manager, 423
     renaming the core, 421-422
-    root, 420
+    #root~, 420
     setting permissions, 108
-    setup, 420
+    #setup~, 420
     XAMPP, 63
 directory names in transport packages, 601
 directory permissions, 41, 108
@@ -888,8 +948,8 @@ displaying
     template variables, 11, 17, 200, 203, 375-376
     user information, 16, 380-396
 Ditto, 565, 570
-div (output modifier), 172
-divide (output modifier), 172
+#div~ (output modifier), 172
+#divide~ (output modifier), 172
 documentation link, 122
 documentObject, 307
 DocumentRoot, 430, 431
@@ -898,15 +958,15 @@ documents
     Create, 103
     creating, 6, 136
     defined, 7
-    edit_document permission, 465
+    #edit_document~ permission, 465
     fields, 7, 135-154, 138
     in Evolution, 185, 397
     Private Document, 470
     Private Document2, 486
-    publish_document permission, 449, 449
+    #publish_document~ permission, 449, 449
     recently edited (Manager Home screen), 110
     recently edited (Report menu)), 121
-    save_document permission, 453, 453, 465
+    #save_document~ permission, 453, 453, 465
     using tags in, 154-167
 double quotes in PHP, 657-659
 Download Extras button, 122
@@ -918,16 +978,16 @@ Duplicate Resource, 103, 181
 duplicating access policies, 444, 456, 459
 
 E
-ECHO constant, 635
-echo statement in PHP, 676
+#ECHO~ constant, 635
+#echo~ statement in PHP, 676
 Edit Element, 106
 edit permission, 453
 Edit Resource, 103
-edit_document permission, 465
-edit_tv permission, 514
-editedby (Edited By) resource field, 153
+#edit_document~ permission, 465
+#edit_tv~ permission, 514
+#editedby~ (Edited By) resource field, 153
 EditedBy related object, 323, 388
-editedon (Edited On) resource field, 153
+#editedon~ (Edited On) resource field, 153
 editing
     access policies, 115, 444
     chunks in Evolution, 264-265
@@ -949,8 +1009,8 @@ editors
     CodeMirror, 269
     TinyMCE, 147
 Editors user group, 455
-eg (output modifier), 168
-el (output modifier), 168
+#eg~ (output modifier), 168
+#el~ (output modifier), 168
 element categories, 105
 Element Category Access ACL entries, 116
 element category policies, 444-445
@@ -961,7 +1021,7 @@ Element tree, 104-106
     Quick Create, 106
     right-click menu, 106
 Element tree icons, 104
-element_tree permission, 465
+#element_tree~ permission, 465
 elements
     attaching property sets to, 251
     attaching property sets to in code, 409
@@ -970,53 +1030,53 @@ elements
     default properties, 249-255
     defined, 9
     editing, 106
-    element_tree permission, 465
+    #element_tree~ permission, 465
     hiding, 461-463
     in Evolution, 31
     protected, 439
     Quick Update, 106
     removing, 106
-    save_element permission, 443
-ellipsis (output modifier), 171, 567
-else (output modifier), 168
-else statement in PHP, 665-667
-elseif statement in PHP, 665
+    #save_element~ permission, 443
+#ellipsis~ (output modifier), 171, 567
+#else~ (output modifier), 168
+#else~ statement in PHP, 665-667
+#elseif~ statement in PHP, 665
 email hook for FormIt, 581
 email hook properties for FormIt, 587
 email template variable input type, 210
-emailsender system setting, 651
-emailsubject system setting, 651
+#emailsender~ system setting, 651
+#emailsubject~ system setting, 651
 emailTpl chunk, 585
-empty (output modifier), 172
+#empty~ (output modifier), 172
 Empty Cache checkbox, 150
-empty() PHP function, 335-336
+#empty()~ PHP function, 335-336
 enabling
     cURL, 52
     cURL in XAMPP, 536
-    mod_rewrite, 60
+    #mod_rewrite~, 60
     news feed, 110
     RSS feeds, 110
     security feed, 110
 enhanced hello snippet, 273-275
 eof marker (PHP), 671
-eq (output modifier), 168
-equalorgreatherthan (output modifier), 168
-equals (output modifier), 168
-equalto (output modifier), 168
-equaltoorlessthan (output modifier), 168
+#eq~ (output modifier), 168
+#equalorgreatherthan~ (output modifier), 168
+#equals~ (output modifier), 168
+#equalto~ (output modifier), 168
+#equaltoorlessthan~ (output modifier), 168
 error log, 121, 690
 error page, 50
     avoiding, 475
 error page unpublished warning, 110
-error_page system setting, 302, 475
-errorCode() method, 631
-errorInfo() method, 631
+#error_page~ system setting, 302, 475
+#errorCode()~ method, 631
+#errorInfo()~ method, 631
 errors
     404 (page-not-found), 50
     server 500, 46
     xPDO log, 635
-esc (output modifier), 170
-escape (output modifier), 170
+#esc~ (output modifier), 170
+#escape~ (output modifier), 170
 event model, 300-301
 events (see: system events)
 Evolution
@@ -1042,11 +1102,11 @@ Evolution
     file and directory permissions, 95
     form customization, 533
     FURLs, 97
-    getChildIds() method, 416
-    getChunk() method, 416
-    getLoginUserID() method, 307
-    getLoginUserName() method, 307
-    getParentIds() method, 416
+    #getChildIds()~ method, 416
+    #getChunk()~ method, 416
+    #getLoginUserID()~ method, 307
+    #getLoginUserName()~ method, 307
+    #getParentIds()~ method, 416
     installing, 42, 96
     installing add-on components, 96, 595
     installing snippets, 306
@@ -1056,7 +1116,7 @@ Evolution
     module manager system events, 712
     modules, 533
     overview, viii
-    parseChunk() method, 416
+    #parseChunk()~ method, 416
     PHX, 187
     placeholders, 306
     plugins, 307
@@ -1064,7 +1124,7 @@ Evolution
     Resource tree, 184
     retrieving system settings, 416
     roles, 446, 498
-    runSnippet() method, 416
+    #runSnippet()~ method, 416
     security system, 497-498
     snippet properties, 595
     snippets, 306
@@ -1075,22 +1135,17 @@ Evolution
     transport packages, 626
     user information in, 307
     user settings, 32
-    userLoggedIn() method, 307
+    #userLoggedIn()~ method, 307
     using SMTP, 596
     versus Revolution, vii-x
 example template, 191
-exec() method, 631
-explode() PHP function, 678
+#exec()~ method, 631
+#explode()~ PHP function, 678
 exporting property sets, 261
 extended user fields, 115
 extended user fields in code, 393-397
 ExtJS, 523, 532
-extras
-    at modx.com, 537
-    downloading, 122
-    installing, 52-54
-    overview, 4
-    using common, 535-594
+extras (see: add-on components)
 EZfaq
     installing, 539-540
     properties, 542
@@ -1099,15 +1154,15 @@ EZfaq
 
 F
 false in PHP, 656-657
-fclose() PHP function, 678
+#fclose()~ PHP function, 678
 feature branches (Git), 71
 features of MODX, x-xiii
-feof() PHP function, 671
+#feof()~ PHP function, 671
 fetch (Git), 80-81, 88
 FeView policy, 471, 472
 FeViewer role, 471, 472
 FeViewTemplate access policy, 471, 486-487
-fgets() PHP function, 671, 678
+#fgets()~ PHP function, 671, 678
 field default values (setting with form customization), 523
 field labels (setting with form customization), 523
 field rules in form customization, 515
@@ -1126,69 +1181,69 @@ file
     validators (transport packages, 619
     vehicles (transport packages), 614-615
 file and directory permissions, 41, 69
-FILE constant, 635
+#FILE~ constant, 635
 file template variable input type, 211
 File tree, 106-109
-    chmod directory, 108
+    #chmod~ directory, 108
     icons, 107
     right-click menu, 108-109
     upload files, 108
 file-not-found page, 50
-file_exists() PHP function, 678
-file_get_contents() PHP function, 606, 609, 615, 678
-file_put_contents() PHP function, 678
-file_tree permission, 443, 465
-filemanager_path permission, 467, 468
-filemanager_path tutorial, 467
+#file_exists()~ PHP function, 678
+#file_get_contents()~ PHP function, 606, 609, 615, 678
+#file_put_contents()~ PHP function, 678
+#file_tree~ permission, 443, 465
+#filemanager_path~ permission, 467, 468
+#filemanager_path~ tutorial, 467
 files
-    .DOC as static resources, 178
-    .htaccess, 46-47, 426
-    .PDF as static resources, 178
-    Apache httpd.conf, 60
-    build.config.php (transport packages), 624
-    build.transport.php (transport packages), 600-601, 621-623
-    config.core.php, 420
-    config.inc.php, 420-423
-    config.inc.php for Evolution, 95
+    #.DOC~ as static resources, 178
+    #.htaccess~, 46-47, 426
+    #.PDF~ as static resources, 178
+    Apache #httpd.conf~, 60
+    #build.config.php~ (transport packages), 624
+    #build.transport.php~ (transport packages), 600-601, 621-623
+    #config.core.php~, 420
+    #config.inc.php~, 420-423
+    #config.inc.php~ for Evolution, 95
     creating lexicon files, 412
-    default.inc.php, 348
+    #default.inc.php~, 348
     deleting, 109
     editing, 108-109
     editing in Evolution, 130
     Evolution config, 95
-    file_tree permission, 443, 465
-    filemanager_path setting, 467
+    #file_tree~ permission, 443, 465
+    #filemanager_path~ setting, 467
     hosts, 430
-    ht.access, 46-47
-    httpd-vhosts.conf, 430, 430-431
-    httpd.conf, 60
+    #ht.access~, 46-47
+    #httpd-vhosts.conf~, 430, 430-431
+    #httpd.conf~, 60
     in MODX, 19
-    index.php (components), 505-506
-    index.php (MODX), 38, 56, 61, 142, 165
-    index.php (separate contexts), 426-428
-    index.php for CheatSheet component, 525, 527
-    install.script.php (transport packages), 616-620
+    #index.php~ (components), 505-506
+    #index.php~ (MODX), 38, 56, 61, 142, 165
+    #index.php~ (separate contexts), 426-428
+    #index.php~ for CheatSheet component, 525, 527
+    #install.script.php~ (transport packages), 616-620
     lexicon, 348, 412
     lexicon file locations (transport packages), 611-612
     loading lexicon files in snippets, 412
     locations (transport packages), 601-604
     locations for MODX, 20
     locations for XAMPP, 63
-    modresponse.class.php, 290
+    #modresponse.class.php~, 290
     MODX, 19
-    MODX build.config.php, 87
+    MODX #build.config.php~, 87
     MODX config, 41, 41, 420-423
     MODX schema, 318-319
-    MODX transport.core.php, 76
-    modx.class.php, 601
-    modx.mysql.schema.php, 318-319
+    MODX #transport.core.php~, 76
+    #modx.class.php~, 601
+    #modx.mysql.schema.php~, 318-319
     names in transport packages, 601
     permissions, 41
     permissions in Evolution, 95
-    php.ini, 536
-    php_curl.dll, 536
+    #php.ini~, 536
+    #php_curl.dll~, 536
     placement, 38-39
-    readme.txt (transport packages), 602, 614-615
+    #readme.txt~ (transport packages), 602, 614-615
     removing, 109
     renaming, 109
     schema (MODX), 318-319
@@ -1199,16 +1254,16 @@ files
     transport package, 601-604
     transport package lexicon, 603
     uploading, 108
-    user.input.html (transport packages), 614-615
+    #user.input.html~ (transport packages), 614-615
 filters, 167
 firing system events, 289-290
 float variables in PHP, 655
 flush all sessions, 117, 442, 457-458, 458, 462
 flush permissions, 117, 442, 457-458, 458, 462, 474
 fonts used in MODX: The Official Guide, iii-v
-fopen() PHP function, 678
-for loop (PHP), 671-672
-foreach loop (PHP), 670
+#fopen()~ PHP function, 678
+#for~ loop (PHP), 671-672
+#foreach~ loop (PHP), 670
 ForgotPassword snippet, 480
 Form Customization, 513-523
     bulk actions, 523
@@ -1259,21 +1314,21 @@ FormItAutoResponder properties, 587-588
 FormItRetriever snippet, 592
 formProcAllowedReferers (SPForm), 550
 forums link, 127-128
-fputs() PHP function, 679
-fread() PHP function, 678
-Freeze URI (uri_override) resource field, 154
+#fputs()~ PHP function, 679
+#fread()~ PHP function, 678
+Freeze URI (#uri_override~) resource field, 154
 friendly alias path, 57
 friendly aliases, 58
 Friendly URLs (see:FURLs)
-fromArray() method, 340-341, 638
-fromJSON() method, 638
+#fromArray()~ method, 340-341, 638
+#fromJSON()~ method, 638
 front end, 5
     contexts, 441
     controlling access in, 468-474
     hiding template variables in (tutorial), 484-485
     versus back end, 5
 front-end system events, 
-full URL, 646
+full URL in #makeUrl()~ method, 646
 functions
     (see: PHP functions)
     PHP, 673-679
@@ -1287,81 +1342,81 @@ FURLs
     RewriteBase, 60
     suffixes, 57
     testing, 60
-fwrite() PHP function, 678
+#fwrite()~ PHP function, 678
 
 G
 Gateway plugin, 432
-ge (output modifier), 168
+#ge~ (output modifier), 168
 generating a GitHub SSH key, 77
 generic methods, 310-314
-get() and set() methods in PHP, 684-685
-get() method, 327, 355, 391, 629, 638
-get*() methods, 310-327
-getActiveChildren() method, 640
-getAggregates() method, 631
-getAllChildren() method, 640
-getAncestry() method, 631
-getAttribute() method, 631
-getAuthenticatedUser() method, 640-641
-getCacheManager() method, 631, 641
-getCachePath() method, 631
-getChildIds() method, 315, 357, 641
-getChildIds() method in Evolution, 416
-getChunk() method, 237, 317, 368-370, 389, 488, 528, 642
-getChunk() method in Evolution, 416
-getCollection() method, 313, 362-363, 373, 390, 392-393, 393, 403, 407, 631-632
-getCollectionGraph() method, 324-325, 364-365, 391, 397, 631-632
-getComposites() method, 631-632
-getConfig() method, 642
-getContent() method, 328, 651
-getContext() method, 642
-getCount() method, 633
-getDebug() method, 633
-getDebugBacktrace() method, 633
-getDocGroups() method, 642
-getDocument() method, 642
-getDocumentChildren() method, 642
-getDocumentChildrenTVars() method, 642
-getDocumentIdentifier() method, 642
-getDocumentMethod() method, 642
-getDocumentObject() method, 642
-getDocuments() method, 642
-getEventMap() method, 642
-getFields() method, 633
-getFullTableName() method, 642
-getIterator() method, 313, 633
-getKeywords() method, 642
-getLoginUserID() method, 642
-getLoginUserID() method (Evolution), 307
-getLoginUserName() method, 643
-getLoginUserName() method (Evolution), 307
-getLoginUserType() method, 643
-getManager() method, 633
-getManagerPath() method, 643
-getMany() method, 321, 359-361, 373, 638
-getMany() versus getOne(), 321
-getMETATags() method, 643
-getMicroTime() method, 633
+#get()~ and #set()~ methods in PHP, 684-685
+#get()~ method, 327, 355, 355, 391, 629, 638
+#get*()~ methods, 310-327
+#getActiveChildren()~ method, 640
+#getAggregates()~ method, 631
+#getAllChildren()~ method, 640
+#getAncestry()~ method, 631
+#getAttribute()~ method, 631
+#getAuthenticatedUser()~ method, 640-641
+#getCacheManager()~ method, 631, 641
+#getCachePath()~ method, 631
+#getChildIds()~ method, 315, 357, 641
+#getChildIds()~ method in Evolution, 416
+#getChunk()~ method, 237, 317, 368-370, 389, 488, 528, 642
+#getChunk()~ method in Evolution, 416
+#getCollection()~ method, 313, 362-363, 373, 390, 392-393, 393, 403, 407, 631-632
+#getCollectionGraph()~ method, 324-325, 364-365, 391, 397, 631-632
+#getComposites()~ method, 631-632
+#getConfig()~ method, 642
+#getContent()~ method, 328, 651
+#getContext()~ method, 642
+#getCount()~ method, 633
+#getDebug()~ method, 633
+#getDebugBacktrace()~ method, 633
+#getDocGroups()~ method, 642
+#getDocument()~ method, 642
+#getDocumentChildren()~ method, 642
+#getDocumentChildrenTVars()~ method, 642
+#getDocumentIdentifier()~ method, 642
+#getDocumentMethod()~ method, 642
+#getDocumentObject()~ method, 642
+#getDocuments()~ method, 642
+#getEventMap()~ method, 642
+#getFields()~ method, 633
+#getFullTableName()~ method, 642
+#getIterator()~ method, 313, 633
+#getKeywords()~ method, 642
+#getLoginUserID()~ method, 642
+#getLoginUserID()~ method (Evolution), 307
+#getLoginUserName()~ method, 643
+#getLoginUserName()~ method (Evolution), 307
+#getLoginUserType()~ method, 643
+#getManager()~ method, 633
+#getManagerPath()~ method, 643
+#getMany()~ method, 321, 359-361, 373, 638
+#getMany()~ versus #getOne()~, 321
+#getMETATags()~ method, 643
+#getMicroTime()~ method, 633
 GetMyComponent add-on package, 625
-getObject() $classKey argument, 311-312
-getObject() method, 310-313, 354, 390, 629, 633
-getObjectGraph() method, 321-324, 363-364, 384, 388, 396, 633-634
-getOne() method, 320, 348, 358-360, 388, 390, 392, 639
-getOne() versus getMany(), 321
-getOption() method, 314, 367-368, 490, 527, 634
-getPackage() method, 634
-getPageInfo() method, 643
-getParent() method, 643
-getParentIds() method, 315-316, 358, 643
-getParentIds() method in Evolution, 416
-getParser() method, 643
-getPK() method, 634
-getPKType() method, 634
-getPlaceholder() method, 316, 643
-getProperties() method, 370
-getRegisteredClientScripts() method, 643
-getRegisteredClientStartupScripts() method, 643
-getRequest() method, 643
+#getObject()~ #$classKey~ argument, 311-312
+#getObject()~ method, 310-313, 354, 390, 629, 633
+#getObjectGraph()~ method, 321-324, 363-364, 384, 388, 396, 633-634
+#getOne()~ method, 320, 348, 358-360, 388, 390, 392, 639
+#getOne()~ versus #getMany()~, 321
+#getOption()~ method, 314, 367-368, 490, 527, 634
+#getPackage()~ method, 634
+#getPageInfo()~ method, 643
+#getParent()~ method, 643
+#getParentIds()~ method, 315-316, 358, 643
+#getParentIds()~ method in Evolution, 416
+#getParser()~ method, 643
+#getPK()~ method, 634
+#getPKType()~ method, 634
+#getPlaceholder()~ method, 316, 643
+#getProperties()~ method, 370
+#getRegisteredClientScripts()~ method, 643
+#getRegisteredClientStartupScripts()~ method, 643
+#getRequest()~ method, 643
 getResources
     blogging with, 571
     properties, 567-570
@@ -1369,30 +1424,30 @@ getResources
     tag, 196
     tutorial, 566-567
     uses for, 565, 571
-getResponse() method, 643
-getSelectColumns() method, 393
-getService() method, 412
-getSessionState() method, 644
-getSettings() method, 644, 650
-getTableName() method, 634
-getTemplateVar() method, 644
-getTemplateVarOutput() method, 644
-getTemplateVars() method, 644
+#getResponse()~ method, 643
+#getSelectColumns()~ method, 393
+#getService()~ method, 412
+#getSessionState()~ method, 644
+#getSettings()~ method, 644, 650
+#getTableName()~ method, 634
+#getTemplateVar()~ method, 644
+#getTemplateVarOutput()~ method, 644
+#getTemplateVars()~ method, 644
 getting
     (see also: retrieving)
 getting user information in code, 380-396
-getTree() method, 644
-getTVValue() method, 378
-getUser() method, 644
-getUserDocGroups() method, 644
-getUserGroupNames() method, 650
-getUserGroups() method, 650
-getUserInfo() method, 645
-getValue() method, 330, 652
-getVersionData() method, 645
-getWebUserInfo() method, 645
+#getTree()~ method, 644
+#getTVValue()~ method, 378
+#getUser()~ method, 644
+#getUserDocGroups()~ method, 644
+#getUserGroupNames()~ method, 650
+#getUserGroups()~ method, 650
+#getUserInfo()~ method, 645
+#getValue()~ method, 330, 652
+#getVersionData()~ method, 645
+#getWebUserInfo()~ method, 645
 Git
-    --ff-only merges, 81, 88
+    #--ff-only~ merges, 81, 88
     Bash, 73
     branches, 70-72
     bug fixes in, 84
@@ -1420,7 +1475,7 @@ Git
     release branches, 72
     remotes, 80
     Revolution repository, 72
-    SHA1, 71
+    #SHA1~, 71
     switching branches, 72
     tracking branches, 80
     updating development version of Revolution, 88
@@ -1434,20 +1489,20 @@ GitHub, 70-75
     forking MODX, 78-79
 Gmail (using SMTP with), 585-586, 696
 graph methods, 321-325
-greaterthanorequalto (output modifier), 168
-gt (output modifier), 168
-gte (output modifier), 168
+#greaterthanorequalto~ (output modifier), 168
+#gt~ (output modifier), 168
+#gte~ (output modifier), 168
 
 H
 handler, 526
 handler for menu items, 503-504
-handleRequest() method, 645
+#handleRequest()~ method, 645
 handling clicks in the Top Menu, 507
-hasChildren() method, 329, 356
-hasPermission() method, 485, 488, 645
-hasSessionContext() method, 384-385, 469, 481, 490, 650
-hasTemplate() method, 331
-hasTemplateVar() method, 331
+#hasChildren()~ method, 329, 356-357
+#hasPermission()~ method, 485, 488, 645
+#hasSessionContext()~ method, 384-385, 469, 481, 490, 650
+#hasTemplate()~ method, 331
+#hasTemplateVar()~ method, 331
 HEAD, 71
 hello snippet, 269-270
 hello snippet (enhanced), 273-275
@@ -1465,13 +1520,12 @@ help, 122
     xPDO, 122
 hidden template variable input type, 211
 HiddenTVs resource group, 482, 484
-hide (output modifier), 168
+#hide~ (output modifier), 168
 Hide From Menus checkbox, 145
 Hide From Menus checkbox (and Wayfinder), 560
-hidemenu (Hide From Menus) resource field, 145
+#hidemenu~ (Hide From Menus) resource field, 145
 HidePages snippet tutorial, 469
 hiding
-    Create/Edit Resource panel fields with form customization, 522
     Create/Edit Resource panel fields with form customization tutorial, 522
     Create/Edit Resource panel tabs with form customization, 520
     Create/Edit Resource panel tabs with form customization tutorial, 520
@@ -1498,12 +1552,12 @@ hooks
     custom for FormIt, 588-594
     email for FormIt, 581
     FormIt custom preHooks, 591-593
-    FormIt setValue() method, 592
+    FormIt #setValue()~ method, 592
     math for FormIt, 579-580
     properties for FormIt email hook, 587
     properties for FormIt spam hook, 587
     redirect for FormIt, 581
-    setValue() method (FormIt), 592
+    #setValue()~ method (FormIt), 592
     variables available in FormIt custom hooks, 590
 hooks and preHooks for FormIt, 579-582
 host (database), 42
@@ -1511,61 +1565,63 @@ hosts file, 430
 hotfix branch (Git), 71
 how MODX delivers a web page, 21
 how MODX works, 1
-ht.access file, 46-47
-htdocs directory, 63
+#ht.access~ file, 46-47
+#htdocs~ directory, 63
 HTML comments, 531
-HTML constant, 635
+#HTML~ constant, 635
 HTML tag template variable output type, 216
 htmlarea template variable input type, 211
-htmlent (output modifier), 170
-htmlentities (output modifier), 170
-http URL, 646
-http://api.modx.com, 630
-http_host context setting, 429, 431
-http_host system setting, 429
-http_referer variable, 550
-httpd-vhosts.conf file, 430, 430-431
-httpd.conf file, 60
-https URL, 646
+#htmlent~ (output modifier), 170
+#htmlentities~ (output modifier), 170
+http URL in #makeUrl()~ method, 646
+#http://api.modx.com~, 630
+#http://modx.com/extras~, 537
+#http_host~ context setting, 429, 431
+#http_host~ system setting, 429
+#http_referer~ variable, 550
+#httpd-vhosts.conf~ file, 430, 430-431
+#httpd.conf~ file, 60
+https URL in #makeUrl()~ method, 646
 
 I
 icons
     Element tree, 104
     File tree, 107
     Resource tree, 101
-id (Resource ID) field, 138, 340
+id (resource ID) field, 340
+#id~ (Resource ID) resource field, 139
 id user field, 381
-if (output modifier), 168
-if statement in PHP, 664-666
-ifempty (output modifier), 172
-ifnotempty (output modifier), 172
+#if~ (output modifier), 168
+#if~ statement in PHP, 664-666
+#ifempty~ (output modifier), 172
+#ifnotempty~ (output modifier), 172
 image template variable input type, 211-212
 image template variable output type, 217
-implode() PHP function, 634, 678
+#implode()~ PHP function, 634, 678
 importing
     HTML resources, 118
     property sets, 261
     resources, 118
-inc (output modifier), 172
-increment (output modifier), 172
-index.php file
+#inc~ (output modifier), 172
+#increment~ (output modifier), 172
+#index.php~ file
     components, 505-506
     for CheatSheet component, 525, 527
     MODX, 38, 56, 61, 142, 165
     separate contexts, 426-428
 info chunk tutorial, 233-235
 Info panel, 111
-initialize() method (contexts), 426-427
-initialize() method (MODX), 600-601, 645
-innerJoin() method, 393
+#initialize()~ method (contexts), 426-427
+#initialize()~ method (MODX), 600-601, 645
+#innerJoin()~ method, 393
 InnoDB storage engine, 405
-input (output modifier), 168
+#input~ (output modifier), 168
 input filters, 176
 input option values TV field, 206
 input type TV field, 206
 input types for TVs, 208-213
-insideManager() method, 645
-install.script.php file (transport packages), 616-620
+#insideManager()~ method, 645
+#install.script.php~ file (transport packages), 616-620
 installer still present warning, 47
 installing
     add-on components, 52-54, 536-538
@@ -1575,7 +1631,6 @@ installing
     Evolution add-on components, 96
     EZfaq, 539-540
     Git, 73
-    MODX extras, 52-54
     packages, 52-54
     snippets in Evolution, 306
     snippets with Package Manager, 268
@@ -1597,7 +1652,7 @@ installing MODX Revolution, 35
     file placement, 38-39
     installer still present warning, 47
     localhost, 62-64
-    register_globals, 45-47
+    #register_globals~, 45-47
     running setup, 41
     summary screen, 43
     upgrade, 69
@@ -1613,44 +1668,44 @@ intersect objects
     modTemplateVarTemplate, 403
     modUserGroupMember, 406
 introduction, i-xiii
-introtext (Summary) resource field, 143
-invokeEvent() method, 301, 645, 698
+#introtext~ (Summary) resource field, 143
+#invokeEvent()~ method, 301, 645, 698
 invoking system events, 289-290
-is (output modifier), 168
+#is~ (output modifier), 168
 is MODX for you?, vi-vii
 is user logged in?, 384-385
-is_array() PHP function, 335
-is_object() PHP function, 337
-isAuthenticated() method, 650
-isBackend() method, 645
-isempty (output modifier), 172
-isequal (output modifier), 168
-isequalto (output modifier), 168
-isfolder (Container) resource field, 146, 356
-isFrontend() method, 645
-isgt (output modifier), 168
-isgte (output modifier), 168
-islessthan (output modifier), 168
-isloggedin (output modifier), 173
-islowerthan (output modifier), 168
-islte (output modifier), 168
-ismember (output modifier), 169
-isMember() method, 386-386, 650
-isMemberOfWebGroup() method, 646
-isNew() method, 639
-isnot (output modifier), 168
-isnotempty (output modifier), 172
-isnotloggedin (output modifier), 173
-isnt (output modifier), 168
-isset() PHP function, 334-335
+#is_array()~ PHP function, 335
+#is_object()~ PHP function, 337
+#isAuthenticated()~ method, 650
+#isBackend()~ method, 645
+#isempty~ (output modifier), 172
+#isequal~ (output modifier), 168
+#isequalto~ (output modifier), 168
+#isfolder~ (Container) resource field, 146, 356
+#isFrontend()~ method, 645
+#isgt~ (output modifier), 168
+#isgte~ (output modifier), 168
+#islessthan~ (output modifier), 168
+#isloggedin~ (output modifier), 173
+#islowerthan~ (output modifier), 168
+#islte~ (output modifier), 168
+#ismember~ (output modifier), 169
+#isMember()~ method, 386-387, 650
+#isMemberOfWebGroup()~ method, 646
+#isNew()~ method, 639
+#isnot~ (output modifier), 168
+#isnotempty~ (output modifier), 172
+#isnotloggedin~ (output modifier), 173
+#isnt~ (output modifier), 168
+#isset()~ PHP function, 334-335
 ItemTpl chunk, 242, 284
 
 J
 JavaScript, 526, 643, 647
     with Wayfinder, 559
-joinGroup() method, 408
-joinGroup() method (resource object), 332
-joinGroup() method (user object), 332, 650
+#joinGroup()~ method, 408
+#joinGroup()~ method (resource object), 332
+#joinGroup()~ method (user object), 332, 650
 JSON, 395, 631-632
 
 K
@@ -1664,18 +1719,18 @@ language files (see: lexicon files)
 language strings (see: lexicon strings)
 language tags, 163-164
 languages, 349
-lastInsertId() method, 634
-lcase (output modifier), 169
-le (output modifier), 168
-leaveGroup() method (resource object), 332
-leaveGroup() method (user object), 332, 650
-len (output modifier), 170
-length (output modifier), 170
-lessthan (output modifier), 168
-lessthanorequalto (output modifier), 168
+#lastInsertId()~ method, 634
+#lcase~ (output modifier), 169
+#le~ (output modifier), 168
+#leaveGroup()~ method (resource object), 332
+#leaveGroup()~ method (user object), 332, 650
+#len~ (output modifier), 170
+#length~ (output modifier), 170
+#lessthan~ (output modifier), 168
+#lessthanorequalto~ (output modifier), 168
 lexicon
     core, 504-505
-    default.inc.php file, 348
+    #default.inc.php~ file, 348
     for CheatSheet component, 526-527
     for Top Menu items, 504-505, 508
     in Evolution, 32
@@ -1685,7 +1740,7 @@ lexicon
     working with in code, 347-351, 411-413
 lexicon files
     creating, 412
-    default.inc.php, 348
+    #default.inc.php~, 348
     for transport packages, 603, 611-612
     loading in code, 412
     location of, 348, 412
@@ -1704,17 +1759,17 @@ lexicon strings
     uses for, 347
 lexicon topics, 23-24, 349-351, 506
 lexicon topics for custom manager pages, 524
-lexicon() method, 646
-lexicon->load() method, 350, 412
-lexicon_entries table, 348
-limit (output modifier), 171
+#lexicon()~ method, 646
+lexicon->#load()~ method, 350, 412
+#lexicon_entries~ table, 348
+#limit~ (output modifier), 171
 limiting access to elements tutorial, 461-463
 limiting permissions in the Manager tutorial, 464-467
 link tag properties, 163
 link tags, 16, 161-163, 197
     context property, 163
     scheme property, 163
-link_attributes (Link Attributes) resource field, 143
+#link_attributes~ (Link Attributes) resource field, 143
 links, 16
     bug report, 129
     displaying, 17
@@ -1730,22 +1785,22 @@ Load List and View policy, 444, 459
 Load Only policy, 443, 475
 load permission, 449, 459, 475
 Load policy, 471
-loadClass() method, 606, 608, 609, 634-635
+#loadClass()~ method, 606, 608, 609, 634-635
 loading lexicon topics, 350
 localhost default database, 42
 location
-    of config.core.php files, 420
-    of config.inc.php file, 41
+    of #config.core.php~ files, 420
+    of #config.inc.php~ file, 41
     of lexicon files, 348, 412
     of properties in database, 250
     of property sets in database, 250
     of Revolution config file, 41
 lock variable for editing TV field, 206
 locks, 112
-log() method, 635
-log() method (transport packages), 617
-log() method options, 635
-logEvent() method, 646
+#log()~ method, 635
+#log()~ method (transport packages), 617
+#log()~ method options, 635
+#logEvent()~ method, 646
 logged-in users list, 111
 logging out, 113
 logical operators in PHP, 663-664
@@ -1757,16 +1812,16 @@ Login snippet, 472-473
 login status, 384-385, 469
 login tests, 302
 loginResourceId property, 474
-logManagerAction() method, 646
-longtitle (Long Title) resource field, 142
-lowercase (output modifier), 169
-lowerthan (output modifier), 168
-lte (output modifier), 168
-ltrim() PHP function, 676
+#logManagerAction()~ method, 646
+#longtitle~ (Long Title) resource field, 142
+#lowercase~ (output modifier), 169
+#lowerthan~ (output modifier), 168
+#lte~ (output modifier), 168
+#ltrim()~ PHP function, 676
 
 M
-mail() PHP function, 696
-makeUrl() method, 481, 488, 490, 646
+#mail()~ PHP function, 696
+#makeUrl()~ method, 481, 488, 490, 646
 Manage Users menu, 114
 Manager, 99-132
     configuration check (Revolution), 110
@@ -1781,25 +1836,25 @@ manager action policy, 444-445
 manager action rules, 449
 manager actions, 126, 502-508
 Manager Actions Report, 121
-manager directory, 420
+#manager~ directory, 420
 Manager menu (see Top Menu)
 manager users, 440-441, 446-447
 manager users in Evolution, 497-498
-manager_language system setting, 612
-manager_language user setting, 447
-manager_url system setting, 531
+#manager_language~ system setting, 612
+#manager_language~ user setting, 447
+#manager_url~ system setting, 531
 manually installing transport packages, 537-538
 many-to-many relationships (see: intersect objects)
 master branch (Git), 71
-math (output modifier), 172
+#math~ (output modifier), 172
 math hook for FormIt, 579-580
-md5, 342
-md5 (output modifier), 173
-member pages with tree_root_id tutorial, 489-496
+#md5~, 342
+#md5~ (output modifier), 173
+member pages with #tree_root_id~ tutorial, 489-496
 member role, 475
 Member template, 490-491
 member variables in PHP, 683
-memberof (output modifier), 169
+#memberof~ (output modifier), 169
 MemberPages plugin, 492-493
 MemberPages snippet, 490-491
 Members resource, 489
@@ -1809,235 +1864,236 @@ menu item handler, 503-504
 menu tree, 503-513
 Menu Update dialog, 503
 menuindex (and Resource tree sorting), 101
-menuindex (Menu Index) resource field, 145
+#menuindex~ (Menu Index) resource field, 145
 menus (custom), 513
-menutitle (Menu Title) resource field, 144
+#menutitle~ (Menu Title) resource field, 144
 merge (Git), 81, 88
-mergeChunkContent() method, 646
-mergeDocumentContent() method, 646
-mergePlaceholderContent() method, 646
-mergeSettingsContent() method, 646
-messageQuit() method, 647
+#mergeChunkContent()~ method, 646
+#mergeDocumentContent()~ method, 646
+#mergePlaceholderContent()~ method, 646
+#mergeSettingsContent()~ method, 646
+#messageQuit()~ method, 647
 methods
-    addEventListener(), 640
-    addMany(), 342, 621, 637
-    addMany()402, 
-    addOne(), 341-342, 403, 404, 406, 407, 408, 409, 637
-    addPackage(), 630
-    beginTransaction(), 405, 630
-    changePassword(), 640, 650
-    changeWebUserPassword(), 640
-    checkPreview(), 640
-    checkSession(), 640
-    cleanDocumentIdentifier(), 640
-    commit(), 406, 630
-    connect(), 631
-    createPackage() (transport packages), 606, 608
-    createVehicle() (transport packages), 606, 610
-    errorCode(), 631
-    errorInfo(), 631
-    exec(), 631
-    fromArray(), 340-341, 638
-    fromJSON(), 638
+    #addEventListener()~, 640
+    #addMany()~, 342, 621, 637
+    #addMany()~402, 
+    #addOne()~, 341-342, 403, 404, 406, 407, 408, 409, 637
+    #addPackage()~, 630
+    #beginTransaction()~, 405, 630
+    #changePassword()~, 640, 650
+    #changeWebUserPassword()~, 640
+    #checkPreview()~, 640
+    #checkSession()~, 640
+    #cleanDocumentIdentifier()~, 640
+    #commit()~, 406, 630
+    #connect()~, 631
+    #createPackage()~ (transport packages), 606, 608
+    #createVehicle()~ (transport packages), 606, 610
+    #errorCode()~, 631
+    #errorInfo()~, 631
+    #exec()~, 631
+    #fromArray()~, 340-341, 638
+    #fromJSON()~, 638
     generic, 310-314
-    get(), 327, 355, 391, 629, 638
-    getActiveChildren(), 640
-    getAggregates(), 631
-    getAllChildren(), 640
-    getAncestry(), 631
-    getAttribute(), 631
-    getAuthenticatedUser(), 640-641
-    getCacheManager(), 631, 641
-    getCachePath(), 631
-    getChildIds(), 315, 357, 641
-    getChunk(), 237, 317, 368-370, 389, 488, 528, 642
-    getCollection(), 313, 362-363, 373, 390, 392-393, 393, 403, 407, 631-632
-    getCollectionGraph(), 324-325, 364-365, 391, 397, 632
-    getComposites(), 631-632
-    getConfig(), 642
-    getContent(), 328, 651
-    getContext(), 642
-    getCount(), 633
-    getDebug(), 633
-    getDebugBacktrace(), 633
-    getDocGroups(), 642
-    getDocument(), 642
-    getDocumentChildren(), 642
-    getDocumentChildrenTVars(), 642
-    getDocumentIdentifier(), 642
-    getDocumentMethod(), 642
-    getDocumentObject(), 642
-    getDocuments(), 642
-    getEventMap(), 642
-    getFields(), 633
-    getFullTableName(), 642
-    getIterator(), 313, 633
-    getKeywords(), 642
-    getLoginUserID(), 642
-    getLoginUserName(), 643
-    getLoginUserType(), 643
-    getManager(), 633
-    getManagerPath(), 643
-    getMany(), 321, 359-361, 373, 638
-    getMETATags(), 643
-    getMicroTime(), 633
-    getObject(), 310-313, 354, 390, 629, 633
-    getObjectGraph(), , 321-324, 363-364, 384, 388, 396, 633-634
-    getOne(), 320, 358-360, 384, 388, 390, 392, 639
-    getOption(), 314, 367-368, 380, 490, 527, 634
-    getPackage(), 634
-    getPageInfo(), 643
-    getParent(), 643
-    getParentIds(), 315-316, 358, 643
-    getParser(), 643
-    getPK(), 634
-    getPKType(), 634
-    getPlaceholder(), 316, 643
-    getProperties(), 370
-    getRegisteredClientScripts(), 643
-    getRegisteredClientStartupScripts(), 643
-    getRequest(), 643
-    getResponse(), 643
-    getSelectColumns(), 393
-    getService(), 
-    getSessionState(), 644
-    getSettings(), 644, 650
-    getTableName(), 634
-    getTemplateVar(), 644
-    getTemplateVarOutput(), 644
-    getTemplateVars(), 644
-    getTree(), 644
-    getTVValue(), 378
-    getUser(), 644
-    getUserDocGroups(), 644
-    getUserGroupNames(), 650
-    getUserGroups(), 650
-    getUserInfo(), 645
-    getValue(), 330, 652
-    getVersionData(), 645
-    getWebUserInfo(), 645
+    #get()~, 327, 355, 355, 391, 629, 638
+    #getActiveChildren()~, 640
+    #getAggregates()~, 631
+    #getAllChildren()~, 640
+    #getAncestry()~, 631
+    #getAttribute()~, 631
+    #getAuthenticatedUser()~, 640-641
+    #getCacheManager()~, 631, 641
+    #getCachePath()~, 631
+    #getChildIds()~, 315, 357, 641
+    #getChunk()~, 237, 317, 368-370, 389, 488, 528, 642
+    #getCollection()~, 313, 362-363, 373, 390, 392-393, 393, 403, 407, 631-632
+    #getCollectionGraph()~, 324-325, 364-365, 391, 397, 632
+    #getComposites()~, 631-632
+    #getConfig()~, 642
+    #getContent()~, 328, 651
+    #getContext()~, 642
+    #getCount()~, 633
+    #getDebug()~, 633
+    #getDebugBacktrace()~, 633
+    #getDocGroups()~, 642
+    #getDocument()~, 642
+    #getDocumentChildren()~, 642
+    #getDocumentChildrenTVars()~, 642
+    #getDocumentIdentifier()~, 642
+    #getDocumentMethod()~, 642
+    #getDocumentObject()~, 642
+    #getDocuments()~, 642
+    #getEventMap()~, 642
+    #getFields()~, 633
+    #getFullTableName()~, 642
+    #getIterator()~, 313, 633
+    #getKeywords()~, 642
+    #getLoginUserID()~, 642
+    #getLoginUserName()~, 643
+    #getLoginUserType()~, 643
+    #getManager()~, 633
+    #getManagerPath()~, 643
+    #getMany()~, 321, 359-361, 373, 638
+    #getMETATags()~, 643
+    #getMicroTime()~, 633
+    #getObject()~, 310-313, 354, 390, 629, 633
+    #getObjectGraph()~, , 321-324, 363-364, 384, 388, 396, 633-634
+    #getOne()~, 320, 358-360, 384, 388, 390, 392, 639
+    #getOption()~, 314, 367-368, 380, 490, 527, 634
+    #getPackage()~, 634
+    #getPageInfo()~, 643
+    #getParent()~, 643
+    #getParentIds()~, 315-316, 358, 643
+    #getParser()~, 643
+    #getPK()~, 634
+    #getPKType()~, 634
+    #getPlaceholder()~, 316, 643
+    #getProperties()~, 370
+    #getRegisteredClientScripts()~, 643
+    #getRegisteredClientStartupScripts()~, 643
+    #getRequest()~, 643
+    #getResponse()~, 643
+    #getSelectColumns()~, 393
+    #getService()~, 
+    #getSessionState()~, 644
+    #getSettings()~, 644, 650
+    #getTableName()~, 634
+    #getTemplateVar()~, 644
+    #getTemplateVarOutput()~, 644
+    #getTemplateVars()~, 644
+    #getTree()~, 644
+    #getTVValue()~, 378
+    #getUser()~, 644
+    #getUserDocGroups()~, 644
+    #getUserGroupNames()~, 650
+    #getUserGroups()~, 650
+    #getUserInfo()~, 645
+    #getValue()~, 330, 652
+    #getVersionData()~, 645
+    #getWebUserInfo()~, 645
     graph, 321-325
-    handleRequest(), 645
-    hasChildren(), 329, 356
-    hasPermission(), 485, 488, 645
-    hasSessionContext(), 384-385, 469, 481, 490, 650
-    hasTemplate(), 331
-    hasTemplateVar(), 331
-    initialize() (contexts), 426-427
-    initialize() (MODX), 600-601, 645
-    innerJoin(), 393
-    insideManager(), 645
-    invokeEvent(), 301, 645, 698
-    isAuthenticated(), 650
-    isBackend(), 645
-    isFrontend(), 645
-    isMember(), 386-386, 650
-    isMemberOfWebGroup(), 646
-    isNew(), 639
-    joinGroup(), 408
-    joinGroup() (user object), 332, 650
-    lastInsertId(), 634
-    leaveGroup() (resource object), 332
-    leaveGroup() (user object), 332, 650
-    lexicon(), 646
-    lexicon->load(), 350, 412
-    loadClass(), 606, 608, 609, 634-635
-    log(), 635
-    log() (transport packages), 617
-    logEvent(), 646
-    logManagerAction(), 646
-    makeUrl(), 481, 488, 490, 646
-    mergeChunkContent(), 646
-    mergeDocumentContent(), 646
-    mergePlaceholderContent(), 646
-    mergeSettingsContent(), 646
-    messageQuit(), 647
+    #handleRequest()~, 645
+    #hasChildren()~, 329, 356-357
+    #hasPermission()~, 485, 488, 645
+    #hasSessionContext()~, 384-385, 469, 481, 490, 650
+    #hasTemplate()~, 331
+    #hasTemplateVar()~, 331
+    #initialize()~ (contexts), 426-427
+    #initialize()~ (MODX), 600-601, 645
+    #innerJoin()~, 393
+    #insideManager()~, 645
+    #invokeEvent()~, 301, 645, 698
+    #isAuthenticated()~, 650
+    #isBackend()~, 645
+    #isFrontend()~, 645
+    #isMember()~, 386-387, 650
+    #isMemberOfWebGroup()~, 646
+    #isNew()~, 639
+    #joinGroup()~, 408
+    #joinGroup()~ (user object), 332, 650
+    #lastInsertId()~, 634
+    #leaveGroup()~ (resource object), 332
+    #leaveGroup()~ (user object), 332, 650
+    #lexicon()~, 646
+    lexicon->#load()~, 350, 412
+    #loadClass()~, 606, 608, 609, 634-635
+    #log()~, 635
+    #log()~ (transport packages), 617
+    #logEvent()~, 646
+    #logManagerAction()~, 646
+    #makeUrl()~, 481, 488, 490, 646
+    #mergeChunkContent()~, 646
+    #mergeDocumentContent()~, 646
+    #mergePlaceholderContent()~, 646
+    #mergeSettingsContent()~, 646
+    #messageQuit()~, 647
     modUser class, 650-651
     modX class, 640-649
-    newObject(), 339, 397, 398, 399, 400, 403, 404, 406, 407, 408, 409, 635
-    newObject() (transport packages), 606
-    newQuery(), 313, 393, 631-632, 636
+    #newObject()~, 339, 397, 398, 399, 400, 403, 404, 406, 407, 408, 409, 635
+    #newObject()~ (transport packages), 606
+    #newQuery()~, 313, 393, 631-632, 636
     object, 326-332
-    parseChunk(), 647
-    parseSchema(), 410
-    prepare(), 636
-    process(), 328-329
-    processElementTags(), 646
-    putChunk(), 647
-    putVehicle()  (transport packages), 606
-    putVehicle() (transport packages), 610
-    query(), 636
-    reg*(), 647
-    regClientCSS(), 378, 527, 647
-    regClientHTMLBlock(), 647
-    regClientScript(), 647
-    regClientStartupHTMLBlock(), 647
-    regClientStartupScript(), 647
-    registerNamespace() (transport packages), 606, 608
+    #parseChunk()~, 647
+    #parseSchema()~, 410
+    #prepare()~, 636
+    #process()~, 328-329
+    #processElementTags()~, 646
+    #putChunk()~, 647
+    #putVehicle()~  (transport packages), 606
+    #putVehicle()~ (transport packages), 610
+    #query()~, 636
+    #reg*()~, 647
+    #regClientCSS()~, 378, 527, 647
+    #regClientHTMLBlock()~, 647
+    #regClientScript()~, 647
+    #regClientStartupHTMLBlock()~, 647
+    #regClientStartupScript()~, 647
+    #registerNamespace()~ (transport packages), 606, 608
     related object, 317-319
-    reloadConfig(), 647
-    remove(), 344, 639
-    remove() (user object), 651
-    removeAllEventListener(), 648
-    removeCollection(), 636
-    removeEventListener(), 648
-    removeObject(), 636
-    removeObject() (transport packages), 618
-    renderOutput(), 330-331, 652
-    resolve() (transport packages), 612-614
-    rollback(), 405, 636
-    runSnippet(), 373-375, 648
-    save(), 339, 343-344, 397, 398, 400, 404, 639
-    save() (user object), 651
-    sendEmail(), 651
-    sendError(), 648
-    sendErrorPage(), 469, 648
-    sendForward(), 302, 648
-    sendRedirect(), 488, 648
-    sendUnauthorizedPage(), 469, 490, 648
-    set(), 340, 397, 399, 404, 639
-    set() (transport packages), 606
-    setAttribute(), 636
-    setContent(), 340, 399, 400, 651
-    setContent() (transport packages), 606
-    setDebug(), 636, 648
-    setLogLevel(), 636
-    setLogLevel() (transport packages), 625
-    setLogTarget(), 636
-    setLogTarget() (transport packages), 625
-    setOption(), 637
-    setPackageAttributes() (transport packages), 615
-    setPlaceholder(), 344-347, 591, 593, 648-649
-    setPlaceholders(), 346-347, 649
-    setService(), 643
-    setValue() (FormIt hooks), 592
-    setValue() (TV), 404, 414
-    sortby() for xPDO queries, 631-632
-    stripTags(), 649
-    switchContext(), 649
-    toArray(), 328, 355, 370-373, 384, 639
-    toJSON(), 639
-    toPlaceholder(), 346, 649
-    toPlaceholders(), 346-347, 384, 388-389, 649
-    unsetPlaceholder(), 347, 649
-    unsetPlaceholders(), 347, 649
-    userLoggedIn()649, 
-    where() for xPDO queries, 631-632
-    writeSchema(), 410
+    #reloadConfig()~, 647
+    #remove()~, 344, 639
+    #remove()~ (user object), 651
+    #removeAllEventListener()~, 648
+    #removeCollection()~, 636
+    #removeEventListener()~, 648
+    #removeObject()~, 636
+    #removeObject()~ (transport packages), 618
+    #renderOutput()~, 330-331, 652
+    #resolve()~ (transport packages), 612-614
+    #rollback()~, 405, 636
+    #runSnippet()~, 373-375, 648
+    #save()~, 339, 343-344, 397, 398, 400, 404, 639
+    #save()~ (user object), 651
+    #sendEmail()~, 651
+    #sendError()~, 648
+    #sendErrorPage()~, 469, 648
+    #sendForward()~, 302, 648
+    #sendRedirect()~, 488, 648
+    #sendUnauthorizedPage()~, 469, 490, 648
+    #set()~, 340, 397, 399, 404, 639
+    #set()~ (transport packages), 606
+    #setAttribute()~, 636
+    #setContent()~, 340, 399, 400, 651
+    #setContent()~ (transport packages), 606
+    #setDebug()~, 636, 648
+    #setLogLevel()~, 636
+    #setLogLevel()~ (transport packages), 625
+    #setLogTarget()~, 636
+    #setLogTarget()~ (transport packages), 625
+    #setOption()~, 637
+    #setPackageAttributes()~ (transport packages), 615
+    #setPlaceholder()~, 344-347, 591, 593, 648-649
+    #setPlaceholders()~, 346-347, 649
+    #setService()~, 643
+    #setValue()~ (FormIt hooks), 592
+    #setValue()~ (TV), 404, 414
+    #sortby()~ for xPDO queries, 631-632
+    #stripTags()~, 649
+    #switchContext()~, 649
+    #toArray()~, 328, 355, 355, 370-373, 384, 639
+    #toJSON()~, 639
+    #toPlaceholder()~, 346, 649
+    #toPlaceholders()~, 346-347, 384, 388-389, 649
+    #unsetPlaceholder()~, 347, 649
+    #unsetPlaceholders()~, 347, 649
+    #userLoggedIn()~649, 
+    #where()~ for xPDO queries, 631-632
+    #writeSchema()~, 410
     xPDO class, 630-637
-mgr context, 25-26, 424-425, 450-451, 456, 458, 459, 460, 483
-mgr context permissions, 441
+#mgr~ context, 25-26, 424-425, 450-451, 456, 458, 459, 460, 483
+#mgr~ context permissions, 441
 MIME types, 125
 minimum role
     for context access ACL entries, 450-451
     for element category access ACL entries, 453
     for resource group access ACL entries, 452, 458-459
-mo (output modifier), 169
-mod (output modifier), 172
-mod_rewrite, 60
+#mo~ (output modifier), 169
+#mod~ (output modifier), 172
+#mod_rewrite~, 60
 modChunk object reference, 691
-MODE_NEW constant, 299
-MODE_UPD constant, 299
+#MODE_NEW~ constant, 299, 699
+#MODE_UPD~ constant, 299
+#MODE_UPS~ constant, 699
 modElementPropertySet intersect object, 409
 MODExt, 532-533
 modifying
@@ -2049,17 +2105,17 @@ modPluginEvent intersect object, 408
 modPrincipal object, 319
 modResource object reference, 691
 modResourceGroupResource intersect object, 408
-modresponse.class.php file, 290
+#modresponse.class.php~ file, 290
 modSnippet object reference, 692
-modSystemEvent::MODE_NEW constant, 299, 699
-modSystemEvent::MODE_UPD constant, 299, 699
+#modSystemEvent::MODE_NEW~ constant, 299, 699
+#modSystemEvent::MODE_UPD~ constant, 299, 699
 modTemplate object reference, 693
 modTemplateVar object reference, 693-694
 modTemplateVarTemplate intersect object, 403
 modules
     in Evolution, 533
     manager system events (Evolution), 712
-modulus (output modifier), 172
+#modulus~ (output modifier), 172
 modUser class, 650-651
 modUser object, 381
 modUser object reference, 694
@@ -2067,7 +2123,7 @@ modUserGroup object, 318-319
 modUserGroupMember intersect object, 319, 406
 modUserProfile object reference, 695
 MODX
-    .htaccess file, 426
+    #.htaccess~ file, 426
     about, vi-xiii
     About Report, 122
     add-on components (overview), 4
@@ -2075,12 +2131,12 @@ MODX
     API documentation link, 129, 630
     API reference, 629-652
     architecture, x-xiii
-    assets directory, 20
+    #assets~ directory, 20
     back end, 5
     BaseTemplate, 49
     basic building blocks, 6-20
     browser support, 36-37
-    build.config.php, 87
+    #build.config.php~, 87
     building the development version of Revolution, 87
     cache (overview), 28-29
     cache control, xiii
@@ -2097,10 +2153,10 @@ MODX
     contexts, 424-434
     contexts defined, 25-26
     contributing to development, 75-89
-    core directory, 20, 349, 411, 425-426, 433, 524
-    core directory (moving), 421-422
+    #core~ directory, 20, 349, 411, 425-426, 433, 524
+    #core~ directory (moving), 421-422
     core independence in MODX, xii-xiii
-    core/packages directory, 537
+    #core/packages~ directory, 537
     creating contexts, 25-26
     creating resources, 6
     credits, 122
@@ -2123,20 +2179,19 @@ MODX
     event model, 300-301
     Evolution, viii
     Evolution tags, 17
-    extras (overview), 4
     file and directory permissions, 41
     files, 19
     forums (searching), 127-128
     forums link, 127-128
     front end, 5
-    get*() methods, 310-327
+    #get*()~ methods, 310-327
     getting version information in code, 645
     help, 122
     history, vi-viii
     home page, 48
-    index.php file, 38, 56, 61, 142, 165
-    index.php file (separate contexts), 426-428
-    initialize() method, 600-601
+    #index.php~ file, 38, 56, 61, 142, 165
+    #index.php~ file (separate contexts), 426-428
+    #initialize()~ method, 600-601
     installing, 35
     is it for you?, vi-vii
     key features, x-xiii
@@ -2146,7 +2201,7 @@ MODX
     Manager, 99-132
     Manager trees, 99-109
     menu (see Top Menu), 
-    mgr context, 25-26, 424-425
+    #mgr~ context, 25-26, 424-425
     moving site, 64-70
     multiple sites sharing core, 433
     namespaces defined, 23
@@ -2168,7 +2223,7 @@ MODX
     Revolution objects, 680-682
     Revolution tags, 17
     robustness, xiii
-    root directory, 420
+    #root~ directory, 420
     RSS feeds, 110
     running setup, 41
     schema, 318-319
@@ -2201,7 +2256,7 @@ MODX
     Tpl chunks defined, 12
     Traditional distribution, 420-423
     transport packages defined, 22
-    transport.core.php, 87
+    #transport.core.php~, 87
     unauthorized page, 50
     upgrading, 69
     user interface, xi
@@ -2209,7 +2264,7 @@ MODX
     user profile object reference, 695
     user settings, 26
     versions, vii-x
-    web context, 25-26, 424-425
+    #web~ context, 25-26, 424-425
     Wiki link, 128
     workspaces, 25-26
 MODX Evolution, viii
@@ -2232,11 +2287,11 @@ MODX Evolution, viii
     elements, 31
     file and directory permissions, 95
     form customization, 533
-    getChildIds() method, 416
-    getChunk() method, 416
-    getLoginUserID() method, 307
-    getLoginUserName() method, 307
-    getParentIds() method, 416
+    #getChildIds()~ method, 416
+    #getChunk()~ method, 416
+    #getLoginUserID()~ method, 307
+    #getLoginUserName()~ method, 307
+    #getParentIds()~ method, 416
     installing, 42, 96
     installing add-on components, 96, 595
     installing snippets, 306
@@ -2246,7 +2301,7 @@ MODX Evolution, viii
     missing Manager functions in, 133
     modules, 533
     output modifiers, 187
-    parseChunk() method, 416
+    #parseChunk()~ method, 416
     PHX, 187
     placeholders, 306
     plugins, 307
@@ -2254,7 +2309,7 @@ MODX Evolution, viii
     Resource tree, 184
     retrieving system settings, 416
     roles, 446, 498
-    runSnippet() method, 416
+    #runSnippet()~ method, 416
     security system, 497-498
     snippet properties, 595
     snippets, 306
@@ -2265,7 +2320,7 @@ MODX Evolution, viii
     transport packages, 626
     user information in, 307
     user settings, 32
-    userLoggedIn() method, 307
+    #userLoggedIn()~ method, 307
     using SMTP, 596
     web users, 497-498
 MODX Manager, 99-132
@@ -2279,44 +2334,43 @@ MODX Motors resources, 557-558
 modX object, 310, 699
 MODX objects (creating in code), 338-344, 397-409
 MODX Objects reference, 690-695
-modx.class.php file, 601
-modx.com/extras, 537
-modx.mysql.schema.php file, 318-319
-modx.user.id placeholder, 381
-modx.user.username placeholder, 381
+#modx.class.php~ file, 601
+#modx.mysql.schema.php~ file, 318-319
+#modx.user.id~ placeholder, 381
+#modx.user.username~ placeholder, 381
 MODX: The Official Guide
     audience for, ii
     introduction to, i-xiii
     organization of, iii
     typographical conventions, iii-v
-modX::LOG_LEVEL_INFO constant, 625
-modX::SESSION_STATE_EXTERNAL constant, 644
-modX::SESSION_STATE_INITIALIZED constant, 644
-modX::SESSION_STATE_UNAVAILABLE constant, 644
-modX::SESSION_STATE_UNINITIALIZED constant, 644
-modx_actions database table, 506
-MODX_ASSETS_PATH constant, 603, 614
-MODX_ASSETS_URL constant, 603
-modx_base_path system setting, 642
-modx_base_url system setting, 642
-modx_charset system setting, 192
-MODX_CONFIG_KEY constant, 601
-MODX_CORE_PATH constant, 601, 603, 630, 634
-modx_core_path system setting, 642
-MODX_PROCESSORS_PATH constant, 422
+#modX::LOG_LEVEL_INFO~ constant, 625
+#modX::SESSION_STATE_EXTERNAL~ constant, 644
+#modX::SESSION_STATE_INITIALIZED~ constant, 644
+#modX::SESSION_STATE_UNAVAILABLE~ constant, 644
+#modX::SESSION_STATE_UNINITIALIZED~ constant, 644
+#modx_actions~ database table, 506
+#MODX_ASSETS_PATH~ constant, 603, 614
+#MODX_ASSETS_URL~ constant, 603
+#modx_base_path~ system setting, 642
+#modx_base_url~ system setting, 642
+#modx_charset~ system setting, 192
+#MODX_CONFIG_KEY~ constant, 601
+#MODX_CORE_PATH~ constant, 601, 603, 630, 634
+#modx_core_path~ system setting, 642
+#MODX_PROCESSORS_PATH~ constant, 422
 moving
     a site to MODX, 89-94
     local site to remote server, 64-70
-    MODX manager directory, 423
-    the MODX core directory, 421-422
+    MODX #manager~ directory, 423
+    the MODX #core~ directory, 421-422
     TV to a new tab with form customization tutorial, 520
-mpy (output modifier), 172
+#mpy~ (output modifier), 172
 multi-language sites, 434
 multiple security permissions, 440
-multiply (output modifier), 172
+#multiply~ (output modifier), 172
 my-new-tab, 522
-my_allow_private permission, 486-487
-my_view_user permission, 510
+#my_allow_private~ permission, 486-487
+#my_view_user~ permission, 510
 MyComponent example transport package build script, 625
 MyISAM storage engine, 405
 MyMenu custom menu item, 509
@@ -2332,28 +2386,28 @@ namespaces, 23, 411, 506
     creating, 126
     defined, 23
     for components, 349
-ne (output modifier), 168
-neq (output modifier), 168
+#ne~ (output modifier), 168
+#neq~ (output modifier), 168
 nested tags, 18, 164-165, 197
 New Category dialog, 42
 new feature in Git, 86
 new MODX objects in code, 339
 New Property Set dialog, 119
 New Role button, 115
-new_document_in_root permission, 439
-new_user permission, 449
-newObject() method, 339, 397, 398, 399, 400, 403, 404, 406, 407, 408, 409, 635
-newObject() method (transport packages), 606, 621
-newQuery() method, 313, 393, 631-632, 636
+#new_document_in_root~ permission, 439
+#new_user~ permission, 449
+#newObject()~ method, 339, 397, 398, 399, 400, 403, 404, 406, 407, 408, 409, 635
+#newObject()~ method (transport packages), 606, 621
+#newQuery()~ method, 313, 393, 631-632, 636
 News resource group, 459
 news RSS feed, 110
 news summary with getResources tutorial, 566-567
 NightErrorPage resource, 303
-nl2br (output modifier), 171
-notags (output modifier), 170
-notempty (output modifier), 172
-notequals (output modifier), 168
-notequalto (output modifier), 168
+#nl2br~ (output modifier), 171
+#notags~ (output modifier), 170
+#notempty~ (output modifier), 172
+#notequals~ (output modifier), 168
+#notequalto~ (output modifier), 168
 null variable in PHP, 655
 number template variable input type, 212
 
@@ -2367,172 +2421,172 @@ object-oriented design of MODX, xiii
 object-oriented programming in PHP, 679-686
 ObjectDemo tutorial, 353
 objects in PHP, 679-686
-OnBeforeCacheUpdate system event, 715
-OnBeforeChunkFormDelete system event, 706
-OnBeforeChunkFormSave system event, 297, 705
-OnBeforeDocFormDelete system event, 704, 704
-OnBeforeDocFormSave system event, 296, 703
-OnBeforeEmptyTrash system event, 705
-OnBeforeManagerLogin system event, 301, 700
-OnBeforeManagerLogout system event, 701
-OnBeforeManagerPageInit system event, 701
-OnBeforeModFormDelete system event, 712
-OnBeforeModFormSave system event, 712
-OnBeforePluginFormDelete system event, 708
-OnBeforePluginFormSave system event, 707
-OnBeforeResourceGroupRemove system event, 705
-OnBeforeSaveWebPageCache system event, 715
-OnBeforeSnipFormDelete system event, 707
-OnBeforeSnipFormSave system event, 706
-OnBeforeTempFormDelete system event, 
-OnBeforeTempFormSave system event, 
-OnBeforeTVFormDelete system event, 710
-OnBeforeTVFormSave system event, 709
-OnBeforeUserActivate system event, 711
-OnBeforeUserFormDelete system event, 702, 711
-OnBeforeUserFormSave system event, 702, 710
-OnBeforeWebLogin system event, 714
-OnBeforeWebLogout system event, 
-OnBeforeWUserFormDelete system event, 711
-OnBeforeWUserFormSave system event, 711
-OnCacheUpdate system event, 715
-OnCategoryBeforeRemove system event, 712
-OnCategoryBeforeSave system event, 712
-OnCategoryRemove system event, 712
-OnCategorySave system event, 712
-OnChunkBeforeSave system event, 706
-OnChunkFormDelete system event, 706
-OnChunkFormPrerender system event, 705
-OnChunkFormRender system event, 705
-OnChunkFormSave system event, 706
-OnChunkRemove system event, 706
-OnChunkSave system event, 706
-OnContextBeforeRemove system event, 713
-OnContextBeforeSave system event, 713
-OnContextFormPrerender system event, 713
-OnContextFormRender system event, 713
-OnContextRemove system event, 713
-OnContextSave system event, 713
-OnContextUpdate system event, 713
-OnCreateDocGroup system event, 704
-OnDocFormDelete system event, 704
-OnDocFormPrerender system event, 703
-OnDocFormRender system event, 703
-OnDocFormSave system event, 703
-OnDocPublished system event, 703
-OnDocUnPublished system event, 703
-OnEmptyTrash system event, 705
-OnFileManagerUpload, 702
-OnFriendlyURLSettingsRender system event, 713
-OnHandleRequest system event, 432, 714
-OnInterfaceSettingsRender system event, 713
+#OnBeforeCacheUpdate~ system event, 715
+#OnBeforeChunkFormDelete~ system event, 706
+#OnBeforeChunkFormSave~ system event, 297, 705
+#OnBeforeDocFormDelete~ system event, 704, 704
+#OnBeforeDocFormSave~ system event, 296, 703
+#OnBeforeEmptyTrash~ system event, 705
+#OnBeforeManagerLogin~ system event, 301, 700
+#OnBeforeManagerLogout~ system event, 701
+#OnBeforeManagerPageInit~ system event, 701
+#OnBeforeModFormDelete~ system event, 712
+#OnBeforeModFormSave~ system event, 712
+#OnBeforePluginFormDelete~ system event, 708
+#OnBeforePluginFormSave~ system event, 707
+#OnBeforeResourceGroupRemove~ system event, 705
+#OnBeforeSaveWebPageCache~ system event, 715
+#OnBeforeSnipFormDelete~ system event, 707
+#OnBeforeSnipFormSave~ system event, 706
+#OnBeforeTempFormDelete~ system event, 
+#OnBeforeTempFormSave~ system event, 
+#OnBeforeTVFormDelete~ system event, 710
+#OnBeforeTVFormSave~ system event, 709
+#OnBeforeUserActivate~ system event, 711
+#OnBeforeUserFormDelete~ system event, 702, 711
+#OnBeforeUserFormSave~ system event, 702, 710
+#OnBeforeWebLogin~ system event, 714
+#OnBeforeWebLogout~ system event, 
+#OnBeforeWUserFormDelete~ system event, 711
+#OnBeforeWUserFormSave~ system event, 711
+#OnCacheUpdate~ system event, 715
+#OnCategoryBeforeRemove~ system event, 712
+#OnCategoryBeforeSave~ system event, 712
+#OnCategoryRemove~ system event, 712
+#OnCategorySave~ system event, 712
+#OnChunkBeforeSave~ system event, 706
+#OnChunkFormDelete~ system event, 706
+#OnChunkFormPrerender~ system event, 705
+#OnChunkFormRender~ system event, 705
+#OnChunkFormSave~ system event, 706
+#OnChunkRemove~ system event, 706
+#OnChunkSave~ system event, 706
+#OnContextBeforeRemove~ system event, 713
+#OnContextBeforeSave~ system event, 713
+#OnContextFormPrerender~ system event, 713
+#OnContextFormRender~ system event, 713
+#OnContextRemove~ system event, 713
+#OnContextSave~ system event, 713
+#OnContextUpdate~ system event, 713
+#OnCreateDocGroup~ system event, 704
+#OnDocFormDelete~ system event, 704
+#OnDocFormPrerender~ system event, 703
+#OnDocFormRender~ system event, 703
+#OnDocFormSave~ system event, 703
+#OnDocPublished~ system event, 703
+#OnDocUnPublished~ system event, 703
+#OnEmptyTrash~ system event, 705
+#OnFileManagerUpload~, 702
+#OnFriendlyURLSettingsRender~ system event, 713
+#OnHandleRequest~ system event, 432, 714
+#OnInterfaceSettingsRender~ system event, 713
 Online panel, 111
-OnLoadWebDocument system event, 714
-OnLoadWebPageCache system event, 715
-OnLogPageHit system event, 
-OnManagerAuthentication system event, 700
-OnManagerChangePassword system event, 701
-OnManagerCreateGroup system event, 701
-OnManagerDeleteUser system event, 702, 711
-OnManagerLogin system event, 700
-OnManagerLoginFormPrerender system event, 700
-OnManagerLoginFormRender system event, 301, 700
-OnManagerLogout system event, 701
-OnManagerPageInit system event, 701
-OnManagerSaveUser system event, 702, 710
-OnMiscSettingsRender, 713
-OnModFormDelete system event, 712
-OnModFormPrerender system event, 712
-OnModFormRender system event, 712
-OnModFormSave system event, 712
-OnPageNotFound system event, , 302, 304
-OnPageUnauthorized system event, 714-715
-OnParseDocument system event, 714
-OnPluginBeforeRemove system event, 708
-OnPluginBeforeSave system event, 707
-OnPluginEventBeforeRemove system event, 708
-OnPluginEventRemove system event, 708
-OnPluginFormDelete system event, 708
-OnPluginFormPrerender system event, 707
-OnPluginFormRender system event, 707
-OnPluginFormSave system event, 708
-OnPluginRemove system event, 708
-OnPluginSave system event, 707
-OnResourceBeforeSort system event, 704
-OnResourceDuplicate system event, 704
-OnResourceGroupBeforeSave system event, 705
-OnResourceGroupRemove system event, 705
-OnResourceGroupSave system event, 705
-OnResourceSort system event, 704
-OnResourceToolbarLoad system event, 704
-OnResourceTVFormPrerender system event, 704
-OnResourceTVFormRender system event, 704
-OnResourceUndelete system event, 704
-OnRichTextBrowserInit system event, 712
-OnRichTextEditorInit system event, 712
-OnRichTextEditorRegister system event, 712
-OnSiteRefresh system event, 715
-OnSiteSettingsRender, 713
-OnSnipFormDelete system event, 707
-OnSnipFormPrerender system event, 706
-OnSnipFormRender system event, 706
-OnSnipFormSave system event, 707
-OnSnippetBeforeRemove system event, 707
-OnSnippetBeforeSave system event, 706
-OnSnippetRemove system event, 707
-OnSnippetSave system event, 707
-OnTempFormDelete system event, 
-OnTempFormPrerender system event, 
-OnTempFormRender system event, 
-OnTempFormSave system event, 
-OnTemplateBeforeRemove system event, 
-OnTemplateBeforeSave system event, 
-OnTemplateRemove system event, 
-OnTemplateSave system event, 
-OnTemplateVarBeforeRemove system event, 710
-OnTemplateVarBeforeSave system event, 709
-OnTemplateVarRemove system event, 710
-OnTemplateVarSave system event, 710
-OnTVFormDelete system event, 710
-OnTVFormPrerender system event, 709
-OnTVFormRender system event, 709
-OnTVFormSave system event, 710
-OnUserActivate system event, 711
-OnUserBeforeRemove system event, 702, 711
-OnUserBeforeSave system event, 702, 711
-OnUserChangePassword system event, 701
-OnUserFormDelete system event, 702, 711
-OnUserFormPrerender system event, 710
-OnUserFormRender system event, 493, 710
-OnUserFormSave system event, 493, 702, 711
-OnUserGroupBeforeRemove system event, 701
-OnUserGroupBeforeSave system event, 701
-OnUserGroupRemove system event, 701
-OnUserGroupSave system event, 701
-OnUserNotFound system event, 700
-OnUserRemove system event, 702, 711
-OnUserSave system event, 702, 711
-OnUserSettingsRender system event, 713
-OnWebAuthentication system event, 700
-OnWebAuthentification system event, 714
-OnWebChangePassword system event, 714
-OnWebCreateGroup system event, 714
-OnWebDeleteUser system event, 714
-OnWebLogin system event, 714
-OnWebLogout system event, 
-OnWebPageCompete system event, 714
-OnWebPageInit system event, 714
-OnWebPagePrerender system event, 290, 292, 714
-OnWebSaveUser system event, 714
-OnWUserFormDelete system event, 711
-OnWUserFormPrerender system event, 711
-OnWUsrFormRender system event, 711
-OnWUsrFormSave system event, 711
+#OnLoadWebDocument~ system event, 714
+#OnLoadWebPageCache~ system event, 715
+#OnLogPageHit~ system event, 
+#OnManagerAuthentication~ system event, 700
+#OnManagerChangePassword~ system event, 701
+#OnManagerCreateGroup~ system event, 701
+#OnManagerDeleteUser~ system event, 702, 711
+#OnManagerLogin~ system event, 700
+#OnManagerLoginFormPrerender~ system event, 700
+#OnManagerLoginFormRender~ system event, 301, 700
+#OnManagerLogout~ system event, 701
+#OnManagerPageInit~ system event, 701
+#OnManagerSaveUser~ system event, 702, 710
+#OnMiscSettingsRender~, 713
+#OnModFormDelete~ system event, 712
+#OnModFormPrerender~ system event, 712
+#OnModFormRender~ system event, 712
+#OnModFormSave~ system event, 712
+#OnPageNotFound~ system event, , 302, 304
+#OnPageUnauthorized~ system event, 714-715
+#OnParseDocument~ system event, 714
+#OnPluginBeforeRemove~ system event, 708
+#OnPluginBeforeSave~ system event, 707
+#OnPluginEventBeforeRemove~ system event, 708
+#OnPluginEventRemove~ system event, 708
+#OnPluginFormDelete~ system event, 708
+#OnPluginFormPrerender~ system event, 707
+#OnPluginFormRender~ system event, 707
+#OnPluginFormSave~ system event, 708
+#OnPluginRemove~ system event, 708
+#OnPluginSave~ system event, 707
+#OnResourceBeforeSort~ system event, 704
+#OnResourceDuplicate~ system event, 704
+#OnResourceGroupBeforeSave~ system event, 705
+#OnResourceGroupRemove~ system event, 705
+#OnResourceGroupSave~ system event, 705
+#OnResourceSort~ system event, 704
+#OnResourceToolbarLoad~ system event, 704
+#OnResourceTVFormPrerender~ system event, 704
+#OnResourceTVFormRender~ system event, 704
+#OnResourceUndelete~ system event, 704
+#OnRichTextBrowserInit~ system event, 712
+#OnRichTextEditorInit~ system event, 712
+#OnRichTextEditorRegister~ system event, 712
+#OnSiteRefresh~ system event, 715
+#OnSiteSettingsRender~, 713
+#OnSnipFormDelete~ system event, 707
+#OnSnipFormPrerender~ system event, 706
+#OnSnipFormRender~ system event, 706
+#OnSnipFormSave~ system event, 707
+#OnSnippetBeforeRemove~ system event, 707
+#OnSnippetBeforeSave~ system event, 706
+#OnSnippetRemove~ system event, 707
+#OnSnippetSave~ system event, 707
+#OnTempFormDelete~ system event, 
+#OnTempFormPrerender~ system event, 
+#OnTempFormRender~ system event, 
+#OnTempFormSave~ system event, 
+#OnTemplateBeforeRemove~ system event, 
+#OnTemplateBeforeSave~ system event, 
+#OnTemplateRemove~ system event, 
+#OnTemplateSave~ system event, 
+#OnTemplateVarBeforeRemove~ system event, 710
+#OnTemplateVarBeforeSave~ system event, 709
+#OnTemplateVarRemove~ system event, 710
+#OnTemplateVarSave~ system event, 710
+#OnTVFormDelete~ system event, 710
+#OnTVFormPrerender~ system event, 709
+#OnTVFormRender~ system event, 709
+#OnTVFormSave~ system event, 710
+#OnUserActivate~ system event, 711
+#OnUserBeforeRemove~ system event, 702, 711
+#OnUserBeforeSave~ system event, 702, 711
+#OnUserChangePassword~ system event, 701
+#OnUserFormDelete~ system event, 702, 711
+#OnUserFormPrerender~ system event, 710
+#OnUserFormRender~ system event, 493, 710
+#OnUserFormSave~ system event, 493, 702, 711
+#OnUserGroupBeforeRemove~ system event, 701
+#OnUserGroupBeforeSave~ system event, 701
+#OnUserGroupRemove~ system event, 701
+#OnUserGroupSave~ system event, 701
+#OnUserNotFound~ system event, 700
+#OnUserRemove~ system event, 702, 711
+#OnUserSave~ system event, 702, 711
+#OnUserSettingsRender~ system event, 713
+#OnWebAuthentication~ system event, 700
+#OnWebAuthentification~ system event, 714
+#OnWebChangePassword~ system event, 714
+#OnWebCreateGroup~ system event, 714
+#OnWebDeleteUser~ system event, 714
+#OnWebLogin~ system event, 714
+#OnWebLogout~ system event, 
+#OnWebPageCompete~ system event, 714
+#OnWebPageInit~ system event, 714
+#OnWebPagePrerender~ system event, 290, 292, 714
+#OnWebSaveUser~ system event, 714
+#OnWUserFormDelete~ system event, 711
+#OnWUserFormPrerender~ system event, 711
+#OnWUsrFormRender~ system event, 711
+#OnWUsrFormSave~ system event, 711
 OOP in PHP, 679-686
 operators
-    = (PHP), 661
-    =& (PHP), 312, 354, 388
-    === (PHP), 336
+    #=~ (PHP), 661
+    #=&~ (PHP), 312, 354, 388
+    #===~ (PHP), 336
     arithmetic (PHP), 660
     assignment (PHP), 661
     comparison (PHP), 661-662
@@ -2544,108 +2598,109 @@ organization of the book, iii
 origin remote (Git), 80
 OuterTpl chunk, 242, 284
 output modifiers
-    !empty, 172
-    add, 172
-    and, 168
-    cat, 169
-    cdata, 171
-    custom, 174-176
-    date, 172
-    decr, 172
-    decrement, 172
-    default, 172, 567
-    div, 172
-    divide, 172
-    eg, 168
-    el, 168
-    ellipsis, 171, 567
-    else, 168
-    empty, 172
-    eq, 168
-    equalorgreatherthan, 168
-    equals, 168
-    equalto, 168
-    equaltoorlessthan, 168
-    esc, 170
-    escape, 170
+    #!empty~, 172
+    #add~, 172
+    #and~, 168
+    #cat~, 169
+    #cdata~, 171
+    Conditional, 167-169
+    Custom, 174-176
+    #date~, 172
+    #decr~, 172
+    #decrement~, 172
+    #default~, 172, 567
+    #div~, 172
+    #divide~, 172
+    #eg~, 168
+    #el~, 168
+    #ellipsis~, 171, 567
+    #else~, 168
+    #empty~, 172
+    #eq~, 168
+    #equalorgreatherthan~, 168
+    #equals~, 168
+    #equalto~, 168
+    #equaltoorlessthan~, 168
+    #esc~, 170
+    #escape~, 170
     Evolution (PHX), 187
-    ge, 168
-    greaterthanorequalto, 168
-    gt, 168
-    gte, 168
-    hide, 168
-    htmlent, 170
-    htmlentities, 170
-    if, 168
-    ifempty, 172
-    ifnotempty, 172
-    inc, 172
-    increment, 172
-    input, 168
-    is, 168
-    isempty, 172
-    isequal, 168
-    isequalto, 168
-    isgt, 168
-    isgte, 168
-    islessthan, 168
-    isloggedin, 173
-    islowerthan, 168
-    islte, 168
-    ismember, 169
-    isnot, 168
-    isnotempty, 172
-    isnotloggedin, 173
-    isnt, 168
-    lcase, 169
-    le, 168
-    len, 170
-    length, 170
-    lessthan, 168
-    lessthanorequalto, 168
-    limit, 171
-    lowercase, 169
-    lowerthan, 168
-    lte, 168
-    math, 172
-    md5, 173
-    memberof, 169
-    mo, 169
-    mod, 172
-    modulus, 172
-    mpy, 172
-    multiply, 172
-    ne, 168
-    neq, 168
-    nl2br, 171
-    notags, 170
-    notempty, 172
-    notequals, 168
-    notequalto, 168
-    reverse, 171
-    select, 168
-    show, 168
-    string, 169-171
-    strip, 170
-    strip_tags, 170
-    striptags, 170
-    strlen, 170
-    strrev, 171
-    strtolower, 169
-    strtotime, 173, 567
-    strtoupper, 170
-    subtract, 172
-    tag, 171
-    then, 168
-    ucase, 170
-    ucfirst, 170
-    ucwords, 170
-    uppercase, 170
-    use with properties, 174
-    userinfo, 173, 566
-    wordwrap, 171
-    wordwrapcut, 171
-output modifiers reference, 167-175
+    #ge~, 168
+    #greaterthanorequalto~, 168
+    #gt~, 168
+    #gte~, 168
+    #hide~, 168
+    #htmlent~, 170
+    #htmlentities~, 170
+    #if~, 168
+    #ifempty~, 172
+    #ifnotempty~, 172
+    #inc~, 172
+    #increment~, 172
+    #input~, 168
+    #is~, 168
+    #isempty~, 172
+    #isequal~, 168
+    #isequalto~, 168
+    #isgt~, 168
+    #isgte~, 168
+    #islessthan~, 168
+    #isloggedin~, 173
+    #islowerthan~, 168
+    #islte~, 168
+    #ismember~, 169
+    #isnot~, 168
+    #isnotempty~, 172
+    #isnotloggedin~, 173
+    #isnt~, 168
+    #lcase~, 169
+    #le~, 168
+    #len~, 170
+    #length~, 170
+    #lessthan~, 168
+    #lessthanorequalto~, 168
+    #limit~, 171
+    #lowercase~, 169
+    #lowerthan~, 168
+    #lte~, 168
+    #math~, 172
+    #md5~, 173
+    #memberof~, 169
+    #mo~, 169
+    #mod~, 172
+    #modulus~, 172
+    #mpy~, 172
+    #multiply~, 172
+    #ne~, 168
+    #neq~, 168
+    #nl2br~, 171
+    #notags~, 170
+    #notempty~, 172
+    #notequals~, 168
+    #notequalto~, 168
+    #reverse~, 171
+    #select~, 168
+    #show~, 168
+    String, 169-171
+    #strip~, 170
+    #strip_tags~, 170
+    #striptags~, 170
+    #strlen~, 170
+    #strrev~, 171
+    #strtolower~, 169
+    #strtotime~, 173, 567
+    #strtoupper~, 170
+    #subtract~, 172
+    #tag~, 171
+    #then~, 168
+    #ucase~, 170
+    #ucfirst~, 170
+    #ucwords~, 170
+    #uppercase~, 170
+    #use with properties~, 174
+    #userinfo~, 173, 566
+    #wordwrap~, 171
+    #wordwrapcut~, 171
+output modifiers Reference, 167-175
 output type TV field, 208
 output types for template variables, 214-218
 overhead of database tables, 121
@@ -2653,7 +2708,7 @@ overriding default properties, 256
 overriding properties, 276
 
 P
-pack() method (transport packages), 607
+#pack()~ method (transport packages), 607
 package attributes for transport packages, 615
 Package Manager, 22, 52-54, 122-123
     add package, 537
@@ -2669,61 +2724,61 @@ page-not-found page, 50
 page-not-found plugin, 302-305
 page-not-found snippet, 302-304
 PageNotFound tutorial, 302-305
-pagetitle (Resource Title) resource field, 141
+#pagetitle~ (Resource Title) resource field, 141
 parameters (see also: properties)
-parameters (with $_GET), 646
-parent (Resource Parent) resource field, 144, 358
+parameters (with #$_GET~), 646
+#parent~ (Resource Parent) resource field, 144, 358
 Parent related object, 318, 321, 363, 363
-parseChunk() method, 647
-parseChunk() method in Evolution, 416
+#parseChunk()~ method, 647
+#parseChunk()~ method in Evolution, 416
 parser, 21
-parseSchema() method, 410
+#parseSchema()~ method, 410
 password user field, 342, 381, 640, 650
 passwords in code, 342
 pasting code into in PHP, 659
 path to namespace, 349
-PBKDF2, 342
+#PBKDF2~, 342
 Peoples add-on component, 392
 permissions, 443
-    access_permissions, 465
-    add_children, 459
-    allow_private, 486
-    clear_cache, 503
+    #access_permissions~, 465
+    #add_children~, 459
+    #allow_private~, 486
+    #clear_cache~, 503
     conflicting, 440
-    create, 453
+    #create~, 453
     custom, 510-512
     default settings, 442
-    edit, 453
-    edit_document, 465
-    edit_tv, 514
-    element_tree, 465
-    file_tree, 443, 465
-    filemanager_path, 467
+    #edit~, 453
+    #edit_document~, 465
+    #edit_tv~, 514
+    #element_tree~, 465
+    #file_tree~, 443, 465
+    #filemanager_path~, 467
     for contexts, 433
-    list, 459
-    load, 449, 459, 475
-    mgr context, 441
-    my_allow_private, 486-487
-    my_view_user, 510
-    new_document_in_root, 439
-    new_user, 449
-    publish, 466
-    publish_document, 449
-    remove, 466
+    #list~, 459
+    #load~, 449, 459, 475
+    #mgr~ context, 441
+    #my_allow_private~, 486-487
+    #my_view_user~, 510
+    #new_document_in_root~, 439
+    #new_user~, 449
+    #publish~, 466
+    #publish_document~, 449
+    #remove~, 466
     removing, 445
-    resource_tree, 465
-    save, 449, 453
-    save_chunk, 449, 453, 453
-    save_document, 453, 453, 465
-    save_element, 443
-    save_tv, 514
-    tree_root_id, 466-467, 468
-    undelete, 466
-    unpublish, 466
-    view, 453, 459
-    view_tv, 514
-    view_user, 510
-    web context, 441
+    #resource_tree~, 465
+    #save~, 449, 453
+    #save_chunk~, 449, 453, 453
+    #save_document~, 453, 453, 465
+    #save_element~, 443
+    #save_tv~, 514
+    #tree_root_id~, 466-467, 468
+    #undelete~, 466
+    #unpublish~, 466
+    #view~, 453, 459
+    #view_tv~, 514
+    #view_user~, 510
+    #web~ context, 441
 permissions system, 437-496
 permissions system overview, 438-441
 PHP
@@ -2744,20 +2799,20 @@ PHP
     date and time functions, 679
     debugging, 686-690
     double quotes, 657-659
-    echo statement, 676
-    else statement, 665-667
-    elseif statement, 665
+    #echo~ statement, 676
+    #else~ statement, 665-667
+    #elseif~ statement, 665
     eof marker, 671
     false, 656-657
     file functions, 678-679
     file pointers, 655
     float variables, 655
-    for loop, 671-672
-    foreach loop, 670
-    get() and set() methods, 684-685
+    #for~ loop, 671-672
+    #foreach~ loop, 670
+    #get()~ and #set()~ methods, 684-685
     getting help, 652
     help, 122
-    if statement, 664-666
+    #if~ statement, 664-666
     instanceof, 337-338
     integer variables, 655
     K&R style, 672-673
@@ -2771,7 +2826,7 @@ PHP
     OOP, 679-686
     operators, 272-273
     pasting code into, 659
-    print statement, 676
+    #print~ statement, 676
     program flow, 670-672
     quoted strings, 657-659
     reserved words, 657
@@ -2780,63 +2835,63 @@ PHP
     single quotes, 657-659
     string functions, 676-677
     string variables, 655
-    switch statement, 666-667
+    #switch~ statement, 666-667
     ternary operator, 281-282, 667-668
     true, 656-657
     tutorial, 652-690
     user-defined functions, 673-675
     validators in transport packages, 619-620
     variables, 272, 655-657
-    while loop, 671
+    #while~ loop, 671
 PHP functions
-    array(), 678
-    array_merge(), 375, 384, 388
+    #array()~, 678
+    #array_merge()~, 375, 384, 388
     built-in, 675-679
-    count(), 678
-    date(), 679
-    empty(), 335-336
-    explode(), 678
-    fclose(), 678
-    feof(), 671
-    fgets(), 671, 678
-    file_exists(), 678
-    file_get_contents(), 606, 609, 615, 678
-    file_put_contents(), 678
-    fopen(), 678
-    fputs(), 679
-    fread(), 678
-    fwrite(), 678
-    implode(), 634, 678
-    is_array(), 335
-    is_object(), 337
-    isset(), 334-335
-    ltrim(), 676
-    mail(), 696
+    #count()~, 678
+    #date()~, 679
+    #empty()~, 335-336
+    #explode()~, 678
+    #fclose()~, 678
+    #feof()~, 671
+    #fgets()~, 671, 678
+    #file_exists()~, 678
+    #file_get_contents()~, 606, 609, 615, 678
+    #file_put_contents()~, 678
+    #fopen()~, 678
+    #fputs()~, 679
+    #fread()~, 678
+    #fwrite()~, 678
+    #implode()~, 634, 678
+    #is_array()~, 335
+    #is_object()~, 337
+    #isset()~, 334-335
+    #ltrim()~, 676
+    #mail()~, 696
     online documentation, 652
-    rtrim(), 676
-    str_ireplace(), 677
-    str_replace(), 330, 609, 677
-    strftime(), 173, 215, 679
+    #rtrim()~, 676
+    #str_ireplace()~, 677
+    #str_replace()~, 330, 609, 677
+    #strftime()~, 173, 215, 679
     string, 676-677
-    stripos(), 677
-    stristr(), 677
-    strlen(), 676
-    strpos(), 677
-    strstr(), 676
-    strtolower(), 676
-    strtotime(), 173, 679
-    strtoupper(), 676
-    substr(), 677
-    time(), 679
-    trim(), 240, 609, 676
-    unlink(), 679
+    #stripos()~, 677
+    #stristr()~, 677
+    #strlen()~, 676
+    #strpos()~, 677
+    #strstr()~, 676
+    #strtolower()~, 676
+    #strtotime()~, 173, 679
+    #strtoupper()~, 676
+    #substr()~, 677
+    #time()~, 679
+    #trim()~, 240, 609, 676
+    #unlink()~, 679
     user-defined, 673-675
 PHP operators, 659-664
-    =&, 312, 354, 388
-    ===, 336
+    #=&~, 312, 354, 388
+    #===~, 336
 PHP primer, 652-690
-php.ini file, 536
-php_curl.dll, 536
+#php.ini~ file, 536
+#php_curl.dll~ file, 536
 phpinfo, 121
 PHPMyAdmin
     accessing, 63
@@ -2850,8 +2905,8 @@ placeholder tags, 15, 161
 placeholders
     defined, 15
     in Evolution, 306
-    modx.user.id, 381
-    modx.user.username, 381
+    #modx.user.id~, 381
+    #modx.user.username~, 381
     setting in code, 344-347, 383-384
     setting in snippets, 272-273, 274-275
     Wayfinder, 562
@@ -2915,21 +2970,27 @@ porting
     content to MODX, 91
 prefixes for FURLs, 57
 PreFormIt custom preHook for FormIt, 591-593
-prepare() method, 636
-PRESERVE_KEYS in transport packages, 606, 610, 621-622
+#prepare()~ method, 636
+#PRESERVE_KEYS~ in transport packages, 606, 610, 621-622
 Preview Site, 111
 previewing resources, 103, 183
-print statement in PHP, 676
+#print~ statement in PHP, 676
 priority of properties, 276
 Private Document, 470
 Private Document 2 resource, 486
 Private resource group, 470, 472
 PrivateViewers user group, 471
-process() method, 328-329
+#process()~ method, 328-329
 processed content of template variables, 377
-processElementTags() method, 646
+#processElementTags()~ method, 646
 processors, 409
-Profile related object, 318, 322-325, 325, 341, 382-384, 383-383, 388-389, 391-397, 404
+Profile related object, 318, 382-384, 391-397
+    creating in code, 341-342, 404
+    object reference, 695
+    retrieving with #getCollection()~, 393
+    retrieving with #getObjectGraph()~, 322-325, 388-389
+    retrieving with #getOne()~, 382, 392
+    setting placeholders for, 383
 Profile snippet, 396, 480
 profiles in form customization, 516
 program flow (PHP), 670-672
@@ -2993,31 +3054,31 @@ protected
     elements, 439
     resources, 451-453
 protection of MODX objects, 438-439
-pub_date (Publish Date) resource field, 148
-public_html directory, 59, 422, 602
+#pub_date~ (Publish Date) resource field, 148
+#public_html~ directory, 59, 422, 602
 Publication Report, 120
-Publish Date (pub_date) resource field, 148
+Publish Date (#pub_date~) resource field, 148
 publish permission, 466
-publish_default system setting, 50
-publish_document permission, 449
+#publish_default~ system setting, 50
+#publish_document~ permission, 449
 Published checkbox, 141
 Published resource field, 141
 PublishedBy related object, 389, 390-391
-publishedon (Published On) resource field, 147
+#publishedon~ (Published On) resource field, 147
 PublishedResources related object, 324
 publishing resources, 103, 182
 purging resources, 102
 push (Git), 82
-putChunk() method, 647
-putVehicle() method (transport packages), 606, 610, 622
+#putChunk()~ method, 647
+#putVehicle()~ method (transport packages), 606, 610, 622
 
 Q
 queries
-    innerJoin() method, 393
-    sortby() method, 631-632
-    where() method, 362-363, 393, 631-632, 638
+    #innerJoin()~ method, 393
+    #sortby()~ method, 631-632
+    #where()~ method, 362-363, 393, 631-632, 638
 query criteria, 311-313, 363
-query() method, 636
+#query()~ method, 636
 Quick Create
     elements, 106
     resources, 103, 182
@@ -3034,44 +3095,44 @@ quoted strings in PHP, 657-659
 R
 radio options template variable input type, 212
 raw content of template variables, 376
-readme.txt file (transport packages), 602, 614-615
+#readme.txt~ file (transport packages), 602, 614-615
 recaptcha hook for FormIt, 581-582
 recently edited documents (Manager Home screen), 110
 recently edited documents (Report menu), 121
 recipientArray for SPForm, 549-550
 redirect hook for FormIt, 581
-REDIRECT_HEADER constant, 648
-REDIRECT_META constant, 648
-REDIRECT_REFRESH constant, 648
+#REDIRECT_HEADER~ constant, 648
+#REDIRECT_META~ constant, 648
+#REDIRECT_REFRESH~ constant, 648
 redirecting users
     based on custom permissions, 485-488
     based on login status, 481, 490
-    based on tree_root_id setting, 489-496
+    based on #tree_root_id~ setting, 489-496
     in FormIt, 579-581, 586
     in SPForm, 544-545, 550-551
     on login, 385, 473-474, 474
     on page-not-found, 302-305, 475
     on registration, 477-480
-    with sendForward(), 302-303, 648
-    with sendRedirect(), 481, 488, 490, 494-495, 648
+    with #sendForward()~, 302-303, 648
+    with #sendRedirect()~, 481, 488, 490, 494-495, 648
 reference variables, 312-313
 refresh resource, 182
-reg*() methods, 647
-regClientCSS() method, 378, 527, 647
-regClientHTMLBlock() method, 647
-regClientScript() method, 647
-regClientStartupHTMLBlock() method, 647
-regClientStartupScript() method, 647
+#reg*()~ methods, 647
+#regClientCSS()~ method, 378, 527, 647
+#regClientHTMLBlock()~ method, 647
+#regClientScript()~ method, 647
+#regClientStartupHTMLBlock()~ method, 647
+#regClientStartupScript()~ method, 647
 register globals is on warning, 45-47, 110
 Register resource, 477
 Register snippet, 394, 396, 476-480
-register_globals, 45-47, 110
+#register_globals~, 45-47, 110
 Registered user, 471
 Registering users tutorial, 476-480
-registerNamespace() method (transport packages), 606, 608
+#registerNamespace()~ method (transport packages), 606, 608
 related objects, 317-319, 359
-    available with getMany(), 359
-    available with getOne(), 359
+    available with #getMany()~, 359
+    available with #getOne()~, 359
     Children, 318, 321, 324, 357, 364
     CreatedBy, 320, 323, 388, 390
     CreatedResources, 324
@@ -3080,22 +3141,22 @@ related objects, 317-319, 359
     EditedBy, 323, 388
     in transport packages, 621-623
     Parent, 318, 321, 359-361, 363, 363
-    Profile, 318, 322-325, 325, 341, 382-384, 383-383, 388-389, 391-397, 404
+    Profile, 318, 322-325, 341, 382-383, 382-384, 388-389, 391-397, 404
     PublishedBy, 389, 390-391
     PublishedResources, 324
     TemplateVars, 324
 relatedUserTpl chunk, 389
 release branches (Git), 72
-reloadConfig() method, 647
+#reloadConfig()~ method, 647
 Remove Category, 106
 remove permission, 466
-remove() method, 344, 639
-remove() method (user object), 651
-removeAllEventListener() method, 648
-removeCollection() method, 636
-removeEventListener() method, 648
-removeObject() method, 636
-removeObject() method (transport packages), 618
+#remove()~ method, 344, 639
+#remove()~ method (user object), 651
+#removeAllEventListener()~ method, 648
+#removeCollection()~ method, 636
+#removeEventListener()~ method, 648
+#removeObject()~ method, 636
+#removeObject()~ method (transport packages), 618
 removing
     branches (Git), 82
     categories, 106
@@ -3121,13 +3182,13 @@ Rename Directory dialog, 109
 Rename File dialog, 109
 renaming
     (see also: changing and modifying)
-    .htaccess file, 59
+    #.htaccess~ file, 59
     directories, 108
     files, 109
-    MODX manager directory, 423
-    the core directory, 421-422
+    MODX #manager~ directory, 423
+    the #core~ directory, 421-422
     Top Menu items, 504-505
-renderOutput() method, 330-331, 652
+#renderOutput()~ method, 330-331, 652
 replacing conditional output modifiers with a snippet tutorial, 280-283
 reporting bugs, 129
 reports, 120-122
@@ -3142,46 +3203,49 @@ requirements
 reserved words in PHP, 657
 reset user password in Manager, 127
 ResetPassword snippet, 480
-resolve() method (transport packages), 612-614, 619
+#resolve()~ method (transport packages), 612-614, 619
 resolvers (transport packages), 609
 Resource Alias (Alias) resource field, 142
-Resource Content (content) resource field, 145-146
+Resource Content (#content~) resource field, 145-146
 resource fields, 7, 135-154
-    alias (Alias), 142
-    cacheable (Cacheable), 150
-    class_key (Class Key), 151
-    content (Resource Content), 145-146
-    content_dispo (Content Disposition), 151
-    content_type (Content Type), 150
-    createdby (Created By), 152
-    createdon (Created On), 152
-    deletedby (Deleted By), 153
-    deletedon (Deleted On), 153
-    description (Description), 142
+    #alias~ (Alias), 142
+    #cacheable~ (Cacheable), 150
+    #class_key~ (Class Key), 151
+    #content~ (Resource Content), 145-146
+    #content_dispo~ (Content Disposition), 151
+    #content_type~ (Content Type), 150
+    #createdby~ (Created By), 152
+    #createdon~ (Created On), 152
+    #deletedby~ (Deleted By), 153
+    #deletedon~ (Deleted On), 153
+    #description~ (Description), 142
     displaying, 17
-    editedby (Edited By), 153
-    editedon (Edited On), 153
-    hidemenu (Hide From Menus), 145
-    id (Resource ID), 139, 340
-    introtext (Summary), 143
-    isfolder (Container), 146, 356
-    link_attributes (Link Attributes), 143
-    longtitle (Long Title), 142
-    menuindex (Menu Index), 145
-    menutitle (Menu Title), 144
-    pagetitle (Resource Title), 141
-    parent (Parent Resource), 144
-    parent (Resource Parent), 358
-    pub_date (Publish Date), 148
-    published (Published), 141
-    publishedon (Published On), 147
+    #editedby~ (Edited By), 153
+    #editedon~ (Edited On), 153
+    #hidemenu~ (Hide From Menus), 145
+    hiding in Create/Edit Resource panel with form customization, 522
+    #id~ (Resource ID), 139, 340
+    #introtext~ (Summary), 143
+    #isfolder~ (Container), 146, 356
+    #link_attributes~ (Link Attributes), 143
+    #longtitle~ (Long Title), 142
+    #menuindex~ (Menu Index), 145
+    #menutitle~ (Menu Title), 144
+    #pagetitle~ (Resource Title), 141
+    #parent~ (Parent Resource), 144
+    #parent~ (Resource Parent), 358
+    #pub_date~ (Publish Date), 148
+    #published~ (Published), 141
+    #publishedon~ (Published On), 147
     quick reference, 138-154
-    richtext (Rich Text), 147
-    searchable (Searchable), 149
-    template (Uses Template), 140
-    unpub_date (Unpublish Date), 149
-    uri (URI), 154
-    uri_override (Freeze URI), 154
+    Resource ID (#id~), 139
+    Resource Title (#pagetitle~), 141
+    #richtext~ (Rich Text), 147
+    #searchable~ (Searchable), 149
+    #template~ (Uses Template), 140
+    #unpub_date~ (Unpublish Date), 149
+    #uri~ (URI), 154
+    #uri_override~ (Freeze URI), 154
 Resource Group Access ACL entries, 116, 451-453, 458-459
 resource group access policies, 444-445
 resource groups, 117, 438, 448
@@ -3193,12 +3257,12 @@ resource groups, 117, 438, 448
     News, 459
     Private, 470, 472
     ViewOnly, 459, 460
-Resource ID resource field, 139
+Resource ID (#id~) resource field, 139
 resource list template variable input type, 212
 resource manager system events, 703-705
 Resource policy, 443, 444-445, 458, 483, 484
 resource tags, 11, 154-156
-Resource Title (pagetitle) resource field, 141
+Resource Title (#pagetitle~) resource field, 141
 Resource tree, 100-104
     deleting resources, 103
     Duplicate Resource, 103
@@ -3214,7 +3278,7 @@ Resource tree, 100-104
     View Resource, 103
 resource/create action, 514
 resource/update action, 514
-resource_tree permission, 465
+#resource_tree~ permission, 465
 resources, 135-183
     (see also: documents)
     assigning to resource groups, 117
@@ -3227,18 +3291,18 @@ resources, 135-183
     creating with processor, 409
     deleting, 102-103, 182
     duplicating, 103, 181
-    edit_document permission, 465
+    #edit_document~ permission, 465
     editing, 135-154
     Evolution Resource tree, 130
     fields, 138
-    getTVValue() method, 378
+    #getTVValue()~ method, 378
     hiding in the Manager, 438-439, 454-460
     hiding with ACL entries tutorial, 470-474
     hiding with custom permissions tutorial, 485-488
     importing, 118
     in Evolution, 185, 397
-    joinGroup() method, 332
-    leaveGroup() method, 332
+    #joinGroup()~ method, 332
+    #leaveGroup()~ method, 332
     Member, 489
     object reference, 691
     ObjectDemo, 352
@@ -3249,7 +3313,7 @@ resources, 135-183
     Private Document2, 486
     protected, 438-439, 451-453
     publish permission, 466
-    publish_document permission, 449, 449
+    #publish_document~ permission, 449, 449
     publishing, 103, 182
     Quick Create, 103, 182
     Quick Update, 181
@@ -3259,12 +3323,12 @@ resources, 135-183
     remove permission, 466
     removing from resource groups, 448
     removing from resource groups in code, 332
-    save_document permission, 453, 453, 465
-    site_content table, 137
+    #save_document~ permission, 453, 453, 465
+    #site_content~ table, 137
     static, 178
     symlinks, 177
     Thanks for Registering, 477
-    toArray() method, 372
+    #toArray()~ method, 370-373
     Unauthorized, 487
     undelete permission, 466
     undeleting, 103
@@ -3282,24 +3346,26 @@ retrieving
     children of current resource, 360-361
     children of current resource in code, 315
     chunks from database, 311
-    current resource in code, 311, 318, 327-328
+    current resource in code, 312-313, 318, 327-328
     current resource related objects, 388
     current user, 381-383
     ID of current resource, 315, 327-328
     MODX version information in code, 645
     related objects, 359-361
-    resource fields from database, 311
     resources from database, 311
     system settings in Evolution, 416
-    system settings with getOption(), 380
+    system settings with #getOption()~, 380
     template variables from database, 377-379
     TV values for current resource in code, 331, 376
     user extended fields from database, 397
     user groups from database, 406-408
     user information in code, 380-396
+    user profile with #getCollection()~, 393
+    user profile with #getObjectGraph()~, 322-325, 388-389
+    user profile with #getOne()~, 382, 392
     user profiles from database, 382-383
     users from database, 311, 392-393
-reverse (output modifier), 171
+#reverse~ (output modifier), 171
 Revolution
     architecture, x-xiii
     objects, 680-682
@@ -3313,8 +3379,8 @@ rich text
     manager system events, 712
     template variable input type, 213
     template variable output type, 217
+#richtext~ (Rich Text) resource field, 147
 richtext editor, 147
-richtext resource field, 147
 right-click menu
     Element tree, 106
     File tree, 108-109
@@ -3339,34 +3405,35 @@ roles
     removing, 446
     Revolution versus Evolution, 440
     working with in code, 408
-rollback() method, 405, 636
-root directory, 420
+#rollback()~ method, 405, 636
+#root~ directory, 420
 RowTpl chunk, 242, 284
 RSS feeds, 110
-rtrim() PHP function, 676
+#rtrim()~ PHP function, 676
 rule sets in form customization, 516
 running setup, 41
 running transport package build script outside of MODX tutorial, 624-625
-runSnippet() method, 373-375, 648
-runSnippet() method in Evolution, 416
+#runSnippet()~ method, 373-375, 648
+#runSnippet()~ method in Evolution, 416
 
 S
 sanity checking, 332-338, 393
 save permission, 449, 453
-save() method, 339, 343-344, 397, 398, 400, 404, 639
+#save()~ method, 339, 343-344, 397, 398, 400, 404, 639
     element objects, 400
     overview, 343-344
     reference, 639
     resource object, 339
     user object, 404, 651
-save_chunk permission, 449, 453, 453
-save_document permission, 453, 453, 465
-save_element permission, 443
-save_tv permission, 514
+#save_chunk~ permission, 449, 453, 453
+#save_document~ permission, 453, 453, 465
+#save_element~ permission, 443
+#save_tv~ permission, 514
 schema file (MODX), 318-319
 schema for custom database files, 410-411
-scheme argument for MakeUrl(), 646
+scheme argument for #makeUrl()~, 646
 scheme property for link tags, 163
+scriptProperties (see: #$scriptProperties~)
 Search Locally for Packages, 53, 123, 537, 610
 searchable resource field, 149
 searching MODX forums, 127-128
@@ -3389,7 +3456,7 @@ security
     element category access policy, 444-445
     Element policy, 444-445
     elements, 442-453
-    hasPermission() method, 485
+    #hasPermission()~ method, 485
     hiding elements tutorial, 461-463
     hiding pages with a snippet tutorial, 468-470
     hiding resources in the Manager tutorial, 454-460
@@ -3400,7 +3467,7 @@ security
     in Evolution, 497-498
     limiting permissions in the Manager tutorial, 464-467
     manager action policies, 444-445
-    member pages with tree_root_id tutorial, 489-496
+    member pages with #tree_root_id~ tutorial, 489-496
     MemberPages plugin, 492-493
     MemberPages snippet, 490-491
     minimum role, 450-453, 456-459
@@ -3432,15 +3499,15 @@ Security menu
     Flush All Sessions, 117
     Flush Permissions, 117
     Manage Users, 114
-select (output modifier), 168
-sendEmail() method, 651
-sendError() method, 648
-sendErrorPage() method, 469, 648
-sendForward() method, 302, 648
-sendRedirect() method, 488, 648
-sendUnauthorizedPage() method, 469, 490, 648
+#select~ (output modifier), 168
+#sendEmail()~ method, 651
+#sendError()~ method, 648
+#sendErrorPage()~ method, 469, 648
+#sendForward()~ method, 302, 648
+#sendRedirect()~ method, 488, 648
+#sendUnauthorizedPage()~ method, 469, 490, 648
 SEO-friendly URLs, 55-61
-seOnChunkBeforeRemove, 706
+se#OnChunkBeforeRemove~, 706
 server 500 error, 46
 server requirements
     browsers, 36-37
@@ -3449,24 +3516,24 @@ server requirements
     operating system, 36-37
     PHP, 36-37
     web servers, 36-37
-set() method, 340, 397, 399, 404, 639
-set() method (transport packages), 606
-setAttribute() method, 636
-setContent() method, 340, 399, 400, 651
-setContent() method (transport packages), 606
-setDebug() method, 636, 648
-setLogLevel() method, 636
-setLogLevel() method (transport packages), 625, 625
-setLogTarget() method, 636
-setLogTarget() method (transport packages), 625, 625
-setLogTarget() method options, 636
-setOption() method, 637
+#set()~ method, 340, 397, 399, 404, 639
+#set()~ method (transport packages), 606
+#setAttribute()~ method, 636
+#setContent()~ method, 340, 399, 400, 651
+#setContent()~ method (transport packages), 606
+#setDebug()~ method, 636, 648
+#setLogLevel()~ method, 636
+#setLogLevel()~ method (transport packages), 625, 625
+#setLogTarget()~ method, 636
+#setLogTarget()~ method (transport packages), 625, 625
+#setLogTarget()~ method options, 636
+#setOption()~ method, 637
 setPackageAttributes array (transport packages), 610
-setPackageAttributes() method (transport packages), 615
-setPlaceholder() method, 344-347, 591, 593, 648-649
-setPlaceholders() method, 346-347, 649
+#setPackageAttributes()~ method (transport packages), 615
+#setPlaceholder()~ method, 344-347, 591, 593, 648-649
+#setPlaceholders()~ method, 346-347, 649
 sets in form customization, 516
-setService() method, 643
+#setService()~ method, 643
 setting
     directory permissions, 108, 108
     field default values with form customization tutorial, 523
@@ -3491,16 +3558,16 @@ settings
     user, 26
     working with in code, 380
 setup, 41
-setup directory, 420
-setup/includes directory, 420
-setValue() method (FormIt hooks), 592
-setValue() method (TV), 404, 414
-SHA1, 71
+#setup~ directory, 420
+#setup/includes~ directory, 420
+#setValue()~ method (FormIt hooks), 592
+#setValue()~ method (TV), 404, 414
+#SHA1~, 71
 sharing
     core between sites, 425-426
     core with multiple contexts, 433
     database between sites, 425
-show (output modifier), 168
+#show~ (output modifier), 168
 showing (see: displaying)
 ShowList category, 242, 284
 ShowList tutorial, 283-288
@@ -3526,12 +3593,12 @@ site organization, 419-423
 Site panel, 111
 Site Preview, 111
 Site Schedule, 120
-site_content table, 137
-site_name system setting, 49, 109, 193, 651
-site_snippets database table, 250
-site_start system setting, 197, 428, 455, 553
-site_url context setting, 429
-site_url system setting, 193, 429
+#site_content~ table, 137
+#site_name~ system setting, 49, 109, 193, 651
+#site_snippets~ database table, 250
+#site_start~ system setting, 197, 428, 455, 553
+#site_url~ context setting, 429
+#site_url~ system setting, 193, 429
 sites (multi-language), 434
 smart quotes in PHP, 659
 Smarty, 523, 532
@@ -3553,9 +3620,9 @@ snippet tags, 12-13, 157-158, 195
     display rather than execute, 330
 SnippetDemo tutorial, 270-280
 snippets
-    $output variable, 272
+    #$output~ variable, 272
     adding to categories in transport packages, 621-623
-    addOne() method, 403
+    #addOne()~ method, 403
     advanced operations, 309-414
     assigning resources to resource groups in, 408
     attaching plugins to events in, 408
@@ -3621,12 +3688,12 @@ snippets
     working with user groups in, 406-408
 sockets, 536
 sort order TV field, 206
-sortby() method for xPDO queries, 631-632
+#sortby()~ method for xPDO queries, 631-632
 sorting
     and MySQL 5.0.51, 145
     in getCollection, 631-632
-    in getCollection(), 362-361
-    in GetMany(), 639
+    in #getCollection()~, 362-361
+    in #GetMany()~, 639
     in getResources, 569
     in Wayfinder, 145, 564
     in xPDO queries, 631-632
@@ -3640,8 +3707,8 @@ spam hook for FormIt, 581-582, 587
 spam hook properties for FormIt, 587
 specifying property sets in element tags, 259
 specifying property sets in snippet tags, 279
-spf_block_prompt, 547
-spf_inline_prompt, 547
+#spf_block_prompt~, 547
+#spf_inline_prompt~, 547
 SPForm
     contact form tutorial, 543-551
     Contact page, 545
@@ -3656,8 +3723,8 @@ SPForm
     recipientArray, 549-550
     setting options, 548-551
     snippet, 543-551
-    spf_block prompt, 547
-    spf_inline prompt, 547
+    #spf_block~ prompt, 547
+    #spf_inline~ prompt, 547
     takeMeBack property, 550-551
     thank you page, 544-545, 544-545
     Tpl chunks for, 545
@@ -3671,47 +3738,47 @@ static resources, 178
     overview, 9
     Quick Create, 103
 storing/retrieving data in a chunk tutorial, 238-241
-str_ireplace() PHP function, 677
-str_replace() PHP function, 330, 609, 677
-strftime() PHP function, 173, 215, 679
-string
+#str_ireplace()~ PHP function, 677
+#str_replace()~ PHP function, 330, 609, 677
+#strftime()~ PHP function, 173, 215, 679
+String
     functions in PHP, 676-677
     output modifiers, 169-171
     template variable output type, 218
     variables in PHP, 655
-strip (output modifier), 170
-strip_tags (output modifier), 170
-stripos() PHP function, 677
-striptags (output modifier), 170
-stripTags() method, 649
-stristr() PHP function, 677
-strlen (output modifier), 170
-strlen() PHP function, 676
-strpos() PHP function, 677
-strrev (output modifier), 171
-strstr() PHP function, 676
-strtolower (output modifier), 169
-strtolower() PHP function, 676
-strtotime (output modifier), 173, 567
-strtotime() PHP function, 173, 679
-strtoupper (output modifier), 170
-strtoupper() PHP function, 676
+#strip~ (output modifier), 170
+#strip_tags~ (output modifier), 170
+#stripos()~ PHP function, 677
+#striptags~ (output modifier), 170
+#stripTags()~ method, 649
+#stristr()~ PHP function, 677
+#strlen~ (output modifier), 170
+#strlen()~ PHP function, 676
+#strpos()~ PHP function, 677
+#strrev~ (output modifier), 171
+#strstr()~ PHP function, 676
+#strtolower~ (output modifier), 169
+#strtolower()~ PHP function, 676
+#strtotime~ (output modifier), 173, 567
+#strtotime()~ PHP function, 173, 679
+#strtoupper~ (output modifier), 170
+#strtoupper()~ PHP function, 676
 StudentTeacher tutorial, 387
 styling Wayfinder menus, 558-559
-substr() PHP function, 677
-subtract (output modifier), 172
+#substr()~ PHP function, 677
+#subtract~ (output modifier), 172
 suffixes for FURLs, 57
-Summary (introtext) resource field, 143
+Summary (#introtext~) resource field, 143
 suPHP, 47
-suPHP_ConfigPath, 47
+#suPHP_ConfigPath~, 47
 Support menu, 127-128
     Bugs link, 129
     Forums link, 127-128
     Wiki link, 128
 supported browsers, 36-37
 SVN for transport packages, 604-605
-switch statement in PHP, 666-667
-switchContext() method, 649
+#switch~ statement in PHP, 666-667
+#switchContext()~ method, 649
 switching branches (Git), 72
 symlinks, 9, 177
     creating, 103
@@ -3728,166 +3795,166 @@ system events, 289-290
     manager action, 700-713
     module events (Evolution), 712
     multiple events in a plugin, 298
-    OnBeforeCacheUpdate, 715
-    OnBeforeChunkFormDelete, 706
-    OnBeforeChunkFormSave, 705
-    OnBeforeChunkSave, 297
-    OnBeforeDocFormDelete, 704, 704
-    OnBeforeDocFormSave, 296, 703
-    OnBeforeEmptyTrash, 705
-    OnBeforeManagerLogin, 301, 700
-    OnBeforeManagerLogout, 701
-    OnBeforeManagerPageInit, 701
-    OnBeforeModFormDelete, 712
-    OnBeforeModFormSave, 712
-    OnBeforePluginFormDelete, 708
-    OnBeforePluginFormSave, 707
-    OnBeforeResourceGroupRemove, 705
-    OnBeforeSaveWebPageCache, 715
-    OnBeforeSnipFormDelete, 707
-    OnBeforeSnipFormSave, 706
-    OnBeforeTempFormDelete, 
-    OnBeforeTempFormSave, 
-    OnBeforeTVFormDelete, 710
-    OnBeforeTVFormSave, 709
-    OnBeforeUserActivate, 711
-    OnBeforeUserFormDelete, 702, 711
-    OnBeforeUserFormSave, 702, 710
-    OnBeforeWebLogin, 714
-    OnBeforeWebLogout, 
-    OnBeforeWUserFormDelete, 711
-    OnBeforeWUserFormSave, 711
-    OnCacheUpdate, 715
-    OnCategoryBeforeRemove, 712
-    OnCategoryBeforeSave, 712
-    OnCategoryRemove, 712
-    OnCategorySave, 712
-    OnChunkBeforeSave, 706
-    OnChunkFormDelete, 706
-    OnChunkFormPrerender, 705
-    OnChunkFormRender, 705
-    OnChunkFormSave, 706
-    OnChunkRemove, 706
-    OnChunkSave, 706
-    OnContextBeforeRemove, 713
-    OnContextBeforeSave, 713
-    OnContextFormPrerender, 713
-    OnContextFormRender, 713
-    OnContextRemove, 713
-    OnContextSave, 713
-    OnContextUpdate, 713
-    OnCreateDocGroup, 704
-    OnDocFormDelete, 704
-    OnDocFormPrerender, 703
-    OnDocFormRender, 703
-    OnDocFormSave, 703
-    OnDocPublished, 703
-    OnDocUnPublished, 703
-    OnEmptyTrash, 705
-    OnFileManagerUpload, 702
-    OnFriendlyURLSettingsRender, 713
-    OnHandleRequest, 432, 714
-    OnInterfaceSettingsRender, 713
-    OnLoadWebDocument, 714
-    OnLoadWebPageCache, 715
-    OnLogPageHit, 
-    OnManagerAuthentication, 700
-    OnManagerChangePassword, 701
-    OnManagerCreateGroup, 701
-    OnManagerDeleteUser, 702, 711
-    OnManagerLogin, 700
-    OnManagerLoginFormPrerender, 700
-    OnManagerLoginFormRender, 301, 700
-    OnManagerLogout, 701
-    OnManagerPageInit, 701
-    OnManagerSaveUser, 702, 710
-    OnModFormDelete, 712
-    OnModFormPrerender, 712
-    OnModFormRender, 712
-    OnModFormSave, 712
-    OnPageNotFound, , 302, 304
-    OnPageUnauthorized, 714-715
-    OnParseDocument, 714
-    OnPluginBeforeRemove, 708
-    OnPluginBeforeSave, 707
-    OnPluginEventBeforeRemove, 708
-    OnPluginEventRemove, 708
-    OnPluginFormDelete, 708
-    OnPluginFormPrerender, 707
-    OnPluginFormRender, 707
-    OnPluginFormSave, 708
-    OnPluginRemove, 708
-    OnPluginSave, 707
-    OnResourceBeforeSort, 704
-    OnResourceDuplicate, 704
-    OnResourceGroupBeforeSave, 705
-    OnResourceGroupRemove, 705
-    OnResourceGroupSave, 705
-    OnResourceSort, 704
-    OnResourceToolbarLoad, 704
-    OnResourceTVFormPrerender, 704
-    OnResourceTVFormRender, 704
-    OnResourceUndelete, 704
-    OnRichTextBrowserInit, 712
-    OnRichTextEditorInit, 712
-    OnRichTextEditorRegister, 712
-    OnSiteRefresh, 715
-    OnSiteSettingsRender, 713
-    OnSnipFormDelete, 707
-    OnSnipFormPrerender, 706
-    OnSnipFormRender, 706
-    OnSnipFormSave, 707
-    OnSnippetBeforeRemove, 707
-    OnSnippetBeforeSave, 706
-    OnSnippetRemove, 707
-    OnSnippetSave, 707
-    OnTempFormDelete, 
-    OnTempFormPrerender, 
-    OnTempFormRender, 
-    OnTempFormSave, 
-    OnTemplateBeforeRemove, 
-    OnTemplateBeforeSave, 
-    OnTemplateRemove, 
-    OnTemplateSave, 
-    OnTemplateVarBeforeRemove, 710
-    OnTemplateVarBeforeSave, 709
-    OnTemplateVarRemove, 710
-    OnTemplateVarSave, 710
-    OnTVFormDelete, 710
-    OnTVFormPrerender, 709
-    OnTVFormRender, 709
-    OnTVFormSave, 710
-    OnUserActivate, 711
-    OnUserBeforeRemove, 702, 711
-    OnUserBeforeSave, 702, 711
-    OnUserChangePassword, 701
-    OnUserFormDelete, 702, 711
-    OnUserFormPrerender, 710
-    OnUserFormRender, 493, 710
-    OnUserFormSave, 493, 702, 711
-    OnUserGroupBeforeRemove, 701
-    OnUserGroupBeforeSave, 701
-    OnUserGroupRemove, 701
-    OnUserGroupSave, 701
-    OnUserNotFound, 700
-    OnUserRemove, 702, 711
-    OnUserSave, 702, 711
-    OnUserSettingsRender, 713
-    OnWebAuthentication, 700
-    OnWebAuthentification, 714
-    OnWebChangePassword, 714
-    OnWebCreateGroup, 714
-    OnWebDeleteUser, 714
-    OnWebLogin, 714
-    OnWebLogout, 
-    OnWebPageCompete, 714
-    OnWebPageInit, 714
-    OnWebPagePrerender, 290, 292, 714
-    OnWebSaveUser, 714
-    OnWUserFormDelete, 711
-    OnWUserFormPrerender, 711
-    OnWUsrFormRender, 711
-    OnWUsrFormSave, 711
+    #OnBeforeCacheUpdate~, 715
+    #OnBeforeChunkFormDelete~, 706
+    #OnBeforeChunkFormSave~, 705
+    #OnBeforeChunkSave~, 297
+    #OnBeforeDocFormDelete~, 704, 704
+    #OnBeforeDocFormSave~, 296, 703
+    #OnBeforeEmptyTrash~, 705
+    #OnBeforeManagerLogin~, 301, 700
+    #OnBeforeManagerLogout~, 701
+    #OnBeforeManagerPageInit~, 701
+    #OnBeforeModFormDelete~, 712
+    #OnBeforeModFormSave~, 712
+    #OnBeforePluginFormDelete~, 708
+    #OnBeforePluginFormSave~, 707
+    #OnBeforeResourceGroupRemove~, 705
+    #OnBeforeSaveWebPageCache~, 715
+    #OnBeforeSnipFormDelete~, 707
+    #OnBeforeSnipFormSave~, 706
+    #OnBeforeTempFormDelete~, 
+    #OnBeforeTempFormSave~, 
+    #OnBeforeTVFormDelete~, 710
+    #OnBeforeTVFormSave~, 709
+    #OnBeforeUserActivate~, 711
+    #OnBeforeUserFormDelete~, 702, 711
+    #OnBeforeUserFormSave~, 702, 710
+    #OnBeforeWebLogin~, 714
+    #OnBeforeWebLogout~, 
+    #OnBeforeWUserFormDelete~, 711
+    #OnBeforeWUserFormSave~, 711
+    #OnCacheUpdate~, 715
+    #OnCategoryBeforeRemove~, 712
+    #OnCategoryBeforeSave~, 712
+    #OnCategoryRemove~, 712
+    #OnCategorySave~, 712
+    #OnChunkBeforeSave~, 706
+    #OnChunkFormDelete~, 706
+    #OnChunkFormPrerender~, 705
+    #OnChunkFormRender~, 705
+    #OnChunkFormSave~, 706
+    #OnChunkRemove~, 706
+    #OnChunkSave~, 706
+    #OnContextBeforeRemove~, 713
+    #OnContextBeforeSave~, 713
+    #OnContextFormPrerender~, 713
+    #OnContextFormRender~, 713
+    #OnContextRemove~, 713
+    #OnContextSave~, 713
+    #OnContextUpdate~, 713
+    #OnCreateDocGroup~, 704
+    #OnDocFormDelete~, 704
+    #OnDocFormPrerender~, 703
+    #OnDocFormRender~, 703
+    #OnDocFormSave~, 703
+    #OnDocPublished~, 703
+    #OnDocUnPublished~, 703
+    #OnEmptyTrash~, 705
+    #OnFileManagerUpload~, 702
+    #OnFriendlyURLSettingsRender~, 713
+    #OnHandleRequest~, 432, 714
+    #OnInterfaceSettingsRender~, 713
+    #OnLoadWebDocument~, 714
+    #OnLoadWebPageCache~, 715
+    #OnLogPageHit~, 
+    #OnManagerAuthentication~, 700
+    #OnManagerChangePassword~, 701
+    #OnManagerCreateGroup~, 701
+    #OnManagerDeleteUser~, 702, 711
+    #OnManagerLogin~, 700
+    #OnManagerLoginFormPrerender~, 700
+    #OnManagerLoginFormRender~, 301, 700
+    #OnManagerLogout~, 701
+    #OnManagerPageInit~, 701
+    #OnManagerSaveUser~, 702, 710
+    #OnModFormDelete~, 712
+    #OnModFormPrerender~, 712
+    #OnModFormRender~, 712
+    #OnModFormSave~, 712
+    #OnPageNotFound~, , 302, 304
+    #OnPageUnauthorized~, 714-715
+    #OnParseDocument~, 714
+    #OnPluginBeforeRemove~, 708
+    #OnPluginBeforeSave~, 707
+    #OnPluginEventBeforeRemove~, 708
+    #OnPluginEventRemove~, 708
+    #OnPluginFormDelete~, 708
+    #OnPluginFormPrerender~, 707
+    #OnPluginFormRender~, 707
+    #OnPluginFormSave~, 708
+    #OnPluginRemove~, 708
+    #OnPluginSave~, 707
+    #OnResourceBeforeSort~, 704
+    #OnResourceDuplicate~, 704
+    #OnResourceGroupBeforeSave~, 705
+    #OnResourceGroupRemove~, 705
+    #OnResourceGroupSave~, 705
+    #OnResourceSort~, 704
+    #OnResourceToolbarLoad~, 704
+    #OnResourceTVFormPrerender~, 704
+    #OnResourceTVFormRender~, 704
+    #OnResourceUndelete~, 704
+    #OnRichTextBrowserInit~, 712
+    #OnRichTextEditorInit~, 712
+    #OnRichTextEditorRegister~, 712
+    #OnSiteRefresh~, 715
+    #OnSiteSettingsRender~, 713
+    #OnSnipFormDelete~, 707
+    #OnSnipFormPrerender~, 706
+    #OnSnipFormRender~, 706
+    #OnSnipFormSave~, 707
+    #OnSnippetBeforeRemove~, 707
+    #OnSnippetBeforeSave~, 706
+    #OnSnippetRemove~, 707
+    #OnSnippetSave~, 707
+    #OnTempFormDelete~, 
+    #OnTempFormPrerender~, 
+    #OnTempFormRender~, 
+    #OnTempFormSave~, 
+    #OnTemplateBeforeRemove~, 
+    #OnTemplateBeforeSave~, 
+    #OnTemplateRemove~, 
+    #OnTemplateSave~, 
+    #OnTemplateVarBeforeRemove~, 710
+    #OnTemplateVarBeforeSave~, 709
+    #OnTemplateVarRemove~, 710
+    #OnTemplateVarSave~, 710
+    #OnTVFormDelete~, 710
+    #OnTVFormPrerender~, 709
+    #OnTVFormRender~, 709
+    #OnTVFormSave~, 710
+    #OnUserActivate~, 711
+    #OnUserBeforeRemove~, 702, 711
+    #OnUserBeforeSave~, 702, 711
+    #OnUserChangePassword~, 701
+    #OnUserFormDelete~, 702, 711
+    #OnUserFormPrerender~, 710
+    #OnUserFormRender~, 493, 710
+    #OnUserFormSave~, 493, 702, 711
+    #OnUserGroupBeforeRemove~, 701
+    #OnUserGroupBeforeSave~, 701
+    #OnUserGroupRemove~, 701
+    #OnUserGroupSave~, 701
+    #OnUserNotFound~, 700
+    #OnUserRemove~, 702, 711
+    #OnUserSave~, 702, 711
+    #OnUserSettingsRender~, 713
+    #OnWebAuthentication~, 700
+    #OnWebAuthentification~, 714
+    #OnWebChangePassword~, 714
+    #OnWebCreateGroup~, 714
+    #OnWebDeleteUser~, 714
+    #OnWebLogin~, 714
+    #OnWebLogout~, 
+    #OnWebPageCompete~, 714
+    #OnWebPageInit~, 714
+    #OnWebPagePrerender~, 290, 292, 714
+    #OnWebSaveUser~, 714
+    #OnWUserFormDelete~, 711
+    #OnWUserFormPrerender~, 711
+    #OnWUsrFormRender~, 711
+    #OnWUsrFormSave~, 711
     plugin manager events, 707-708
     Quick Reference, 696-715
     resource manager events, 703-705
@@ -3907,41 +3974,41 @@ System menu, 122-126
     Package Manager, 122-123
     System Settings, 123-124
 system settings
-    assets_url, 527
-    automatic_alias, 143, 409
-    base_url, 428
-    container_suffix, 57, 146
+    #assets_url~, 527
+    #automatic_alias~, 143, 409
+    #base_url~, 428
+    #container_suffix~, 57, 146
     defined, 25
     editing, 50, 123-124
-    emailsender, 651
-    emailsubject, 651
-    error_page, 302, 475
+    #emailsender~, 651
+    #emailsubject~, 651
+    #error_page~, 302, 475
     FURLs, 55-61
-    http_host, 429
+    #http_host~, 429
     in Evolution, 32
     manager system events, 713
-    manager_language, 612
-    manager_url, 531
-    modx_base_path, 642
-    modx_base_url, 642
-    modx_charset, 192
-    modx_core_path, 642
+    #manager_language~, 612
+    #manager_url~, 531
+    #modx_base_path~, 642
+    #modx_base_url~, 642
+    #modx_charset~, 192
+    #modx_core_path~, 642
     not in system setting grid, 159
-    publish_default, 50
+    #publish_default~, 50
     removing, 124
-    retrieving with getOption(), 380
+    retrieving with #getOption()~, 380
     RSS feeds, 110
-    site_name, 49, 109, 193, 651
-    site_start, 197, 428, 455, 553
-    site_url, 193, 429
-    tree_root_id, 490
-    udperms_allowroot, 439
-    unauthorized_page, 475
+    #site_name~, 49, 109, 193, 651
+    #site_start~, 197, 428, 455, 553
+    #site_url~, 193, 429
+    #tree_root_id~, 490
+    #udperms_allowroot~, 439
+    #unauthorized_page~, 475
 
 T
 tab rules in form customization, 515
 table prefix, 425
-tag (output modifier), 171
+#tag~ (output modifier), 171
 tag syntax specification, 19
 tags, 11, 12-13, 17, 18, 49, 90, 145-146, 150, 154-176
     base href, 429
@@ -3970,7 +4037,7 @@ tags, 11, 12-13, 17, 18, 49, 90, 145-146, 150, 154-176
     Wayfinder, 195
 takeMeBack property for SPForm, 550-551
 target directory (transport packages), 601, 614, 624
-template (Uses Template) resource field, 140
+#template~ (Uses Template) resource field, 140
 template variable fields, 205-208
     caption, 205
     category, 205
@@ -3983,14 +4050,14 @@ template variable fields, 205-208
     sort order, 206
     variable name, 205
 template variables, 199-226, 200, uses for
-    @ BINDINGS, 220-226
-    @CHUNK binding, 222-223
-    @DIRECTORY binding, 225
-    @EVAL binding, 225-226
-    @FILE binding, 224
-    @INHERIT binding, 207, 221-222
-    @RESOURCE binding, 224
-    @SELECT binding, 225
+    #@~ BINDINGS, 220-226
+    #@CHUNK~ binding, 222-223
+    #@DIRECTORY~ binding, 225
+    #@EVAL~ binding, 225-226
+    #@FILE~ binding, 224
+    #@INHERIT~ binding, 207, 221-222
+    #@RESOURCE~ binding, 224
+    #@SELECT~ binding, 225
     access permissions tab, 220
     assigning to resource groups, 219
     attaching to templates, 203, 219
@@ -4011,12 +4078,12 @@ template variables, 199-226, 200, uses for
     delimiter output type, 216
     displaying, 11, 17, 200, 203, 375-376
     dropdown list menu input type, 210
-    edit_Tv permission, 514
+    #edit_Tv~ permission, 514
     email input type, 210
     fields of, 205-208
     file input type, 211
-    getValue() method, 330
-    hasTemplate() method, 331
+    #getValue()~ method, 330
+    #hasTemplate()~ method, 331
     hidden input type, 211
     hiding in the Manager, 481-484
     hiding with form customization, 514, 520
@@ -4036,18 +4103,18 @@ template variables, 199-226, 200, uses for
     overview, 10
     properties tab, 219
     radio options input type, 212
-    renderOutput() method, 330
+    #renderOutput()~ method, 330
     resource list input type, 212
     retrieving in code, 377-379
     retrieving processed output of, 377
     retrieving raw content of, 376
     rich text input type, 213
     rich text output type, 217
-    save_tv permission, 514
+    #save_tv~ permission, 514
     setting captions (labels) with form customization, 523
     setting default values with form customization, 517-519
     setting labels (captions) with form customization, 523
-    setValue() method, 414
+    #setValue()~ method, 414
     string output type, 218
     template access tab, 219
     text input type, 213
@@ -4058,7 +4125,7 @@ template variables, 199-226, 200, uses for
     uses for, 10, 204, 296, 377
     using tags to display, 203
     using to control snippets, 204
-    view_tv permission, 514
+    #view_tv~ permission, 514
     working with in code, 377-378
 template variables tab (Create/Edit Resource panel), 179
 templates, 189-199
@@ -4069,7 +4136,7 @@ templates, 189-199
     creating, 190
     creating in code tutorial, 400
     example, 191
-    hasTemplateVar() method, 331
+    #hasTemplateVar()~ method, 331
     in Evolution, 185
     manager system events, 
     Member, 490-491
@@ -4084,13 +4151,13 @@ text template variable input type, 213
 textarea (mini) template variable input type, 213
 textarea template variable input type, 213
 Thanks for Registering resource, 477
-then (output modifier), 168
+#then~ (output modifier), 168
 third-party components (overview), 4
-time() PHP function, 679
+#time()~ PHP function, 679
 TinyMCE, 147
-Title (pagetitle) resource field, 141
-toArray() method, 328, 355, 372, 384, 639
-toJSON() method, 639
+Title (#pagetitle~) resource field, 141
+#toArray()~ method, 328, 355, 355, 384, 639
+#toJSON()~ method, 639
 Tools menu, 117-120
     Error Log, 121
     Import HTML, 118
@@ -4129,8 +4196,8 @@ Top Menu, 109-128
     Update Menu Dialog, 503
     User, 126-127
 topics (lexicon), 23-24, 349-351, 506, 524
-toPlaceholder() method, 346, 649
-toPlaceholders() method, 346-347, 384, 388-389, 649
+#toPlaceholder()~ method, 346, 649
+#toPlaceholders()~ method, 346-347, 384, 388-389, 649
 Tpl chunks, 241-244, 283-288, 473
     defined, 12
     for FormIt, 585, 587
@@ -4144,18 +4211,19 @@ transactions, 405-406
 transfer local site to remote server, 64-70
 transferring files in transport packages, 612-614, 614-615
 transport packages, 22
-    _build directory, 601, 614, 623
+    (see also: add-on components)
+    #_build~ directory, 601, 614, 623
     aborting, 620
     array of file paths, 623-624
-    assets directory, 602-604, 623
+    #assets~ directory, 602-604, 623
     build scripts, 601, 605-610
-    build.config.php file, 624
-    build.transport.php file, 621-623
+    #build.config.php~ file, 624
+    #build.transport.php~ file, 621-623
     categories, 621-623
-    changelog.txt, 614-615
+    #changelog.txt~, 614-615
     changelogs, 602
-    core directory, 602-603, 623
-    createVehicle() method, 606, 610, 622
+    #core~ directory, 602-603, 623
+    #createVehicle()~ method, 606, 610, 622
     creating, 599-626
     defined, 22
     defined constants, 605-607
@@ -4169,30 +4237,30 @@ transport packages, 22
     file vehicles, 614-615
     Git and, 604-605
     in Evolution, 626
-    install.script.php file, 616-620
+    #install.script.php~ file, 616-620
     installing, 54
     installing manually, 53-55, 537-538
     interacting with the user in, 616-620
     internationalization, 611-612
     lexicon files, 603, 611-612
-    log() method, 617
+    #log()~ method, 617
     MyComponent example script, 625
-    newObject() method, 621
+    #newObject()~ method, 621
     not downloadable through package management, 53-55, 537
-    pack() method, 607
+    #pack()~ method, 607
     package attributes, 615
     PHP validators, 619-620
-    PRESERVE_KEYS, 606, 610, 621-622
-    putVehicle() method, 606, 610, 622
+    #PRESERVE_KEYS~, 606, 610, 621-622
+    #putVehicle()~ method, 606, 610, 622
     QuickEmail, 479
-    readme.txt file, 602, 614-615
+    #readme.txt~ file, 602, 614-615
     related objects in, 621-623
     removing, 54-55
-    resolve() method, 612-614, 619
+    #resolve()~ method, 612-614, 619
     resolvers, 609
     running build script outside of MODX, 624-625
-    setLogLevel() method, 625
-    setLogTarget() method, 625
+    #setLogLevel()~ method, 625
+    #setLogTarget()~ method, 625
     setPackageAttributes, 615
     setPackageAttributes array, 610
     source directory, 601, 614, 624
@@ -4200,34 +4268,38 @@ transport packages, 22
     target directory, 601, 614, 624
     transferring files, 612-614, 614-615
     uninstalling, 54-55
-    UNIQUE_KEY, 606, 610, 621-622
-    UPDATE_OBJECT, 606, 610, 621-622
+    #UNIQUE_KEY~, 606, 610, 621-622
+    #UPDATE_OBJECT~, 606, 610, 621-622
     updating, 54
-    user.input.html file, 614-615
+    #user.input.html~ file, 614-615
     uses for, 599
-    validate() method, 620
+    #validate()~ method, 620
     validators, 609, 619-620, 619-620
     version control, 604-605
-    xPDOTransport::RELATED_OBJECT_ATTRIBUTES, 621-623
-    xPDOTransport::RELATED_OBJECTS, 621-623
-tree_root_id
+    #xPDOTransport::RELATED_OBJECT_ATTRIBUTES~, 621-623
+    #xPDOTransport::RELATED_OBJECTS~, 621-623
+#tree_root_id~
     permission, 466-467, 468
     redirecting users based on, 489-496
     system setting, 490
     tutorial, 466-467
     user setting, 447, 489
-trim() PHP function, 240, 609, 676
+#trim()~ PHP function, 240, 609, 676
 troubleshooting
+    admin Super User permissions, 444
     debugging code, 686-690
+    disappearing menu items, 512
+    disappearing resources, 100, 439
+    disappearing TVs, 519, 521
     email, 479
-    FURLs and mod_rewrite, 
+    FURLs and #mod_rewrite~, 
     image TVs, 217
     mail not sent, 479
     MODX API methods, 629-652
     MODX forum searches, 127-128
     Package Manager and cURL, 52, 536
     pasting PHP code, 659
-    register_globals, 110
+    #register_globals~, 110
     Server 500 error, 46
     sorting, 145
     system events, 696-715
@@ -4253,7 +4325,7 @@ tutorials
     creating template variables in code, 402-404
     custom manager page, 523-533
     enhanced hello snippet, 273-275
-    filemanager_path, 467, 468
+    #filemanager_path~, 467, 468
     FormIt custom hook, 588-594
     FormIt snippet, 571-594
     getResources, 566-567
@@ -4274,7 +4346,7 @@ tutorials
     limiting element permissions, 461-463
     limiting permissions in the Manager, 464-467
     Login page, 472-473
-    member pages with tree_root_id, 489-496
+    member pages with #tree_root_id~, 489-496
     modifying the Top Menu, 507-512
     moving TV to a new tab with form customization, 520
     news summary with getResources, 566-567
@@ -4301,10 +4373,10 @@ tutorials
     storing/retrieving data in a chunk, 238-241
     StudentTeacher, 387
     Tpl chunk, 283-288
-    tree_root_id, 466-467
+    #tree_root_id~, 466-467
     TV-based chunks, 244-247
     user extended fields in code, 393-397
-    using isMember() to select content, 387
+    using #isMember()~ to select content, 387
     using the lexicon in snippets, 411-413
     working with resources in code, 352-365
     YesNoDemo, 280-283
@@ -4316,35 +4388,35 @@ type style of Resource tree, 102
 typographical conventions in MODX: The Official Guide, iii-v
 
 U
-ucase (output modifier), 170
-ucfirst (output modifier), 170
-ucwords (output modifier), 170
-udperms_allowroot system setting, 439
-uft8_unicode_ci, 63
+#ucase~ (output modifier), 170
+#ucfirst~ (output modifier), 170
+#ucwords~ (output modifier), 170
+#udperms_allowroot~ system setting, 439
+#uft8_unicode_ci~, 63
 unauthorized page, 50
 unauthorized page unpublished warning, 110
 Unauthorized resource, 487
-unauthorized_page system setting, 475
+#unauthorized_page~ system setting, 475
 uncached tags, 150, 166
 undelete permission, 466
 undeleting resources, 103
-UNIQUE_KEY in transport packages, 606, 610, 621-622
+#UNIQUE_KEY~ in transport packages, 606, 610, 621-622
 unix timestamp, 173
-unlink() PHP function, 679
-unpub_date (Unpublish Date) resource field, 149
+#unlink()~ PHP function, 679
+#unpub_date~ (Unpublish Date) resource field, 149
 Unpublication Report, 120
-Unpublish Date (unpub_date) resource field, 149
+Unpublish Date (#unpub_date~) resource field, 149
 unpublish permission, 466
 unpublished error page warning, 110, 110
 unpublished unauthorized page warning, 110
 Unregistered user, 471
-unsetPlaceholder() method, 347, 649
-unsetPlaceholders() method, 347, 649
+#unsetPlaceholder()~ method, 347, 649
+#unsetPlaceholders()~ method, 347, 649
 Update Action dialog, 505
 Update Menu dialog, 503, 510
 Update User Group panel, 115
 Update User Role dialog, 448
-UPDATE_OBJECT in transport packages, 606, 610, 621-622
+#UPDATE_OBJECT~ in transport packages, 606, 610, 621-622
 UpdateProfile snippet, 396, 405, 480
 updating
     development version of Revolution, 88
@@ -4356,11 +4428,11 @@ upgrade install, 69
 upgrading MODX Revolution, 69
 upload files, 108
 Upload Files dialog, 108
-uppercase (output modifier), 170
+#uppercase~ (output modifier), 170
 upstream remote (Git), 80
-URI (uri) resource field, 154
-uri_override (Freeze URI) resource field, 154
-URL scheme, 646
+#uri~ (URI) resource field, 154
+#uri_override~ (Freeze URI) resource field, 154
+URL scheme in #makeUrl()~ method, 646
 URL template variable output type, 218
 user
     anonymous, 104, 381-383, 387, 460, 469, 474-475, 481
@@ -4382,7 +4454,7 @@ User Group Context Access dialog, 449-451, 456-457
 user groups
     adding users to, 115, 447-448
     Administrator, 450-451
-    checking membership in code, 386-386
+    checking membership in code, 386-387
     creating, 115, 447
     custom menus for, 513
     Editors, 455
@@ -4401,20 +4473,25 @@ User menu
     profile, 127
     Recent Resources, 127
     Reset Password, 127
-user profile, 127, 318-319, 322-325, 341, 382-384, 404-405
+user profile, 127, 318-319, 322-325, 382-384
+    creating in code, 341-342, 404-405
     object reference, 695
+    retrieving with #getCollection()~, 393
+    retrieving with #getObjectGraph()~, 322-325, 388-389
+    retrieving with #getOne()~, 382
+    setting placeholders for, 382-383
 user roles, 448
 user settings, 26
     creating, 114
     in Evolution, 32
-    manager_language, 447
-    tree_root_id, 447, 489
+    #manager_language~, 447
+    #tree_root_id~, 447, 489
 user-defined functions in PHP, 673-675
-user.input.html file (transport packages), 614-615
-userinfo (output modifier), 173, 566
+#user.input.html~ file (transport packages), 614-615
+#userinfo~ (output modifier), 173, 566
 userinfo fields, 173
-userLoggedIn() method, 649
-userLoggedIn() method (Evolution), 307
+#userLoggedIn()~ method, 649
+#userLoggedIn()~ method (Evolution), 307
 username user field, 381
 users
     active, 479
@@ -4424,14 +4501,14 @@ users
     assigning to user groups, 447-448
     authenticating, 302, 469
     checking login status in code, 384-385, 469, 481
-    checking user group membership in code, 386-386
+    checking user group membership in code, 386-387
     creating access permissions, 114-115
     creating in code, 404
     database table, 479
     interacting with in transport packages, 616-620
-    isMember() method, 386-386
-    joinGroup() method, 332, 408
-    leaveGroup() method, 332
+    #isMember()~ method, 386-387
+    #joinGroup()~ method, 332, 408
+    #leaveGroup()~ method, 332
     list of currently logged in, 111
     logged in or not, 469, 469, 481
     manager, , 440-441441, 446-447
@@ -4441,14 +4518,14 @@ users
     passwords in code, 342
     redirecting based on custom permissions, 485-488
     redirecting based on login status, 481, 490
-    redirecting based on tree_root_id setting, 489-496
+    redirecting based on #tree_root_id~ setting, 489-496
     redirecting in FormIt, 579-581, 586
     redirecting in SPForm, 544-545, 550-551
     redirecting on login, 385, 473-474, 474
     redirecting on page-not-found, 302-305, 475
     redirecting on registration, 477-480
-    redirecting with sendForward(), 302-303, 648
-    redirecting with sendRedirect(), 481, 488, 490, 494-495, 648
+    redirecting with #sendForward()~, 302-303, 648
+    redirecting with #sendRedirect()~, 481, 488, 490, 494-495, 648
     Registered, 471
     registering, 476-480
     related to another resource, 389-391
@@ -4484,9 +4561,8 @@ using
     chunks in snippet properties, 236-237
     chunks to store data, 238-241
     chunks with snippets, 236-237
-    common MODX extras, 535-594
     Git for transport packaged, 604-605
-    isMember() to select content tutorial, 387
+    #isMember()~ to select content tutorial, 387
     lexicon in snippets tutorial, 411-413
     lexicon strings in code, 347-351
     properties with plugins, 293-295
@@ -4501,39 +4577,37 @@ using
     template variables in snippet properties, 204
     template variables to control snippets, 204
     Tpl chunks in snippets, 370-373
-utf-8, 63
+#utf-8~, 63
 
 V
 validate property for FormIt, 578
-validate() method (transport packages), 620
+#validate()~ method (transport packages), 620
 validating FormIt forms, 574-578
 validators (FormIt), 574-578
 validators (transport packages), 609, 619-620
 value, 247
 variable name TV field, 205
 variables
-    $, 629, modx
-    $_COOKIE, 699
-    $_GET, 528, 646
-    $_output, 300-301
-    $_POST, 699
-    $_SERVER['HTTP_REFERER'], 550
-    $_SESSION, 301, 699
-    $cacheFlag, 631-632, 633, 699
-    $key, 344-345
-    $modx, 310, 699
-    $modx->resource, 152, 311, 312-313, 318, 327-328, 332, 353-355, 387-388
-    $modx->user, 318, 322, 327, 345, 381-389, 469, 481, 593
-    $output, 272, 656
-    $resource, 354
-    $resource assignment by reference, 312-313
-    $resource in plugins, 297-298
-    $scriptProperties, 366-367, 374
-    $value, 344-345
-    $xpdo, 310, 325, 405, 629
+    #$_COOKIE~, 699
+    #$_GET~, 528, 646
+    #$_output~, 300-301
+    #$_POST~, 699
+    #$_SERVER['HTTP_REFERER']~, 550
+    #$_SESSION~, 301, 699
+    #$cacheFlag~, 631-632, 633, 699
+    #$key~, 344-345
+    #$modx~, 310, 629, 699
+    #$modx->resource~, 152, 290, 312-313, 318, 327-328, 332, 353-355, 387-388
+    #$modx->user~, 318, 323, 327, 345, 381-389, 384, 385, 388-389, 469, 481, 481, 490, 592, 592-593
+    #$output~, 272, 656
+    #$resource~, 311-313, 318, 354
+    #$resource~ (assignment by reference), 312-313
+    #$resource~ in plugins, 297-298
+    #$scriptProperties~, 366-367, 374
+    #$value~, 344-345
+    #$xpdo~, 310, 325, 405, 629
     assignment by reference, 312-313
     available in FormIt custom hooks, 590
-    http_referer, 550
     in PHP, 655-657
     PHP string, 655
 variables in PHP, 272
@@ -4548,8 +4622,8 @@ View Resource panel
     cache output tab, 180
     changes tab, 180
     general tab, 180
-view_tv permission, 514
-view_user permission, 510
+#view_tv~ permission, 514
+#view_user~ permission, 510
 viewing cache output, 180
 ViewOnly resource group, 459, 460
 virtual domain, 431
@@ -4560,7 +4634,7 @@ warnings
     config file still writable, 45
     installer still present, 47
     register globals is on, 110
-    register_globals is on, 45-47
+    #register_globals~ is on, 45-47
     unpublished error page, 110
     unpublished unauthorized page, 110
 Wayfinder
@@ -4577,8 +4651,8 @@ Wayfinder
     Tpl chunks, 558-559, 560-562
     tutorial, 555-565
     uses for, 555
-web context, 25-26, 424-425, 432, 446-447, 457, 460, 468, 472, 484
-web context permissions, 441
+#web~ context, 25-26, 424-425, 432, 446-447, 457, 460, 468, 472, 484
+#web~ context permissions, 441
 web page parsing, 21
 web resources, 6
 web users, 440-441, 446-447
@@ -4586,12 +4660,12 @@ web users in Evolution, 497-498
 weblinks, 8-9, 176-177
     creating, 103
     Quick Create, 103
-where() method for xPDO queries, 362-363, 393, 631-632, 638
+#where()~ method for xPDO queries, 362-363, 393, 631-632, 638
 which version of MODX to choose, vii-x
-while loop (PHP), 671
+#while~ loop (PHP), 671
 Wiki, 128
-wordwrap (output modifier), 171
-wordwrapcut (output modifier), 171
+#wordwrap~ (output modifier), 171
+#wordwrapcut~ (output modifier), 171
 workflow with Git, 83-86
 working with
     BreadCrumbs, 
@@ -4602,15 +4676,15 @@ working with
     EZfaq, 539-542
     form customization rules, 517-522
     FormIt, 571-594
-    getChunk(), 368-370
+    #getChunk()~, 368-370
     getResources, 565-571
     MODX security, 454-496
     plugins, 289-305
     properties in code, 365-368
     resources in code tutorial, 352-365
-    runSnippet(), 373-375
-    set(), 399
-    setContent(), 399
+    #runSnippet()~, 373-375
+    #set()~, 399
+    #setContent()~, 399
     settings in code, 380
     snippets, 268-288
     SPForm, 543-555
@@ -4623,7 +4697,7 @@ working with
     users in code, 380-396
     Wayfinder, 555-565
 workspaces, 25-26
-writeSchema() method, 410
+#writeSchema()~ method, 410
 
 X
 XAMPP
@@ -4631,7 +4705,7 @@ XAMPP
     enabling cURL, 536
     file locations, 63
     installing, 62
-    mod_rewrite, 60
+    #mod_rewrite~, 60
 xPDO
     class methods, 629-652
     for custom database tables, 409-411
@@ -4642,31 +4716,31 @@ xPDO
     xPDO object, 310
 xPDO queries
     criteria, 311-313
-    innerJoin() method, 393
-    newQuery() method, 631-632
-    sortby() method, 631-632
-    where() method, 362-363, 393, 631-632, 638
-xPDO::LOG_LEVEL_DEBUG constant, 635
-xPDO::LOG_LEVEL_ERROR constant, 635
-xPDO::LOG_LEVEL_FATAL constant, 635
-xPDO::LOG_LEVEL_INFO constant, 617, 618, 635
-xPDO::LOG_LEVEL_WARN constant, 635
-XPDO_CLI_MODE constant, 625
+    #innerJoin()~ method, 393
+    #newQuery()~ method, 313, 393, 631-632, 635
+    #sortby()~ method, 631-632
+    #where()~ method, 362-363, 393, 631-632, 638
+#xPDO::LOG_LEVEL_DEBUG~ constant, 635
+#xPDO::LOG_LEVEL_ERROR~ constant, 635
+#xPDO::LOG_LEVEL_FATAL~ constant, 635
+#xPDO::LOG_LEVEL_INFO~ constant, 617, 618, 635
+#xPDO::LOG_LEVEL_WARN~ constant, 635
+#XPDO_CLI_MODE~ constant, 625
 xPDOFileVehicle, 614-615
 xPDOObject class, 637-639
-xPDOTransport::ABORT_ON_VEHICLE_FAIL constant, 620
-xPDOTransport::ACTION_INSTALL constant, 618
-xPDOTransport::ACTION_UNINSTALL constant, 618
-xPDOTransport::ACTION_UPGRADE constant, 618
-xPDOTransport::PACKAGE_ACTION constant, 617
-xPDOTransport::PRESERVE_KEYS constant, 606, 610, 621-622
-xPDOTransport::RELATED_OBJECT_ATTRIBUTES constant, 621-623
-xPDOTransport::RELATED_OBJECT_ATTRIBUTES in transport packages, 621-623
-xPDOTransport::RELATED_OBJECTS constant, 621-623
-xPDOTransport::RELATED_OBJECTS in transport packages, 621-623
-xPDOTransport::UNIQUE_KEY constant, 606, 610, 621-622
-xPDOTransport::UPDATE_OBJECT constant, 606, 610, 621-622
+#xPDOTransport::ABORT_ON_VEHICLE_FAIL~ constant, 620
+#xPDOTransport::ACTION_INSTALL~ constant, 618
+#xPDOTransport::ACTION_UNINSTALL~ constant, 618
+#xPDOTransport::ACTION_UPGRADE~ constant, 618
+#xPDOTransport::PACKAGE_ACTION~ constant, 617
+#xPDOTransport::PRESERVE_KEYS~ constant, 606, 610, 621-622
+#xPDOTransport::RELATED_OBJECT_ATTRIBUTES~ constant, 621-623
+#xPDOTransport::RELATED_OBJECT_ATTRIBUTES~ in transport packages, 621-623
+#xPDOTransport::RELATED_OBJECTS~ constant, 621-623
+#xPDOTransport::RELATED_OBJECTS~ in transport packages, 621-623
+#xPDOTransport::UNIQUE_KEY~ constant, 606, 610, 621-622
+#xPDOTransport::UPDATE_OBJECT~ constant, 606, 610, 621-622
 
 Y
 YesNoDemo tutorial, 280-283
-{core_path}, 349, 411, 524, 527
+#{core_path}~, 349, 411, 524, 527

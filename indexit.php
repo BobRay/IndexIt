@@ -41,8 +41,6 @@ class AllHeads {
 
             }
         }
-
-        return;
         /* loops and PHP statements */
         $head = preg_replace('/([a-z]*)(\sloop)/', '#$1~$2', $head);
         $head = preg_replace('/([a-z]*)(\sstatement)/', '#$1~$2', $head);
@@ -436,7 +434,7 @@ $mtime = explode(" ", $mtime);
 $mtime = $mtime[1] + $mtime[0];
 $tstart = $mtime;
 
-$html = 0;
+$html = 1;
 $infile = 'bookindex.txt';
 if (!$html) {
     $outfile = 'final.txt';

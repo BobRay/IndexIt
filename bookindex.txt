@@ -52,11 +52,8 @@ how MODX works,1
 using|a content management system,2
 MODX|database,1
 third-party components (overview),4
-MODX|extras (overview),4
-extras|overview,4
 MODX|add-on components (overview),4
 add-on components|overview,4
-3PCs (overview),4
 MODX|components (overview),4
 components|overview,4
 back end|versus front end,5
@@ -371,9 +368,6 @@ editing|system settings,50
 system settings|editing,50
 installing|add-on components,52-54
 add-on components|installing,52-54
-extras|installing,52-54
-installing|MODX extras,52-54
-3PCs (installing),52-54
 Package Manager,52-54
 Search Locally for Packages,53
 Package Manager|Search Locally for Packages,53
@@ -532,7 +526,7 @@ upstream remote (Git),80
 Git|merge,81
 merge (Git),81
 Git|--ff-only merges,81
--ff-only merge (Git),81
+--ff-only merge (Git),81
 Git|deleting branches,82
 removing|branches (Git),82
 deleting|branches (Git),82
@@ -566,7 +560,7 @@ Git|merge,88
 fetch (Git),88
 merge (Git),88
 Git|--ff-only merges,88
--ff-only merge (Git),88
+--ff-only merge (Git),88
 MODX|porting an existing site to,89-94
 porting|an existing site to MODX,89-94
 moving|a site to MODX,89-94
@@ -952,7 +946,6 @@ Top Menu|System,122-126
 System menu|Package Manager,122-123
 Package Manager,122-123
 Download Extras button,122
-extras|downloading,122
 add-on components|downloading,122
 transport packages|downloading,122
 downloading transport packages,122
@@ -1060,31 +1053,36 @@ database|site_content table,137
 documents|fields,138
 resources|fields,138
 
-id (Resource ID) field,138
 Create/Edit Resource panel|id (Resource ID) resource field,138
-Resource ID resource field,139
+Resource ID (id) resource field,139
+id (Resource ID) resource field,139
 resource fields|id (Resource ID),139
+resource fields|Resource ID (id),139
 Create/Edit Resource panel|Resource ID (id) resource field,139
 
 template (Uses Template) resource field,140
 Create/Edit Resource panel|template (Uses Template) resource field,140
+Create/Edit Resource panel|Uses Template (template) resource field,140
 Uses Template resource field,140
 resource fields|template (Uses Template),140
 
 Published checkbox,141
 Create/Edit Resource panel|Published checkbox,141
+Create/Edit Resource panel|Published (published) resource field,141
 resource fields|published (Published),141
 Published resource field,141
 
 Resource Title (pagetitle) resource field,141
-Create/Edit Resource panel|Resource Title (pagetitle) field,141
+Create/Edit Resource panel|Resource Title (pagetitle) resource field,141
+Create/Edit Resource panel|pagetitle (Resource Title) resource field,141
 
 Title (pagetitle) resource field,141
 pagetitle (Resource Title) resource field,141
 resource fields|pagetitle (Resource Title),141
+resource fields|Resource Title (pagetitle),141
 
 longtitle (Long Title) resource field,142
-Create/Edit Resource panel|longtitle (Long Title) resource field,142
+Create/Edit Resource panel|Long Title  (longtitle) resource field,142
 resource fields|longtitle (Long Title),142
 
 index.php file|MODX,142
@@ -1094,7 +1092,7 @@ files|index.php (MODX),142
 
 description resource field,142
 resource fields|description (Description),142
-Create/Edit Resource panel|description (Description) resource field,142
+Create/Edit Resource panel|Description (description) resource field,142
 
 alias (Resource Alias) resource field,142
 Create/Edit Resource panel|alias (Resource Alias) resource field,142
@@ -1106,24 +1104,25 @@ system settings|automatic_alias,143
 automatic_alias system setting,143
 
 link_attributes (Link Attributes) resource field,143
-Create/Edit Resource panel|link_attributes (Link Attributes) resource field,143
+Create/Edit Resource panel|Link Attributes (link_attributes) resource field,143
 resource fields|link_attributes (Link Attributes),143
 
 introtext (Summary) resource field,143
 Summary (introtext) resource field,143
 Create/Edit Resource panel|Summary (introtext) resource field,143
+Create/Edit Resource panel|introtext (Summary) resource field,143
 resource fields|introtext (Summary),143
 
 parent (Resource Parent) resource field,144
-Create/Edit Resource panel|parent (Parent Resource) resource field,144
+Create/Edit Resource panel|Parent Resource (parent) resource field,144
 resource fields|parent (Parent Resource),144
 
 menutitle (Menu Title) resource field,144
-Create/Edit Resource panel|menutitle (Menu Title) resource field,144
+Create/Edit Resource panel|Menu Title (menutitle) resource field,144
 resource fields|menutitle (Menu Title),144
 
 menuindex (Menu Index) resource field,145
-Create/Edit Resource panel|menuindex (Menu Index) resource field,145
+Create/Edit Resource panel|Menu Index (menuindex) resource field,145
 resource fields|menuindex (Menu Index),145
 sorting|in Wayfinder,145
 sorting|and MySQL 5.0.51,145
@@ -1138,7 +1137,7 @@ displaying|resource content,145-146
 hiding|resources from menus,145
 Hide From Menus checkbox,145
 hidemenu (Hide From Menus) resource field,145
-Create/Edit Resource panel|hidemenu (Hide From Menus) resource field,145
+Create/Edit Resource panel|Hide From Menus (hidemenu) resource field,145
 resource fields|hidemenu (Hide From Menus),145
 
 Resource Content (content) resource field,145-146
@@ -1151,39 +1150,40 @@ resource fields|content (Resource Content),145-146
 
 isfolder (Container) resource field,146
 Create/Edit Resource panel|isfolder (Container) resource field,146
+Create/Edit Resource panel|Container (isfolder) resource field,146
 Container (isfolder) resource field,146
 resource fields|isfolder (Container),146
 container_suffix system setting,146
 system settings|container_suffix,146
 
-richtext resource field,147
+richtext (Rich Text) resource field,147
 resource fields|richtext (Rich Text),147
-Create/Edit Resource panel|richtext (Rich Text) resource field,147
+Create/Edit Resource panel|Rich Text (richtext) resource field,147
 richtext editor,147
 TinyMCE,147
 editors|TinyMCE,147
 
 publishedon (Published On) resource field,147
-Create/Edit Resource panel|publishedon (Published On) resource field,147
+Create/Edit Resource panel|Published On (publishedon) resource field,147
 resource fields|publishedon (Published On),147
 
 pub_date (Publish Date) resource field,148
 Publish Date (pub_date) resource field,148
-Create/Edit Resource panel|pub_date (Publish Date) resource field,148
+Create/Edit Resource panel|Publish Date (pub_date) resource field,148
 resource fields|pub_date (Publish Date),148
 
 unpub_date (Unpublish Date) resource field,149
-Create/Edit Resource panel|unpub_date (Unpublish Date) resource field,149
+Create/Edit Resource panel|Unpublish Date (unpub_date) resource field,149
 Unpublish Date (unpub_date) resource field,149
 resource fields|unpub_date (Unpublish Date),149
 
 searchable resource field,149
 resource fields|searchable (Searchable),149
-Create/Edit Resource panel|searchable resource field,149
+Create/Edit Resource panel|Searchable (searchable) resource field,149
 
 cacheable resource field,150
 resource fields|cacheable (Cacheable),150
-Create/Edit Resource panel|cacheable resource field,150
+Create/Edit Resource panel|Cacheable (cacheable) resource field,150
 
 tags,150
 tags|cached,150
@@ -1197,54 +1197,55 @@ Create/Edit Resource panel|Empty Cache checkbox,150
 cache|Empty Cache checkbox,150
 
 content_type (Content Type) resource field,150
-Create/Edit Resource panel|content_type (Content Type) resource field,150
+Create/Edit Resource panel|Content Type (content_type) resource field,150
 resource fields|content_type (Content Type),150
 
 content_dispo (Content Disposition) resource field,151
 Content Disposition (content_dispo) resource field,151
-Create/Edit Resource panel|content_dispo (Content Disposition) resource field,151
+Create/Edit Resource panel|Content Disposition (content_dispo) resource field,151
 resource fields|content_dispo (Content Disposition),151
 
 class_key (Class Key) resource field,151
-Create/Edit Resource panel|class_key (Class Key) resource field,151
+Create/Edit Resource panel|Class Key (class_key) resource field,151
 resource fields|class_key (Class Key),151
 
 createdon (Created On) resource field,152
-Create/Edit Resource panel|createdon (Created On) resource field,152
+Create/Edit Resource panel|Created On (createdon) resource field,152
 resource fields|createdon (Created On),152
 
 createdby (Created By) resource field,152
-Create/Edit Resource panel|createdby (Created By) resource field,152
+Create/Edit Resource panel|Created By (createdby) resource field,152
 resource fields|createdby (Created By),152
 
 $modx->resource variable,152
 variables|$modx->resource,152
 
 editedon (Edited On) resource field,153
-Create/Edit Resource panel|editedon (Edited On) resource field,153
+Create/Edit Resource panel|Edited On (editedon) resource field,153
 resource fields|editedon (Edited On),153
 
 editedby (Edited By) resource field,153
-Create/Edit Resource panel|editedby (Edited By) resource field,153
+Create/Edit Resource panel|Edited By (editedby) resource field,153
 resource fields|editedby (Edited By),153
 
 deletedon (Deleted On) resource field,153
-Create/Edit Resource panel|deletedon (Deleted On) resource field,153
+Create/Edit Resource panel|Deleted On (deletedon) resource field,153
 resource fields|deletedon (Deleted On),153
 
 deletedby (Deleted By) resource field,153
-Create/Edit Resource panel|deletedby (Deleted By) resource field,153
+Create/Edit Resource panel|Deleted By (deletedby) resource field,153
 resource fields|deletedby (Deleted By),153
 
 Freeze URI (uri_override) resource field,154
 uri_override (Freeze URI) resource field,154
 Create/Edit Resource panel|Freeze URI (uri_override) resource field,154
 resource fields|uri_override (Freeze URI),154
-Create/Edit Resource panel|Freeze URI resource field,154
+Create/Edit Resource panel|uri_override (Freeze URI) resource field,154
 
 resource fields|uri (URI),154
-URI (uri) resource field,154
+uri (URI) resource field,154
 Create/Edit Resource panel|URI (uri) resource field,154
+
 
 tags,154-176
 MODX|tags,154-176
@@ -1291,9 +1292,10 @@ tags|uncached,166
 uncached tags,166
 cached tags,166
 filters,167
-output modifiers reference,167-175
+output modifiers Reference,167-175
 PHX in Revolution,167-175
-conditional output modifiers|reference,167-169
+conditional output modifiers|Reference,167-169
+output modifiers|Conditional,167-169
 if (output modifier),168
 output modifiers|if,168
 output modifiers|input,168
@@ -1376,8 +1378,8 @@ output modifiers|mo,169
 mo (output modifier),169
 output modifiers|ismember,169
 ismember (output modifier),169
-output modifiers|string,169-171
-string|output modifiers,169-171
+output modifiers|String,169-171
+String|output modifiers,169-171
 output modifiers|cat,169
 cat (output modifier),169
 output modifiers|lcase,169
@@ -1498,8 +1500,8 @@ output modifiers|isnotloggedin,173
 isnotloggedin (output modifier),173
 output modifiers|use with properties,174
 properties|use with output modifiers,174
-custom output modifiers,174-176
-output modifiers|custom,174-176
+Custom output modifiers,174-176
+output modifiers|Custom,174-176
 creating|custom output modifiers,174-176
 input filters,176
 $output variable in snippets,176
@@ -2031,7 +2033,7 @@ disabling|plugins,296
 system events|OnBeforeDocFormSave,296
 OnBeforeDocFormSave system event,296
 OnBeforeChunkFormSave system event,297
-$resource variable in plugins,297-298
+$resource variable|in plugins,297-298
 variables|$resource in plugins,297-298
 system events|OnBeforeChunkSave,297
 plugins|listening to multiple system events,298
@@ -2042,6 +2044,8 @@ MODE_UPD constant,299
 constants|MODE_UPD,299
 modSystemEvent::MODE_NEW constant,299
 modSystemEvent::MODE_UPD constant,299
+constants|modSystemEvent::MODE_NEW,299
+constants|modSystemEvent::MODE_UPD,299
 plugins|executing on create versus update resource,299
 Captcha plugin,300-302
 plugins|Captcha,300-302
@@ -2144,6 +2148,9 @@ $classKey argument for getObject,311-312
 getObject() $classKey argument,311-312
 database|retrieving resources from,311
 retrieving|resources from database,311
+$resource variable,311-313
+variables|$resource,311-313
+$resource variable,using getObject() with,313
 database|retrieving chunks from,311
 retrieving|chunks from database,311
 database|retrieving users from,311
@@ -2153,11 +2160,12 @@ $modx->resource variable,312-313
 variables|$modx->resource,312-313
 retrieving|current resource in code,312-313
 $modx->resource variable|reference variable for,312-313
-$resource variable assignment by reference,312-313
-variables|$resource assignment by reference,312-313
+$resource variable|assignment by reference,312-313
+variables|$resource (assignment by reference),312-313
 variables|assignment by reference,312-313
 assignment by reference,312-313
 reference variables,312-313
+$resource variable,using getCollection() with,313
 =& operator (PHP),312
 operators|=& (PHP),312
 PHP operators|=&,312
@@ -2196,6 +2204,10 @@ files|modx.mysql.schema.php,318-319
 files|schema (MODX),318-319
 related objects|Parent,318
 Parent related object,318
+$resource variable|using getOne() with,318
+$resource variable|using getMany() with,318
+$resource variable|using getObject() with,318
+variables|$resource,318
 related objects|Children,318
 Children related object,318
 $modx->resource variable,318
@@ -2221,10 +2233,15 @@ methods|getOne(),320
 getOne() method,320
 related objects|CreatedBy,320
 CreatedBy related object,320
+$resource variable|using get() with,320
+$resource variable|using getObject() with,320
 related objects|Children,321
 Children related object,321
 related objects|Parent,321
 Parent related object,321
+$resource variable|using getOne() with,321
+$resource variable|using getMany() with,321
+
 $modx->user variable|using get() with,323
 variables|$modx->user,323
 related objects|Profile,322-325
@@ -2242,6 +2259,7 @@ related objects|CreatedBy,323
 CreatedBy related object,323
 related objects|EditedBy,323
 EditedBy related object,323
+$resource variable|using getObjectGraph() with,323
 related objects|CreatedResources,324
 CreatedResources related object,324
 related objects|PublishedResources,324
@@ -2291,11 +2309,13 @@ hasTemplate() method,331
 template variables|hasTemplate() method,331
 methods|hasTemplateVar(),331
 hasTemplateVar() method,331
+$resource variable|using getTVValue() with,331
 templates|hasTemplateVar() method,331
 retrieving|TV values for current resource in code,331
 current resource|retrieving TV values for,331
 methods|joinGroup() (user object),332
 joinGroup() method (user object),332
+$resource variable|using joinGroup() with,332
 users|joinGroup() method,332
 $modx->resource variable|using joinGroup() with,332
 $modx->resource variable|using leaveGroup() with,332
@@ -2349,6 +2369,9 @@ newObject() method,339
 methods|save(),339
 save() method,339
 save() method|resource object,339
+$resource variable|using save() with,339
+
+
 creating|resources in code,339
 creating|chunks in code,339
 creating|snippets in code,340-341
@@ -2356,6 +2379,11 @@ methods|set(),340
 set() method,340
 id (resource ID) field,340
 resource fields|id (Resource ID),340
+$resource variable|using set() with,340
+$resource variable|using save() with,340
+$resource variable|using newObject() with,340
+$resource variable|using setContent() with,340
+
 methods|setContent(),340
 setContent() method,340
 methods|fromArray(),340-341
@@ -2460,6 +2488,8 @@ methods|get(),355
 toArray() method,355
 methods|toArray(),355
 $modx->resource variable|using toArray() with,355
+$resource variable|using get() with,355
+$resource variable|using toArray() with,355
 variables|$resource,354
 $resource variable,354
 methods|getObject(),354
@@ -2472,8 +2502,9 @@ get() method,355
 methods|toArray(),355
 toArray() method,355
 current resource|toArray() method,356
-methods|hasChildren(),356
-hasChildren() method,356
+methods|hasChildren(),356-357
+hasChildren() method,356-357
+$resource variable|using hasChildren() with,356-357
 resource fields|isfolder (Container),356
 isfolder (Container) resource field,356
 methods|getChildIds(),357
@@ -2507,6 +2538,7 @@ getCollection() method,362-363
 where() method for xPDO queries,362-363
 queries|where() method,362-363
 xPDO queries|where() method,362-363
+$resource variable|using getObjectGraph() with,363
 query criteria,363
 criteria for queries,363
 methods|getObjectGraph(),363-364
@@ -2546,8 +2578,8 @@ methods|runSnippet(),373-375
 runSnippet() method,373-375
 working with|runSnippet(),373-375
 methods|toArray(),370-373
-toArray() method,372
-resources|toArray() method,372
+$resource variable|using toArray() with,370-373
+resources|toArray() method,370-373
 methods|getCollection(),373
 getCollection() method,373
 methods|getMany(),373
@@ -2729,6 +2761,7 @@ related objects|CreatedBy,390
 CreatedBy related object,390
 getOne() method,390
 related objects|DeletedBy,390
+$resource variable|using getOne() with,390
 DeletedBy related object,390
 methods|getCollection(),390
 getCollection() method,390
@@ -2806,6 +2839,9 @@ resources|creating in code tutorial,398
 creating|resources in code tutorial,398
 tutorials|creating resources in code,398
 methods|newObject(),398
+$resource variable|using newObject() with,398-399
+$resource variable|using setContent() with,399
+$resource variable|using save() with,399
 newObject() method,398
 methods|set(),399
 set() method,399
@@ -3143,7 +3179,7 @@ httpd-vhosts.conf file,430
 files|hosts,430
 files|httpd-vhosts.conf,430
 apache/bin directory,430
-directories|apache.bin,430
+directories|apache/bin,430
 context settings|http_host,431
 http_host context setting,431
 two contexts in same directory,431-432
@@ -4128,7 +4164,7 @@ my-new-tab,522
 form customization|hiding fields with,522
 fields|hiding with form customization,522
 hiding|fields with form customization,522
-hiding|Create/Edit Resource panel fields with form customization,522
+resource fields|hiding in Create/Edit Resource panel with form customization,522
 tutorials|hiding Create/Edit Resource panel fields with form customization,522
 hiding|Create/Edit Resource panel fields with form customization tutorial,522
 form customization|setting field default values with,523
@@ -4212,8 +4248,6 @@ modules|in Evolution,533
 common MODX add-on components,535-594
 add-on components|commonly used,535-594
 MODX|common add-on components,535-594
-using|common MODX extras,535-594
-extras|using common,535-594
 installing|add-on components,536-538
 add-on components|installing,536-538
 cURL,536
@@ -4226,11 +4260,10 @@ XAMPP|enabling cURL,536
 troubleshooting|Package Manager and cURL,536
 php.ini file,536
 files|php.ini,536
-php_curl.dll,536
+php_curl.dll file,536
 files|php_curl.dll,536
-cURL|.dll file,536
+cURL|php_curl.dll file,536
 core/packages directory,537
-core|packages directory,537
 directories|core/packages,537
 MODX|core/packages directory,537
 transport packages|installing manually,537-538
@@ -4241,8 +4274,8 @@ Package Manager|add package,537
 Search Locally for Packages,537
 Package Manager|Search Locally for Packages,537
 transport packages|not downloadable through package management,537
-modx.com/extras,537
-extras|at modx.com,537
+http://modx.com/extras,537
+add-on components|at http://modx.com,537
 add-on components|with no transport package,538
 installing|add-on components with no transport package,538
 property sets|creating,538-539
@@ -4747,6 +4780,7 @@ chunks|adding to categories in transport packages,621-623
 adding|chunks to categories in transport packages,621-623
 attaching|chunks to categories in transport packages,621-623
 xPDOTransport::UNIQUE_KEY constant,621-622
+$resource variable|in transport packages,622
 constants|xPDOTransport::UNIQUE_KEY,621-622
 xPDOTransport::UPDATE_OBJECT constant,621-622
 constants|xPDOTransport::UPDATE_OBJECT,621-622
@@ -4986,11 +5020,15 @@ methods|setOption(),637
 setOption() method,637
 xPDOObject class,637-639
 classes|xPDOObject,637-639
+$resource variable|using getObject() with,637
+$resource variable|using get() with,637
+$resource variable|using newObject() with,638
 methods|addMany(),637
 addMany() method,637
 methods|addOne(),637
 addOne() method,637
 methods|fromArray(),638
+$resource variable|using fromArray() with,638
 fromArray() method,638
 methods|fromJSON(),638
 fromJSON() method,638
@@ -5014,6 +5052,7 @@ save() method,639
 save() method|reference,639
 methods|set(),639
 set() method,639
+$resource variable|using set() with,639
 methods|toArray(),639
 toArray() method,639
 methods|toJSON(),639
@@ -5179,12 +5218,12 @@ logManagerAction() method,646
 methods|makeUrl(),646
 makeUrl() method,646
 $scheme argument for makeUrl(),646
-scheme argument for MakeUrl(),646
-URL scheme,646
-http URL,646
-https URL,646
-full URL,646
-absolute URL,646
+scheme argument for makeUrl(),646
+URL scheme in makeUrl() method,646
+http URL in makeUrl() method,646
+https URL in makeUrl() method,646
+full URL in makeUrl() method,646
+absolute URL in makeUrl() method,646
 $_GET parameters,646
 parameters (with $_GET),646
 variables|$_GET,646
@@ -5306,6 +5345,8 @@ methods|save() (user object),651
 save() method|user object,651
 methods|sendEmail(),651
 sendEmail() method,651
+$resource variable|using getContent() with,651
+$resource variable|using setContent() with,651
 system settings|site_name,651
 site_name system setting,651
 system settings|emailsender,651
@@ -5616,8 +5657,13 @@ invokeEvent() method,698
 methods|invokeEvent(),698
 constants|modSystemEvent::MODE_NEW,699
 modSystemEvent::MODE_NEW constant,699
+MODE_NEW constant,699
+constants|MODE_NEW,699
 constants|modSystemEvent::MODE_UPD,699
 modSystemEvent::MODE_UPD constant,699
+MODE_UPS constant,699
+constants|MODE_UPD,699
+
 variables|$cacheFlag,699
 $cacheFlag variable,699
 
@@ -6045,6 +6091,7 @@ OnSiteRefresh system event,715
 
 
 
+scriptProperties (see: $scriptProperties)
 functions|(see: PHP functions)
 many-to-many relationships (see: intersect objects)
 Friendly URLs (see:FURLs)
@@ -6059,6 +6106,9 @@ parameters (see also: properties)
 documents|(see also: resources)
 resources|(see also: documents)
 
+extras (see: add-on components)
+3PCS (see: add-on components)
+transport packages|(see also: add-on components)
 getting|(see also: retrieving)
 retrieving|(see also: getting)
 modifying|(see also: changing and renaming)
