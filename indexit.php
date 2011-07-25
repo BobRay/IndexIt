@@ -6,11 +6,7 @@
  * topic2|subtopic, 11,13,56
  */
 
-/* ToDo: AddSubHead
-    array_merge pages
-    have inArray return key
-    sorting
- */
+
 
 
 class AllHeads {
@@ -21,7 +17,147 @@ class AllHeads {
     {
         $this->mainHeads = array();
     }
-public function pageSort(&$pages) {
+
+    public function inlineCode(&$head, $mainHead, $html)
+    {
+        /* does inlineCode tokens #substring~ */
+
+        /* directories mainHead: * directory, but not and, same, chmod, source, target
+        /* directories subHead
+        core as the total subhead
+        directories| no XAMPP, 'ing'
+         */
+        if ($mainHead == 'directories') { /* do subheads */
+            if ($head == 'core') {
+                $head = '#' . $head . '~';
+            } elseif ( !strstr($head,'ing') && !strstr($head, 'XAMPP')) {
+                $head = preg_replace('/^([a-z\/\_]*)/', '#$1~', $head);
+
+            }
+
+        } else { /* do mainHeads */
+            if(! strstr($head,'and') && ! strstr($head, 'same')&& !strstr($head, 'Chmod') && !strstr($head,'source') && ! strstr($head,'target')) {
+            $head = preg_replace('/([\-a-z\/\_]*)( directory)/', '#$1~$2', $head);
+
+            }
+        }
+
+        return;
+        /* loops and PHP statements */
+        $head = preg_replace('/([a-z]*)(\sloop)/', '#$1~$2', $head);
+        $head = preg_replace('/([a-z]*)(\sstatement)/', '#$1~$2', $head);
+
+        /* Files and URLs */
+
+        /* files that don't start with a dot and URLs*/
+
+        $head = preg_replace('/([^\s\|]+\.[^\s,\(0-9]+)/', '#$1~', $head);
+        /* files that start with a dot */
+        if (substr($head, 0, 1) == '.') {
+            $head = preg_replace('/(\.\S*)/', '#$1~', $head);
+        }
+
+
+        /* @ bindings */
+        $head = preg_replace('/(@[A-Z]*)/', '#$1~', $head);
+        /* variables */
+        $head = preg_replace('/(\$.[A-Za-z->_\'\[\]]*[^,\s\)])/', '#$1~', $head);
+        /* functions and methods */
+        $head = preg_replace('/([\*a-zA-Z_-]*\(\))/', '#$1~', $head);
+
+        /* php operators */
+        $head = preg_replace('/(^[\=\&\+]+|\|[\=\&\+]+)/', '#$1~', $head);
+
+        /* System Events */
+        $head = preg_replace('/(On[A-Z][a-zA-Z]*)/', '#$1~', $head);
+
+        /* output modifiers */
+
+
+        if (strstr($mainHead, 'output modifiers')) {
+            if (!stristr($head, 'custom') && !stristr($head, 'conditional') && !stristr($head, 'string') && !stristr($head, 'evolution')) {
+                $head = '#' . $head . '~';
+            }
+            ;
+
+        } else {
+            $head = preg_replace('/([0-9a-zA-Z_-]*)(\s\(output modifier\))/', '#$1~$2', $head);
+        }
+
+
+        /* settings, constants, permissions, and misc */
+        if (!strstr($head, '#')) {  /* don't reprocess methods */
+            $head = preg_replace('/([\{\}A-Za-z0-9:]+_[A-Za-z0-9_\{\}]+)/', '#$1~', $head);
+        }
+
+
+        /* extra permissions */
+        if ($mainHead == 'permissions') {
+            if ($head == 'create' || $head == 'edit' || $head == 'list' or $head == 'load' || $head == 'remove' || $head == 'save' || $head == 'undelete' || $head == 'publish' || $head == 'unpublish' || $head == 'view') {
+                $head = '#' . $head . '~';
+            }
+        }
+        /* extra constants ECHO, HTML, FILE */
+        $head = preg_replace('/(^[A-Z]*)(\sconstant)/', '#$1~$2', $head);
+        if ($mainHead == 'constants') {
+            $head = str_replace('ECHO', '#ECHO~', $head);
+            $head = str_replace('HTML', '#HTML~', $head);
+            $head = str_replace('FILE', '#FILE~', $head);
+        }
+
+        /* permissions in main heads */
+        $head = preg_replace('/([a-z_]*\spermission)(,)/', '#$1~$2', $head);
+
+        /* ToDo: Resource fields */
+        /* $mainHead = 'resource fields || 'Create/Edit Resource panel'  do subHeads */
+        if ($mainHead == 'resource fields' || $mainHead == 'Create/Edit Resource panel') {
+            /* link_attributes (Link Attributes) */
+            $head = preg_replace('/^([a-z_]*)(\s\([\sa-zA-Z_]*)(\))/', '#$1~$2$3', $head);
+
+            /* Summary (introtext) */
+            $head = preg_replace('/^([a-z_A-Z\s]*\s\()([\sa-z_]*)(\))/', '$1#$2~$3', $head);
+        } else {
+            /* do mainHeads */
+            /* Summary (introtext) resource field */
+            $head = preg_replace('/(\()([a-z_]*)(\)\sresource field)/', '$1#$2~$3', $head);
+
+            /* pagetitle (Resource Title) resource field */
+            $head = preg_replace('/^([a-z_]*)(\s\([a-z_A-Z_\s]*\)\sresource field)/', '#$1~$2', $head);
+        }
+
+        /* anomalies*/
+        $head = str_replace('--ff-only', '#--ff-only~', $head);
+        $head = str_replace('emailsender', '#emailsender~', $head);
+        $head = str_replace('emailsubject', '#emailsubject~', $head);
+        $head = str_replace('SHA1', '#SHA1~', $head);
+        $head = preg_replace('/(\[\[\S*)/', '#$1~', $head);
+        $head = str_replace('PBKDF2', '#PBKDF2~', $head);
+        if ($head == 'md5') {
+            $head = '#md5~';
+        }
+        if ($head == 'utf-8') {
+            $head = '#utf-8~';
+        }
+        if ($mainHead == 'contexts' && ($head == 'web' || $head == 'mgr' || $head == 'alt')) {
+            $head = '#' . $head . '~';
+        }
+        $head = str_replace('web context', '#web~ context', $head);
+        $head = str_replace('mgr context', '#mgr~ context', $head);
+        $head = str_replace('alt context', '#alt~ context', $head);
+
+        if ($html) {
+            if (! $mainHead) {  /* it's a main head */
+                $head = str_replace('#','<span class="InlineCodeBold">',$head);
+            } else { /* it's a subhead */
+                $head = str_replace('#','<span class="InlineCode">',$head);
+            }
+            $head = str_replace('~','</span>',$head);
+
+        }
+    }
+
+
+    public function pageSort(&$pages) {
         $introPages=array();
         $mainPages=array();
         $appendixPages=array();
@@ -85,6 +221,7 @@ public function pageSort(&$pages) {
                 $letter = $l;
             }
             // echo "\n" . $mainHead->heading;
+            $this->inlineCode($mainHead->heading,null,$html);
             if (!$html) {
                 fwrite($fp,"\n" . $mainHead->heading);
             } else {
@@ -120,6 +257,7 @@ public function pageSort(&$pages) {
                     }
                     // $pfx = "~";
                     //fwrite($fp,"\n    " . $subHead->heading . ', ' . $s);
+                    $this->inlineCode($subHead->heading, $mainHead->heading, $html);
                     if (!$html) {
                         fwrite($fp,$pfx . $subHead->heading . $d . $s);
                     } else {
@@ -298,7 +436,7 @@ $mtime = explode(" ", $mtime);
 $mtime = $mtime[1] + $mtime[0];
 $tstart = $mtime;
 
-$html = 1;
+$html = 0;
 $infile = 'bookindex.txt';
 if (!$html) {
     $outfile = 'final.txt';
