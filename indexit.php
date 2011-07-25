@@ -22,11 +22,11 @@ class AllHeads {
     {
         /* does inlineCode tokens #substring~ */
 
-        /* directories mainHead: * directory, but not and, same, chmod, source, target
-        /* directories subHead
-        core as the total subhead
-        directories| no XAMPP, 'ing'
-         */
+        /* fix {core_path} sorting */
+        $head = str_replace('!{core_path}','{core_path}',$head);
+
+        /* directories */
+
         if ($mainHead == 'directories') { /* do subheads */
             if ($head == 'core') {
                 $head = '#' . $head . '~';
@@ -145,9 +145,9 @@ class AllHeads {
 
         if ($html) {
             if (! $mainHead) {  /* it's a main head */
-                $head = str_replace('#','<span class="InlineCodeBold">',$head);
+                $head = str_replace('#','<span class="indexinlinecodebold">',$head);
             } else { /* it's a subhead */
-                $head = str_replace('#','<span class="InlineCode">',$head);
+                $head = str_replace('#','<span class="indexinlinecode">',$head);
             }
             $head = str_replace('~','</span>',$head);
 
@@ -180,6 +180,7 @@ class AllHeads {
             natsort($appendixPages);
         }
         $pages = array_merge($introPages, $mainPages, $appendixPages);
+
         return;
 }
 
@@ -212,7 +213,7 @@ class AllHeads {
                     if (!$html) {
                         fwrite($fp,"\n\n" . $l);
                     } else {
-                        fwrite($fp,'<p class="IndexLetterHeading">' . $l . "</p> \n" .
+                        fwrite($fp,'<p class="indexletterheading">' . $l . "</p> \n" .
 '<hr class="IndexLetterHeadingHr"  size="2"  width="40%" align="left" />' . "\n");
                     }
                 }
@@ -223,7 +224,7 @@ class AllHeads {
             if (!$html) {
                 fwrite($fp,"\n" . $mainHead->heading);
             } else {
-                fwrite($fp,"\n" . '<p class="MainHead"><span class = "MainHeadText">' . $mainHead->heading . '</span>');
+                fwrite($fp,"\n" . '<p class="indexmainhead"><span class = "indexmainheadtext">' . $mainHead->heading . '</span>');
             }
 
             $p = $mainHead->getPages();
@@ -235,7 +236,7 @@ class AllHeads {
                 if (!$html) {
                     fwrite($fp, ', ' . $s);
                 } else {
-                    fwrite($fp,'<span class="MainHeadNumbers">' . ', ' . $s . '</span></p>');
+                    fwrite($fp,'<span class="indexmainheadnumbers">' . ', ' . $s . '</span></p>');
 
                 }
             }
@@ -259,8 +260,8 @@ class AllHeads {
                     if (!$html) {
                         fwrite($fp,$pfx . $subHead->heading . $d . $s);
                     } else {
-                        fwrite($fp, "\n" . $pfx .'<p class=subhead><span class="SubHeadText">'. $subHead->heading . $d .
-                                    '</span><span class="SubHeadNumbers">' . $s . '</span></p>');
+                        fwrite($fp, "\n" . $pfx .'<p class=indexsubhead><span class="indexsubheadtext">'. $subHead->heading . $d .
+                                    '</span><span class="indexsubheadnumbers">' . $s . '</span></p>');
                     }
                 }
             }
@@ -434,7 +435,7 @@ $mtime = explode(" ", $mtime);
 $mtime = $mtime[1] + $mtime[0];
 $tstart = $mtime;
 
-$html = 1;
+$html = 0;
 $infile = 'bookindex.txt';
 if (!$html) {
     $outfile = 'final.txt';

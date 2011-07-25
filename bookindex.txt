@@ -249,7 +249,7 @@ MODX Evolution|cache,33
 
 installing MODX Revolution,35
 MODX|installing,35
-MODX|server requirements,
+MODX|server requirements,36-37
 server requirements|for MODX,36-37
 server requirements|operating system,36-37
 requirements|operating system,36-37
@@ -1864,7 +1864,7 @@ property sets|adding properties to,257-258
 adding|properties to property sets,257-258
 attaching|properties to property sets,257-258
 properties|adding to property sets,257-258
-property sets|specifying in element tags,
+property sets|specifying in element tags,259
 specifying property sets in element tags,259
 property sets|editing on the tools menu,259
 editing|property sets on the tools menu,260
@@ -2150,7 +2150,7 @@ database|retrieving resources from,311
 retrieving|resources from database,311
 $resource variable,311-313
 variables|$resource,311-313
-$resource variable,using getObject() with,313
+$resource variable|using getObject() with,313
 database|retrieving chunks from,311
 retrieving|chunks from database,311
 database|retrieving users from,311
@@ -2165,7 +2165,7 @@ variables|$resource (assignment by reference),312-313
 variables|assignment by reference,312-313
 assignment by reference,312-313
 reference variables,312-313
-$resource variable,using getCollection() with,313
+$resource variable|using getCollection() with,313
 =& operator (PHP),312
 operators|=& (PHP),312
 PHP operators|=&,312
@@ -2464,7 +2464,7 @@ lexicon|default.inc.php file,348
 default lexicon file,348
 namespace path,349
 path to namespace,349
-{core_path},349
+!{core_path},349
 core|directory,349
 directories|core,349
 MODX|core directory,349
@@ -2817,7 +2817,6 @@ Profile snippet,396
 snippets|Profile,396
 snippets|Register,396
 JSON,395
-methods|getObjectGraph(),
 getObjectGraph() method,396
 methods|getObjectGraph(),396
 methods|set(),397
@@ -3012,7 +3011,7 @@ tutorials|using the lexicon in snippets,411-413
 snippets|using the lexicon in,411-413
 namespaces,411
 creating|namespaces,411
-{core_path},411
+!{core_path},411
 core|directory,411
 directories|core,411
 MODX|core directory,411
@@ -3024,7 +3023,7 @@ lexicon files|location of,412
 location|of lexicon files,412
 lexicon files|loading in code,412
 files|lexicon,412
-methods|getService(),
+methods|getService(),412
 getService() method,412
 methods|lexicon->load(),412
 snippets|loading lexicon files,412
@@ -3267,7 +3266,7 @@ web context permissions,441
 permissions|mgr context,441
 mgr context permissions,441
 web users,440-441
-users|manager,440-441441,
+users|manager,440-441
 users|web,440-441
 manager users,440-441
 contexts|web,441
@@ -4194,7 +4193,7 @@ tutorials|CheatSheet component,523-533
 CheatSheet component tutorial,523-533
 components|CheatSheet,523-533
 namespaces|cheatsheet,524
-{core_path},524
+!{core_path},524
 core|directory,524
 directories|core,524
 MODX|core directory,524
@@ -4208,7 +4207,7 @@ handler,526
 JavaScript,526
 lexicon|for CheatSheet component,526-527
 creating|lexicon strings (entries) for CheatSheet component,526-527
-{core_path},527
+!{core_path},527
 methods|getOption(),527
 getOption() method,527
 methods|regClientCSS(),527
@@ -5307,7 +5306,7 @@ methods|unsetPlaceholder(),649
 unsetPlaceholder() method,649
 methods|unsetPlaceholders(),649
 unsetPlaceholders() method,649
-methods|userLoggedIn()649,
+methods|userLoggedIn(),649
 userLoggedIn() method,649
 
 #modUser
@@ -5874,28 +5873,29 @@ OnPluginEventBeforeRemove system event,708
 system events|OnPluginEventRemove,708
 OnPluginEventRemove system event,708
 
-templates|manager system events,
-system events|template manager events,
-system events|OnTempFormPrerender,
-OnTempFormPrerender system event,
-system events|OnTempFormRender,
-OnTempFormRender system event,
-system events|OnBeforeTempFormSave,
-OnBeforeTempFormSave system event,
-system events|OnTemplateBeforeSave,
-OnTemplateBeforeSave system event,
-system events|OnTemplateSave,
-OnTemplateSave system event,
-system events|OnTempFormSave,
-OnTempFormSave system event,
-system events|OnBeforeTempFormDelete,
-OnBeforeTempFormDelete system event,
-system events|OnTemplateBeforeRemove,
-OnTemplateBeforeRemove system event,
-system events|OnTemplateRemove,
-OnTemplateRemove system event,
-system events|OnTempFormDelete,
-OnTempFormDelete system event,
+templates|manager system events,708-709
+system events|template manager events,708-709
+system events|OnTempFormPrerender,708
+OnTempFormPrerender system event,708
+system events|OnTempFormRender,708
+OnTempFormRender system event,708
+system events|OnBeforeTempFormSave,708
+OnBeforeTempFormSave system event,708
+system events|OnTemplateBeforeSave,708
+OnTemplateBeforeSave system event,708
+
+system events|OnTemplateSave,709
+OnTemplateSave system event,709
+system events|OnTempFormSave,709
+OnTempFormSave system event,709
+system events|OnBeforeTempFormDelete,709
+OnBeforeTempFormDelete system event,709
+system events|OnTemplateBeforeRemove,709
+OnTemplateBeforeRemove system event,709
+system events|OnTemplateRemove,709
+OnTemplateRemove system event,709
+system events|OnTempFormDelete,709
+OnTempFormDelete system event,709
 
 template variables|manager system events,709-710
 system events|template variable manager events,709-710
@@ -6034,7 +6034,7 @@ system events|OnContextRemove,713
 OnContextRemove system event,713
 
 system events|front-end events,714-715
-front-end system events,
+front-end system events,714-715
 
 system events|OnBeforeWebLogin,714
 OnBeforeWebLogin system event,714
@@ -6066,14 +6066,14 @@ OnWebPageCompete system event,714
 system events|OnPageUnauthorized,714-715
 OnPageUnauthorized system event,714-715
 
-system events|OnPageNotFound,
-OnPageNotFound system event,
-system events|OnBeforeWebLogout,
-OnBeforeWebLogout system event,
-system events|OnWebLogout,
-OnWebLogout system event,
-system events|OnLogPageHit,
-OnLogPageHit system event,
+system events|OnPageNotFound,715
+OnPageNotFound system event,715
+system events|OnBeforeWebLogout,715
+OnBeforeWebLogout system event,715
+system events|OnWebLogout,715
+OnWebLogout system event,715
+system events|OnLogPageHit,715
+OnLogPageHit system event,715
 
 system events|cache,715
 cache|system events,715
@@ -6105,6 +6105,7 @@ language files (see: lexicon files)
 parameters (see also: properties)
 documents|(see also: resources)
 resources|(see also: documents)
+user|(see also: users)
 
 extras (see: add-on components)
 3PCS (see: add-on components)

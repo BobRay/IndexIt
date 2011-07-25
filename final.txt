@@ -1,5 +1,6 @@
 
 !#empty~ (output modifier), 172
+#{core_path}~, 349, 411, 524, 527
 #$_COOKIE~ variable, 699
 #$_GET~ array, 528
 #$_GET~ parameters, 646
@@ -37,15 +38,16 @@
     using #leaveGroup()~ with, 332
 #$output~ variable (PHP), 656
 #$output~ variable in snippets, 176, 272
-#$resource~ variable, 311-313, 313, 313, 354, using getCollection() with, using getObject() with
+#$resource~ variable, 311-313, 354
     assignment by reference, 312-313
     in plugins, 297-298
     in transport packages, 622
     using #fromArray()~ with, 638
     using #get()~ with, 320, 355, 637
+    using #getCollection()~ with, 313
     using #getContent()~ with, 651
     using #getMany()~ with, 318, 321
-    using #getObject()~ with, 318, 320, 637
+    using #getObject()~ with, 313, 318, 320, 637
     using #getObjectGraph()~ with, 323, 363
     using #getOne()~ with, 318, 321, 390
     using #getTVValue()~ with, 331
@@ -1327,7 +1329,7 @@ front end, 5
     controlling access in, 468-474
     hiding template variables in (tutorial), 484-485
     versus back end, 5
-front-end system events, 
+front-end system events, 714-715
 full URL in #makeUrl()~ method, 646
 functions
     (see: PHP functions)
@@ -1937,7 +1939,7 @@ methods
     #getMETATags()~, 643
     #getMicroTime()~, 633
     #getObject()~, 310-313, 354, 390, 629, 633
-    #getObjectGraph()~, , 321-324, 363-364, 384, 388, 396, 633-634
+    #getObjectGraph()~, 321-324, 363-364, 384, 388, 396, 633-634
     #getOne()~, 320, 358-360, 384, 388, 390, 392, 639
     #getOption()~, 314, 367-368, 380, 490, 527, 634
     #getPackage()~, 634
@@ -1954,7 +1956,7 @@ methods
     #getRequest()~, 643
     #getResponse()~, 643
     #getSelectColumns()~, 393
-    #getService()~, 
+    #getService()~, 412
     #getSessionState()~, 644
     #getSettings()~, 644, 650
     #getTableName()~, 634
@@ -2076,7 +2078,7 @@ methods
     #toPlaceholders()~, 346-347, 384, 388-389, 649
     #unsetPlaceholder()~, 347, 649
     #unsetPlaceholders()~, 347, 649
-    #userLoggedIn()~649, 
+    #userLoggedIn()~, 649
     #where()~ for xPDO queries, 631-632
     #writeSchema()~, 410
     xPDO class, 630-637
@@ -2230,7 +2232,7 @@ MODX
     Security panel, 110
     security system, 437-496
     security system elements, 442-453
-    server requirements, 
+    server requirements, 36-37
     setup, 41
     sharing core between sites, 425-426, 433
     sharing database between sites, 425
@@ -2438,15 +2440,15 @@ objects in PHP, 679-686
 #OnBeforeSaveWebPageCache~ system event, 715
 #OnBeforeSnipFormDelete~ system event, 707
 #OnBeforeSnipFormSave~ system event, 706
-#OnBeforeTempFormDelete~ system event, 
-#OnBeforeTempFormSave~ system event, 
+#OnBeforeTempFormDelete~ system event, 709
+#OnBeforeTempFormSave~ system event, 708
 #OnBeforeTVFormDelete~ system event, 710
 #OnBeforeTVFormSave~ system event, 709
 #OnBeforeUserActivate~ system event, 711
 #OnBeforeUserFormDelete~ system event, 702, 711
 #OnBeforeUserFormSave~ system event, 702, 710
 #OnBeforeWebLogin~ system event, 714
-#OnBeforeWebLogout~ system event, 
+#OnBeforeWebLogout~ system event, 715
 #OnBeforeWUserFormDelete~ system event, 711
 #OnBeforeWUserFormSave~ system event, 711
 #OnCacheUpdate~ system event, 715
@@ -2483,7 +2485,7 @@ objects in PHP, 679-686
 Online panel, 111
 #OnLoadWebDocument~ system event, 714
 #OnLoadWebPageCache~ system event, 715
-#OnLogPageHit~ system event, 
+#OnLogPageHit~ system event, 715
 #OnManagerAuthentication~ system event, 700
 #OnManagerChangePassword~ system event, 701
 #OnManagerCreateGroup~ system event, 701
@@ -2499,7 +2501,7 @@ Online panel, 111
 #OnModFormPrerender~ system event, 712
 #OnModFormRender~ system event, 712
 #OnModFormSave~ system event, 712
-#OnPageNotFound~ system event, , 302, 304
+#OnPageNotFound~ system event, 302, 304, 715
 #OnPageUnauthorized~ system event, 714-715
 #OnParseDocument~ system event, 714
 #OnPluginBeforeRemove~ system event, 708
@@ -2535,14 +2537,14 @@ Online panel, 111
 #OnSnippetBeforeSave~ system event, 706
 #OnSnippetRemove~ system event, 707
 #OnSnippetSave~ system event, 707
-#OnTempFormDelete~ system event, 
-#OnTempFormPrerender~ system event, 
-#OnTempFormRender~ system event, 
-#OnTempFormSave~ system event, 
-#OnTemplateBeforeRemove~ system event, 
-#OnTemplateBeforeSave~ system event, 
-#OnTemplateRemove~ system event, 
-#OnTemplateSave~ system event, 
+#OnTempFormDelete~ system event, 709
+#OnTempFormPrerender~ system event, 708
+#OnTempFormRender~ system event, 708
+#OnTempFormSave~ system event, 709
+#OnTemplateBeforeRemove~ system event, 709
+#OnTemplateBeforeSave~ system event, 708
+#OnTemplateRemove~ system event, 709
+#OnTemplateSave~ system event, 709
 #OnTemplateVarBeforeRemove~ system event, 710
 #OnTemplateVarBeforeSave~ system event, 709
 #OnTemplateVarRemove~ system event, 710
@@ -2573,7 +2575,7 @@ Online panel, 111
 #OnWebCreateGroup~ system event, 714
 #OnWebDeleteUser~ system event, 714
 #OnWebLogin~ system event, 714
-#OnWebLogout~ system event, 
+#OnWebLogout~ system event, 715
 #OnWebPageCompete~ system event, 714
 #OnWebPageInit~ system event, 714
 #OnWebPagePrerender~ system event, 290, 292, 714
@@ -3038,7 +3040,7 @@ property sets, 229
     properties in, 250-251
     removing, 260
     retrieving in code, 370
-    specifying in element tags, 
+    specifying in element tags, 259
     specifying in snippet tags, 279
     SPForm, 548-551
     Tools menu, 119
@@ -3813,15 +3815,15 @@ system events, 289-290
     #OnBeforeSaveWebPageCache~, 715
     #OnBeforeSnipFormDelete~, 707
     #OnBeforeSnipFormSave~, 706
-    #OnBeforeTempFormDelete~, 
-    #OnBeforeTempFormSave~, 
+    #OnBeforeTempFormDelete~, 709
+    #OnBeforeTempFormSave~, 708
     #OnBeforeTVFormDelete~, 710
     #OnBeforeTVFormSave~, 709
     #OnBeforeUserActivate~, 711
     #OnBeforeUserFormDelete~, 702, 711
     #OnBeforeUserFormSave~, 702, 710
     #OnBeforeWebLogin~, 714
-    #OnBeforeWebLogout~, 
+    #OnBeforeWebLogout~, 715
     #OnBeforeWUserFormDelete~, 711
     #OnBeforeWUserFormSave~, 711
     #OnCacheUpdate~, 715
@@ -3857,7 +3859,7 @@ system events, 289-290
     #OnInterfaceSettingsRender~, 713
     #OnLoadWebDocument~, 714
     #OnLoadWebPageCache~, 715
-    #OnLogPageHit~, 
+    #OnLogPageHit~, 715
     #OnManagerAuthentication~, 700
     #OnManagerChangePassword~, 701
     #OnManagerCreateGroup~, 701
@@ -3872,7 +3874,7 @@ system events, 289-290
     #OnModFormPrerender~, 712
     #OnModFormRender~, 712
     #OnModFormSave~, 712
-    #OnPageNotFound~, , 302, 304
+    #OnPageNotFound~, 302, 304, 715
     #OnPageUnauthorized~, 714-715
     #OnParseDocument~, 714
     #OnPluginBeforeRemove~, 708
@@ -3908,14 +3910,14 @@ system events, 289-290
     #OnSnippetBeforeSave~, 706
     #OnSnippetRemove~, 707
     #OnSnippetSave~, 707
-    #OnTempFormDelete~, 
-    #OnTempFormPrerender~, 
-    #OnTempFormRender~, 
-    #OnTempFormSave~, 
-    #OnTemplateBeforeRemove~, 
-    #OnTemplateBeforeSave~, 
-    #OnTemplateRemove~, 
-    #OnTemplateSave~, 
+    #OnTempFormDelete~, 709
+    #OnTempFormPrerender~, 708
+    #OnTempFormRender~, 708
+    #OnTempFormSave~, 709
+    #OnTemplateBeforeRemove~, 709
+    #OnTemplateBeforeSave~, 708
+    #OnTemplateRemove~, 709
+    #OnTemplateSave~, 709
     #OnTemplateVarBeforeRemove~, 710
     #OnTemplateVarBeforeSave~, 709
     #OnTemplateVarRemove~, 710
@@ -3946,7 +3948,7 @@ system events, 289-290
     #OnWebCreateGroup~, 714
     #OnWebDeleteUser~, 714
     #OnWebLogin~, 714
-    #OnWebLogout~, 
+    #OnWebLogout~, 715
     #OnWebPageCompete~, 714
     #OnWebPageInit~, 714
     #OnWebPagePrerender~, 290, 292, 714
@@ -3961,7 +3963,7 @@ system events, 289-290
     rich text manager events, 712
     snippet manager events, 706-707
     system setting events, 713
-    template manager events, 
+    template manager events, 708-709
     template variable manager events, 709-710
     user manager events, 710-711
 System Info, 121
@@ -4138,7 +4140,7 @@ templates, 189-199
     example, 191
     #hasTemplateVar()~ method, 331
     in Evolution, 185
-    manager system events, 
+    manager system events, 708-709
     Member, 490-491
     object reference, 693
     overview, 10, 10
@@ -4435,6 +4437,7 @@ upstream remote (Git), 80
 URL scheme in #makeUrl()~ method, 646
 URL template variable output type, 218
 user
+    (see also: users)
     anonymous, 104, 381-383, 387, 460, 469, 474-475, 481
     class methods, 650-651
     extended fields, 115
@@ -4511,7 +4514,7 @@ users
     #leaveGroup()~ method, 332
     list of currently logged in, 111
     logged in or not, 469, 469, 481
-    manager, , 440-441441, 446-447
+    manager, 440-441, 446-447
     manager (in Evolution), 497-498
     manager system events, 710-711
     object reference, 694
@@ -4743,4 +4746,3 @@ xPDOObject class, 637-639
 
 Y
 YesNoDemo tutorial, 280-283
-#{core_path}~, 349, 411, 524, 527
