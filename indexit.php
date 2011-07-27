@@ -167,6 +167,8 @@ class AllHeads {
         if ($html) {
             if (! $mainHead) {  /* it's a main head */
                 $head = str_replace('#','<span class="indexinlinecodebold">',$head);
+                $head = str_replace('MODX: The Official Guide','<span class="indexmainheadtextitalic">MODX: The Official Guide</span>',$head);
+
             } else { /* it's a subhead */
                 $head = str_replace('#','<span class="indexinlinecode">',$head);
             }
@@ -179,13 +181,11 @@ class AllHeads {
     public function pageSort(&$pages) {
         $introPages=array();
         $mainPages=array();
-        $appendixPages=array();
+
 
         foreach ($pages as $page){
             $c = substr($page,0,1);
-            if ($c == 'A') {
-                $appendixPages[] = $page;
-            } elseif (preg_match('/[ixvl]/',$c)) {
+            if (preg_match('/[ixvl]/',$c)) {
                 $introPages[] = $page;
             } else {
                 $mainPages[] = $page;
@@ -197,10 +197,8 @@ class AllHeads {
         if (!empty($mainPages)) {
             natsort($mainPages);
         }
-        if (!empty($appendixPages)) {
-            natsort($appendixPages);
-        }
-        $pages = array_merge($introPages, $mainPages, $appendixPages);
+
+        $pages = array_merge($introPages, $mainPages);
 
         return;
 }
@@ -320,6 +318,7 @@ class AllHeads {
         $s = trim($s);
         foreach($this->mainHeads as $key=>$head) {
             if (strcasecmp($s, $head->heading)==0) {
+            //if (strcmp($s, $head->heading)==0) {
                 return $key;
             }
         }
@@ -429,6 +428,7 @@ class MainHead
         if (!empty($this->subheads)) {
             foreach ($this->subheads as $key=>$sub) {
                     if (strcasecmp($line->subHead,$sub->heading) ==0) {
+                    //if (strcmp($line->subHead,$sub->heading) ==0) {
                     $sub->pages = array_merge($sub->pages,$line->pages);
                     return;
                 }
@@ -456,7 +456,7 @@ $mtime = explode(" ", $mtime);
 $mtime = $mtime[1] + $mtime[0];
 $tstart = $mtime;
 
-$html = 1;
+$html = 0;
 $infile = 'bookindex.txt';
 if (!$html) {
     $outfile = 'final.txt';
