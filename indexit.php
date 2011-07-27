@@ -20,7 +20,7 @@ class AllHeads {
 
     public function inlineCode(&$head, $mainHead, $html)
     {
-        /* does inlineCode tokens #substring~ */
+        /* does inlineCode tokens #string~ */
 
         /* fix {core_path} sorting */
         $head = str_replace('!{core_path}','{core_path}',$head);
@@ -73,7 +73,7 @@ class AllHeads {
 
 
         if (strstr($mainHead, 'output modifiers')) {
-            if (!stristr($head, 'custom') && !stristr($head, 'conditional') && !stristr($head, 'string') && !stristr($head, 'evolution')) {
+            if (!stristr($head, 'custom') && !stristr($head, 'conditional') && !stristr($head, 'string') && !stristr($head, 'evolution') && !strstr($head,'use with')) {
                 $head = '#' . $head . '~';
             }
             ;
@@ -82,7 +82,9 @@ class AllHeads {
             $head = preg_replace('/([0-9a-zA-Z_-]*)(\s\(output modifier\))/', '#$1~$2', $head);
         }
 
-
+        /* permissions in main heads */
+        $head = preg_replace('/([a-z_]*)(\spermission$)/', '#$1~$2', $head);
+        
         /* settings, constants, permissions, and misc */
         if (!strstr($head, '#')) {  /* don't reprocess methods */
             $head = preg_replace('/([\{\}A-Za-z0-9:]+_[A-Za-z0-9_\{\}]+)/', '#$1~', $head);
@@ -103,8 +105,7 @@ class AllHeads {
             $head = str_replace('FILE', '#FILE~', $head);
         }
 
-        /* permissions in main heads */
-        $head = preg_replace('/([a-z_]*\spermission)(,)/', '#$1~$2', $head);
+
 
         /* ToDo: Resource fields */
         /* $mainHead = 'resource fields || 'Create/Edit Resource panel'  do subHeads */
@@ -124,6 +125,26 @@ class AllHeads {
         }
 
         /* anomalies*/
+        /* context property (for link tags), scheme property (for link tags) loginResourceId property
+        (Login) takeMeBack property (SPForm), validate property (FormIt), startId property (Wayfinder)*/
+        if ($mainHead == 'properties') {
+            $head = str_replace('context','#context~',$head);
+            $head = str_replace('scheme','#scheme~',$head);
+            $head = str_replace('loginResourceId','#loginResourceId~',$head);
+            $head = str_replace('takeMeBack','#takeMeBack~',$head);
+            $head = str_replace('validate','#validate~',$head);
+            $head = str_replace('startId','#startId~',$head);
+        } else {
+            $head = str_replace('context property','#context~ property',$head);
+            $head = str_replace('scheme property','#scheme~ property',$head);
+            $head = str_replace('loginResourceId property','#loginResourceId~ property',$head);
+            $head = str_replace('takeMeBack property','#takeMeBack~ property',$head);
+            $head = str_replace('validate property','#validate~ property',$head);
+            $head = str_replace('startId property','#startId~ property',$head);
+        }
+
+        /* misc. */
+        $head = str_replace('lexicon->#load()~','#lexicon->load()~',$head);
         $head = str_replace('--ff-only', '#--ff-only~', $head);
         $head = str_replace('emailsender', '#emailsender~', $head);
         $head = str_replace('emailsubject', '#emailsubject~', $head);
@@ -435,7 +456,7 @@ $mtime = explode(" ", $mtime);
 $mtime = $mtime[1] + $mtime[0];
 $tstart = $mtime;
 
-$html = 0;
+$html = 1;
 $infile = 'bookindex.txt';
 if (!$html) {
     $outfile = 'final.txt';
