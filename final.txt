@@ -94,7 +94,7 @@ A
 aborting transport packages, 620
 about MODX, vi-xiii, 122
 absolute URL in #makeUrl()~ method, 646
-Access Control Lists, 441, 449-454, 449-454
+Access Control Lists, 441, 449-454
     context access entries, 449-451
     creating entries, 449-454
     element category access entries, 453-554
@@ -132,7 +132,7 @@ access policies, 440, 443
     Load List and View, 444, 459
     Load Only, 443, 475
     manager action, 444-445
-    object, 444, 444-445
+    object, 444-445
     Resource, 443, 444-445, 458, 483, 484
     resource group access ACL entries, 444-445
     ResourceViewOnly, 460, 460
@@ -153,8 +153,6 @@ actions, 126, 502-508
 Actions tree, 505-506
 active user field, 479
 active users, 479
-add
-    chunks to categories in transport packages, 621-623
 #add~ (output modifier), 172
 Add Category dialog, 117, 462
 add package, 537
@@ -176,9 +174,11 @@ add-on components
 #addEventListener()~ method, 640
 adding
     (see also: attaching and assigning)
+    chunks to categories in transport packages, 621-623
     elements to categories in transport packages, 621-623
     properties to property sets, 257-258
     resources to resource groups, 117, 179
+    snippets to categories in transport packages, 621-623
     tables to database, 409-411
     template variables to resource groups, 219
     template variables to templates, 219
@@ -246,7 +246,7 @@ assigning
     resources to resource groups, 117, 179
     resources to resource groups in code, 332, 408, 408
     roles to users, 115
-    snippets to categories in transport packages, 621-623, 621-623
+    snippets to categories in transport packages, 621-623
     template variables to resource groups, 219
     templates to categories in code, 401-402
     users to user groups, 115, 447-448
@@ -308,11 +308,11 @@ build scripts
     for transport packages, 601, 605-610
     MyComponent example, 625
     running outside of MODX, 624-625
-#build.config.php~ file, 87
+#build.config.php~ file (Revolution development version), 87
 #build.config.php~ file (transport packages), 624
 #build.transport.php~ file (transport packages), 600-601, 621-623
 building blocks of MODX, 6-20
-building the development version of Revolution, 87
+building the development version of Revolution, 87-88
 built-in functions in PHP, 675-679
 bulk actions in form customization, 523
 
@@ -365,7 +365,7 @@ changing
     (see also: modifying and renaming)
     component menu items, 504-505
     current resource alias in code, 344
-    language strings used in the Manager, 164, 164
+    language strings used in the Manager, 164
     the site name, 49
     Top Menu items, 504-505
 character set, 63
@@ -399,7 +399,7 @@ chunks
     overview, 230
     relatedUserTpl, 389
     RowTpl, 242, 284
-    #save_chunk~ permission, 449, 453, 453
+    #save_chunk~ permission, 449, 453
     sending properties in tag, 249
     Tpl, 241-244, 473
     tutorial, 230-235
@@ -883,8 +883,12 @@ description TV field, 205
 design philosophy of MODX, xi
 develop branch (Git), 71
 development version of Evolution, 97
-development version of Revolution, 70-75
-    updating, 88
+development version of Revolution, 70-89
+    #build.config.php~ file, 87
+    building, 87-88
+    cloning, 73-75
+    #transport.core.php~ file, 87
+    updating, 88-89
 dialogs
     Add Category, 117, 462
     Add Permission to Template, 486-487
@@ -974,10 +978,10 @@ documents
     in Evolution, 185, 397
     Private Document, 470
     Private Document2, 486
-    #publish_document~ permission, 449, 449
+    #publish_document~ permission, 449
     recently edited (Manager Home screen), 110
     recently edited (Report menu)), 121
-    #save_document~ permission, 453, 453, 465
+    #save_document~ permission, 453, 465
     using tags in, 154-167
 double quotes in PHP, 657-659
 Download Extras button, 122
@@ -1214,6 +1218,7 @@ files
     #.htaccess~, 46-47, 426
     #.PDF~ as static resources, 178
     Apache #httpd.conf~, 60
+    #build.config.php~ (Revolution development version), 87
     #build.config.php~ (transport packages), 624
     #build.transport.php~ (transport packages), 600-601, 621-623
     #config.core.php~, 420
@@ -1246,10 +1251,8 @@ files
     locations for XAMPP, 63
     #modresponse.class.php~, 290
     MODX, 19
-    MODX #build.config.php~, 87
     MODX config, 41, 41, 420-423
     MODX schema, 318-319
-    MODX #transport.core.php~, 76
     #modx.class.php~, 601
     #modx.mysql.schema.php~, 318-319
     names in transport packages, 601
@@ -1268,13 +1271,14 @@ files
     transferring in transport packages, 612-615
     transport package, 601-604
     transport package lexicon, 603
+    #transport.core.php~ (Revolution development version), 87
     uploading, 108
     #user.input.html~ (transport packages), 614-615
 filters, 167
 firing system events, 289-290
 float variables in PHP, 655
-flush all sessions, 117, 442, 457-458, 458, 462
-flush permissions, 117, 442, 457-458, 458, 462, 474
+flush all sessions, 117, 442, 457-458, 462
+flush permissions, 117, 442, 457-458, 462, 474
 fonts used in MODX: The Official Guide, iii-v
 #fopen()~ PHP function, 678
 #for~ loop (PHP), 671-672
@@ -1497,6 +1501,7 @@ Git
     deleting branches, 82
     deleting remotes branches, 82
     develop branch, 71
+    development version of Revolution, 75-89
     editing commit messages, 85
     feature branches, 71
     fetch, 80-81, 88
@@ -1515,7 +1520,6 @@ Git
     #SHA1~, 71
     switching branches, 72
     tracking branches, 80
-    updating development version of Revolution, 88
     upstream remote, 80
     workflow, 83-86
 Git for transport packages, 604-605
@@ -1685,7 +1689,6 @@ installing MODX Revolution, 35
     connection information, 42
     database host, 42
     database name, 42
-    development version, 70-75
     file placement, 38-39
     installer still present warning, 47
     localhost, 64
@@ -1693,7 +1696,6 @@ installing MODX Revolution, 35
     running setup, 41
     summary screen, 43
     under XAMPP, 64
-    upgrade, 69
 instanceof in PHP, 337-338
 integer variables in PHP, 655
 interacting with the user in transport packages, 616-620
@@ -1913,8 +1915,7 @@ merge (Git), 81, 88
 #messageQuit()~ method, 647
 methods
     #addEventListener()~, 640
-    #addMany()~, 342, 621, 637
-    #addMany()~402, 
+    #addMany()~, 342, 402, 621, 637
     #addOne()~, 341-342, 403, 404, 406, 407, 408, 409, 637
     #addPackage()~, 630
     #beginTransaction()~, 405, 630
@@ -2108,7 +2109,7 @@ methods
     #sortby()~ for xPDO queries, 631-632
     #stripTags()~, 649
     #switchContext()~, 649
-    #toArray()~, 328, 355, 355, 370-373, 384, 639
+    #toArray()~, 328, 355, 370-373, 384, 639
     #toJSON()~, 639
     #toPlaceholder()~, 346, 649
     #toPlaceholders()~, 346-347, 384, 388-389, 649
@@ -2136,9 +2137,9 @@ modElementPropertySet intersect object, 409
 MODExt, 532-533
 modifying
     (see also: changing and renaming)
-modifying MODX objects in code, 338-344
-modifying the Top Menu tutorial, 507-512
-modPlugin object reference, 693-693
+    MODX objects in code, 338-344
+    the Top Menu tutorial, 507-512
+modPlugin object reference, 692-693
 modPluginEvent intersect object, 408
 modPrincipal object, 319
 modResource object reference, 691
@@ -2174,8 +2175,8 @@ MODX
     BaseTemplate, 49
     basic building blocks, 6-20
     browser support, 36-37
-    #build.config.php~ file, 87
-    building the development version of Revolution, 87
+    #build.config.php~ file (Revolution development version), 87
+    building the development version of Revolution, 87-88
     cache (overview), 28-29
     cache control, xiii
     categories defined, 14
@@ -2248,7 +2249,7 @@ MODX
     objects reference, 690-695
     parser, 21
     placeholders defined, 15
-    plugin object reference, 693-693
+    plugin object reference, 692-693
     plugins defined, 13
     porting an existing site to, 89-94
     processors, 409
@@ -2257,9 +2258,9 @@ MODX
     resource object reference, 691
     resources, 7, 135-183
     Revolution, viii-ix
-    Revolution development version, 70-75
+    Revolution development version, 70-89
     Revolution objects, 680-682
-    Revolution tags, 17
+    Revolution tags, 17-19
     robustness, xiii
     #root~ directory, 420
     RSS feeds, 110
@@ -2284,7 +2285,7 @@ MODX
     system settings defined, 25
     table prefix, 425
     tag syntax specification, 19
-    tags, 17, 17-18, 49, 145-146, 154-176
+    tags, 17-19, 49, 145-146, 154-176
     tags in documents, 154-167
     template object reference, 693
     template variable object reference, 693-694
@@ -2294,7 +2295,6 @@ MODX
     Tpl chunks defined, 12
     Traditional distribution, 420-423
     transport packages defined, 22
-    #transport.core.php~ file, 87
     unauthorized page, 50
     user interface, xi
     user object reference, 694
@@ -2452,7 +2452,7 @@ O
 object methods, 326-332
 object policies, 444-445
 object policies (editing), 465-466
-Object policy, 444
+Object policy, 459
 object variables in PHP, 655
 object-oriented design of MODX, xiii
 object-oriented programming in PHP, 679-686
@@ -2765,7 +2765,7 @@ PageNotFound tutorial, 302-305
 parameters (see also: properties)
 parameters (with #$_GET~), 646
 #parent~ (Resource Parent) resource field, 144, 358
-Parent related object, 318, 321, 363, 363
+Parent related object, 318, 321, 363
 #parseChunk()~ method, 647
 #parseChunk()~ method in Evolution, 416
 parser, 21
@@ -2805,8 +2805,8 @@ permissions, 443
     removing, 445
     #resource_tree~, 465
     #save~, 449, 453
-    #save_chunk~, 449, 453, 453
-    #save_document~, 453, 453, 465
+    #save_chunk~, 449, 453
+    #save_document~, 453, 465
     #save_element~, 443
     #save_tv~, 514
     #undelete~, 466
@@ -2879,7 +2879,7 @@ PHP
     validators in transport packages, 619-620
     variables, 272, 655-657
     #while~ loop, 671
-PHP functions, 550, mail()
+PHP functions
     #array()~, 678
     #array_merge()~, 375, 384, 388
     built-in, 675-679
@@ -2902,7 +2902,7 @@ PHP functions, 550, mail()
     #is_object()~, 337
     #isset()~, 334-335
     #ltrim()~, 676
-    #mail()~, 696
+    #mail()~, 550, 696
     online documentation, 652
     #rtrim()~, 676
     #str_ireplace()~, 677
@@ -2971,7 +2971,7 @@ plugins, 289-304
     listening to multiple system events, 298
     manager system events, 707-708
     MemberPages, 492-493
-    object reference, 693-693
+    object reference, 692-693
     page-not-found, 302-305
     property sets with, 293-295
     sanity checking in, 332-338
@@ -2998,7 +2998,7 @@ policies
     Load List and View, 444, 459
     Load Only, 443, 475
     manager action, 444-445
-    object, 444, 444-445
+    object, 444-445, 459
     Resource, 443, 444-445, 458, 483, 484
     resource group access, 444-445
     ResourceViewOnly, 460
@@ -3187,7 +3187,7 @@ related objects, 317-319, 359
     DeletedBy, 390
     EditedBy, 323, 388
     in transport packages, 621-623
-    Parent, 318, 321, 359-361, 363, 363
+    Parent, 318, 321, 359-361, 363
     Profile, 318, 322-325, 341, 382-384, 388-389, 391-397, 404
     PublishedBy, 389, 390-391
     PublishedResources, 324
@@ -3245,7 +3245,7 @@ reports, 120-122
 requirements
     browsers, 36-37
     database, 36-37
-    operating system, 36-37, 36-37
+    operating system, 36-37
     PHP, 36-37
     web servers, 36-37
 reserved words in PHP, 657
@@ -3362,7 +3362,7 @@ resources, 135-183
     Private Document2, 486
     protected, 438-439, 451-453
     #publish~ permission, 466
-    #publish_document~ permission, 449, 449
+    #publish_document~ permission, 449
     publishing, 103, 182
     Quick Create, 103, 182
     Quick Update, 181
@@ -3372,10 +3372,11 @@ resources, 135-183
     #remove~ permission, 466
     removing from resource groups, 448
     removing from resource groups in code, 332
-    #save_document~ permission, 453, 453, 465
+    #save_document~ permission, 453, 465
     #site_content~ table, 137
     static, 178
     symlinks, 177
+    Thank You (SPForm), 544-545
     Thanks for Registering, 477
     #toArray()~ method, 370-373
     Unauthorized, 487
@@ -3393,12 +3394,20 @@ retrieving (see: getting)
 #reverse~ (output modifier), 171
 Revolution
     architecture, x-xiii
+    building the development version, 87-88
+    cloning the development version, 73-75
+    development version, 70-89
     objects, 680-682
     overview, viii-ix
     roles in, 446
-    tags, 17
-    updating, 69
+    tags, 17-19
+    updating the development version, 88-89
     versus Evolution, vii-x
+Revolution development version
+    building, 87-88
+    cloning, 73-75
+    creating a fork, 78-79
+    updating, 88-89
 RewriteBase, 60
 rich text
     manager system events, 712
@@ -3450,8 +3459,8 @@ sanity checking, 332-338, 393
     reference, 639
     resource objects, 339
     user objects, 404, 651
-#save_chunk~ permission, 449, 453, 453
-#save_document~ permission, 453, 453, 465
+#save_chunk~ permission, 449, 453
+#save_document~ permission, 453, 465
 #save_element~ permission, 443
 #save_tv~ permission, 514
 schema file (MODX), 318-319
@@ -3549,9 +3558,9 @@ server requirements
 #setContent()~ method (transport packages), 606
 #setDebug()~ method, 636, 648
 #setLogLevel()~ method, 636
-#setLogLevel()~ method (transport packages), 625, 625
+#setLogLevel()~ method (transport packages), 625
 #setLogTarget()~ method, 636
-#setLogTarget()~ method (transport packages), 625, 625
+#setLogTarget()~ method (transport packages), 625
 #setLogTarget()~ method options, 636
 #setOption()~ method, 637
 setPackageAttributes array (transport packages), 610
@@ -3704,7 +3713,7 @@ snippets
     SPForm, 543-551
     SPFResponse, 548-549
     StudentTeacher, 387
-    UpdateProfile, 396, 396, 405, 480
+    UpdateProfile, 396, 405, 480
     uses for, 12, 267, 302, 338, 370, 380-381, 387, 468
     using the lexicon in, 411-413
     using Tpl chunks in, 370-373
@@ -3716,8 +3725,7 @@ sort order TV field, 206
 #sortby()~ method for xPDO queries, 631-632
 sorting
     and MySQL 5.0.51, 145
-    in getCollection, 631-632
-    in #getCollection()~, 362-361
+    in #getCollection()~, 362-361, 631-632
     in #GetMany()~, 639
     in getResources, 569
     in Wayfinder, 145, 564
@@ -4036,7 +4044,7 @@ tab rules in form customization, 515
 table prefix, 425
 #tag~ (output modifier), 171
 tag syntax specification, 19
-tags, 11, 12-13, 17, 18, 49, 90, 145-146, 150, 154-176
+tags, 11, 12-13, 18, 49, 90, 145-146, 150, 154-176
     base href, 429
     cached, 150, 166
     chunk, 11-12, 157, 194
@@ -4048,7 +4056,7 @@ tags, 11, 12-13, 17, 18, 49, 90, 145-146, 150, 154-176
     language, 163-164
     link, 16, 161-163, 197
     MODX Evolution, 17
-    MODX Revolution, 17
+    MODX Revolution, 17-19
     nested, 18, 164-165, 197
     placeholder, 15, 161
     quick reference, 154
@@ -4181,7 +4189,7 @@ third-party components (see: add-on components)
 #time()~ PHP function, 679
 TinyMCE, 147
 Title (#pagetitle~) resource field, 141
-#toArray()~ method, 328, 355, 355, 384, 639
+#toArray()~ method, 328, 355, 384, 639
 #toJSON()~ method, 639
 Tools menu, 117-120
     Error Log, 121
@@ -4303,7 +4311,7 @@ transport packages, 22
     version control, 604-605
     #xPDOTransport::RELATED_OBJECT_ATTRIBUTES~, 621-623
     #xPDOTransport::RELATED_OBJECTS~, 621-623
-#transport.core.php~ file for MODX, 87
+#transport.core.php~ file (Revolution development version), 87
 #tree_root_id~
     redirecting users based on, 489-496
     system setting, 468, 490
@@ -4351,7 +4359,7 @@ tutorials
     creating template variables in code, 402-404
     custom manager page, 523-533
     enhanced hello snippet, 273-275
-    #filemanager_path~, 467-468, 468
+    #filemanager_path~, 467-468
     FormIt custom hook, 588-594
     FormIt snippet, 571-594
     getResources, 566-567
@@ -4433,7 +4441,7 @@ unix timestamp, 173
 Unpublication Report, 120
 Unpublish Date (#unpub_date~) resource field, 149
 #unpublish~ permission, 466
-unpublished error page warning, 110, 110
+unpublished error page warning, 110
 unpublished unauthorized page warning, 110
 Unregistered user, 471
 #unsetPlaceholder()~ method, 347, 649
@@ -4445,9 +4453,8 @@ Update User Role dialog, 448
 #UPDATE_OBJECT~ in transport packages, 606, 610, 621-622
 UpdateProfile snippet, 396, 405, 480
 updating
-    development version of Revolution, 88
+    development version of Revolution, 88-89
     MODX objects in code, 338-344
-    MODX Revolution, 69
     transport packages, 54
     user groups, 115, 115-116
 upgrading (see: updating)
@@ -4540,7 +4547,7 @@ users
     #joinGroup()~ method, 332, 408
     #leaveGroup()~ method, 332
     list of currently logged in, 111
-    logged in or not, 469, 469, 481
+    logged in or not, 469, 481
     manager, 440-441, 446-447
     manager (in Evolution), 497-498
     manager system events, 710-711
@@ -4628,7 +4635,7 @@ variables
     #$key~, 344-345
     #$modx~, 310, 629, 699
     #$modx->resource~, 152, 290, 312-313, 318, 327-328, 332, 353-355, 387-388
-    #$modx->user~, 318, 323, 327, 345, 381-389, 384, 385, 388-389, 469, 481, 481, 490, 592, 592-593
+    #$modx->user~, 318, 323, 327, 345, 381-389, 384, 385, 388-389, 469, 481, 490, 592, 592-593
     #$output~, 272, 656
     #$resource~, 311-313, 318, 354
     #$resource~ (assignment by reference), 312-313

@@ -131,8 +131,6 @@ displaying|user information,16
 user information|displaying,16
 link tags,16
 tags|link,16
-tags,17
-MODX|tags,17
 displaying|resource fields,17
 displaying|template variables,17
 displaying|chunks,17
@@ -153,14 +151,14 @@ links|displaying,17
 
 Evolution|tags,17
 tags|MODX Evolution,17
-tags|MODX Revolution,17
+tags|MODX Revolution,17-19
 MODX|Evolution tags,17
-MODX|Revolution tags,17
-Revolution|tags,17
+MODX|Revolution tags,17-19
+Revolution|tags,17-19
 tags|nested,18
 nested tags,18
 tags,18
-MODX|tags,17-18
+MODX|tags,17-19
 tags|syntax definition,18
 tag syntax specification,19
 MODX|tag syntax specification,19
@@ -254,7 +252,6 @@ server requirements|operating system,36-37
 requirements|operating system,36-37
 server requirements|web servers,36-37
 requirements|web servers,36-37
-requirements|operating system,36-37
 server requirements|PHP,36-37
 requirements|PHP,36-37
 PHP|server requirements,36-37
@@ -460,12 +457,9 @@ dialogs|PhpMyAdmin File Download,65-66
 setting|file and directory permissions,69
 file and directory permissions,69
 files|setting permissions,69
-installing MODX Revolution|upgrade,69
-updating|MODX Revolution,69
-Revolution|updating,69
-installing MODX Revolution|development version,70-75
-development version of Revolution,70-75
-MODX|Revolution development version,70-75
+development version of Revolution,70-89
+MODX|Revolution development version,70-89
+Revolution|development version,70-89
 GitHub,70-75
 Git|branches,70-72
 branches (Git),70-72
@@ -496,10 +490,15 @@ Git|GUI,73
 command-line client for Git,73
 Git|installing,73
 installing|Git,73
+
 cloning Revolution development version,73-75
+Revolution development version|cloning,73-75
+Revolution|cloning the development version,73-75
+development version of Revolution|cloning,73-75
 Git|cloning MODX development version,73-75
 contributing|to MODX development,75-89
 MODX|contributing to development,75-89
+Git|development version of Revolution,75-89
 Git|workflow,83-86
 workflow with Git,83-86
 GitHub|creating an account,76-78
@@ -508,6 +507,7 @@ generating a GitHub SSH key,77
 configuring|Git for MODX development,76-81
 GitHub|forking MODX,78-79
 GitHub|cloning a fork of MODX,78-79
+Revolution development version|creating a fork,78-79
 creating|fork of MODX at GitHub,78-79
 cloning a fork at GitHub,78-79
 Git|fetch,80-81
@@ -547,17 +547,23 @@ commit messages (editing in Git),85
 Git|contributing a new feature,86
 contributing|a new feature in Git,86
 new feature in Git,86
-MODX|building the development version of Revolution,87
-building the development version of Revolution,87
-MODX|build.config.php file,87
-files|MODX build.config.php,87
-build.config.php file,87
-MODX|transport.core.php file,87
-transport.core.php file for MODX,87
-files|MODX transport.core.php,76
-updating|development version of Revolution,88
-development version of Revolution|updating,88
-Git|updating development version of Revolution,88
+MODX|building the development version of Revolution,87-88
+Revolution|building the development version,87-88
+Revolution development version|building,87-88
+development version of Revolution|building,87-88
+building the development version of Revolution,87-88
+MODX|build.config.php file (Revolution development version),87
+files|build.config.php (Revolution development version),87
+build.config.php file (Revolution development version),87
+development version of Revolution|build.config.php file,87
+transport.core.php file (Revolution development version),87
+files|transport.core.php (Revolution development version),87
+development version of Revolution|transport.core.php file,87
+updating|development version of Revolution,88-89
+Revolution|updating the development version,88-89
+development version of Revolution|updating,88-89
+Revolution development version|updating,88-89
+
 Git|checkout,88
 checkout (Git),88
 Git|fetch,88
@@ -772,12 +778,14 @@ troubleshooting|register_globals,110
 register_globals is on warning,110
 warnings|register_globals is on,110
 warnings|unpublished error page,110
-unpublished error page warning,110
 warnings|unpublished unauthorized page,110
-error page unpublished warning,110
-unauthorized page unpublished warning,110
+
 unpublished error page warning,110
 unpublished unauthorized page warning,110
+
+unauthorized page unpublished warning,110
+error page unpublished warning,110
+
 MODX|News panel,110
 MODX|Security panel,110
 MODX|RSS feeds,110
@@ -2379,7 +2387,7 @@ uses for|plugins,338
 creating|MODX objects in code,338-344
 snippets|creating objects in,338-344
 MODX objects (creating in code),338-344
-modifying MODX objects in code,338-344
+modifying|MODX objects in code,338-344
 updating|MODX objects in code,338-344
 database|modifying MODX objects in code,338-344
 new MODX objects in code,339
@@ -2501,14 +2509,7 @@ tutorials|working with resources in code,352-365
 working with|resources in code tutorial,352-365
 $modx->resource variable,353-355
 variables|$modx->resource,353-355
-$modx->resource variable|using get() with,355
-get() method,355
-methods|get(),355
-toArray() method,355
-methods|toArray(),355
-$modx->resource variable|using toArray() with,355
-$resource variable|using get() with,355
-$resource variable|using toArray() with,355
+
 variables|$resource,354
 $resource variable,354
 methods|getObject(),354
@@ -2516,8 +2517,16 @@ getObject() method,354
 =& operator (PHP),354
 operators|=& (PHP),354
 PHP operators|=&,354
+
+$modx->resource variable|using get() with,355
+get() method,355
+methods|get(),355
+$modx->resource variable|using toArray() with,355
+$resource variable|using get() with,355
+$resource variable|using toArray() with,355
 methods|toArray(),355
 toArray() method,355
+
 current resource|toArray() method,356
 methods|hasChildren(),356-357
 hasChildren() method,356-357
@@ -2565,8 +2574,6 @@ related objects|Parent,363
 Parent related object,363
 methods|getCollectionGraph(),364-365
 getCollectionGraph() method,364-365
-related objects|Parent,363
-Parent related object,363
 related objects|Children,364
 Children related object,364
 properties|working with,365-368
@@ -2827,7 +2834,6 @@ snippets|extended user fields in,393-397
 UpdateProfile snippet,396
 Register snippet,394
 snippets|Register,394
-snippets|UpdateProfile,396
 Register snippet,396
 snippets|UpdateProfile,396
 Profile snippet,396
@@ -2901,7 +2907,7 @@ templates|assigning to categories in code,401-402
 categories|assigning templates to in code,401-402
 categories|addMany() method,402
 addMany() method,402
-methods|addMany()402
+methods|addMany(),402
 template variables|creating in code tutorial,402-404
 creating|template variables in code tutorial,402-404
 tutorials|creating template variables in code,402-404
@@ -3295,7 +3301,6 @@ Access Control Lists,441
 security|Access Control Lists,441
 security|elements,442-453
 MODX|security system elements,442-453
-Access Control Lists,449-454
 admin Super User,442-444
 admin Super User|default ACL entries for,442
 security|default settings,442
@@ -3376,12 +3381,9 @@ security|manager action policies,444-445
 policies|manager action,444-445
 manager action policy,444-445
 access policies|object,444-445
-access policies|Object,444
 security|object policies,444-445
 policies|object,444-445
 object policies,444-445
-policies|Object,444
-Object policy,444
 roles|overview,446
 Evolution|roles,446
 MODX Evolution|roles,446
@@ -3459,8 +3461,6 @@ permissions|save_chunk,449
 chunks|save_chunk permission,449
 save_chunk permission,449
 permissions|publish_document,449
-documents|publish_document permission,449
-resources|publish_document permission,449
 publish_document permission,449
 documents|publish_document permission,449
 resources|publish_document permission,449
@@ -3485,10 +3485,6 @@ mgr context,450-451
 resource group access ACL entries,451-453
 ACL entries|resource group access,451-453
 Access Control Lists|resource group access entries,451-453
-permissions|save_document,453
-save_document permission,453
-documents|save_document permission,453
-resources|save_document permission,453
 security|protected resources,451-453
 resources|protected,451-453
 protected|resources,451-453
@@ -3504,9 +3500,6 @@ security|policies for resource group access ACL entries,452
 
 ACL entries|element category access,453-554
 Access Control Lists|element category access entries,453-554
-chunks|save_chunk permission,453
-permissions|save_chunk,453
-save_chunk permission,453
 security|minimum role for element category access ACL entries,453
 minimum role|for element category access ACL entries,453
 roles|minimum role for element category access ACL entries,453
@@ -3590,12 +3583,12 @@ resource groups|AllDocs,458
 access policies|resource,458
 policies|resource,458
 resource policy,458
-flush permissions,458
-flush all sessions,458
 contexts|mgr,458
 mgr context,458
 contexts|mgr,459
 mgr context,459
+Object policy,459
+policies|Object,459
 access policies|duplicating,459
 duplicating access policies,459
 News resource group,459
@@ -3721,7 +3714,6 @@ filemanager_path tutorial,467-468
 
 system settings|tree_root_id,468
 admin Super User|previewing from Manager,468
-tutorials|filemanager_path,468
 controlling|access in the front end,468-474
 front end|controlling access in,468-474
 contexts|web,468
@@ -3741,7 +3733,6 @@ authenticating users,469
 users|authenticating,469
 login status,469
 users|checking login status in code,469
-users|logged in or not,469
 methods|sendErrorPage(),469
 sendErrorPage() method,469
 methods|sendUnauthorizedPage(),469
@@ -3885,7 +3876,6 @@ redirecting users|with sendRedirect(),481
 checking user's login status,481
 $modx->user variable|checking login status with,481
 $modx->user variable|using hasSessionContext() with,481
-variables|$modx->user,481
 methods|hasSessionContext(),481
 hasSessionContext() method,481
 methods|makeUrl(),481
@@ -4053,7 +4043,6 @@ Top Menu|renaming items,504-505
 renaming|Top Menu items,504-505
 components|changing menu item for,504-505
 changing|Top Menu items,504-505
-changing|language strings used in the Manager,164
 Components|Top Menu item,504-505
 changing|component menu items,504-505
 Batcher add-on component,504-507
@@ -4078,7 +4067,7 @@ handling clicks in the Top Menu,507
 Top Menu|reordering,507-508
 Top Menu|order of items,507-508
 tutorials|modifying the Top Menu,507-512
-modifying the Top Menu tutorial,507-512
+modifying|the Top Menu tutorial,507-512
 Top Menu|lexicon keys,508
 lexicon keys|for Top Menu items,508
 lexicon|for Top Menu items,508
@@ -4330,6 +4319,7 @@ SPForm|Contact page,545
 redirecting users|in SPForm,544-545
 users|redirecting in SPForm,544-545
 Thank You page (SPForm),544-545
+resources|Thank You (SPForm),544-545
 SPForm|thank you page,544-545
 SPFORM|Tpl chunks for,545
 Tpl chunks|for SPForm,545
@@ -4359,7 +4349,7 @@ SPForm|multiple recipients for,549-550
 formProcAllowedReferers (SPForm),550
 SPForm|formProcAllowedReferers,550
 mail() PHP function,550
-PHP functions,mail(),550
+PHP functions|mail(),550
 troubleshooting|email,550
 SPForm|using SMTP with,550
 using|SMTP with SPForm,550
@@ -4804,12 +4794,12 @@ addMany() method,621
 adding|elements to categories in transport packages,621-623
 attaching|elements to categories in transport packages,621-623
 categories|assigning elements to in transport packages,621-623
-assigning|snippets to categories in transport packages,621-623
+adding|snippets to categories in transport packages,621-623
 assigning|snippets to categories in transport packages,621-623
 snippets|assigning to categories in transport packages,621-623
 chunks|assigning to categories in transport packages,621-623
 assigning|chunks to categories in transport packages,621-623
-add|chunks to categories in transport packages,621-623
+adding|chunks to categories in transport packages,621-623
 xPDOTransport::UNIQUE_KEY constant,621-622
 $resource variable|in transport packages,622
 constants|xPDOTransport::UNIQUE_KEY,621-622
@@ -4868,11 +4858,9 @@ files|build.config.php (transport packages),624
 methods|setLogLevel() (transport packages),625
 setLogLevel() method (transport packages),625
 transport packages|setLogLevel() method,625
-setLogLevel() method (transport packages),625
 transport packages|setLogTarget() method,625
 setLogTarget() method (transport packages),625
 methods|setLogTarget() (transport packages),625
-setLogTarget() method (transport packages),625
 modX::LOG_LEVEL_INFO constant,625
 constants|modX::LOG_LEVEL_INFO,625
 XPDO_CLI_MODE constant,625
@@ -4953,7 +4941,7 @@ queries|where() method,631-632
 xPDO queries|where() method,631-632
 methods|sortby() for xPDO queries,631-632
 sorting|in xPDO queries,631-632
-sorting|in getCollection,631-632
+sorting|in getCollection(),631-632
 sortby() method for xPDO queries,631-632
 queries|sortby() method,631-632
 xPDO queries|sortby() method,631-632
@@ -5655,9 +5643,9 @@ MODX|snippet object reference,692
 snippets|object reference,692
 modSnippet object reference,692
 
-MODX|plugin object reference,693-693
-plugins|object reference,693-693
-modPlugin object reference,693-693
+MODX|plugin object reference,692-693
+plugins|object reference,692-693
+modPlugin object reference,692-693
 
 
 MODX|template object reference,693
