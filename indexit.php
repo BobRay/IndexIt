@@ -456,7 +456,7 @@ $mtime = explode(" ", $mtime);
 $mtime = $mtime[1] + $mtime[0];
 $tstart = $mtime;
 
-$html = 0;
+$html = 1;
 $infile = 'bookindex.txt';
 if (!$html) {
     $outfile = 'final.txt';
