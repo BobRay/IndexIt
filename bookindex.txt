@@ -51,7 +51,6 @@ cache|control,xiii
 how MODX works,1
 using|a content management system,2
 MODX|database,1
-third-party components (overview),4
 MODX|add-on components (overview),4
 add-on components|overview,4
 MODX|components (overview),4
@@ -126,6 +125,8 @@ tags|placeholder,15
 links,16
 MODX|links,16
 current user,16
+users|current user,16
+user|current,16
 displaying|user information,16
 user information|displaying,16
 link tags,16
@@ -136,6 +137,7 @@ displaying|resource fields,17
 displaying|template variables,17
 displaying|chunks,17
 displaying|snippet output,17
+settings|defined,16
 displaying|settings,17
 displaying|language strings,17
 displaying|placeholders,17
@@ -192,13 +194,11 @@ lexicon strings|overview,23-24
 MODX|lexicon strings,23-24
 system settings|defined,25
 MODX|system settings defined,25
-settings|system,25
 setting tags,25
 tags|setting,25
 contexts|defined,25-26
 MODX|contexts defined,25-26
 context settings,25-26
-settings|context,25-26
 mgr context,25-26
 contexts|mgr,25-26
 contexts|web,25-26
@@ -211,7 +211,6 @@ contexts|creating,25-26
 creating|contexts,25-26
 MODX|creating contexts,25-26
 user settings,26
-settings|user,26
 MODX|user settings,26
 property sets|defined,27-28
 MODX|property sets defined,27-28
@@ -303,7 +302,7 @@ Evolution|installing,42
 MODX Evolution|installing,42
 installing MODX Revolution|connection information,42
 connection information,42
-default database,42
+default|database,42
 localhost default database,42
 database|host,42
 host (database),42
@@ -322,7 +321,7 @@ warnings|config file still writable,45
 installing MODX Revolution|register_globals,45-47
 register_globals,45-47
 warnings|register_globals is on,45-47
-register globals is on warning,45-47
+register_globals is on warning,45-47
 errors|server 500,46
 troubleshooting|Server 500 error,46
 server 500 error,46
@@ -403,7 +402,7 @@ FURLs|friendly alias path,57
 friendly aliases,58
 FURLs|friendly aliases,58
 .htaccess file|configuring for FURLs,59
-configuring .htaccess file for FURLS,59
+configuring|.htaccess file for FURLS,59
 .htaccess file|Furls and,59
 .htaccess file,59-60
 public_html directory,59
@@ -425,13 +424,16 @@ FURLs|testing,60
 index.php file|MODX,61
 MODX|index.php file,61
 files|index.php (MODX),61
-installing MODX Revolution|localhost,62-64
-installing MODX Revolution|XAMPP,62-64
+installing MODX Revolution|localhost,64
+installing MODX Revolution|under XAMPP,64
 XAMPP|downloading,62
-XAMPP|installing,62
+XAMPP|installing,62-63
+installing|XAMPP,62-63
+XAMPP|configuring,62-63
+configuring|XAMPP,62-63
 PHPMyAdmin|accessing,63
 Apache Friends,62
-default collation,63
+default|collation,63
 utf-8,63
 uft8_unicode_ci,63
 character set,63
@@ -458,11 +460,8 @@ dialogs|PhpMyAdmin File Download,65-66
 setting|file and directory permissions,69
 file and directory permissions,69
 files|setting permissions,69
-upgrade install,69
 installing MODX Revolution|upgrade,69
 updating|MODX Revolution,69
-upgrading MODX Revolution,69
-MODX|upgrading,69
 Revolution|updating,69
 installing MODX Revolution|development version,70-75
 development version of Revolution,70-75
@@ -477,9 +476,9 @@ develop branch (Git),71
 Git|commits,71
 commits (Git),71
 Git|HEAD,71
-HEAD,71
+HEAD (Git),71
 Git|SHA1,71
-SHA1,71
+SHA1 (Git),71
 Git|hotfix branch,71
 hotfix branch (Git),71
 Git|feature branches,71
@@ -499,13 +498,14 @@ Git|installing,73
 installing|Git,73
 cloning Revolution development version,73-75
 Git|cloning MODX development version,73-75
-contributing to MODX development,75-89
+contributing|to MODX development,75-89
 MODX|contributing to development,75-89
 Git|workflow,83-86
 workflow with Git,83-86
 GitHub|creating an account,76-78
 GitHub|creating an SSH key,77
 generating a GitHub SSH key,77
+configuring|Git for MODX development,76-81
 GitHub|forking MODX,78-79
 GitHub|cloning a fork of MODX,78-79
 creating|fork of MODX at GitHub,78-79
@@ -535,20 +535,25 @@ Git|push,82
 push (Git),82
 Git|contributor workflow,83-89
 contributor workflow in Git,83-89
+guidelines for Git with MODX,83-84
+Git|guidelines for using with MODX,83-84
 bug fixes in Git,84
 Git|bug fixes in,84
-contributing a bug fix with Git,84
+contributing|a bug fix with Git,84
+configuring|Git editor for commit messages,85
 Git|editing commit messages,85
 editing|commit messages (Git),85
 commit messages (editing in Git),85
 Git|contributing a new feature,86
-contributing a new feature in Git,86
+contributing|a new feature in Git,86
 new feature in Git,86
 MODX|building the development version of Revolution,87
 building the development version of Revolution,87
-MODX|build.config.php,87
+MODX|build.config.php file,87
 files|MODX build.config.php,87
-MODX|transport.core.php,87
+build.config.php file,87
+MODX|transport.core.php file,87
+transport.core.php file for MODX,87
 files|MODX transport.core.php,76
 updating|development version of Revolution,88
 development version of Revolution|updating,88
@@ -569,10 +574,13 @@ porting|a template to MODX,90
 templates|porting to MODX,90
 tags,90
 porting|content to MODX,91
+disabling|snippets,92
+snippets|disabling,92
 converting a template to MODX,90
 config.inc.php file|Evolution,95
 files|config.inc.php for Evolution,95
 Evolution|config file,95
+location|of Evolution config file,95
 MODX Evolution|config file,95
 files|Evolution config,95
 installing MODX Evolution,96
@@ -617,7 +625,7 @@ admin Super User,101
 Resource tree|icons,101
 icons|Resource tree,101
 Resource tree|sorting,101-102
-Resource tree|menuindex,101-102
+Resource tree|menuindex (sorting by),101-102
 sorting|Resource tree,101-102
 menuindex (and Resource tree sorting),101
 Resource tree|deleting resources,103
@@ -752,7 +760,7 @@ Home Top Menu choice,109
 Manager|Home screen,109
 MODX Manager|Home screen,109
 Home screen of the Manager,109
-Components Tom Menu item,109
+Components Top Menu item,109
 Top Menu|Components,109
 system settings|site_name,109
 site_name system setting,109
@@ -761,8 +769,8 @@ MODX Manager|configuration check,110
 Manager|configuration check (Revolution),110
 register_globals,110
 troubleshooting|register_globals,110
-register globals is on warning,110
-warnings|register globals is on,110
+register_globals is on warning,110
+warnings|register_globals is on,110
 warnings|unpublished error page,110
 unpublished error page warning,110
 warnings|unpublished unauthorized page,110
@@ -779,6 +787,7 @@ security|RSS feed,110
 system settings|RSS feeds,110
 enabling|RSS feeds,110
 disabling|RSS feeds,110
+RSS feeds,disabling,110
 enabling|news feed,110
 enabling|security feed,110
 disabling|news feed,110
@@ -843,6 +852,8 @@ Access Controls menu,115
 Access Controls menu|User Groups,115
 creating|user groups,115
 Access Controls menu|Roles tab,115
+disabling|permissions,115
+permissions|disabling,115
 creating|roles,115
 New Role button,115
 Access Controls menu|Access Policies tab,115
@@ -881,7 +892,7 @@ resource groups,117
 creating|resource groups,117
 Access Controls menu|Resource Groups tab,117
 resources|assigning to resource groups,117
-assigning|resources to resource groups,117
+adding|resources to resource groups,117
 assigning|resources to resource groups,117
 Form Customization|Manager panel,117
 flush permissions,117
@@ -1025,6 +1036,9 @@ editing|files in Evolution,130
 files|editing in Evolution,130
 Evolution|editing elements,130
 MODX Evolution|editing elements,130
+configuring|modules in Evolution,131
+configuring|MODX Evolution,131
+configuring|File Manager in Evolution,131
 Evolution|Top Menu,130-132
 MODX Evolution|Top Menu,130-132
 Top Menu|Evolution,130-132
@@ -1274,7 +1288,9 @@ tags|link,161-163
 link tag properties,163
 scheme property for link tags,163
 context property for link tags,163
+properties|context for link tags,163
 link tags|scheme property,163
+properties|scheme for link tags,163
 link tags|context property,163
 language tags,163-164
 tags|language,163-164
@@ -1612,7 +1628,7 @@ tags|in templates,199
 templates|using tags in,199
 using|tags in templates,199
 template variables,199-226
-template variables|uses,200
+template variables|uses for,200
 displaying|template variables,200
 template variables|displaying,200
 uses for|template variables,200
@@ -1657,7 +1673,7 @@ input type TV field,206
 template variable fields|input option values,206
 input option values TV field,206
 template variable fields|default value,207
-default value TV field,207
+Default Value TV field,207
 @INHERIT binding,207
 template variables|@INHERIT binding,207
 template variable fields|output type,208
@@ -1709,7 +1725,7 @@ formatting codes for date template variables,215
 strftime() PHP function,215
 PHP functions|strftime(),215
 template variables|default output type,215
-default template variable output type,215
+default|template variable output type,215
 template variables|delimiter output type,216
 delimiter template variable output type,216
 template variables|HTML tag output type,216
@@ -1792,6 +1808,7 @@ chunks|uses for,238-241
 using|chunks to store data,238-241
 data storage in chunks,238-241
 tutorials|storing/retrieving data in a chunk,238-241
+getting|data from a chunk tutorial,238-241
 storing/retrieving data in a chunk tutorial,238-241
 Tpl chunks,241-244
 chunks|Tpl,241-244
@@ -1818,7 +1835,6 @@ properties|sending in chunk tags,249
 chunks|sending properties in tag,249
 default properties|versus property sets,249-251
 property sets|versus default properties,249-251
-snippets|properties,249-263
 snippets|default properties,249-255
 snippet properties,249-263
 snippets|properties,249-263
@@ -1900,17 +1916,15 @@ plugins|defined,267
 snippets|installing with Package Manager,268
 installing|snippets with Package Manager,268
 Package Manager|installing snippets,268
-CodeMirror editor|installing,269
+CodeMirror editor,269
 editors|CodeMirror,269
-CodeMirror editor |configuring,269
-configuring CodeMirror editor,269
-CodeMirror editor|disabling,269
+disabling|CodeMirror,269
+configuring|CodeMirror editor,269
 tutorials|simple snippet,268-270
 simple snippet tutorial,268-270
 hello snippet,269-270
 snippets|hello snippet tutorial,269-270
 snippet properties|in snippet tags,270-271
-snippets|properties,270-271
 snippet properties,269-271
 snippets|properties,269-271
 properties|in snippet tags,270-271
@@ -1925,6 +1939,7 @@ snippets|$output variable,272
 variables|$output,272
 PHP|operators,272-273
 operators|PHP,272-273
+PHP operators,272-273
 placeholders|setting in snippets,272-273
 tutorials|enhanced hello snippet,273-275
 enhanced hello snippet,273-275
@@ -1963,6 +1978,7 @@ replacing conditional output modifiers with a snippet tutorial,280-283
 PHP|ternary operator,281-282
 ternary operator (PHP),281-282
 operators|ternary (PHP),281-282
+PHP operators|ternary,281-282
 Tpl chunks,283-288
 tutorials|Tpl chunk,283-288
 Tpl chunks|tutorial,283-288
@@ -2007,7 +2023,6 @@ system events|OnWebPagePrerender,292
 attaching|system events to plugins,292
 plugins|attaching system events to,292
 attaching|system events to plugins,292
-properties|using with plugins,293-295
 uses for|plugin properties,293-295
 using|properties with plugins,293-295
 properties|using with plugins,293-295
@@ -2146,19 +2161,19 @@ methods|getObject(),310-313
 getObject() method,310-313
 $classKey argument for getObject,311-312
 getObject() $classKey argument,311-312
-database|retrieving resources from,311
-retrieving|resources from database,311
+database|getting resources from,311
+getting|resources from database,311
 $resource variable,311-313
 variables|$resource,311-313
 $resource variable|using getObject() with,313
-database|retrieving chunks from,311
-retrieving|chunks from database,311
-database|retrieving users from,311
-retrieving|users from database,311
-current resource|retrieving in code,312
+database|getting chunks from,311
+getting|chunks from database,311
+database|getting users from,311
+getting|users from database,311
+current resource|getting in code,312
 $modx->resource variable,312-313
 variables|$modx->resource,312-313
-retrieving|current resource in code,312-313
+getting|current resource in code,312-313
 $modx->resource variable|reference variable for,312-313
 $resource variable|assignment by reference,312-313
 variables|$resource (assignment by reference),312-313
@@ -2184,9 +2199,9 @@ getOption() method,314
 methods|getChildIds(),315
 getChildIds() method,315
 current resource|getting ID of in code,315
-retrieving|ID of current resource,315
+getting|ID of current resource,315
 current resource|children,315
-retrieving|children of current resource in code,315
+getting|children of current resource in code,315
 methods|getParentIds(),315-316
 getParentIds() method,315-316
 methods|getPlaceholder(),316
@@ -2211,8 +2226,8 @@ variables|$resource,318
 related objects|Children,318
 Children related object,318
 $modx->resource variable,318
-current resource|retrieving in code,318
-retrieving|current resource in code,318
+current resource|getting in code,318
+getting|current resource in code,318
 variables|$modx->resource,318
 $modx->user variable,318
 variables|$modx->user,318
@@ -2220,6 +2235,8 @@ user profile,318-319
 related objects|Profile,318
 Profile related object,318
 current user,318
+users|current user,318
+user|current,318
 methods|getMany(),321
 getMany() method,321
 getMany() versus getOne(),321
@@ -2245,10 +2262,10 @@ $resource variable|using getMany() with,321
 $modx->user variable|using get() with,323
 variables|$modx->user,323
 related objects|Profile,322-325
-Profile related object|retrieving with getObjectGraph(),322-325
-retrieving|user profile with getObjectGraph(),322-325
+Profile related object|getting with getObjectGraph(),322-325
+getting|user profile with getObjectGraph(),322-325
 user profile,322-325
-user profile|retrieving with getObjectGraph(),322-325
+user profile|getting with getObjectGraph(),322-325
 graph methods,321-325
 methods|graph,321-325
 methods|getObjectGraph(),321-324
@@ -2277,11 +2294,13 @@ get() method,327
 $modx->user variable|using get() with,327
 variables|$modx->user,327
 current user,327
-current resource|retrieving in code,327-328
+users|current user,327
+user|current,327
+current resource|getting in code,327-328
 current resource|getting ID of in code,327-328
-retrieving|ID of current resource,327-328
+getting|ID of current resource,327-328
 current resource|children,315
-retrieving|current resource in code,327-328
+getting|current resource in code,327-328
 $modx->resource variable|using get() with,327
 variables|$modx->resource,327-328
 $modx->resource variable|using toArray() with,327
@@ -2311,8 +2330,8 @@ methods|hasTemplateVar(),331
 hasTemplateVar() method,331
 $resource variable|using getTVValue() with,331
 templates|hasTemplateVar() method,331
-retrieving|TV values for current resource in code,331
-current resource|retrieving TV values for,331
+getting|TV values for current resource in code,331
+current resource|getting TV values for,331
 methods|joinGroup() (user object),332
 joinGroup() method (user object),332
 $resource variable|using joinGroup() with,332
@@ -2368,7 +2387,7 @@ methods|newObject(),339
 newObject() method,339
 methods|save(),339
 save() method,339
-save() method|resource object,339
+save() method|resource objects,339
 $resource variable|using save() with,339
 
 
@@ -2461,7 +2480,7 @@ default.inc.php lexicon file,348
 files|default.inc.php,348
 lexicon files|default.inc.php,348
 lexicon|default.inc.php file,348
-default lexicon file,348
+default|lexicon file,348
 namespace path,349
 path to namespace,349
 !{core_path},349
@@ -2497,8 +2516,6 @@ getObject() method,354
 =& operator (PHP),354
 operators|=& (PHP),354
 PHP operators|=&,354
-methods|get(),355
-get() method,355
 methods|toArray(),355
 toArray() method,355
 current resource|toArray() method,356
@@ -2527,10 +2544,10 @@ related objects|available with getMany(),359
 current resource|getting parent information,359
 MODX|related objects,359-361
 related objects|Parent,359-361
-retrieving|related objects,359-361
+getting|related objects,359-361
 current resource|getting children,360-361
-retrieving|children of current resource,360-361
-database|retrieving related objects,359-361
+getting|children of current resource,360-361
+database|getting related objects,359-361
 methods|getCollection(),362-363
 sorting|in getCollection(),362-361
 $modx->resource variable|using getMany() with,359
@@ -2554,7 +2571,8 @@ related objects|Children,364
 Children related object,364
 properties|working with,365-368
 working with|properties in code,365-368
-properties|retrieving in code,365-368
+properties|getting in code,365-368
+getting|properties in code,365-368
 $scriptProperties array,366-367
 variables|$scriptProperties,366-367
 $scriptProperties variable,366-367
@@ -2564,7 +2582,7 @@ methods|getChunk(),368-370
 getChunk() method,368-370
 working with|getChunk(),368-370
 chunks|getChunk() method,368-370
-property sets|retrieving in code,370
+property sets|getting in code,370
 methods|getProperties(),370
 getProperties() method,370
 Tpl chunks|working with in code,370-373
@@ -2590,36 +2608,36 @@ $scriptProperties variable,374
 PHP functions|array_merge(),375
 array_merge() PHP function,375
 $modx->resource variable|using getTVValue() with,376
-current resource|retrieving TV values for,376
-template variables|retrieving in code,377-379
-snippets|retrieving template variables,377-379
-database|retrieving template variables from,377-379
-retrieving|template variables from database,377-379
+current resource|getting TV values for,376
+template variables|getting in code,377-379
+snippets|getting template variables in,377-379
+database|getting template variables from,377-379
+getting|template variables from database,377-379
 methods|getTVValue(),378
 $modx->resource variable|using getTVValue() with,378
 getTVValue() method,378
-current resource|retrieving TV values for,378
+current resource|getting TV values for,378
 resources|getTVValue() method,378
 raw content of template variables,376
 displaying|template variables,375-376
 template variables|displaying,375-376
 current resource|getting TV values in code,376
-retrieving|TV values for current resource in code,376
-template variables|retrieving raw content of,376
+getting|TV values for current resource in code,376
+template variables|getting raw content of,376
 template variables|working with in code,377-378
 working with|template variables in code,377-378
 processed content of template variables,377
-template variables|retrieving processed output of,377
+template variables|getting processed output of,377
 tutorials|controlling text color with a TV,377-379
 controlling|text color with a TV tutorial,377-379
 uses for|template variables,377
 template variables|uses for,377
 methods|regClientCSS(),378
 regClientCSS() method,378
-system settings|retrieving with getOption(),380
+system settings|getting with getOption(),380
 methods|getOption(),380
-retrieving|system settings with getOption(),380
-database|retrieving system settings from,380
+getting|system settings with getOption(),380
+database|getting system settings from,380
 settings|working with in code,380
 working with|settings in code,380
 working with|users in code,380-396
@@ -2629,20 +2647,19 @@ uses for|snippets,380-381
 snippets|uses for,380-381
 displaying|user information,380-396
 user information|displaying,380-396
-getting user information in code,380-396
-user information|retrieving in code,380-396
-retrieving|user information in code,380-396
-current user,381-383
+user information|getting in code,380-396
+getting|user information in code,380-396
 working with|the current user in code,381-383
 current user,381-383
+users|current user,381-383
+user|current,381-383
 $modx->user variable,381-389
 $modx->user variable|using get() with,381-382
 variables|$modx->user,381-389
-retrieving|current user,381-383
-related objects|Profile,382-383
-Profile related object|retrieving with getOne(),382
-user profile|retrieving with getOne(),382
-retrieving|user profile with getOne(),382
+getting|current user,381-383
+Profile related object|getting with getOne(),382
+user profile|getting with getOne(),382
+getting|user profile with getOne(),382
 modUser object,381
 username user field,381
 user fields|username,381
@@ -2664,8 +2681,8 @@ admin Super User|previewing from Manager,382
 user profile,382-384
 Profile related object,382-384
 related objects|Profile,382-384
-database|retrieving user profiles from,382-383
-retrieving|user profiles from database,382-383
+database|getting user profiles from,382-383
+getting|user profiles from database,382-383
 Profile related object|setting placeholders for,383
 user profile|setting placeholders for,382-383
 placeholders|setting in code,383-384
@@ -2692,6 +2709,8 @@ authenticating users,384-385
 users|checking login status in code,384-385
 users|logged in or not,469
 current user,469
+users|current user,469
+user|current,469
 $modx->user variable|checking login status with,385
 $modx->user variable|using isMember() with,385
 variables|$modx->user,385
@@ -2723,7 +2742,7 @@ current resource|related objects,387-389
 current resource|creator,388
 $modx->user variable|using get() with,388-389
 variables|$modx->user,388-389
-retrieving|current resource related objects,388
+getting|current resource related objects,388
 related objects|CreatedBy,388
 CreatedBy related object,388
 current resource|editor,388
@@ -2749,9 +2768,9 @@ toPlaceholders() method,388-389
 PHP functions|array_merge(),388
 array_merge() PHP function,388
 related objects|Profile,388-389
-Profile related object|retrieving with getObjectGraph(),388-389
-user profile|retrieving with getObjectGraph(),388-389
-retrieving|user profile with getObjectGraph(),388-389
+Profile related object|getting with getObjectGraph(),388-389
+user profile|getting with getObjectGraph(),388-389
+getting|user profile with getObjectGraph(),388-389
 users|related to another resource,389-391
 resources|users related to,389-391
 methods|getObject(),390
@@ -2773,10 +2792,10 @@ getCollectionGraph() method,391
 methods|getCollectionGraph(),391
 related objects|Profile,391-397
 Profile related object,391-397
-Profile related object|retrieving with getOne(),392
-retrieving|user profile with getOne(),392
-database|retrieving users from,392-393
-retrieving|users from database,392-393
+Profile related object|getting with getOne(),392
+getting|user profile with getOne(),392
+database|getting users from,392-393
+getting|users from database,392-393
 methods|getCollection(),392-393
 getCollection() method,392-393
 methods|getOne(),392
@@ -2787,9 +2806,9 @@ xPDO queries|newQuery() method,393
 newQuery() method,393
 methods|getSelectColumns(),393
 getSelectColumns() method,393
-Profile related object|retrieving with getCollection(),393
-user profile|retrieving with getCollection(),393
-retrieving|user profile with getCollection(),393
+Profile related object|getting with getCollection(),393
+user profile|getting with getCollection(),393
+getting|user profile with getCollection(),393
 methods|innerJoin(),393
 innerJoin() method,393
 queries|innerJoin() method, 393
@@ -2798,8 +2817,6 @@ where() method for xPDO queries,393
 queries|where() method,393
 xPDO queries|where() method,393
 
-methods|getCollection(),393
-getCollection() method,393
 sanity checking,393
 extended user fields in code,393-397
 fields|extended user (in code),393-397
@@ -2827,9 +2844,9 @@ methods|save(),398
 save() method,398
 methods|getCollectionGraph(),397
 getCollectionGraph() method,397
-database|retrieving user extended fields from,397
-fields|retrieving user extended fields in code,397
-retrieving|user extended fields from database,397
+database|getting user extended fields from,397
+fields|getting user extended fields in code,397
+getting|user extended fields from database,397
 creating|MODX objects in code,397-409
 MODX objects (creating in code),397-409
 methods|newObject(),397
@@ -2874,23 +2891,23 @@ working with|categories in code,401-402
 creating|categories in code,401-402
 snippets|creating categories in,401-402
 attaching|snippets to categories in code,401-402
-snippets|attaching to categories in code,401-402
-categories|attaching snippets to in code,401-402
-attaching|chunks to categories in code,401-402
-chunks|attaching to categories in code,401-402
-categories|attaching chunks to in code,401-402
-attaching|templates to categories in code,401-402
-templates|attaching to categories in code,401-402
-categories|attaching templates to in code,401-402
+snippets|assigning to categories in code,401-402
+categories|assigning snippets to in code,401-402
+assigning|chunks to categories in code,401-402
+chunks|assigning to categories in code,401-402
+categories|assigning chunks to in code,401-402
+assigning|templates to categories in code,401-402
+templates|assigning to categories in code,401-402
+categories|assigning templates to in code,401-402
 categories|addMany() method,402
 addMany() method,402
 methods|addMany()402
 template variables|creating in code tutorial,402-404
 creating|template variables in code tutorial,402-404
 tutorials|creating template variables in code,402-404
-attaching|template variables to templates in code,402-404
+adding|template variables to templates in code,402-404
 template variables|attaching to templates in code,402-404
-templates|attaching to template variables in code,402-404
+templates|attaching template variables to in code,402-404
 attaching|template variables to templates in code,402-404
 snippets|addOne() method,403
 addOne() method,403
@@ -2918,7 +2935,7 @@ methods|addOne(),404
 addOne() method,404
 methods|save(),404
 save() method,404
-save() method|user object,404
+save() method|user objects,404
 variables|$xpdo,405
 $xpdo variable,405
 UpdateProfile snippet,405
@@ -2937,8 +2954,8 @@ user groups|working with in code,406-408
 assigning|users to user groups in code,406-408
 working with|user groups in code,406-408
 snippets|working with user groups in,406-408
-database|retrieving user groups from,406-408
-retrieving|user groups from database,406-408
+database|getting user groups from,406-408
+getting|user groups from database,406-408
 methods|newObject(),406
 newObject() method,406
 methods|addOne(),406
@@ -3053,9 +3070,9 @@ parseChunk() method in Evolution,416
 Evolution|runSnippet() method,416
 MODX Evolution|runSnippet() method,416
 runSnippet() method in Evolution,416
-Evolution|retrieving system settings,416
-MODX Evolution|retrieving system settings,416
-retrieving|system settings in Evolution,416
+Evolution|getting system settings,416
+MODX Evolution|getting system settings,416
+getting|system settings in Evolution,416
 Evolution|lexicon strings,416
 MODX Evolution|lexicon strings,416
 lexicon strings|in Evolution,416
@@ -3143,7 +3160,6 @@ alt context,426-433
 contexts|alt,426-433
 creating|a second context,426-433
 contexts|creating a second,426-433
-settings|context,428-429
 contexts|settings,428-429
 system settings|site_start,428
 site_start system setting,428
@@ -3174,9 +3190,8 @@ virtual hosts,429-431
 creating|virtual hosts,429-431
 cPanel,429
 hosts file,430
-httpd-vhosts.conf file,430
+troubleshooting|Apache startup,430
 files|hosts,430
-files|httpd-vhosts.conf,430
 apache/bin directory,430
 directories|apache/bin,430
 context settings|http_host,431
@@ -3284,9 +3299,9 @@ Access Control Lists,449-454
 admin Super User,442-444
 admin Super User|default ACL entries for,442
 security|default settings,442
-default security settings,442
+default|security settings,442
 permissions|default settings,442
-default permissions,442
+default|permissions,442
 flush permissions,442
 flush all sessions,442
 permissions,443
@@ -3300,6 +3315,8 @@ file_tree permission,443
 access policies,443
 access policy templates,443
 policy templates,443
+disabling|permissions,444
+permissions|disabling,444
 permissions|removing,445
 removing|permissions,445
 access policies|creating,443-445
@@ -3459,12 +3476,12 @@ admin Super User|advisability of adding to user groups,450
 minimum role|for context access ACL entries,450-451
 roles|minimum role for context access ACL entries,450-451
 access policies|for context access ACL entries,450-451
-policies for context access ACL entries,450-451
+policies|for context access ACL entries,450-451
+security|policies for context access ACL entries,450-451
 Administrator user group,450-451
 user groups|Administrator,450-451
 contexts|mgr,450-451
 mgr context,450-451
-contexts|mgr,450-451
 resource group access ACL entries,451-453
 ACL entries|resource group access,451-453
 Access Control Lists|resource group access entries,451-453
@@ -3477,10 +3494,14 @@ resources|protected,451-453
 protected|resources,451-453
 security|minimum role for resource group access ACL entries,452
 minimum role|for resource group access ACL entries,452
+disabling|permissions,452
+permissions|disabling,452
 roles|minimum role for resource group access ACL entries,452
+
 access policies|for resource group access ACL entries,452
-policies for resource group access ACL entries,452
+policies|for resource group access ACL entries,452
 security|policies for resource group access ACL entries,452
+
 ACL entries|element category access,453-554
 Access Control Lists|element category access entries,453-554
 chunks|save_chunk permission,453
@@ -3490,7 +3511,7 @@ security|minimum role for element category access ACL entries,453
 minimum role|for element category access ACL entries,453
 roles|minimum role for element category access ACL entries,453
 access policies|for element category access ACL entries,453
-policies for element category access ACL entries,453
+policies|for element category access ACL entries,453
 security|policies for element category access ACL entries,453
 permissions|save_document,453
 documents|save_document permission,453
@@ -3532,7 +3553,6 @@ User Group Context Access dialog,456-457
 dialogs|User Group Context Access,456-457
 creating|context access ACL entries,456-457
 security|creating context access ACL entries,456-457
-context access ACL entries,456-457
 contexts|mgr,456
 mgr context,456
 access policies|duplicating,456
@@ -3560,7 +3580,7 @@ minimum role|for resource group access ACL entries,458-459
 security|minimum role,456-459
 roles|minimum role for resource group access ACL entries,458-459
 access policies|for resource group access ACL entries,458-459
-policies for resource group access ACL entries,458-459
+policies|for resource group access ACL entries,458-459
 security|policies for resource group access ACL entries,458-459
 Add Resource Group dialog,458
 dialogs|Add Resource Group,458
@@ -3635,6 +3655,8 @@ context access ACL entries,462-463
 ACL entries|context access,462-463
 flush permissions,462
 flush all sessions,462
+disabling|permissions,463
+permissions|disabling,463
 Editor role,463
 roles|Editor,463
 access policies|EditorElement,463
@@ -3650,6 +3672,8 @@ permissions|element_tree,465
 element_tree permission,465
 elements|element_tree permission,465
 permissions|file_tree,465
+disabling|permissions,465-466
+permissions|disabling,465-466
 files|file_tree permission,465
 file_tree permission,465
 permissions|resource_tree,465
@@ -3677,23 +3701,26 @@ undelete permission,466
 resources|remove permission,466
 permissions|remove,466
 remove permission,466
-admin Super User|restricting permission to,466
-permissions|tree_root_id,466-467
-tree_root_id|permission,466-467
-tutorials|tree_root_id,466-467
-tree_root_id|tutorial,466-467
+admin Super User|restricting access for others,466
+user settings|tree_root_id,466-468
+tree_root_id|user setting,466-468
+tree_root_id|system setting,468
+system settings|tree_root_id,468
+tutorials|tree_root_id,466-468
+tree_root_id|tutorial,466-468
 Create New Setting dialog,466-467
 dialogs|Create New Setting,466-467
 admin Super User|tree_root_id for,467-468
-files|filemanager_path setting,467
-permissions|filemanager_path,467
-filemanager_path permission,467
-tutorials|filemanager_path,467
-filemanager_path tutorial,467
-permissions|tree_root_id,468
-tree_root_id|permission,468
+files|filemanager_path setting,467-468
+filemanager_path user setting,467-468
+user settings|filemanager_path,467-468
+system settings|filemanager_path,467-468
+filemanager_path system setting,467-468
+tutorials|filemanager_path,467-468
+filemanager_path tutorial,467-468
+
+system settings|tree_root_id,468
 admin Super User|previewing from Manager,468
-filemanager_path permission,468
 tutorials|filemanager_path,468
 controlling|access in the front end,468-474
 front end|controlling access in,468-474
@@ -3786,10 +3813,9 @@ chunks|Tpl,473
 redirecting users|on login,473-474
 users|redirecting on login,473-474
 flush permissions,474
-loginResourceId property,474
+loginResourceId property (Login),474
+properties|loginResourceId (Login),474
 Login page|loginResourceId property,474
-redirecting users|on login,474
-users|redirecting on login,474
 (anonymous) user,474-475
 user|anonymous,474-475
 anonymous user,474-475
@@ -3902,6 +3928,8 @@ security|hiding resources with custom permissions tutorial,485-488
 methods|hasPermission(),485
 hasPermission() method,485
 current user,485
+users|current user,485
+user|current,485
 security|hasPermission() method,485
 Private Document 2 resource,486
 documents|Private Document2,486
@@ -3966,7 +3994,9 @@ tree_root_id|system setting,490
 Create New Setting dialog,491
 dialogs|Create New Setting,491
 MemberPages plugin,492-493
-current user|492-493
+current user,492-493
+users|current user|492,493
+user|current,492-493
 plugins|MemberPages,492-493
 users|redirecting with sendRedirect(),494-495
 redirecting users|with sendRedirect(),494-495
@@ -4085,11 +4115,13 @@ resource/create action,514
 actions|resource/create,514
 resource/update action,514
 actions|resource/update,514
+disabling|permissions,514
+permissions|disabling,514
 permissions|view_tv,514
 view_tv permission,514
 template variables|view_tv permission,514
 permissions|edit_tv,514
-template variables|edit_Tv permission,514
+template variables|edit_tv permission,514
 edit_tv permission,514
 permissions|save_tv,514
 template variables|save_tv permission,514
@@ -4141,7 +4173,6 @@ hiding|tabs with form customization,520
 tutorials|hiding Create/Edit Resource panel tabs with form customization,520
 hiding|Create/Edit Resource panel tabs with form customization tutorial,520
 Create/Edit Resource panel|hiding tabs with form customization,520
-hiding|Create/Edit Resource panel tabs with form customization,520
 Create/Edit Resource panel|modx-panel-resource-tv tab,520
 Create/Edit Resource panel|modx-resource-access-permissions tab,520
 form customization|constraints,521-522
@@ -4153,8 +4184,7 @@ constraint field (form customization),521
 admin Super User|accidentally hiding TVs from,521
 troubleshooting|disappearing TVs,521
 
-form customization|creating new tabs with,522
-creating|new tabs with form customization,522
+form customization|creating new Create/Edit Resource panel tabs with,522
 Create/Edit Resource panel|modx-panel-resource-tv tab,522
 Create/Edit Resource panel|creating a new tab with form customization,522
 tutorials|creating new Create/Edit Resource panel tabs with form customization,522
@@ -4162,7 +4192,6 @@ creating|new Create/Edit Resource panel tabs with form customization tutorial,52
 my-new-tab,522
 form customization|hiding fields with,522
 fields|hiding with form customization,522
-hiding|fields with form customization,522
 resource fields|hiding in Create/Edit Resource panel with form customization,522
 tutorials|hiding Create/Edit Resource panel fields with form customization,522
 hiding|Create/Edit Resource panel fields with form customization tutorial,522
@@ -4178,7 +4207,6 @@ tutorials|setting field labels with form customization,523
 setting|field labels with form customization tutorial,523
 form customization|setting template variable labels with,523
 Create/Edit Resource panel|setting labels form customization,523
-template variables|setting labels (captions) with form customization,523
 template variables|setting captions (labels) with form customization,523
 tutorials|setting template variable labels with form customization,523
 setting|template variable labels with form customization tutorial,523
@@ -4202,7 +4230,7 @@ creating|actions,524-525
 Top Menu|creating actions,524-525
 creating|Top Menu actions,524-525
 index.php file|for CheatSheet component,525
-files|index.php for CheatSheet component,525
+files|index.php (for CheatSheet component),525
 handler,526
 JavaScript,526
 lexicon|for CheatSheet component,526-527
@@ -4281,7 +4309,6 @@ property sets|creating,538-539
 creating|property sets,538-539
 EZfaq|snippet tutorial,539-542
 working with|EZfaq,539-542
-creating|FAQ page with EZfaq tutorial,539-542
 snippets|EZfaq tutorial,539-542
 tutorials|creating FAQ page with EZfaq snippet,539-542
 creating|FAQ page with EZfaq snippet tutorial,539-542
@@ -4302,7 +4329,7 @@ SPForm|overview,544
 SPForm|Contact page,545
 redirecting users|in SPForm,544-545
 users|redirecting in SPForm,544-545
-SPForm|thank you page,544-545
+Thank You page (SPForm),544-545
 SPForm|thank you page,544-545
 SPFORM|Tpl chunks for,545
 Tpl chunks|for SPForm,545
@@ -4322,6 +4349,7 @@ snippets|SPFResponse,548-549
 SPFResponse snippet,548-549
 SPForm|setting options,548-551
 SPForm|property sets for,548-551
+configuring|SPForm,548-551
 property sets|SPForm,548-551
 SPForm|properties,548-551
 properties|SPForm,548-551
@@ -4330,6 +4358,9 @@ recipientArray for SPForm,549-550
 SPForm|multiple recipients for,549-550
 formProcAllowedReferers (SPForm),550
 SPForm|formProcAllowedReferers,550
+mail() PHP function,550
+PHP functions,mail(),550
+troubleshooting|email,550
 SPForm|using SMTP with,550
 using|SMTP with SPForm,550
 SMTP|using with SPForm,550
@@ -4337,6 +4368,7 @@ http_referer variable,550
 $_SERVER['HTTP_REFERER'] variable,550
 variables|$_SERVER['HTTP_REFERER'],550
 SPForm|takeMeBack property,550-551
+properties|takeMeBack (SPForm),550-551
 takeMeBack property for SPForm,550-551
 redirecting users|in SPForm,550-551
 users|redirecting in SPForm,550-551
@@ -4360,9 +4392,10 @@ uses for|Wayfinder,555
 Wayfinder|book,555
 Kongondo,555
 MODX Motors resources,557-558
-resources for Wayfinder tutorial,557-558
+resources|for Wayfinder tutorial,557-558
 Wayfinder|startId property,558
 Wayfinder|properties,558-559
+properties|startId (Wayfinder),558-559
 properties|Wayfinder,558-559
 styling Wayfinder menus,558-559
 Wayfinder|styling menus,558-559
@@ -4467,6 +4500,7 @@ SMTP|using with FormIt,586
 FormIt|using SMTP with,586
 using|SMTP with FormIt,586
 Gmail (using SMTP with),585-586
+configuring|SMTP for Gmail,586
 SMTP|settings for Gmail,586
 FormIt|tpl chunks,587
 Tpl chunks|for FormIt,587
@@ -4483,7 +4517,6 @@ FormIt|FormItAutoResponder hook,587-588
 FormItAutoResponder hook,587-588
 properties|FormItAutoResponder,587-588
 FormItAutoResponder properties,587-588
-FormIt|custom hooks,588-594
 custom hooks|for FormIt,588-594
 hooks|custom for FormIt,588-594
 creating|custom hooks for FormIt,588-594
@@ -4508,7 +4541,9 @@ methods|setValue() (FormIt hooks),592
 setValue() method (FormIt hooks),592
 hooks|FormIt setValue() method,592
 hooks|setValue() method (FormIt),592
-current user|592-593
+current user,592-593
+users|current user|592-593
+user|current,592-593
 tutorials|ChangeEmail custom hook for FormIt,591-594
 ChangeEmail custom hook for FormIt tutorial,591-594
 $modx->user variable|using get() with,592-593
@@ -4540,7 +4575,7 @@ tutorials|creating a transport package,599-625
 creating|transport package tutorial,599-625
 PackMan add-on component,600
 add-on components|PackMan,600
-build.transport.php file (transport packages,600-601
+build.transport.php file (transport packages),600-601
 files|build.transport.php (transport packages),600-601
 MODX_CORE_PATH constant,601
 constants|MODX_CORE_PATH,601
@@ -4690,8 +4725,8 @@ manager_language system setting,612
 transport packages|file resolvers,612-614
 file|resolvers (transport packages),612-614
 transport packages|transferring files,612-614
-transferring files in transport packages,612-614
-files|transferring in transport packages,612-614
+transferring files in transport packages,612-615
+files|transferring in transport packages,612-615
 transport packages|resolve() method,612-614
 resolve() method (transport packages),612-614
 methods|resolve() (transport packages),612-614
@@ -4703,9 +4738,6 @@ transport packages|target directory,614
 target directory (transport packages),614
 transport packages|file vehicles,614-615
 file|vehicles (transport packages),614-615
-transport packages|transferring files,614-615
-files|transferring in transport packages,614-615
-transferring files in transport packages,614-615
 xPDOFileVehicle,614-615
 transport packages|_build directory,614
 _build directory (transport packages),614
@@ -4771,13 +4803,13 @@ methods|addMany(),621
 addMany() method,621
 adding|elements to categories in transport packages,621-623
 attaching|elements to categories in transport packages,621-623
-categories|adding elements to in transport packages,621-623
-adding|snippets to categories in transport packages,621-623
-attaching|snippets to categories in transport packages,621-623
-snippets|adding to categories in transport packages,621-623
-chunks|adding to categories in transport packages,621-623
-adding|chunks to categories in transport packages,621-623
-attaching|chunks to categories in transport packages,621-623
+categories|assigning elements to in transport packages,621-623
+assigning|snippets to categories in transport packages,621-623
+assigning|snippets to categories in transport packages,621-623
+snippets|assigning to categories in transport packages,621-623
+chunks|assigning to categories in transport packages,621-623
+assigning|chunks to categories in transport packages,621-623
+add|chunks to categories in transport packages,621-623
 xPDOTransport::UNIQUE_KEY constant,621-622
 $resource variable|in transport packages,622
 constants|xPDOTransport::UNIQUE_KEY,621-622
@@ -4914,6 +4946,7 @@ getCollection() method,631-632
 methods|newQuery(),631-632
 xPDO queries|newQuery() method,631-632
 newQuery() method,631-632
+database|queries,631-632
 methods|where() for xPDO queries,631-632
 where() method for xPDO queries,631-632
 queries|where() method,631-632
@@ -4994,6 +5027,7 @@ log() method options,635
 methods|newObject(),635
 newObject() method,635
 xPDO queries|newQuery() method,635
+database|queries,635-638
 methods|newQuery(),636
 newQuery() method,636
 methods|prepare(),636
@@ -5187,7 +5221,7 @@ getUserInfo() method,645
 methods|getVersionData(),645
 getVersionData() method,645
 MODX|getting version information in code,645
-retrieving|MODX version information in code,645
+getting|MODX version information in code,645
 version information in code,645
 methods|getWebUserInfo(),645
 getWebUserInfo() method,645
@@ -5341,7 +5375,7 @@ leaveGroup() method (user object),650
 methods|remove() (user object),651
 remove() method (user object),651
 methods|save() (user object),651
-save() method|user object,651
+save() method|user objects,651
 methods|sendEmail(),651
 sendEmail() method,651
 $resource variable|using getContent() with,651
@@ -5428,15 +5462,20 @@ operators|PHP,659-664
 PHP|arithmetic operators,660
 operators|arithmetic (PHP),660
 arithmetic operators in PHP,660
+PHP operators|arithmetic,660
 PHP|assignment operators,660
+PHP operators|assignment,660
 operators|assignment (PHP),661
 = operator (PHP),661
+PHP operators|=,661
 operators|= (PHP),661
 assignment operators in PHP,661
 PHP|comparison operators,661-662
+PHP operators|comparison,661-662
 operators|comparison (PHP),661-662
 comparison operators in PHP,661-662
 PHP|logical operators,663-664
+PHP operators|logical,663-664
 operators|logical (PHP),663-664
 logical operators in PHP,663-664
 PHP|conditionals,664-668
@@ -5451,6 +5490,7 @@ PHP|switch statement,666-667
 switch statement in PHP,666-667
 PHP|ternary operator,667-668
 operators|ternary (PHP),667-668
+PHP operators|ternary,667-668
 ternary operator (PHP),667-668
 PHP|arrays,668-669
 arrays in PHP,668-669
@@ -5643,12 +5683,14 @@ SMTP|system settings for,696
 PHP functions|mail(),696
 mail() PHP function,696
 Gmail (using SMTP with),696
+configuring|SMTP for Gmail,696
 SMTP|settings for Gmail,696
 #System Events Reference
 
 sorting|system events grid,697
 system events|Quick Reference,696-715
 Quick Reference to system events,696-715
+system events,696-715
 MODX|system events Quick Reference,696-715
 troubleshooting|system events,696-715
 
@@ -6090,7 +6132,7 @@ system events|OnSiteRefresh,715
 OnSiteRefresh system event,715
 
 
-
+upgrading (see: updating)
 scriptProperties (see: $scriptProperties)
 functions|(see: PHP functions)
 many-to-many relationships (see: intersect objects)
@@ -6106,12 +6148,17 @@ parameters (see also: properties)
 documents|(see also: resources)
 resources|(see also: documents)
 user|(see also: users)
+user|(see also: user profile)
+file|(see also: files)
+files|(see also: file)
+removing|(see also: deleting)
+deleting|(see also: removing)
 
 extras (see: add-on components)
 3PCS (see: add-on components)
+third-party components (see: add-on components)
 transport packages|(see also: add-on components)
-getting|(see also: retrieving)
-retrieving|(see also: getting)
+retrieving (see: getting)
 modifying|(see also: changing and renaming)
 changing|(see also: modifying and renaming)
 renaming|(see also: changing and modifying)
