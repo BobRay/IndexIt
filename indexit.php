@@ -217,8 +217,9 @@ class AllHeads {
 </head>
 <body>
 <p class="IndexTitle">Index</p>
-<hr class="IndexTitleHr" size="2" width="90%" align="left" />
+
 ';
+            //<hr class="IndexTitleHr" size="2" width="90%" align="left" />
                 fwrite($fp,$htmlHead);
             }
 
@@ -232,8 +233,8 @@ class AllHeads {
                     if (!$html) {
                         fwrite($fp,"\n\n" . $l);
                     } else {
-                        fwrite($fp,'<p class="indexletterheading">' . $l . "</p> \n" .
-'<hr class="IndexLetterHeadingHr"  size="2"  width="40%" align="left" />' . "\n");
+                        fwrite($fp,'<p class="indexletterheading">' . $l .                         "</p> \n\n");
+                        //'<hr class="IndexLetterHeadingHr"  size="2"  width="40%" align="left" />'
                     }
                 }
                 $letter = $l;

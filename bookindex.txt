@@ -1954,7 +1954,7 @@ enhanced hello snippet,273-275
 hello snippet (enhanced),273-275
 snippets|setting placeholders in,274-275
 placeholders|setting in snippets,274-275
-tutorials|setting placeholders with a snippets,274-275
+tutorials|setting placeholders with a snippet,274-275
 setting|placeholders with a snippet tutorial,274-275
 snippet default properties,276-277
 snippets|default properties,276-277
